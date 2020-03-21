@@ -1,0 +1,67 @@
+.alert {
+  padding: 0;
+  display: flex;
+  // color: $white;
+
+  .close:hover,
+  .close:focus {
+    // color: $white;
+    opacity: 1;
+  }
+}
+
+.alert-outline,
+.alert-outline-coloured {
+  color: $body-color;
+  background: $white;
+
+  hr {
+    border-top-color: $gray-400;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: $gray-800;
+  }
+
+  .alert-message {
+    @include border-right-radius($alert-border-radius);
+    @include border-left-radius($alert-border-radius);
+    border: 1px solid $gray-400;
+  }
+
+  .alert-message:not(:nth-child(2)) {
+    @include border-left-radius(0);
+    border-left: 0;
+  }
+
+  .alert-icon {
+    @include border-left-radius($alert-border-radius);
+    color: $white;
+  }
+
+  @each $color, $value in $theme-colors {
+    &.alert-#{$color} .alert-icon {
+      background-color: $value;
+    }
+  }
+}
+
+.alert-outline-coloured {
+  @each $color, $value in $theme-colors {
+    &.alert-#{$color} .alert-message {
+      border-color: $value;
+    }
+  }
+}
+
+.alert-icon {
+  padding: $alert-padding-y $alert-padding-x;
+  background: rgba(0,0,0,.05);
+}
+
+.alert-message {
+  padding: $alert-padding-y $alert-padding-x;
+  width: 100%;
+  box-sizing: border-box;
+}

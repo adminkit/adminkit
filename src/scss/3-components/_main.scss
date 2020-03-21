@@ -1,0 +1,16 @@
+.main {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  min-height: 100vh;
+  transition: $sidebar-transition;
+  background: $body-bg;
+  flex-direction: column;
+  overflow: hidden;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  
+  @include media-breakpoint-up(lg) {
+    box-shadow: $main-box-shadow;
+  }
+}

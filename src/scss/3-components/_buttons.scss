@@ -1,0 +1,44 @@
+.btn-pill {
+  border-radius: 10rem;
+}
+
+.btn-square {
+  border-radius: 0;
+}
+
+.btn .feather {
+  width: 14px;
+  height: 14px;
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    @include button-color($white);
+    @include button-color-hover($white);
+  }
+
+  .btn-outline-#{$color} {
+    @include button-color-hover($white);
+    @include button-color-active($white);
+  }
+}
+
+@each $color, $value in $social-colors {
+  .btn-#{$color} {
+    @include button-variant($value, $value);
+    @include button-color($white);
+    @include button-color-hover($white);
+  }
+}
+
+.btn-light,
+.btn-white {
+  @include button-color($gray-800);
+  @include button-color-hover($gray-800);
+}
+
+.btn-outline-light,
+.btn-outline-white {
+  @include button-color-hover($gray-800);
+  @include button-color-active($gray-800);
+}

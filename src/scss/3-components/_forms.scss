@@ -1,0 +1,27 @@
+.input-group-navbar {
+  max-width: 250px;
+
+  .form-control,
+  .btn {
+    height: $input-height-lg;
+    background: $body-bg;
+    box-shadow: none;
+    border: 0;
+    padding: $input-padding-y-lg $spacer*0.75;
+
+    &:focus {
+      background: $body-bg;
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+
+  .btn {
+    color: $gray-600;
+
+    .feather {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

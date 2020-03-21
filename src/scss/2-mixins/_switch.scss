@@ -1,0 +1,5 @@
+@mixin switch-variant($color) {
+  input:checked + label::before {
+    background-color: $color;
+  }
+}

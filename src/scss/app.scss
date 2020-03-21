@@ -1,0 +1,61 @@
+/*!
+ * AdminKit v1.0.0 (https://adminkit.io/)
+ * Copyright 2020 Paul Laros
+ * Copyright 2020 AdminKit
+ * Licensed under MIT (https://github.com/adminkit/adminkit/blob/master/LICENSE)
+ */
+
+// Variables
+@import "1-variables/fonts";
+@import "1-variables/variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Theme mixins
+@import "2-mixins/button";
+@import "2-mixins/modal";
+@import "2-mixins/switch";
+
+// Theme components
+@import "3-components/accordion";
+@import "3-components/alert";
+@import "3-components/avatar";
+@import "3-components/buttons";
+@import "3-components/card";
+@import "3-components/chart";
+@import "3-components/content";
+@import "3-components/dropdown";
+@import "3-components/feather";
+@import "3-components/footer";
+@import "3-components/forms";
+@import "3-components/hamburger";
+@import "3-components/list-group";
+@import "3-components/main";
+@import "3-components/modal";
+@import "3-components/navbar";
+@import "3-components/progress";
+@import "3-components/reboot";
+@import "3-components/sidebar";
+@import "3-components/sizing";
+@import "3-components/tables";
+@import "3-components/type";
+@import "3-components/wrapper";
+
+// Theme utilities
+@import "4-utilities/background";
+@import "4-utilities/borders";
+@import "4-utilities/cursors";
+@import "4-utilities/overflow";
+
+// 3rd party plugins
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~jvectormap-next/jquery-jvectormap";
+@import "~simplebar/dist/simplebar";
+@import "~tempusdominus-bootstrap-4/src/sass/tempusdominus-bootstrap-4";
+
+// 3rd party plugin styles
+@import "5-vendor/datetimepicker";
+@import "5-vendor/simplebar";

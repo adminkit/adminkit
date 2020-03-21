@@ -1,0 +1,17 @@
+.accordion {
+  .card:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .card-header {
+    border-bottom: 0;
+  }
+
+  .card-body {
+    border-top: 1px solid $card-border-color;
+  }
+
+  .card-title a {
+    color: $body-color;
+  }
+}

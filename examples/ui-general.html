@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Web UI Kit &amp; Dashboard Template based on Bootstrap">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, web ui kit, dashboard template, admin template">
+
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<title>General | AdminKit Demo</title>
+
+	<link href="css/app.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<nav id="sidebar" class="sidebar">
+			<div class="sidebar-content js-simplebar">
+				<a class="sidebar-brand" href="index.html">
+          <span class="align-middle">AdminKit</span>
+        </a>
+
+				<ul class="sidebar-nav">
+					<li class="sidebar-header">
+						Pages
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="index.html">
+              <i class="align-middle" data-feather="sliders"></i> <span class="align-middle">Dashboard</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-profile.html">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-settings.html">
+              <i class="align-middle" data-feather="settings"></i> <span class="align-middle">Settings</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-invoice.html">
+              <i class="align-middle" data-feather="credit-card"></i> <span class="align-middle">Invoice</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="pages-blank.html">
+              <i class="align-middle" data-feather="book"></i> <span class="align-middle">Blank</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Tools & Components
+					</li>
+					<li class="sidebar-item active">
+						<a href="#ui" data-toggle="collapse" class="sidebar-link">
+              <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">UI Elements</span>
+            </a>
+						<ul id="ui" class="sidebar-dropdown list-unstyled collapse show" data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-alerts.html">Alerts</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-buttons.html">Buttons</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>
+							<li class="sidebar-item active"><a class="sidebar-link" href="ui-general.html">General</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-grid.html">Grid</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-modals.html">Modals</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="ui-typography.html">Typography</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="icons-feather.html">
+              <i class="align-middle" data-feather="coffee"></i> <span class="align-middle">Icons</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a href="#forms" data-toggle="collapse" class="sidebar-link collapsed">
+              <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>
+            </a>
+						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>
+							<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>
+						</ul>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="tables-bootstrap.html">
+              <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>
+            </a>
+					</li>
+
+					<li class="sidebar-header">
+						Plugins & Addons
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="charts-chartjs.html">
+              <i class="align-middle" data-feather="bar-chart-2"></i> <span class="align-middle">Charts</span>
+            </a>
+					</li>
+
+					<li class="sidebar-item">
+						<a class="sidebar-link" href="maps-google.html">
+              <i class="align-middle" data-feather="map"></i> <span class="align-middle">Maps</span>
+            </a>
+					</li>
+				</ul>
+
+				<div class="sidebar-cta">
+					<div class="sidebar-cta-content">
+						<strong class="d-inline-block mb-2">Upgrade to Pro</strong>
+						<div class="mb-3 text-sm">
+							Are you looking for more components?
+						</div>
+						<a href="https://adminkit.io/pricing" target="_blank" class="btn btn-outline-primary btn-block">Upgrade</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="main">
+			<nav class="navbar navbar-expand navbar-light navbar-bg">
+				<a class="sidebar-toggle d-flex">
+          <i class="hamburger align-self-center"></i>
+        </a>
+
+				<form class="form-inline d-none d-sm-inline-block">
+					<div class="input-group input-group-navbar">
+						<input type="text" class="form-control" placeholder="Search…" aria-label="Search">
+						<div class="input-group-append">
+							<button class="btn" type="button">
+                <i class="align-middle" data-feather="search"></i>
+              </button>
+						</div>
+					</div>
+				</form>
+
+				<div class="navbar-collapse collapse">
+					<ul class="navbar-nav navbar-align">
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="bell"></i>
+									<span class="indicator">4</span>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+								<div class="dropdown-menu-header">
+									4 New Notifications
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-danger" data-feather="alert-circle"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Update completed</div>
+												<div class="text-muted small mt-1">Restart server 12 to complete the update.</div>
+												<div class="text-muted small mt-1">30m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-warning" data-feather="bell"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Lorem ipsum</div>
+												<div class="text-muted small mt-1">Aliquam ex eros, imperdiet vulputate hendrerit et.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-primary" data-feather="home"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">Login from 192.186.1.8</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<i class="text-success" data-feather="user-plus"></i>
+											</div>
+											<div class="col-10">
+												<div class="text-dark">New connection</div>
+												<div class="text-muted small mt-1">Christina accepted your request.</div>
+												<div class="text-muted small mt-1">14h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all notifications</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-toggle="dropdown">
+								<div class="position-relative">
+									<i class="align-middle" data-feather="message-square"></i>
+								</div>
+							</a>
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
+								<div class="dropdown-menu-header">
+									<div class="position-relative">
+										4 New Messages
+									</div>
+								</div>
+								<div class="list-group">
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Vanessa Tucker</div>
+												<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
+												<div class="text-muted small mt-1">15m ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">William Harris</div>
+												<div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
+												<div class="text-muted small mt-1">2h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Christina Mason</div>
+												<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
+												<div class="text-muted small mt-1">4h ago</div>
+											</div>
+										</div>
+									</a>
+									<a href="#" class="list-group-item">
+										<div class="row no-gutters align-items-center">
+											<div class="col-2">
+												<img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
+											</div>
+											<div class="col-10 pl-2">
+												<div class="text-dark">Sharon Lessman</div>
+												<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
+												<div class="text-muted small mt-1">5h ago</div>
+											</div>
+										</div>
+									</a>
+								</div>
+								<div class="dropdown-menu-footer">
+									<a href="#" class="text-muted">Show all messages</a>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+                <i class="align-middle" data-feather="settings"></i>
+              </a>
+
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
+                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded mr-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
+              </a>
+							<div class="dropdown-menu dropdown-menu-right">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="pages-settings.html"><i class="align-middle mr-1" data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="help-circle"></i> Help Center</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Log out</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+
+			<main class="content">
+				<div class="container-fluid p-0">
+
+					<h1 class="h3 mb-3">General</h1>
+
+					<div class="row">
+						<div class="col-12 col-lg-6">
+							<div class="accordion" id="accordionExample">
+								<div class="card">
+									<div class="card-header" id="headingOne">
+										<h5 class="card-title my-2">
+											<a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Accordion
+            </a>
+										</h5>
+									</div>
+									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div class="card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+											Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+											et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+											craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingTwo">
+										<h5 class="card-title my-2">
+											<a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+              Another one
+            </a>
+										</h5>
+									</div>
+									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div class="card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+											Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+											et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+											craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</div>
+									</div>
+								</div>
+								<div class="card">
+									<div class="card-header" id="headingThree">
+										<h5 class="card-title my-2">
+											<a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+              Something else
+            </a>
+										</h5>
+									</div>
+									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div class="card-body">
+											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+											Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+											et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
+											craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Breadcrumbs</h5>
+									<h6 class="card-subtitle text-muted">Indicate the current page’s location within a navigational hierarchy.</h6>
+								</div>
+								<div class="card-body">
+									<nav aria-label="breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item active">Home</li>
+										</ol>
+									</nav>
+									<nav aria-label="breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+											<li class="breadcrumb-item active">Library</li>
+										</ol>
+									</nav>
+									<nav aria-label="breadcrumb">
+										<ol class="breadcrumb">
+											<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+											<li class="breadcrumb-item"><a href="#">Library</a></li>
+											<li class="breadcrumb-item active">Data</li>
+										</ol>
+									</nav>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Images</h5>
+									<h6 class="card-subtitle text-muted">Lightweight styles for images.</h6>
+								</div>
+								<div class="card-body">
+									<div class="text-center">
+										<img class="rounded mr-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
+										<img class="rounded-circle rounded mr-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
+										<img class="img-thumbnail rounded mr-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Popovers</h5>
+									<h6 class="card-subtitle text-muted">Examples for adding Bootstrap popovers.</h6>
+								</div>
+								<div class="card-body text-center">
+									<button class="btn btn-secondary" type="button" title="Popover on top" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on top</button>
+									<button class="btn btn-secondary" type="button" title="Popover on bottom" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on bottom</button>
+									<button class="btn btn-secondary" type="button" title="Popover on left" data-container="body" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on left</button>
+									<button class="btn btn-secondary" type="button" title="Popover on right" data-container="body" data-toggle="popover" data-placement="right" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on right</button>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Tooltips</h5>
+									<h6 class="card-subtitle text-muted">Examples for adding custom Bootstrap tooltips.</h6>
+								</div>
+								<div class="card-body text-center">
+									<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+									<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+									<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+									<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="right" data-container="body" title="Tooltip on right">Tooltip on right</button>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Badges</h5>
+									<h6 class="card-subtitle text-muted">Examples for badges.</h6>
+								</div>
+								<div class="card-body">
+
+									<div class="mb-1">
+										<span class="badge badge-primary">Primary</span>
+										<span class="badge badge-secondary">Secondary</span>
+										<span class="badge badge-success">Success</span>
+										<span class="badge badge-danger">Danger</span>
+										<span class="badge badge-warning">Warning</span>
+										<span class="badge badge-info">Info</span>
+									</div>
+
+									<div class="mt-1">
+										<span class="badge badge-pill badge-primary">Primary</span>
+										<span class="badge badge-pill badge-secondary">Secondary</span>
+										<span class="badge badge-pill badge-success">Success</span>
+										<span class="badge badge-pill badge-danger">Danger</span>
+										<span class="badge badge-pill badge-warning">Warning</span>
+										<span class="badge badge-pill badge-info">Info</span>
+									</div>
+
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Dropdowns</h5>
+									<h6 class="card-subtitle text-muted">Toggle contextual overlays for displaying lists of links.</h6>
+								</div>
+								<div class="card-body pb-0">
+
+									<div class="row mb-3">
+										<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+											<p class="mb-0">Basic:</p>
+											<div class="dropdown-menu mb-2" style="position:static;display:block;">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+											<p class="mb-0">Active:</p>
+											<div class="dropdown-menu mb-2" style="position:static;display:block;">
+												<a class="dropdown-item" href="#">Regular link</a>
+												<a class="dropdown-item active" href="#">Active link</a>
+												<a class="dropdown-item" href="#">Another link</a>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+											<p class="mb-0">Disabled:</p>
+											<div class="dropdown-menu mb-2" style="position:static;display:block;">
+												<a class="dropdown-item" href="#">Regular link</a>
+												<a class="dropdown-item disabled" href="#">Disabled link</a>
+												<a class="dropdown-item" href="#">Another link</a>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+											<p class="mb-0">Header:</p>
+											<div class="dropdown-menu mb-2" style="position:static;display:block;">
+												<h6 class="dropdown-header">Dropdown header</h6>
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+											<p class="mb-0">Dividers:</p>
+											<div class="dropdown-menu mb-2" style="position:static;display:block;">
+												<a class="dropdown-item" href="#">Action</a>
+												<a class="dropdown-item" href="#">Another action</a>
+												<a class="dropdown-item" href="#">Something else here</a>
+												<div class="dropdown-divider"></div>
+												<a class="dropdown-item" href="#">Separated link</a>
+											</div>
+										</div>
+										<div class="col-12 col-md-6 col-lg-12 col-xl-6 col-xxl-4">
+											<p class="mb-0">Text:</p>
+											<div class="dropdown-menu p-4 text-muted" style="max-width: 200px;position:static;display:block;">
+												<p class="mb-0">
+													Some example text that's free-flowing within the dropdown menu.
+												</p>
+											</div>
+										</div>
+									</div>
+									<!-- /.row -->
+
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Pagination</h5>
+									<h6 class="card-subtitle text-muted">Examples for showing pagination.</h6>
+								</div>
+								<div class="card-body">
+									<nav aria-label="Page navigation example">
+										<ul class="pagination pagination-sm">
+											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item active"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">4</a></li>
+											<li class="page-item"><a class="page-link" href="#">5</a></li>
+											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+										</ul>
+									</nav>
+									<nav aria-label="Page navigation example">
+										<ul class="pagination pagination-md">
+											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item active"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">4</a></li>
+											<li class="page-item"><a class="page-link" href="#">5</a></li>
+											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+										</ul>
+									</nav>
+									<nav aria-label="Page navigation example">
+										<ul class="pagination pagination-lg">
+											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
+											<li class="page-item"><a class="page-link" href="#">1</a></li>
+											<li class="page-item active"><a class="page-link" href="#">2</a></li>
+											<li class="page-item"><a class="page-link" href="#">3</a></li>
+											<li class="page-item"><a class="page-link" href="#">4</a></li>
+											<li class="page-item"><a class="page-link" href="#">5</a></li>
+											<li class="page-item"><a class="page-link" href="#"><i class="fas fa-angle-right"></i></a></li>
+										</ul>
+									</nav>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Progress Bars</h5>
+									<h6 class="card-subtitle text-muted">Examples for using Bootstrap custom progress bars.</h6>
+								</div>
+								<div class="card-body">
+									<div class="progress mb-3">
+										<div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Default</div>
+									</div>
+
+									<div class="progress mb-3">
+										<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Striped</div>
+									</div>
+
+									<div class="progress mb-3">
+										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Animated</div>
+									</div>
+
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Stacked</div>
+										<div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+										<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+										<div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card">
+								<div class="card-header">
+									<h5 class="card-title">Spinners</h5>
+									<h6 class="card-subtitle text-muted">Indicate the loading state of a component with Bootstrap spinners.</h6>
+								</div>
+								<div class="card-body">
+
+									<div class="mb-2">
+										<div class="spinner-border text-dark mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border text-primary mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border text-secondary mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border text-success mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border text-danger mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border text-warning mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border text-info mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+									</div>
+
+									<div class="mb-2">
+										<div class="spinner-border spinner-border-sm text-dark mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border spinner-border-sm text-primary mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border spinner-border-sm text-secondary mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border spinner-border-sm text-success mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border spinner-border-sm text-danger mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border spinner-border-sm text-warning mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-border spinner-border-sm text-info mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+									</div>
+
+									<hr />
+
+									<div class="mb-2">
+										<div class="spinner-grow text-dark mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow text-primary mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow text-secondary mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow text-success mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow text-danger mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow text-warning mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow text-info mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+									</div>
+
+									<div class="mb-2">
+										<div class="spinner-grow spinner-grow-sm text-dark mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow spinner-grow-sm text-primary mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow spinner-grow-sm text-secondary mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow spinner-grow-sm text-success mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow spinner-grow-sm text-danger mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow spinner-grow-sm text-warning mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+										<div class="spinner-grow spinner-grow-sm text-info mr-2" role="status">
+											<span class="sr-only">Loading...</span>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</main>
+
+			<footer class="footer">
+				<div class="container-fluid">
+					<div class="row text-muted">
+						<div class="col-6 text-left">
+							<p class="mb-0">
+								<a href="index.html" class="text-muted"><strong>AdminKit Demo</strong></a> &copy;
+							</p>
+						</div>
+						<div class="col-6 text-right">
+							<ul class="list-inline">
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Support</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Help Center</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Privacy</a>
+								</li>
+								<li class="list-inline-item">
+									<a class="text-muted" href="#">Terms</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script src="js/vendor.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+
+</html>
