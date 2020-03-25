@@ -52,3 +52,9 @@ npm run build
 ## Bugs and feature requests
 
 Found a bug or have a feature request? [Please open a new issue](https://github.com/adminkit/adminkit/issues/new).
+
+## Upgrade to Pro version
+
+Get more power with "[AdminKit Pro - Web UI Kit & Dashboard Template](https://adminkit.io/)". It has many more features compared to the free version to help create awesome apps!
+
+[Upgrade to Pro »](https://adminkit.io/pricing)
