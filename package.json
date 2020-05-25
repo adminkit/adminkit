@@ -1,6 +1,6 @@
 {
   "name": "adminkit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AdminKit - Web UI Kit & Dashboard Template",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.js",
