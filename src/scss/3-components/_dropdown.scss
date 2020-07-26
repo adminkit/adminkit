@@ -33,6 +33,10 @@
   transition: $transition-appearance-fast;
 }
 
+.dropdown-menu {
+  top: auto;
+}
+
 .dropdown-menu-lg {
   min-width: $dropdown-min-width*2;
 }
