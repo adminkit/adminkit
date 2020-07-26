@@ -8,7 +8,7 @@ A professional Web UI Kit & Dashboard template based on Bootstrap that comes wit
 
 ## Status
 
-![version](https://img.shields.io/badge/version-1.0.1-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-1.0.2-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aissue+is%3Aclosed)
 
 ## Features
 
