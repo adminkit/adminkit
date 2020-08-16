@@ -1,6 +1,6 @@
 # AdminKit
 
-A professional Web UI Kit & Dashboard template based on Bootstrap that comes with hundreds of UI components, forms, tables, charts, pages and icons.
+A professional Admin & Dashboard template based on Bootstrap that comes with hundreds of UI components, forms, tables, charts, pages and icons.
 
 <strong><a href="https://demo.adminkit.io/">View Demo</a> | <a href="https://github.com/adminkit/adminkit/archive/master.zip">Download ZIP</a> | <a href="https://adminkit.io/">Visit Website</a></strong>
 
@@ -55,6 +55,6 @@ Found a bug or have a feature request? [Please open a new issue](https://github.
 
 ## Upgrade to Pro version
 
-Get more power with "[AdminKit Pro - Web UI Kit & Dashboard Template](https://adminkit.io/)". It has many more features compared to the free version to help create awesome apps!
+Get more power with "[AdminKit Pro - The Ultimate Bootstrap Admin Template](https://adminkit.io/)". It has many more features compared to the free version to help create awesome apps!
 
 [Upgrade to Pro »](https://adminkit.io/pricing)

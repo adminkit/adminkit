@@ -1,7 +1,7 @@
 {
   "name": "adminkit",
   "version": "1.0.2",
-  "description": "AdminKit - Web UI Kit & Dashboard Template",
+  "description": "AdminKit - The Ultimate Bootstrap Admin Template",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.js",
     "watch": "webpack -p --config webpack.config.js --watch",
