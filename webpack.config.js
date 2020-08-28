@@ -53,15 +53,6 @@ module.exports = {
       filename: "css/app.css",
       chunkFilename: "css/app.css"
     }),
-    // jQuery and PopperJS
-    new Webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      jquery: "jquery",
-      "window.$": "jquery",
-      "window.jQuery": "jquery",
-      Popper: ["popper.js", "default"]
-    }),
     // Copy fonts and images to dist
     new CopyWebpackPlugin([
       { from: "src/fonts", to: "fonts" },
@@ -119,20 +110,6 @@ module.exports = {
               outputPath: "img/",
               publicPath: "../img/"
             }
-          }
-        ]
-      },
-      // Expose loader
-      {
-        test: require.resolve("jquery"),
-        use: [
-          {
-            loader: "expose-loader",
-            options: "jQuery"
-          },
-          {
-            loader: "expose-loader",
-            options: "$"
           }
         ]
       }
