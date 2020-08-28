@@ -36,16 +36,7 @@ module.exports = {
       }),
       new OptimizeCSSAssetsPlugin({})
     ],
-    runtimeChunk: false,
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor',
-          enforce: true
-        }
-      }
-    }
+    runtimeChunk: false
   },
   plugins: [
     // Extract css files to seperate bundle
