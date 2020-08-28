@@ -232,7 +232,7 @@ $card-shadow: 0 0 .875rem 0 rgba($dark, 0.05) !default;
 $card-title-font-weight: $font-weight-normal !default;
 $card-spacer-y: 1.25rem !default;
 $card-spacer-x: 1.25rem !default;
-$card-cap-padding-y: 0.75rem !default;
+$card-cap-padding-y: 1rem !default;
 $card-cap-padding-x: $card-spacer-x !default;
 
 // Tables
@@ -241,6 +241,7 @@ $table-cell-padding-x: .75rem !default;
 $table-cell-padding-y-sm: .3rem !default;
 $table-cell-padding-x-sm: .3rem !default;
 $table-striped-bg: $gray-100 !default;
+$table-hover-bg: rgba($black, .0375) !default;
 
 // Sidebar general
 $sidebar-width: 260px !default;
@@ -330,11 +331,6 @@ $badge-font-size: 80% !default;
 $badge-padding-y: .3em !default;
 $badge-padding-x: .45em !default;
 $badge-pill-padding-x: .65em !default;
-
-// Breadcrumbs
-$breadcrumb-bg: $gray-200 !default;
-$breadcrumb-border-radius: $border-radius !default;
-$breadcrumb-color: $gray-300 !default;
 
 // Pagination
 $pagination-padding-y: .3rem !default;

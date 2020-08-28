@@ -2,6 +2,10 @@
 	thead, tbody, tfoot, tr, td, th {
 		border-color: $table-border-color;
 	}
+	
+	> :not(:last-child) > :last-child > * {
+		border-color: $table-border-color;
+	}
 }
 
 .card {
