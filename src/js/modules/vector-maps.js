@@ -1,2 +1,2 @@
-import "script-loader!jvectormap-next";
-import "script-loader!../vendor/jquery-jvectormap-world-mill.js";
+import 'script-loader!jsvectormap'
+import 'script-loader!jsvectormap/dist/maps/world.js'
