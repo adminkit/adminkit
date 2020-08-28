@@ -64,12 +64,11 @@
     "bootstrap": "5.0.0-alpha1",
     "chart.js": "2.9.3",
     "feather-icons": "4.28.0",
+    "flatpickr": "4.6.6",
     "jquery": "3.5.1",
     "jsvectormap": "1.1.1",
     "moment": "2.27.0",
     "popper.js": "1.16.1",
-    "simplebar": "5.2.1",
-    "tempusdominus-bootstrap-4": "5.1.2",
-    "tempusdominus-core": "5.0.3"
+    "simplebar": "5.2.1"
   }
 }

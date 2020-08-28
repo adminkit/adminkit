@@ -785,11 +785,11 @@
 		});
 	</script>
 	<script>
-		$(function() {
-			$('#datetimepicker-dashboard').datetimepicker({
+		document.addEventListener("DOMContentLoaded", function() {
+			$('#datetimepicker-dashboard').flatpickr({
 				inline: true,
-				sideBySide: false,
-				format: 'L'
+				prevArrow: '<span class="fas fa-chevron-left" title="Previous month"></span>',
+				nextArrow: '<span class="fas fa-chevron-right" title="Next month"></span>',
 			});
 		});
 	</script>

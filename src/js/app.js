@@ -9,7 +9,7 @@ import "./modules/sidebar";
 import "./modules/user-agent";
 
 // Forms
-import "./modules/datetimepicker";
+import "./modules/flatpickr";
 
 // Charts
 import "./modules/chartjs";
