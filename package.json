@@ -1,7 +1,7 @@
 {
   "name": "adminkit",
-  "version": "1.0.2",
-  "description": "AdminKit - The Ultimate Bootstrap Admin Template",
+  "version": "2.0.0",
+  "description": "AdminKit - The Ultimate Bootstrap 5 Admin Template",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.js",
     "watch": "webpack -p --config webpack.config.js --watch",
@@ -15,15 +15,16 @@
     "not dead"
   ],
   "keywords": [
+    "bootstrap",
+    "bootstrap 5",
+    "admin",
+    "dashboard",
+    "template",
+    "responsive",
     "css",
     "sass",
     "html",
-    "responsive",
     "theme",
-    "template",
-    "admin",
-    "app",
-    "dashboard",
     "front-end",
     "ui kit",
     "web"

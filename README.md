@@ -1,14 +1,14 @@
-# AdminKit
+# AdminKit - Bootstrap 5 Admin Template
 
-A professional Admin & Dashboard template based on Bootstrap that comes with hundreds of UI components, forms, tables, charts, pages and icons.
+A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons.
 
 <strong><a href="https://demo.adminkit.io/">View Demo</a> | <a href="https://github.com/adminkit/adminkit/archive/master.zip">Download ZIP</a> | <a href="https://adminkit.io/">Visit Website</a></strong>
 
-[![AdminKit Demo](/src/img/screenshot.png)](https://demo.adminkit.io/)
+[![AdminKit Demo](/src/img/adminkit-bootstrap-5-admin-template.png)](https://demo.adminkit.io/)
 
 ## Status
 
-![version](https://img.shields.io/badge/version-1.0.2-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aissue+is%3Aclosed)
+![Version](https://img.shields.io/github/package-json/v/adminkit/adminkit) ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aissue+is%3Aclosed)
 
 ## Features
 
@@ -55,6 +55,6 @@ Found a bug or have a feature request? [Please open a new issue](https://github.
 
 ## Upgrade to Pro version
 
-Get more power with "[AdminKit Pro - The Ultimate Bootstrap Admin Template](https://adminkit.io/)". It has many more features compared to the free version to help create awesome apps!
+Get more power with "[AdminKit Pro - The Ultimate Bootstrap 5 Admin Template](https://adminkit.io/)". It has many more features compared to the free version to help create awesome apps!
 
 [Upgrade to Pro »](https://adminkit.io/pricing)
