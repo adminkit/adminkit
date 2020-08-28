@@ -100,7 +100,7 @@
   }
 }
 
-@include media-breakpoint-down(xs) {
+@include media-breakpoint-down(sm) {
   .navbar {
     padding: 0.75rem;
   }

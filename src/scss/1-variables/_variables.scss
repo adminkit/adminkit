@@ -6,7 +6,7 @@ $font-weight-bold: 600 !default;
 $font-size-base: .875rem !default;
 $font-size-lg: .925rem !default;
 $font-size-sm: .75rem !default;
-$headings-font-weight: 400 !default;
+$small-font-size: 80% !default;
 
 // Spacer
 $spacer: 1rem !default;
@@ -43,11 +43,17 @@ $container-max-widths: (
   xl: 1200px
 ) !default;
 
+$container-padding-x: .75rem !default;
+
 // Options
 $enable-validation-icons: false !default;
 
 // Transitions
 $transition-base: all .35s ease-in-out !default;
+
+// Options
+$enable-rfs: false !default;
+$enable-negative-margins: true !default;
 
 // Theme colors
 $blue:    #3B7DDD !default;
@@ -112,6 +118,10 @@ $social-colors: (
 $body-bg: #F7F7FC !default;
 $body-color: $gray-700 !default;
 
+// Links
+$link-decoration: none !default;
+$link-hover-decoration: underline !default;
+
 // Common
 $border-width: 1px !default;
 
@@ -128,6 +138,17 @@ $h4-font-size: $font-size-base * 1.25 !default;
 $h5-font-size: $font-size-base !default;
 $h6-font-size: $font-size-base !default;
 $headings-color: $black !default;
+$headings-font-weight: 400 !default;
+
+// Displays
+$display-font-sizes: (
+	1: 6rem,
+  2: 5.5rem,
+  3: 4.5rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+  ) !default;
 
 // Progress
 $progress-height: 1rem !default;
@@ -169,6 +190,10 @@ $alert-padding-y: .95rem !default;
 $alert-padding-x: .95rem !default;
 $alert-border-width: 0 !default;
 
+// List group
+$list-group-item-padding-y: .75rem !default;
+$list-group-item-padding-x: 1.25rem !default;
+
 // Forms
 $input-bg: $white !default;
 $input-disabled-bg: $gray-200 !default;
@@ -191,11 +216,6 @@ $input-height-sm: calc(#{$input-height-inner-sm} + #{$input-height-border}) !def
 $input-height-inner-lg: ($font-size-lg * $input-btn-line-height-lg) + ($input-btn-padding-y-lg * 2) !default;
 $input-height-lg: calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
 
-// Custom controls
-$custom-control-indicator-bg: $white !default;
-$custom-control-indicator-border-color: $gray-400 !default;
-$custom-control-indicator-disabled-bg: $gray-200 !default;
-
 // Dropdowns
 $dropdown-link-color: $gray-700 !default;
 $dropdown-link-hover-bg: $gray-100 !default;
@@ -210,11 +230,17 @@ $card-border-color: transparent !default;
 $card-cap-bg: $white !default;
 $card-shadow: 0 0 .875rem 0 rgba($dark, 0.05) !default;
 $card-title-font-weight: $font-weight-normal !default;
-$card-spacer-y: 1rem !default;
+$card-spacer-y: 1.25rem !default;
+$card-spacer-x: 1.25rem !default;
+$card-cap-padding-y: 0.75rem !default;
+$card-cap-padding-x: $card-spacer-x !default;
 
 // Tables
-$table-accent-bg: $gray-100 !default;
-$table-hover-bg: rgba($black, .0375) !default;
+$table-cell-padding-y: .75rem !default;
+$table-cell-padding-x: .75rem !default;
+$table-cell-padding-y-sm: .3rem !default;
+$table-cell-padding-x-sm: .3rem !default;
+$table-striped-bg: $gray-100 !default;
 
 // Sidebar general
 $sidebar-width: 260px !default;
@@ -307,6 +333,8 @@ $badge-pill-padding-x: .65em !default;
 
 // Breadcrumbs
 $breadcrumb-bg: $gray-200 !default;
+$breadcrumb-border-radius: $border-radius !default;
+$breadcrumb-color: $gray-300 !default;
 
 // Pagination
 $pagination-padding-y: .3rem !default;
