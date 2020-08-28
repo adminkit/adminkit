@@ -1,2 +1,3 @@
-import 'script-loader!jsvectormap'
-import 'script-loader!jsvectormap/dist/maps/world.js'
+// Usage: https://github.com/themustafaomar/jsvectormap
+import 'jsvectormap'
+import 'jsvectormap/dist/maps/world.js'

@@ -1,7 +1,7 @@
 // Usage: https://github.com/Grsmto/simplebar
 import SimpleBar from "simplebar";
 
-$(function() {
+document.addEventListener("DOMContentLoaded", function() {
   /* Initialize simplebar */
   new SimpleBar(document.getElementsByClassName("js-simplebar")[0])
 

@@ -1,6 +1,7 @@
+// Usage: https://feathericons.com/
 import feather from "feather-icons";
 
-$(function(){
+document.addEventListener("DOMContentLoaded", function() {
     feather.replace();
 });
 
