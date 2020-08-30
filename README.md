@@ -1,6 +1,6 @@
-# AdminKit - Bootstrap 5 Admin Template
+# AdminKit - Bootstrap 5 Admin Template ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fadminkit.io%2F&text=AdminKit%20-%20Open%20Source%20Bootstrap%205%20Admin%20Template)
 
-A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons.
+A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons. AdminKit **does not require jQuery** and neither do the 3rd party libraries AdminKit is using.
 
 <strong><a href="https://demo.adminkit.io/">View Demo</a> | <a href="https://github.com/adminkit/adminkit/archive/master.zip">Download ZIP</a> | <a href="https://adminkit.io/">Visit Website</a></strong>
 
@@ -14,10 +14,10 @@ A professional Admin & Dashboard template based on Bootstrap 5 that comes with h
 
 * **Customizable:** You don't need to be an expert to customize AdminKit. Our code is very readable and well documented.
 * **Fully Responsive:** With mobile, tablet & desktop support it doesn't matter what device you're using. AdminKit is responsive in all browsers.
-* **Cross Browser:** Our themes are working perfectly with: Chrome, Firefox, Safari, Opera and Edge. We're working hard to support them.
-* **HTML5 & CSS3:** We use only modern web technologies, such as HTML5 and CSS3. AdminKit includes some subtle CSS3 animations, which will help you attract attention.
+* **Cross-Browser:** Our themes are working perfectly with Chrome, Firefox, Safari, Opera, and Edge. We're working hard to support them.
 * **Clean Code:** We strictly follow Bootstrap's guidelines to make your integration as easy as possible. All code is handwritten.
-* **Regular Updates:** From time to time you'll receive an update containing new components, improvements and bugfixes.
+* **No jQuery:** AdminKit, and all third-party libraries used in the product, do not require jQuery as a dependency.
+* **Regular Updates:** From time to time you'll receive an update containing new components, improvements, and bugfixes.
 
 ## Quick start
 
@@ -49,12 +49,24 @@ Compile, optimize, minify and uglify all source files to dist/ folder:
 npm run build
 ```
 
+## Browser Support
+
+| <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" /><br/>Edge | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" /><br/>Firefox | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" /><br/>Chrome | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" /><br/>Safari | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" /><br/>iOS Safari |
+| --------- | --------- | --------- | --------- | --------- |
+| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
+
+## Resources
+
+* [Demo](https://demo.adminkit.io/)
+* [Website](https://adminkit.io/)
+* [Documentation](https://adminkit.io/docs)
+* [Support](https://adminkit.io/support/)
+* [Affiliate Program](https://adminkit.io/affiliate-program)
+
 ## Bugs and feature requests
 
 Found a bug or have a feature request? [Please open a new issue](https://github.com/adminkit/adminkit/issues/new).
 
 ## Upgrade to Pro version
 
-Get more power with "[AdminKit Pro - The Ultimate Bootstrap 5 Admin Template](https://adminkit.io/)". It has many more features compared to the free version to help create awesome apps!
-
-[Upgrade to Pro »](https://adminkit.io/pricing)
+Get more power with AdminKit Pro, a premium variant of AdminKit, featuring hundreds of UI components, forms, tables, charts, pages, and icons. Check out "[AdminKit Pro - Bootstrap 5 Admin Template](https://adminkit.io/pricing/)".
