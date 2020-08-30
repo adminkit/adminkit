@@ -1,6 +1,6 @@
 # AdminKit - Bootstrap 5 Admin Template ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fadminkit.io%2F&text=AdminKit%20-%20Open%20Source%20Bootstrap%205%20Admin%20Template)
 
-A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons. AdminKit **does not require jQuery** and neither do the 3rd party libraries AdminKit is using.
+A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons. AdminKit **does not require jQuery** and neither does one of the 3rd party libraries AdminKit is using.
 
 <strong><a href="https://demo.adminkit.io/">View Demo</a> | <a href="https://github.com/adminkit/adminkit/archive/master.zip">Download ZIP</a> | <a href="https://adminkit.io/">Visit Website</a></strong>
 
@@ -16,7 +16,7 @@ A professional Admin & Dashboard template based on Bootstrap 5 that comes with h
 * **Fully Responsive:** With mobile, tablet & desktop support it doesn't matter what device you're using. AdminKit is responsive in all browsers.
 * **Cross-Browser:** Our themes are working perfectly with Chrome, Firefox, Safari, Opera, and Edge. We're working hard to support them.
 * **Clean Code:** We strictly follow Bootstrap's guidelines to make your integration as easy as possible. All code is handwritten.
-* **No jQuery:** AdminKit, and all third-party libraries used in the product, do not require jQuery as a dependency.
+* **No jQuery:** AdminKit, and all third-party libraries used in the admin template, do not require jQuery as a dependency.
 * **Regular Updates:** From time to time you'll receive an update containing new components, improvements, and bugfixes.
 
 ## Quick start
@@ -53,7 +53,7 @@ npm run build
 
 | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" /><br/>Edge | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" /><br/>Firefox | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" /><br/>Chrome | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" /><br/>Safari | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" /><br/>iOS Safari |
 | --------- | --------- | --------- | --------- | --------- |
-| last 2 versions| last 2 versions| last 2 versions| last 2 versions| last 2 versions
+| last version| last 2 versions| last 2 versions| last 2 versions| last 2 versions
 
 ## Resources
 
@@ -69,4 +69,4 @@ Found a bug or have a feature request? [Please open a new issue](https://github.
 
 ## Upgrade to Pro version
 
-Get more power with AdminKit Pro, a premium variant of AdminKit, featuring hundreds of UI components, forms, tables, charts, pages, and icons. Check out "[AdminKit Pro - Bootstrap 5 Admin Template](https://adminkit.io/pricing/)".
+Get more power with AdminKit Pro, a premium variant of AdminKit, featuring hundreds of UI components, forms, tables, charts, pages, and icons. Check out [AdminKit Pro - Bootstrap 5 Admin Template](https://adminkit.io/pricing/).
