@@ -4,7 +4,7 @@ A professional Admin & Dashboard template based on Bootstrap 5 that comes with h
 
 <strong><a href="https://demo.adminkit.io/">View Demo</a> | <a href="https://github.com/adminkit/adminkit/archive/master.zip">Download ZIP</a> | <a href="https://adminkit.io/">Visit Website</a></strong>
 
-[![AdminKit Demo](/src/img/adminkit-bootstrap-5-admin-template.png)](https://demo.adminkit.io/)
+[![AdminKit Demo](https://assets.adminkit.io/banners/adminkit-bootstrap-5-admin-template.png)](https://demo.adminkit.io/)
 
 ## Status
 
@@ -51,7 +51,7 @@ npm run build
 
 ## Browser Support
 
-| <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge" width="24px" height="24px" /><br/>Edge | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" /><br/>Firefox | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" /><br/>Chrome | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" /><br/>Safari | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari-ios/safari-ios_48x48.png" alt="iOS Safari" width="24px" height="24px" /><br/>iOS Safari |
+| <img src="https://assets.adminkit.io/browsers/edge.png" alt="Edge" width="24px" height="24px" /><br/>Edge | <img src="https://assets.adminkit.io/browsers/firefox.png" alt="Firefox" width="24px" height="24px" /><br/>Firefox | <img src="https://assets.adminkit.io/browsers/chrome.png" alt="Chrome" width="24px" height="24px" /><br/>Chrome | <img src="https://assets.adminkit.io/browsers/safari/safari.png" alt="Safari" width="24px" height="24px" /><br/>Safari | <img src="https://assets.adminkit.io/browsers/safari-ios.png" alt="iOS Safari" width="24px" height="24px" /><br/>iOS Safari |
 | --------- | --------- | --------- | --------- | --------- |
 | last version| last 2 versions| last 2 versions| last 2 versions| last 2 versions
 
