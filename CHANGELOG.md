@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0] 
+
+- Upgrade to Bootstrap 5
+- Drop jQuery as dependency
+- Replace jvectormap-next with jsvectormap
+- Replace tempusdominus with flatpickr
+- Upgrade dependencies
+
 ## [1.0.2] 2020-07-26
 
 - Fix issue with dropdown overflow on mobile
