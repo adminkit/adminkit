@@ -577,13 +577,13 @@
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
-			var ctx = document.getElementById('chartjs-dashboard-line').getContext("2d");
+			var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
 			var gradient = ctx.createLinearGradient(0, 0, 0, 225);
-			gradient.addColorStop(0, 'rgba(215, 227, 244, 1)');
-			gradient.addColorStop(1, 'rgba(215, 227, 244, 0)');
+			gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+			gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
 			// Line chart
 			new Chart(document.getElementById("chartjs-dashboard-line"), {
-				type: 'line',
+				type: "line",
 				data: {
 					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 					datasets: [{
@@ -649,7 +649,7 @@
 		document.addEventListener("DOMContentLoaded", function() {
 			// Pie chart
 			new Chart(document.getElementById("chartjs-dashboard-pie"), {
-				type: 'pie',
+				type: "pie",
 				data: {
 					labels: ["Chrome", "Firefox", "IE"],
 					datasets: [{
@@ -677,7 +677,7 @@
 		document.addEventListener("DOMContentLoaded", function() {
 			// Bar chart
 			new Chart(document.getElementById("chartjs-dashboard-bar"), {
-				type: 'bar',
+				type: "bar",
 				data: {
 					labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
 					datasets: [{
@@ -778,17 +778,17 @@
 					}
 				}
 			});
-			window.addEventListener('resize', () => {
+			window.addEventListener("resize", () => {
 				map.updateSize();
 			});
 		});
 	</script>
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
-			document.getElementById('datetimepicker-dashboard').flatpickr({
+			document.getElementById("datetimepicker-dashboard").flatpickr({
 				inline: true,
-				prevArrow: '<span class="fas fa-chevron-left" title="Previous month"></span>',
-				nextArrow: '<span class="fas fa-chevron-right" title="Next month"></span>',
+				prevArrow: "<span class=\"fas fa-chevron-left\" title=\"Previous month\"></span>",
+				nextArrow: "<span class=\"fas fa-chevron-right\" title=\"Next month\"></span>",
 			});
 		});
 	</script>
