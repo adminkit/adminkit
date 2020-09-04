@@ -36,31 +36,13 @@ module.exports = {
       }),
       new OptimizeCSSAssetsPlugin({})
     ],
-    runtimeChunk: false,
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /[\\/]node_modules[\\/]/,
-          name: 'vendor',
-          enforce: true
-        }
-      }
-    }
+    runtimeChunk: false
   },
   plugins: [
     // Extract css files to seperate bundle
     new MiniCssExtractPlugin({
       filename: "css/app.css",
       chunkFilename: "css/app.css"
-    }),
-    // jQuery and PopperJS
-    new Webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      jquery: "jquery",
-      "window.$": "jquery",
-      "window.jQuery": "jquery",
-      Popper: ["popper.js", "default"]
     }),
     // Copy fonts and images to dist
     new CopyWebpackPlugin([
@@ -119,20 +101,6 @@ module.exports = {
               outputPath: "img/",
               publicPath: "../img/"
             }
-          }
-        ]
-      },
-      // Expose loader
-      {
-        test: require.resolve("jquery"),
-        use: [
-          {
-            loader: "expose-loader",
-            options: "jQuery"
-          },
-          {
-            loader: "expose-loader",
-            options: "$"
           }
         ]
       }

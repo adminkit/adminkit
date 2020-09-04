@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
 	<meta name="author" content="AdminKit">
-	<meta name="keywords" content="adminkit, bootstrap, web ui kit, dashboard template, admin template">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
 	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
@@ -63,7 +63,7 @@
 						Tools & Components
 					</li>
 					<li class="sidebar-item">
-						<a href="#ui" data-toggle="collapse" class="sidebar-link collapsed">
+						<a data-target="#ui" data-toggle="collapse" class="sidebar-link collapsed">
               <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">UI Elements</span>
             </a>
 						<ul id="ui" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
@@ -84,7 +84,7 @@
 					</li>
 
 					<li class="sidebar-item">
-						<a href="#forms" data-toggle="collapse" class="sidebar-link collapsed">
+						<a data-target="#forms" data-toggle="collapse" class="sidebar-link collapsed">
               <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>
             </a>
 						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
@@ -134,14 +134,12 @@
           <i class="hamburger align-self-center"></i>
         </a>
 
-				<form class="form-inline d-none d-sm-inline-block">
+				<form class="d-none d-sm-inline-block">
 					<div class="input-group input-group-navbar">
 						<input type="text" class="form-control" placeholder="Search…" aria-label="Search">
-						<div class="input-group-append">
-							<button class="btn" type="button">
-                <i class="align-middle" data-feather="search"></i>
-              </button>
-						</div>
+						<button class="btn" type="button">
+              <i class="align-middle" data-feather="search"></i>
+            </button>
 					</div>
 				</form>
 
@@ -160,7 +158,7 @@
 								</div>
 								<div class="list-group">
 									<a href="#" class="list-group-item">
-										<div class="row no-gutters align-items-center">
+										<div class="row g-0 align-items-center">
 											<div class="col-2">
 												<i class="text-danger" data-feather="alert-circle"></i>
 											</div>
@@ -172,7 +170,7 @@
 										</div>
 									</a>
 									<a href="#" class="list-group-item">
-										<div class="row no-gutters align-items-center">
+										<div class="row g-0 align-items-center">
 											<div class="col-2">
 												<i class="text-warning" data-feather="bell"></i>
 											</div>
@@ -184,7 +182,7 @@
 										</div>
 									</a>
 									<a href="#" class="list-group-item">
-										<div class="row no-gutters align-items-center">
+										<div class="row g-0 align-items-center">
 											<div class="col-2">
 												<i class="text-primary" data-feather="home"></i>
 											</div>
@@ -195,7 +193,7 @@
 										</div>
 									</a>
 									<a href="#" class="list-group-item">
-										<div class="row no-gutters align-items-center">
+										<div class="row g-0 align-items-center">
 											<div class="col-2">
 												<i class="text-success" data-feather="user-plus"></i>
 											</div>
@@ -226,7 +224,7 @@
 								</div>
 								<div class="list-group">
 									<a href="#" class="list-group-item">
-										<div class="row no-gutters align-items-center">
+										<div class="row g-0 align-items-center">
 											<div class="col-2">
 												<img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
 											</div>
@@ -238,7 +236,7 @@
 										</div>
 									</a>
 									<a href="#" class="list-group-item">
-										<div class="row no-gutters align-items-center">
+										<div class="row g-0 align-items-center">
 											<div class="col-2">
 												<img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
 											</div>
@@ -250,7 +248,7 @@
 										</div>
 									</a>
 									<a href="#" class="list-group-item">
-										<div class="row no-gutters align-items-center">
+										<div class="row g-0 align-items-center">
 											<div class="col-2">
 												<img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
 											</div>
@@ -262,7 +260,7 @@
 										</div>
 									</a>
 									<a href="#" class="list-group-item">
-										<div class="row no-gutters align-items-center">
+										<div class="row g-0 align-items-center">
 											<div class="col-2">
 												<img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
 											</div>
@@ -356,12 +354,12 @@
 											<form>
 												<div class="row">
 													<div class="col-md-8">
-														<div class="form-group">
-															<label for="inputUsername">Username</label>
+														<div class="mb-3">
+															<label class="form-label" for="inputUsername">Username</label>
 															<input type="text" class="form-control" id="inputUsername" placeholder="Username">
 														</div>
-														<div class="form-group">
-															<label for="inputUsername">Biography</label>
+														<div class="mb-3">
+															<label class="form-label" for="inputUsername">Biography</label>
 															<textarea rows="2" class="form-control" id="inputBio" placeholder="Tell something about yourself"></textarea>
 														</div>
 													</div>
@@ -389,42 +387,42 @@
 										</div>
 										<div class="card-body">
 											<form>
-												<div class="form-row">
-													<div class="form-group col-md-6">
-														<label for="inputFirstName">First name</label>
+												<div class="row">
+													<div class="mb-3 col-md-6">
+														<label class="form-label" for="inputFirstName">First name</label>
 														<input type="text" class="form-control" id="inputFirstName" placeholder="First name">
 													</div>
-													<div class="form-group col-md-6">
-														<label for="inputLastName">Last name</label>
+													<div class="mb-3 col-md-6">
+														<label class="form-label" for="inputLastName">Last name</label>
 														<input type="text" class="form-control" id="inputLastName" placeholder="Last name">
 													</div>
 												</div>
-												<div class="form-group">
-													<label for="inputEmail4">Email</label>
+												<div class="mb-3">
+													<label class="form-label" for="inputEmail4">Email</label>
 													<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
 												</div>
-												<div class="form-group">
-													<label for="inputAddress">Address</label>
+												<div class="mb-3">
+													<label class="form-label" for="inputAddress">Address</label>
 													<input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
 												</div>
-												<div class="form-group">
-													<label for="inputAddress2">Address 2</label>
+												<div class="mb-3">
+													<label class="form-label" for="inputAddress2">Address 2</label>
 													<input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
 												</div>
-												<div class="form-row">
-													<div class="form-group col-md-6">
-														<label for="inputCity">City</label>
+												<div class="row">
+													<div class="mb-3 col-md-6">
+														<label class="form-label" for="inputCity">City</label>
 														<input type="text" class="form-control" id="inputCity">
 													</div>
-													<div class="form-group col-md-4">
-														<label for="inputState">State</label>
+													<div class="mb-3 col-md-4">
+														<label class="form-label" for="inputState">State</label>
 														<select id="inputState" class="form-control">
                     <option selected>Choose...</option>
                     <option>...</option>
                   </select>
 													</div>
-													<div class="form-group col-md-2">
-														<label for="inputZip">Zip</label>
+													<div class="mb-3 col-md-2">
+														<label class="form-label" for="inputZip">Zip</label>
 														<input type="text" class="form-control" id="inputZip">
 													</div>
 												</div>
@@ -441,17 +439,17 @@
 											<h5 class="card-title">Password</h5>
 
 											<form>
-												<div class="form-group">
-													<label for="inputPasswordCurrent">Current password</label>
+												<div class="mb-3">
+													<label class="form-label" for="inputPasswordCurrent">Current password</label>
 													<input type="password" class="form-control" id="inputPasswordCurrent">
 													<small><a href="#">Forgot your password?</a></small>
 												</div>
-												<div class="form-group">
-													<label for="inputPasswordNew">New password</label>
+												<div class="mb-3">
+													<label class="form-label" for="inputPasswordNew">New password</label>
 													<input type="password" class="form-control" id="inputPasswordNew">
 												</div>
-												<div class="form-group">
-													<label for="inputPasswordNew2">Verify password</label>
+												<div class="mb-3">
+													<label class="form-label" for="inputPasswordNew2">Verify password</label>
 													<input type="password" class="form-control" id="inputPasswordNew2">
 												</div>
 												<button type="submit" class="btn btn-primary">Save changes</button>
@@ -497,7 +495,6 @@
 		</div>
 	</div>
 
-	<script src="js/vendor.js"></script>
 	<script src="js/app.js"></script>
 
 </body>

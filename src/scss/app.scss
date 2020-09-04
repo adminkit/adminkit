@@ -1,5 +1,5 @@
 /*!
- * AdminKit v1.0.2 (https://adminkit.io/)
+ * AdminKit v2.0.0 (https://adminkit.io/)
  * Copyright 2020 Paul Laros
  * Copyright 2020 AdminKit
  * Licensed under MIT (https://github.com/adminkit/adminkit/blob/master/LICENSE)
@@ -52,10 +52,10 @@
 @import "~@fortawesome/fontawesome-free/scss/fontawesome";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 @import "~@fortawesome/fontawesome-free/scss/solid";
-@import "~jvectormap-next/jquery-jvectormap";
+@import "~jsvectormap/dist/css/jsvectormap";
 @import "~simplebar/dist/simplebar";
-@import "~tempusdominus-bootstrap-4/src/sass/tempusdominus-bootstrap-4";
+@import "~flatpickr/dist/flatpickr";
 
 // 3rd party plugin styles
-@import "5-vendor/datetimepicker";
 @import "5-vendor/simplebar";
+@import "5-vendor/flatpickr";
