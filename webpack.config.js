@@ -45,10 +45,12 @@ module.exports = {
       chunkFilename: "css/app.css"
     }),
     // Copy fonts and images to dist
-    new CopyWebpackPlugin([
-      { from: "src/fonts", to: "fonts" },
-      { from: "src/img", to: "img" }
-    ]),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "src/fonts", to: "fonts" },
+        { from: "src/img", to: "img" }
+      ]
+    }),
     // Speed up webpack build
     new HardSourceWebpackPlugin(),
     // Copy dist folder to examples
