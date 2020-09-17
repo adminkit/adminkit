@@ -1,10 +1,7 @@
-# AdminKit - Bootstrap 5 Admin Template ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fadminkit.io%2F&text=AdminKit%20-%20Open%20Source%20Bootstrap%205%20Admin%20Template)
+# AdminKit - Bootstrap 5  !
 
 A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons. AdminKit **does not require jQuery** and neither does one of the 3rd party libraries AdminKit is using.
 
-<strong><a href="https://demo.adminkit.io/">View Demo</a> | <a href="https://github.com/adminkit/adminkit/archive/master.zip">Download ZIP</a> | <a href="https://adminkit.io/">Visit Website</a></strong>
-
-[![AdminKit Demo](https://assets.adminkit.io/banners/adminkit-bootstrap-5-admin-template.png)](https://demo.adminkit.io/)
 
 ## Status
 
@@ -21,11 +18,6 @@ A professional Admin & Dashboard template based on Bootstrap 5 that comes with h
 
 ## Quick start
 
-### Download
-
-* Clone this repo `git clone https://github.com/adminkit/adminkit.git`
-* [Download from GitHub](https://github.com/adminkit/adminkit/archive/master.zip)
-* [Download from Website](https://adminkit.io/#download)
 
 ### Build tools
 
@@ -55,18 +47,3 @@ npm run build
 | --------- | --------- | --------- | --------- | --------- |
 | last version| last 2 versions| last 2 versions| last 2 versions| last 2 versions
 
-## Resources
-
-* [Demo](https://demo.adminkit.io/)
-* [Website](https://adminkit.io/)
-* [Documentation](https://adminkit.io/docs)
-* [Support](https://adminkit.io/support/)
-* [Affiliate Program](https://adminkit.io/affiliate-program)
-
-## Bugs and feature requests
-
-Found a bug or have a feature request? [Please open a new issue](https://github.com/adminkit/adminkit/issues/new).
-
-## Upgrade to Pro version
-
-Get more power with AdminKit Pro, a premium variant of AdminKit, featuring hundreds of UI components, forms, tables, charts, pages, and icons. Check out [AdminKit Pro - Bootstrap 5 Admin Template](https://adminkit.io/pricing/).
