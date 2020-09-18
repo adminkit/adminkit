@@ -2,11 +2,6 @@
 
 A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons. AdminKit **does not require jQuery** and neither does one of the 3rd party libraries AdminKit is using.
 
-
-## Status
-
-![Version](https://img.shields.io/github/package-json/v/adminkit/adminkit) ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aissue+is%3Aclosed) [![GitHub Stars](https://img.shields.io/github/stars/adminkit/adminkit.svg?color=green)](https://github.com/adminkit/adminkit/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://demo.adminkit.io/)
-
 ## Features
 
 * **Customizable:** You don't need to be an expert to customize AdminKit. Our code is very readable and well documented.
