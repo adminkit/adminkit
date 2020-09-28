@@ -53,10 +53,10 @@ module.exports = {
     }),
     // Speed up webpack build
     new HardSourceWebpackPlugin(),
-    // Copy dist folder to examples
+    // Copy dist folder to static
     new FileManagerPlugin({
       onEnd: {
-        copy: [{ source: "./dist/**/*", destination: "./examples" }]
+        copy: [{ source: "./dist/**/*", destination: "./static" }]
       }
     })
   ],
@@ -116,7 +116,7 @@ module.exports = {
     }
   },
   devServer: {
-    contentBase: Path.join(__dirname, "examples"),
+    contentBase: Path.join(__dirname, "static"),
     compress: true,
     port: 8080,
     open: true
