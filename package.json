@@ -62,7 +62,7 @@
   "dependencies": {
     "@babel/polyfill": "7.11.5",
     "@fortawesome/fontawesome-free": "5.14.0",
-    "bootstrap": "5.0.0-alpha1",
+    "bootstrap": "5.0.0-alpha2",
     "chart.js": "2.9.3",
     "feather-icons": "4.28.0",
     "flatpickr": "4.6.6",
