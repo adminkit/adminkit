@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] 2020-11-07
+
+- Add Sign In page
+- Add Sign Up page
+- Replace `.close` with `.btn-close`
+- Upgrade to bootstrap@5.0.0-alpha2
+- Upgrade dependencies
+
 ## [2.0.1] 2020-09-14
 
 - Fix console error on auth pages (#6)
