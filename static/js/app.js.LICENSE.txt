@@ -1,7 +1,7 @@
 /* flatpickr v4.6.6, @license MIT */
 
 /*!
-  * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
+  * Bootstrap v5.0.0-alpha2 (https://getbootstrap.com/)
   * Copyright 2011-2020 The Bootstrap Authors (https://github.com/twbs/bootstrap/graphs/contributors)
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
@@ -13,9 +13,9 @@
 */
 
 /*!
- * Chart.js v2.9.3
+ * Chart.js v2.9.4
  * https://www.chartjs.org
- * (c) 2019 Chart.js Contributors
+ * (c) 2020 Chart.js Contributors
  * Released under the MIT License
  */
 
