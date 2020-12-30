@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.0]
+
+- Replace Inter font with CDN
+- Replace Font Awesome icons with Feather
+
 ## [2.1.0] 2020-11-07
 
 - Add Sign In page
