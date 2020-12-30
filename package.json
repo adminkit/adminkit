@@ -61,7 +61,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "7.12.1",
-    "bootstrap": "5.0.0-alpha2",
+    "bootstrap": "5.0.0-alpha3",
     "chart.js": "2.9.4",
     "feather-icons": "4.28.0",
     "flatpickr": "4.6.6",
