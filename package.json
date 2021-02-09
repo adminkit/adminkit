@@ -40,7 +40,7 @@
     "babel-loader": "8.1.0",
     "copy-webpack-plugin": "6.3.0",
     "cross-env": "7.0.2",
-    "css-loader": "4.3.0",
+    "css-loader": "5.0.2",
     "eslint": "7.12.1",
     "file-loader": "6.2.0",
     "filemanager-webpack-plugin": "2.0.5",
