@@ -8,7 +8,7 @@
     "start": "webpack-dev-server --config webpack.config.js"
   },
   "author": "Paul Laros <support@adminkit.io>",
-  "private": true,
+  "license": "MIT",
   "browserslist": [
     "> 0.25%",
     "not op_mini all",
