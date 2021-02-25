@@ -46,7 +46,7 @@
     "filemanager-webpack-plugin": "2.0.5",
     "hard-source-webpack-plugin": "0.13.1",
     "mini-css-extract-plugin": "0.12.0",
-    "node-sass": "4.14.1",
+    "node-sass": "5.0.0",
     "optimize-css-assets-webpack-plugin": "5.0.4",
     "postcss-loader": "4.2.0",
     "resolve-url-loader": "3.1.2",
