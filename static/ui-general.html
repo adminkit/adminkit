@@ -62,10 +62,10 @@
 					</li>
 
 					<li class="sidebar-item">
-						<a href="#auth" data-toggle="collapse" class="sidebar-link collapsed">
+						<a href="#auth" data-bs-toggle="collapse" class="sidebar-link collapsed">
               <i class="align-middle" data-feather="users"></i> <span class="align-middle">Auth</span>
             </a>
-						<ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+						<ul id="auth" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-sign-in.html">Sign In</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="pages-sign-up.html">Sign Up</a></li>
 						</ul>
@@ -75,10 +75,10 @@
 						Tools & Components
 					</li>
 					<li class="sidebar-item active">
-						<a data-target="#ui" data-toggle="collapse" class="sidebar-link">
+						<a data-bs-target="#ui" data-bs-toggle="collapse" class="sidebar-link">
               <i class="align-middle" data-feather="briefcase"></i> <span class="align-middle">UI Elements</span>
             </a>
-						<ul id="ui" class="sidebar-dropdown list-unstyled collapse show" data-parent="#sidebar">
+						<ul id="ui" class="sidebar-dropdown list-unstyled collapse show" data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="ui-alerts.html">Alerts</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="ui-buttons.html">Buttons</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>
@@ -96,10 +96,10 @@
 					</li>
 
 					<li class="sidebar-item">
-						<a data-target="#forms" data-toggle="collapse" class="sidebar-link collapsed">
+						<a data-bs-target="#forms" data-bs-toggle="collapse" class="sidebar-link collapsed">
               <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>
             </a>
-						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-parent="#sidebar">
+						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
 							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>
 						</ul>
@@ -158,13 +158,13 @@
 				<div class="navbar-collapse collapse">
 					<ul class="navbar-nav navbar-align">
 						<li class="nav-item dropdown">
-							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-toggle="dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
 								<div class="position-relative">
 									<i class="align-middle" data-feather="bell"></i>
 									<span class="indicator">4</span>
 								</div>
 							</a>
-							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="alertsDropdown">
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="alertsDropdown">
 								<div class="dropdown-menu-header">
 									4 New Notifications
 								</div>
@@ -223,12 +223,12 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-toggle="dropdown">
+							<a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
 								<div class="position-relative">
 									<i class="align-middle" data-feather="message-square"></i>
 								</div>
 							</a>
-							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0" aria-labelledby="messagesDropdown">
+							<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end py-0" aria-labelledby="messagesDropdown">
 								<div class="dropdown-menu-header">
 									<div class="position-relative">
 										4 New Messages
@@ -240,7 +240,7 @@
 											<div class="col-2">
 												<img src="img/avatars/avatar-5.jpg" class="avatar img-fluid rounded-circle" alt="Vanessa Tucker">
 											</div>
-											<div class="col-10 pl-2">
+											<div class="col-10 ps-2">
 												<div class="text-dark">Vanessa Tucker</div>
 												<div class="text-muted small mt-1">Nam pretium turpis et arcu. Duis arcu tortor.</div>
 												<div class="text-muted small mt-1">15m ago</div>
@@ -252,7 +252,7 @@
 											<div class="col-2">
 												<img src="img/avatars/avatar-2.jpg" class="avatar img-fluid rounded-circle" alt="William Harris">
 											</div>
-											<div class="col-10 pl-2">
+											<div class="col-10 ps-2">
 												<div class="text-dark">William Harris</div>
 												<div class="text-muted small mt-1">Curabitur ligula sapien euismod vitae.</div>
 												<div class="text-muted small mt-1">2h ago</div>
@@ -264,7 +264,7 @@
 											<div class="col-2">
 												<img src="img/avatars/avatar-4.jpg" class="avatar img-fluid rounded-circle" alt="Christina Mason">
 											</div>
-											<div class="col-10 pl-2">
+											<div class="col-10 ps-2">
 												<div class="text-dark">Christina Mason</div>
 												<div class="text-muted small mt-1">Pellentesque auctor neque nec urna.</div>
 												<div class="text-muted small mt-1">4h ago</div>
@@ -276,7 +276,7 @@
 											<div class="col-2">
 												<img src="img/avatars/avatar-3.jpg" class="avatar img-fluid rounded-circle" alt="Sharon Lessman">
 											</div>
-											<div class="col-10 pl-2">
+											<div class="col-10 ps-2">
 												<div class="text-dark">Sharon Lessman</div>
 												<div class="text-muted small mt-1">Aenean tellus metus, bibendum sed, posuere ac, mattis non.</div>
 												<div class="text-muted small mt-1">5h ago</div>
@@ -290,19 +290,19 @@
 							</div>
 						</li>
 						<li class="nav-item dropdown">
-							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-toggle="dropdown">
+							<a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
                 <i class="align-middle" data-feather="settings"></i>
               </a>
 
-							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-toggle="dropdown">
-                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded mr-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
+							<a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+                <img src="img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
               </a>
-							<div class="dropdown-menu dropdown-menu-right">
-								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle mr-1" data-feather="user"></i> Profile</a>
-								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="pie-chart"></i> Analytics</a>
+							<div class="dropdown-menu dropdown-menu-end">
+								<a class="dropdown-item" href="pages-profile.html"><i class="align-middle me-1" data-feather="user"></i> Profile</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="pie-chart"></i> Analytics</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="pages-settings.html"><i class="align-middle mr-1" data-feather="settings"></i> Settings & Privacy</a>
-								<a class="dropdown-item" href="#"><i class="align-middle mr-1" data-feather="help-circle"></i> Help Center</a>
+								<a class="dropdown-item" href="pages-settings.html"><i class="align-middle me-1" data-feather="settings"></i> Settings & Privacy</a>
+								<a class="dropdown-item" href="#"><i class="align-middle me-1" data-feather="help-circle"></i> Help Center</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="#">Log out</a>
 							</div>
@@ -322,12 +322,12 @@
 								<div class="card">
 									<div class="card-header" id="headingOne">
 										<h5 class="card-title my-2">
-											<a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											<a href="#" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               Accordion
             </a>
 										</h5>
 									</div>
-									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
 										<div class="card-body">
 											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 											Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
@@ -339,12 +339,12 @@
 								<div class="card">
 									<div class="card-header" id="headingTwo">
 										<h5 class="card-title my-2">
-											<a href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+											<a href="#" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
               Another one
             </a>
 										</h5>
 									</div>
-									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
 										<div class="card-body">
 											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 											Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
@@ -356,12 +356,12 @@
 								<div class="card">
 									<div class="card-header" id="headingThree">
 										<h5 class="card-title my-2">
-											<a href="#" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
+											<a href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
               Something else
             </a>
 										</h5>
 									</div>
-									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
 										<div class="card-body">
 											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
 											Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
@@ -406,9 +406,9 @@
 								</div>
 								<div class="card-body">
 									<div class="text-center">
-										<img class="rounded mr-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
-										<img class="rounded-circle rounded mr-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
-										<img class="img-thumbnail rounded mr-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
+										<img class="rounded me-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
+										<img class="rounded-circle rounded me-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
+										<img class="img-thumbnail rounded me-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
 									</div>
 								</div>
 							</div>
@@ -419,10 +419,10 @@
 									<h6 class="card-subtitle text-muted">Examples for adding Bootstrap popovers.</h6>
 								</div>
 								<div class="card-body text-center">
-									<button class="btn btn-secondary" type="button" title="Popover on top" data-container="body" data-toggle="popover" data-placement="top" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on top</button>
-									<button class="btn btn-secondary" type="button" title="Popover on bottom" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on bottom</button>
-									<button class="btn btn-secondary" type="button" title="Popover on left" data-container="body" data-toggle="popover" data-placement="left" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on left</button>
-									<button class="btn btn-secondary" type="button" title="Popover on right" data-container="body" data-toggle="popover" data-placement="right" data-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on right</button>
+									<button class="btn btn-secondary" type="button" title="Popover on top" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on top</button>
+									<button class="btn btn-secondary" type="button" title="Popover on bottom" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on bottom</button>
+									<button class="btn btn-secondary" type="button" title="Popover on left" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on left</button>
+									<button class="btn btn-secondary" type="button" title="Popover on right" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on right</button>
 								</div>
 							</div>
 
@@ -432,10 +432,10 @@
 									<h6 class="card-subtitle text-muted">Examples for adding custom Bootstrap tooltips.</h6>
 								</div>
 								<div class="card-body text-center">
-									<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-									<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-									<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-									<button class="btn btn-secondary" type="button" data-toggle="tooltip" data-placement="right" data-container="body" title="Tooltip on right">Tooltip on right</button>
+									<button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">Tooltip on left</button>
+									<button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Tooltip on top</button>
+									<button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+									<button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-container="body" title="Tooltip on right">Tooltip on right</button>
 								</div>
 							</div>
 						</div>
@@ -610,49 +610,49 @@
 								<div class="card-body">
 
 									<div class="mb-2">
-										<div class="spinner-border text-dark mr-2" role="status">
+										<div class="spinner-border text-dark me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border text-primary mr-2" role="status">
+										<div class="spinner-border text-primary me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border text-secondary mr-2" role="status">
+										<div class="spinner-border text-secondary me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border text-success mr-2" role="status">
+										<div class="spinner-border text-success me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border text-danger mr-2" role="status">
+										<div class="spinner-border text-danger me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border text-warning mr-2" role="status">
+										<div class="spinner-border text-warning me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border text-info mr-2" role="status">
+										<div class="spinner-border text-info me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
 									</div>
 
 									<div class="mb-2">
-										<div class="spinner-border spinner-border-sm text-dark mr-2" role="status">
+										<div class="spinner-border spinner-border-sm text-dark me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border spinner-border-sm text-primary mr-2" role="status">
+										<div class="spinner-border spinner-border-sm text-primary me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border spinner-border-sm text-secondary mr-2" role="status">
+										<div class="spinner-border spinner-border-sm text-secondary me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border spinner-border-sm text-success mr-2" role="status">
+										<div class="spinner-border spinner-border-sm text-success me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border spinner-border-sm text-danger mr-2" role="status">
+										<div class="spinner-border spinner-border-sm text-danger me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border spinner-border-sm text-warning mr-2" role="status">
+										<div class="spinner-border spinner-border-sm text-warning me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-border spinner-border-sm text-info mr-2" role="status">
+										<div class="spinner-border spinner-border-sm text-info me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
 									</div>
@@ -660,49 +660,49 @@
 									<hr />
 
 									<div class="mb-2">
-										<div class="spinner-grow text-dark mr-2" role="status">
+										<div class="spinner-grow text-dark me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow text-primary mr-2" role="status">
+										<div class="spinner-grow text-primary me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow text-secondary mr-2" role="status">
+										<div class="spinner-grow text-secondary me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow text-success mr-2" role="status">
+										<div class="spinner-grow text-success me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow text-danger mr-2" role="status">
+										<div class="spinner-grow text-danger me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow text-warning mr-2" role="status">
+										<div class="spinner-grow text-warning me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow text-info mr-2" role="status">
+										<div class="spinner-grow text-info me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
 									</div>
 
 									<div class="mb-2">
-										<div class="spinner-grow spinner-grow-sm text-dark mr-2" role="status">
+										<div class="spinner-grow spinner-grow-sm text-dark me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow spinner-grow-sm text-primary mr-2" role="status">
+										<div class="spinner-grow spinner-grow-sm text-primary me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow spinner-grow-sm text-secondary mr-2" role="status">
+										<div class="spinner-grow spinner-grow-sm text-secondary me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow spinner-grow-sm text-success mr-2" role="status">
+										<div class="spinner-grow spinner-grow-sm text-success me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow spinner-grow-sm text-danger mr-2" role="status">
+										<div class="spinner-grow spinner-grow-sm text-danger me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow spinner-grow-sm text-warning mr-2" role="status">
+										<div class="spinner-grow spinner-grow-sm text-warning me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
-										<div class="spinner-grow spinner-grow-sm text-info mr-2" role="status">
+										<div class="spinner-grow spinner-grow-sm text-info me-2" role="status">
 											<span class="sr-only">Loading...</span>
 										</div>
 									</div>
@@ -718,12 +718,12 @@
 			<footer class="footer">
 				<div class="container-fluid">
 					<div class="row text-muted">
-						<div class="col-6 text-left">
+						<div class="col-6 text-start">
 							<p class="mb-0">
 								<a href="index.html" class="text-muted"><strong>AdminKit Demo</strong></a> &copy;
 							</p>
 						</div>
-						<div class="col-6 text-right">
+						<div class="col-6 text-end">
 							<ul class="list-inline">
 								<li class="list-inline-item">
 									<a class="text-muted" href="#">Support</a>
