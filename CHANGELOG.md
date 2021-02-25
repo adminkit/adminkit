@@ -2,10 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
-## [2.2.0]
+## [2.2.0] 2021-02-25
 
 - Replace Inter font with CDN
 - Replace Font Awesome icons with Feather
+- Optimize bundle size
+- Bind `bootstrap` to window object
+- Update .nvmrc file
+- Upgrade to bootstrap@5.0.0-beta2
+- Upgrade dependencies
 
 ## [2.1.0] 2020-11-07
 
