@@ -84,7 +84,6 @@
 							<li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="ui-general.html">General</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="ui-grid.html">Grid</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-modals.html">Modals</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="ui-typography.html">Typography</a></li>
 						</ul>
 					</li>
@@ -96,18 +95,8 @@
 					</li>
 
 					<li class="sidebar-item">
-						<a data-bs-target="#forms" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a class="sidebar-link" href="forms-basic-inputs.html">
               <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>
-            </a>
-						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>
-						</ul>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="tables-bootstrap.html">
-              <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>
             </a>
 					</li>
 
@@ -134,7 +123,9 @@
 						<div class="mb-3 text-sm">
 							Are you looking for more components? Check out our premium version.
 						</div>
-						<a href="https://adminkit.io/pricing" target="_blank" class="btn btn-primary btn-block">Upgrade to Pro</a>
+						<div class="d-grid">
+							<a href="https://adminkit.io/pricing" target="_blank" class="btn btn-primary">Upgrade to Pro</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -369,207 +360,6 @@
 						<div class="col-12 col-lg-6">
 							<div class="card">
 								<div class="card-header">
-									<h5 class="card-title">Icon alerts</h5>
-									<h6 class="card-subtitle text-muted">Alerts with icon and background color.</h6>
-								</div>
-								<div class="card-body">
-									<div class="mb-3">
-										<div class="alert alert-primary alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple primary alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-secondary alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple secondary alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-success alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple success alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-danger alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple danger alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-warning alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple warning alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-info alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple info alert—check it out!
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-lg-6">
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Outline alerts</h5>
-									<h6 class="card-subtitle text-muted">Alerts with contextual icon background.</h6>
-								</div>
-								<div class="card-body">
-									<div class="mb-3">
-										<div class="alert alert-primary alert-outline alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple primary alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-secondary alert-outline alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple secondary alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-success alert-outline alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple success alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-danger alert-outline alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple danger alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-warning alert-outline alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple warning alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-info alert-outline alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple info alert—check it out!
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-lg-6">
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Colored outline alerts</h5>
-									<h6 class="card-subtitle text-muted">Alerts with contextual outline color.</h6>
-								</div>
-								<div class="card-body">
-									<div class="mb-3">
-										<div class="alert alert-primary alert-outline-coloured alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple primary alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-secondary alert-outline-coloured alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple secondary alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-success alert-outline-coloured alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple success alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-danger alert-outline-coloured alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple danger alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-warning alert-outline-coloured alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple warning alert—check it out!
-											</div>
-										</div>
-										<div class="alert alert-info alert-outline-coloured alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-icon">
-												<span data-feather="bell"></span>
-											</div>
-											<div class="alert-message">
-												<strong>Hello there!</strong> A simple info alert—check it out!
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-lg-6">
-							<div class="card">
-								<div class="card-header">
 									<h5 class="card-title">Alerts with additonal content</h5>
 									<h6 class="card-subtitle text-muted">Alerts with large contents.</h6>
 								</div>
@@ -596,48 +386,6 @@
 													alert works with this kind of content.</p>
 												<hr>
 												<p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-12 col-lg-6">
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Alerts with buttons</h5>
-									<h6 class="card-subtitle text-muted">Alerts with actions.</h6>
-								</div>
-								<div class="card-body">
-									<div class="mb-3">
-										<div class="alert alert-success alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-message">
-												<h4 class="alert-heading">Well done!</h4>
-												<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an
-													alert works with this kind of content.</p>
-												<hr>
-												<div class="btn-list">
-													<button class="btn btn-light" type="button">Okay</button>
-													<button class="btn btn-secondary" type="button">No, thanks</button>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="mb-3">
-										<div class="alert alert-primary alert-outline alert-dismissible" role="alert">
-											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-											<div class="alert-message">
-												<h4 class="alert-heading">Well done!</h4>
-												<p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an
-													alert works with this kind of content.</p>
-												<hr>
-												<div class="btn-list">
-													<button class="btn btn-success" type="button">Okay</button>
-													<button class="btn btn-danger" type="button">No, thanks</button>
-												</div>
 											</div>
 										</div>
 									</div>

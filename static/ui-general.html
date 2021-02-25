@@ -84,7 +84,6 @@
 							<li class="sidebar-item"><a class="sidebar-link" href="ui-cards.html">Cards</a></li>
 							<li class="sidebar-item active"><a class="sidebar-link" href="ui-general.html">General</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="ui-grid.html">Grid</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="ui-modals.html">Modals</a></li>
 							<li class="sidebar-item"><a class="sidebar-link" href="ui-typography.html">Typography</a></li>
 						</ul>
 					</li>
@@ -96,18 +95,8 @@
 					</li>
 
 					<li class="sidebar-item">
-						<a data-bs-target="#forms" data-bs-toggle="collapse" class="sidebar-link collapsed">
+						<a class="sidebar-link" href="forms-basic-inputs.html">
               <i class="align-middle" data-feather="check-circle"></i> <span class="align-middle">Forms</span>
-            </a>
-						<ul id="forms" class="sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-layouts.html">Form Layouts</a></li>
-							<li class="sidebar-item"><a class="sidebar-link" href="forms-basic-inputs.html">Basic Inputs</a></li>
-						</ul>
-					</li>
-
-					<li class="sidebar-item">
-						<a class="sidebar-link" href="tables-bootstrap.html">
-              <i class="align-middle" data-feather="list"></i> <span class="align-middle">Tables</span>
             </a>
 					</li>
 
@@ -134,7 +123,9 @@
 						<div class="mb-3 text-sm">
 							Are you looking for more components? Check out our premium version.
 						</div>
-						<a href="https://adminkit.io/pricing" target="_blank" class="btn btn-primary btn-block">Upgrade to Pro</a>
+						<div class="d-grid">
+							<a href="https://adminkit.io/pricing" target="_blank" class="btn btn-primary">Upgrade to Pro</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -318,60 +309,6 @@
 
 					<div class="row">
 						<div class="col-12 col-lg-6">
-							<div class="accordion" id="accordionExample">
-								<div class="card">
-									<div class="card-header" id="headingOne">
-										<h5 class="card-title my-2">
-											<a href="#" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Accordion
-            </a>
-										</h5>
-									</div>
-									<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-										<div class="card-body">
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-											Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-											et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-											craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" id="headingTwo">
-										<h5 class="card-title my-2">
-											<a href="#" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-              Another one
-            </a>
-										</h5>
-									</div>
-									<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-										<div class="card-body">
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-											Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-											et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-											craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-										</div>
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header" id="headingThree">
-										<h5 class="card-title my-2">
-											<a href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-              Something else
-            </a>
-										</h5>
-									</div>
-									<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-										<div class="card-body">
-											Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
-											Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-											et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat
-											craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-										</div>
-									</div>
-								</div>
-							</div>
-
 							<div class="card">
 								<div class="card-header">
 									<h5 class="card-title">Breadcrumbs</h5>
@@ -410,32 +347,6 @@
 										<img class="rounded-circle rounded me-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
 										<img class="img-thumbnail rounded me-2 mb-2" src="img/avatars/avatar.jpg" alt="Placeholder" width="140" height="140">
 									</div>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Popovers</h5>
-									<h6 class="card-subtitle text-muted">Examples for adding Bootstrap popovers.</h6>
-								</div>
-								<div class="card-body text-center">
-									<button class="btn btn-secondary" type="button" title="Popover on top" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on top</button>
-									<button class="btn btn-secondary" type="button" title="Popover on bottom" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on bottom</button>
-									<button class="btn btn-secondary" type="button" title="Popover on left" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on left</button>
-									<button class="btn btn-secondary" type="button" title="Popover on right" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.">Popover on right</button>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Tooltips</h5>
-									<h6 class="card-subtitle text-muted">Examples for adding custom Bootstrap tooltips.</h6>
-								</div>
-								<div class="card-body text-center">
-									<button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Tooltip on left">Tooltip on left</button>
-									<button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top">Tooltip on top</button>
-									<button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-									<button class="btn btn-secondary" type="button" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-container="body" title="Tooltip on right">Tooltip on right</button>
 								</div>
 							</div>
 						</div>
@@ -526,184 +437,6 @@
 													Some example text that's free-flowing within the dropdown menu.
 												</p>
 											</div>
-										</div>
-									</div>
-									<!-- /.row -->
-
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Pagination</h5>
-									<h6 class="card-subtitle text-muted">Examples for showing pagination.</h6>
-								</div>
-								<div class="card-body">
-									<nav aria-label="Page navigation example">
-										<ul class="pagination pagination-sm">
-											<li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-											<li class="page-item"><a class="page-link" href="#">1</a></li>
-											<li class="page-item active"><a class="page-link" href="#">2</a></li>
-											<li class="page-item"><a class="page-link" href="#">3</a></li>
-											<li class="page-item"><a class="page-link" href="#">4</a></li>
-											<li class="page-item"><a class="page-link" href="#">5</a></li>
-											<li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-										</ul>
-									</nav>
-									<nav aria-label="Page navigation example">
-										<ul class="pagination pagination-md">
-											<li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-											<li class="page-item"><a class="page-link" href="#">1</a></li>
-											<li class="page-item active"><a class="page-link" href="#">2</a></li>
-											<li class="page-item"><a class="page-link" href="#">3</a></li>
-											<li class="page-item"><a class="page-link" href="#">4</a></li>
-											<li class="page-item"><a class="page-link" href="#">5</a></li>
-											<li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-										</ul>
-									</nav>
-									<nav aria-label="Page navigation example">
-										<ul class="pagination pagination-lg">
-											<li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
-											<li class="page-item"><a class="page-link" href="#">1</a></li>
-											<li class="page-item active"><a class="page-link" href="#">2</a></li>
-											<li class="page-item"><a class="page-link" href="#">3</a></li>
-											<li class="page-item"><a class="page-link" href="#">4</a></li>
-											<li class="page-item"><a class="page-link" href="#">5</a></li>
-											<li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
-										</ul>
-									</nav>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Progress Bars</h5>
-									<h6 class="card-subtitle text-muted">Examples for using Bootstrap custom progress bars.</h6>
-								</div>
-								<div class="card-body">
-									<div class="progress mb-3">
-										<div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Default</div>
-									</div>
-
-									<div class="progress mb-3">
-										<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Striped</div>
-									</div>
-
-									<div class="progress mb-3">
-										<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Animated</div>
-									</div>
-
-									<div class="progress">
-										<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Stacked</div>
-										<div class="progress-bar bg-warning" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
-										<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
-										<div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">20%</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Spinners</h5>
-									<h6 class="card-subtitle text-muted">Indicate the loading state of a component with Bootstrap spinners.</h6>
-								</div>
-								<div class="card-body">
-
-									<div class="mb-2">
-										<div class="spinner-border text-dark me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border text-primary me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border text-secondary me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border text-success me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border text-danger me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border text-warning me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border text-info me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-									</div>
-
-									<div class="mb-2">
-										<div class="spinner-border spinner-border-sm text-dark me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border spinner-border-sm text-primary me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border spinner-border-sm text-secondary me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border spinner-border-sm text-success me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border spinner-border-sm text-danger me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border spinner-border-sm text-warning me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-border spinner-border-sm text-info me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-									</div>
-
-									<hr />
-
-									<div class="mb-2">
-										<div class="spinner-grow text-dark me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow text-primary me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow text-secondary me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow text-success me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow text-danger me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow text-warning me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow text-info me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-									</div>
-
-									<div class="mb-2">
-										<div class="spinner-grow spinner-grow-sm text-dark me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow spinner-grow-sm text-primary me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow spinner-grow-sm text-secondary me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow spinner-grow-sm text-success me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow spinner-grow-sm text-danger me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow spinner-grow-sm text-warning me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
-										</div>
-										<div class="spinner-grow spinner-grow-sm text-info me-2" role="status">
-											<span class="visually-hidden">Loading...</span>
 										</div>
 									</div>
 
