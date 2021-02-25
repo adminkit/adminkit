@@ -25,18 +25,18 @@
   }
 
   .alert-message {
-    @include border-right-radius($alert-border-radius);
-    @include border-left-radius($alert-border-radius);
+    @include border-end-radius($alert-border-radius);
+    @include border-start-radius($alert-border-radius);
     border: 1px solid $gray-400;
   }
 
   .alert-message:not(:nth-child(2)) {
-    @include border-left-radius(0);
+    @include border-start-radius(0);
     border-left: 0;
   }
 
   .alert-icon {
-    @include border-left-radius($alert-border-radius);
+    @include border-start-radius($alert-border-radius);
     color: $white;
   }
 

@@ -112,11 +112,11 @@ a.sidebar-link {
 }
 
 // Chevron
-.sidebar [data-toggle="collapse"] {
+.sidebar [data-bs-toggle="collapse"] {
   position: relative;
 }
 
-.sidebar [data-toggle="collapse"]:after {
+.sidebar [data-bs-toggle="collapse"]:after {
   content: " ";
   border: solid;
   border-width: 0 .075rem .075rem 0;
@@ -130,7 +130,7 @@ a.sidebar-link {
 }
 
 .sidebar [aria-expanded="true"]:after,
-.sidebar [data-toggle="collapse"]:not(.collapsed):after {
+.sidebar [data-bs-toggle="collapse"]:not(.collapsed):after {
   transform: rotate(-135deg);
   top: 1.4rem;
 }
