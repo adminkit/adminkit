@@ -15,7 +15,7 @@ Get more power with AdminKit PRO, a premium variant of AdminKit, featuring hundr
 
 | Free Version        | [AdminKit PRO](https://adminkit.io/pricing/) |
 |---------------------|----------------------------------------------|
-| 18 Demo Pages       | ✔ 45+ Demo Pages                             |
+| 17 Demo Pages       | ✔ 45+ Demo Pages                             |
 | 1 Plugin            | ✔ 10+ Plugins                                |
 | 1 Color Scheme      | ✔ 3 Color Schemes                            |
 | 1 Dashboard Variant | ✔ 3 Dashboards Variants                      |
