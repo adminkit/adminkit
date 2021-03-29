@@ -1,5 +1,5 @@
 {
-  "name": "@adminkit/adminkit",
+  "name": "@adminkit/core",
   "version": "2.2.0",
   "description": "AdminKit - Bootstrap 5 Admin Template",
   "scripts": {
