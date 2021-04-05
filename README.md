@@ -72,7 +72,7 @@ All files included in the `@adminkit/core` npm package are available over a CDN.
 **CSS:**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/js/app.css">
+<link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
 ```
 
 **Javascript:**
