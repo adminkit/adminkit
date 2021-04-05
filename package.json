@@ -1,6 +1,6 @@
 {
   "name": "@adminkit/core",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "AdminKit - Bootstrap 5 Admin Template",
   "keywords": [
     "bootstrap",
@@ -44,8 +44,8 @@
   ],
   "dependencies": {
     "@babel/polyfill": "7.12.1",
-    "@popperjs/core": "2.8.4",
-    "bootstrap": "5.0.0-beta2",
+    "@popperjs/core": "2.9.2",
+    "bootstrap": "5.0.0-beta3",
     "chart.js": "2.9.4",
     "feather-icons": "4.28.0",
     "flatpickr": "4.6.9",
@@ -54,17 +54,17 @@
     "simplebar": "5.3.0"
   },
   "devDependencies": {
-    "@babel/core": "7.13.1",
+    "@babel/core": "7.13.14",
     "@babel/plugin-syntax-dynamic-import": "7.8.3",
-    "@babel/preset-env": "7.13.5",
-    "@babel/register": "7.13.0",
+    "@babel/preset-env": "7.13.12",
+    "@babel/register": "7.13.14",
     "autoprefixer": "9.8.6",
     "babel-eslint": "10.1.0",
     "babel-loader": "8.2.2",
     "copy-webpack-plugin": "6.4.1",
     "cross-env": "7.0.3",
     "css-loader": "4.3.0",
-    "eslint": "7.20.0",
+    "eslint": "7.23.0",
     "file-loader": "6.2.0",
     "filemanager-webpack-plugin": "2.0.5",
     "hard-source-webpack-plugin": "0.13.1",
