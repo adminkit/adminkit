@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.2.1] 2021-04-05
+
+- Upgrade to bootstrap@5.0.0-beta3
+- Upgrade dependencies
+
 ## [2.2.0] 2021-02-25
 
 - Replace Inter font with CDN
