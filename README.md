@@ -65,6 +65,22 @@ Compile, optimize, minify and uglify all source files to dist/ folder:
 npm run build
 ```
 
+## CDN support
+
+All files included in the `@adminkit/core` npm package are available over a CDN.
+
+**CSS:**
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/js/app.css">
+```
+
+**Javascript:**
+
+```html
+<script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
+```
+
 ## Browser Support
 
 | <img src="https://assets.adminkit.io/browsers/edge.png" alt="Edge" width="24px" height="24px" /><br/>Edge | <img src="https://assets.adminkit.io/browsers/firefox.png" alt="Firefox" width="24px" height="24px" /><br/>Firefox | <img src="https://assets.adminkit.io/browsers/chrome.png" alt="Chrome" width="24px" height="24px" /><br/>Chrome | <img src="https://assets.adminkit.io/browsers/safari.png" alt="Safari" width="24px" height="24px" /><br/>Safari | <img src="https://assets.adminkit.io/browsers/safari-ios.png" alt="iOS Safari" width="24px" height="24px" /><br/>iOS Safari |
