@@ -27,10 +27,14 @@
   },
   "license": "MIT",
   "author": "Paul Laros <support@adminkit.io>",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.js",
     "watch": "webpack -p --config webpack.config.js --watch",
-    "start": "webpack-dev-server --config webpack.config.js"
+    "start": "webpack-dev-server --config webpack.config.js",
+    "prepublishOnly": "cross-env NODE_ENV=production webpack -p --config webpack.config.js"
   },
   "browserslist": [
     "> 0.25%",
