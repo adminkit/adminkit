@@ -2,8 +2,9 @@
 
 All notable changes to this project will be documented in this file.
 
-## [2.2.1] 2021-04-05
+## [2.3.0] 2021-04-05
 
+- Add CDN to `README.md`
 - Upgrade to bootstrap@5.0.0-beta3
 - Upgrade dependencies
 
