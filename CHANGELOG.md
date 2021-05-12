@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.0.0] 2021-05-12
+
+- Set Chart.js font family
+- Remove Moment.js dependency
+- Refactor sidebar JavaScript module
+- Various visual changes
+- Upgrade to bootstrap@5.0.0
+- Upgrade dependencies
+
 ## [2.3.0] 2021-04-05
 
 - Add CDN to `README.md`
