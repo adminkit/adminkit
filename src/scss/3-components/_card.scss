@@ -14,8 +14,8 @@
   }
 
   svg {
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
   }
 
   .dropdown {
@@ -24,9 +24,9 @@
 }
 
 .card-title {
-  font-size: $font-size-base;
+  font-size: $card-title-font-size;
   font-weight: $card-title-font-weight;
-  color: $gray-700;
+  color: $card-title-color;
 }
 
 .card-subtitle {

@@ -9,8 +9,4 @@
   overflow: hidden;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  
-  @include media-breakpoint-up(lg) {
-    box-shadow: $main-box-shadow;
-  }
 }

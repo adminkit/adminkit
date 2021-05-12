@@ -6,8 +6,7 @@
  */
 
 // Variables
-@import "1-variables/variables";
-@import "1-variables/custom";
+@import "1-variables/app";
 
 // Bootstrap
 @import "~bootstrap/scss/functions";
@@ -67,7 +66,6 @@
 
 // Theme utilities
 @import "4-utilities/background";
-@import "4-utilities/borders";
 @import "4-utilities/cursors";
 @import "4-utilities/overflow";
 

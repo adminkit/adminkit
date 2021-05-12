@@ -47,6 +47,7 @@ $container-padding-x: .75rem !default;
 
 // Options
 $enable-validation-icons: false !default;
+$min-contrast-ratio: 3 !default;
 
 // Transitions
 $transition-base: all .35s ease-in-out !default;
@@ -57,13 +58,13 @@ $enable-negative-margins: true !default;
 
 // Theme colors
 $blue:    #3B7DDD !default;
-$indigo:  #6610f2 !default;
+$indigo:  #0a0a0a !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
 $red:     #dc3545 !default;
 $orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
+$yellow:  #fcb92c !default;
+$green:   #1cbb8c !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
@@ -85,7 +86,7 @@ $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         #f5f7fb !default;
 $dark:          $gray-900 !default;
 
 $theme-colors: (
@@ -115,7 +116,7 @@ $social-colors: (
 ) !default;
 
 // Body
-$body-bg: #F7F7FC !default;
+$body-bg: #f5f7fb !default;
 $body-color: $gray-700 !default;
 
 // Links
@@ -152,13 +153,16 @@ $display-font-sizes: (
 
 // Progress
 $progress-height: 1rem !default;
-$progress-height-sm: .5rem !default;
+$progress-height-sm: .4rem !default;
 $progress-height-lg: 1.5rem !default;
 
 // Shadows
 $box-shadow-sm:    0 0.05rem 0.2rem rgba($black, .05) !default;
 $box-shadow:       0 0.1rem 0.2rem rgba($black, .05) !default;
 $box-shadow-lg:    0 0.2rem 0.2rem rgba($black, .05) !default;
+
+// Navbar input
+$navbar-input-bg: darken($body-bg, 0.5%) !default;
 
 // Border radius
 $border-radius-sm: .1rem !default;
@@ -203,10 +207,10 @@ $input-btn-line-height: $line-height-base !default;
 $input-btn-line-height-sm:    $line-height-sm !default;
 $input-btn-line-height-lg: $line-height-lg !default;
 $input-btn-focus-width: .2rem !default;
-$input-btn-padding-y: .25rem !default;
-$input-btn-padding-y-sm: .15rem !default;
-$input-btn-padding-y-lg: .35rem !default;
-$input-btn-padding-x: .7rem !default;
+$input-btn-padding-y: .3rem !default;
+$input-btn-padding-y-sm: .2rem !default;
+$input-btn-padding-y-lg: .4rem !default;
+$input-btn-padding-x: .85rem !default;
 $input-border-width: $input-btn-border-width !default;
 $input-height-border: $input-border-width * 2 !default;
 $input-height-inner: ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
@@ -229,7 +233,9 @@ $card-border-width: 0 !default;
 $card-border-color: transparent !default;
 $card-cap-bg: $white !default;
 $card-shadow: 0 0 .875rem 0 rgba($dark, 0.05) !default;
-$card-title-font-weight: $font-weight-normal !default;
+$card-title-font-size: $font-size-lg !default;
+$card-title-font-weight: $font-weight-bold !default;
+$card-title-color: lighten($gray-600, 15%) !default;
 $card-spacer-y: 1.25rem !default;
 $card-spacer-x: 1.25rem !default;
 $card-cap-padding-y: 1rem !default;
@@ -345,7 +351,7 @@ $pagination-hover-color: $gray-800 !default;
 $main-box-shadow: inset .75rem 0px 1.5rem 0px rgba($black, 0.075);
 
 // Content
-$content-padding-desktop: 2.5rem 2.5rem 1rem !default;
+$content-padding-desktop: 3rem 3rem 1.5rem !default;
 $content-padding-mobile: 1.5rem 1.5rem .75rem !default;
 
 // Datetimepicker

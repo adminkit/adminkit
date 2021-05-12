@@ -2,13 +2,14 @@
   .form-control,
   .btn {
     height: $input-height-lg;
-    background: $body-bg;
+    background: $navbar-input-bg;
     box-shadow: none;
     border: 0;
-    padding: $input-padding-y-lg $spacer*0.75;
+    padding: $input-padding-y-lg $spacer;
+    border-radius: 20px;
 
     &:focus {
-      background: $body-bg;
+      background: $navbar-input-bg;
       box-shadow: none;
       outline: 0;
     }
@@ -22,4 +23,8 @@
       height: 20px;
     }
   }
+}
+
+.input-group-sm > .form-select {
+  padding-right: 1.8rem;
 }

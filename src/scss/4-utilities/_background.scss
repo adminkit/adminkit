@@ -1,11 +1,11 @@
 @each $color, $value in $theme-colors {
   .bg-#{$color}-light {
-    background: lighten($value, 35%);
+    background: lighten($value, 37.5%);
   }
 }
 
 @each $color, $value in $theme-colors {
   .bg-#{$color}-dark {
-    background: darken($value, 35%);
+    background: darken($value, 37.5%);
   }
 }
