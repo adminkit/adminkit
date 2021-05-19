@@ -46,15 +46,13 @@ $container-max-widths: (
 $container-padding-x: .75rem !default;
 
 // Options
-$enable-validation-icons: false !default;
 $min-contrast-ratio: 3 !default;
+$enable-validation-icons: false !default;
+$enable-rfs: false !default;
+$enable-negative-margins: true !default;
 
 // Transitions
 $transition-base: all .35s ease-in-out !default;
-
-// Options
-$enable-rfs: false !default;
-$enable-negative-margins: true !default;
 
 // Theme colors
 $blue:    #3B7DDD !default;
@@ -151,11 +149,6 @@ $display-font-sizes: (
   6: 2.5rem
   ) !default;
 
-// Progress
-$progress-height: 1rem !default;
-$progress-height-sm: .4rem !default;
-$progress-height-lg: 1.5rem !default;
-
 // Shadows
 $box-shadow-sm:    0 0.05rem 0.2rem rgba($black, .05) !default;
 $box-shadow:       0 0.1rem 0.2rem rgba($black, .05) !default;
@@ -189,22 +182,13 @@ $navbar-bg: $white !default;
 // Footer
 $footer-bg: $white !default;
 
-// Alerts
-$alert-padding-y: .95rem !default;
-$alert-padding-x: .95rem !default;
-$alert-border-width: 0 !default;
-
-// List group
-$list-group-item-padding-y: .75rem !default;
-$list-group-item-padding-x: 1.25rem !default;
-
 // Forms
 $input-bg: $white !default;
 $input-disabled-bg: $gray-200 !default;
 $input-color: $gray-700 !default;
 $input-btn-border-width: $border-width !default;
 $input-btn-line-height: $line-height-base !default;
-$input-btn-line-height-sm:    $line-height-sm !default;
+$input-btn-line-height-sm: $line-height-sm !default;
 $input-btn-line-height-lg: $line-height-lg !default;
 $input-btn-focus-width: .2rem !default;
 $input-btn-padding-y: .3rem !default;
@@ -219,12 +203,6 @@ $input-height-inner-sm: ($font-size-sm * $input-btn-line-height-sm) + ($input-bt
 $input-height-sm: calc(#{$input-height-inner-sm} + #{$input-height-border}) !default;
 $input-height-inner-lg: ($font-size-lg * $input-btn-line-height-lg) + ($input-btn-padding-y-lg * 2) !default;
 $input-height-lg: calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
-
-// Dropdowns
-$dropdown-link-color: $gray-700 !default;
-$dropdown-link-hover-bg: $gray-100 !default;
-$dropdown-item-padding-y: .35rem !default;
-$dropdown-item-padding-x: 1.5rem !default;
 
 // Cards
 $card-border-radius: .25rem !default;
@@ -283,18 +261,6 @@ $sidebar-link-active-bg: #{linear-gradient(90deg, rgba($primary,0.1) 0%, rgba($p
 $sidebar-link-active-color: $gray-200 !default;
 $sidebar-link-active-border-left-color: $primary !default;
 
-// Sidebar child link
-$sidebar-link-child-padding: .625rem 1.5rem .625rem 3.25rem !default;
-$sidebar-link-child-font-size: 90% !default;
-$sidebar-link-child-font-weight: 400 !default;
-
-$sidebar-link-child-color: $gray-500 !default;
-$sidebar-link-child-bg: transparent !default;
-$sidebar-link-child-hover-color: $gray-200 !default;
-$sidebar-link-child-hover-bg: transparent !default;
-$sidebar-link-child-active-color: #{lighten($primary, 5)} !default;
-$sidebar-link-child-active-bg: transparent !default;
-
 // Sidebar link icon
 $sidebar-link-icon-color: #{rgba($gray-200, 0.5)} !default;
 $sidebar-link-icon-hover-color: #{rgba($gray-200, 0.75)} !default;
@@ -322,30 +288,10 @@ $modal-md: 600px !default;
 $modal-sm: 400px !default;
 $modal-transition: transform .25s ease-out !default;
 
-// Tabs
-$tab-content-padding: $spacer * 1.25 !default;
-$tab-content-box-shadow: 0 0.2rem 0.1rem -0.1rem rgba(0,0,0,0.15) !default;
-$tab-content-border-radius: 0 0 $border-radius $border-radius !default;
-$tab-link-color: $gray-800 !default;
-$tab-link-padding: ($spacer * 0.75) $spacer !default;
-$tab-link-bg: transparent !default;
-$tab-link-active-color: $gray-800 !default;
-$tab-link-active-bg: $white !default;
-
 // Badges
 $badge-font-size: 80% !default;
 $badge-padding-y: .3em !default;
 $badge-padding-x: .45em !default;
-
-// Pagination
-$pagination-padding-y: .3rem !default;
-$pagination-padding-x: .75rem !default;
-$pagination-padding-y-sm: .15rem !default;
-$pagination-padding-x-sm: .5rem !default;
-$pagination-padding-y-lg: .35rem !default;
-$pagination-padding-x-lg: 1rem !default;
-$pagination-color: $gray-600 !default;
-$pagination-hover-color: $gray-800 !default;
 
 // Main
 $main-box-shadow: inset .75rem 0px 1.5rem 0px rgba($black, 0.075);
@@ -364,3 +310,8 @@ $simplebar-scrollbar-bg: $white !default;
 $hamburger-width-top: 24px !default;
 $hamburger-width-middle: 24px !default;
 $hamburger-width-bottom: 16px !default;
+
+// Stats
+$stat-bg: lighten($primary, 35%) !default;
+$stat-icon-color: $primary !default;
+$stat-padding: $spacer * 0.75 !default;
