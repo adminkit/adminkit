@@ -1,0 +1,16 @@
+.stat {
+  background: $stat-bg;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    color: $stat-icon-color !important;
+    stroke-width: 1.5;
+  }
+}
