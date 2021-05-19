@@ -26,7 +26,7 @@ Get more power with AdminKit PRO, a premium variant of AdminKit, featuring hundr
 |                     | ✔ Drag and Drop                              |
 |                     | ✔ Toast Notifications                        |
 |                     | ✔ WYSIWYG Editors                            |
-|                     | ✔ Premium support                            |
+|                     | ✔ Premium Support                            |
 
 ## Features
 
@@ -81,6 +81,38 @@ All files included in the `@adminkit/core` npm package are available over a CDN.
 
 ```html
 <script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
+```
+
+## File structure
+The package contains the following directories and files:
+
+```
+adminkit/
+├── .babelrc
+├── .eslintrc
+├── .nvmrc
+├── README.md
+├── package.json
+├── postcss.config.js
+├── webpack.config.js
+├── src/
+│   ├── fonts/
+│   ├── img/
+│   ├── js/
+│   │   ├── modules/
+│   │   └── app.js
+│   └── scss/
+│       ├── 1-variables/
+│       ├── 2-mixins/
+│       ├── 3-components/
+│       ├── 4-utilities/
+│       ├── 5-vendor/
+│       └── app.scss
+└── dist/
+    ├── css/
+    │   └── app.css
+    └── js/
+        └── app.js
 ```
 
 ## Browser Support
