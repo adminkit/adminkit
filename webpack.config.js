@@ -2,9 +2,8 @@ const Webpack = require("webpack");
 const Path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
 
 const opts = {
@@ -34,7 +33,8 @@ module.exports = {
           ecma: 5
         }
       }),
-      new OptimizeCSSAssetsPlugin({})
+      new CssMinimizerPlugin()
+      // new OptimizeCSSAssetsPlugin({})
     ],
     runtimeChunk: false
   },
@@ -52,11 +52,18 @@ module.exports = {
       ]
     }),
     // Speed up webpack build
-    new HardSourceWebpackPlugin(),
+    // new HardSourceWebpackPlugin(),
     // Copy dist folder to static
     new FileManagerPlugin({
-      onEnd: {
-        copy: [{ source: "./dist/**/*", destination: "./static" }]
+      events: {
+        onEnd: {
+          copy: [
+            { source: "./dist/css/*", destination: "./static/css/" },
+            { source: "./dist/fonts/*", destination: "./static/fonts/" },
+            { source: "./dist/img/*", destination: "./static/img/" },
+            { source: "./dist/js/*", destination: "./static/js/" },
+          ]
+        }
       }
     })
   ],
@@ -64,9 +71,16 @@ module.exports = {
     rules: [
       // Babel-loader
       {
-        test: /\.js$/,
-        exclude: /(node_modules)/,
-        loader: ["babel-loader?cacheDirectory=true"]
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              ['@babel/preset-env', { targets: "defaults" }]
+            ]
+          }
+        }
       },
       // Css-loader & sass-loader
       {
