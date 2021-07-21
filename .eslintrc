@@ -1,7 +1,12 @@
 {
   "parserOptions": {
     "ecmaVersion": 2017,
-    "sourceType": "module"
+    "sourceType": "module",
+    "babelOptions": {
+      "plugins": [
+        "@babel/eslint-parser"
+      ]
+    }
   },
   "env": {
     "es7": true
