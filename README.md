@@ -1,32 +1,28 @@
-# AdminKit - Bootstrap 5 Admin Template ![Twitter URL](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Fadminkit.io%2F&text=AdminKit%20-%20Open%20Source%20Bootstrap%205%20Admin%20Template)
+<p align="center">
+  <a href="https://github.com/adminkit/adminkit"><img src="https://adminkit.io/icons/icon-512x512.png" alt="AdminKit is an free & open-source HTML dashboard & admin template based on Bootstrap 5" width="96"></a>
+</p>
 
-A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons. AdminKit **does not require jQuery** and neither does one of the 3rd party libraries AdminKit is using.
+<h3 align="center">AdminKit</h3>
 
-<strong><a href="https://demo.adminkit.io/">View Demo</a> | <a href="https://github.com/adminkit/adminkit/archive/master.zip">Download ZIP</a> | <a href="https://adminkit.io/">Visit Website</a></strong>
+<p align="center">
+  AdminKit is an free & open-source HTML dashboard & admin template based on Bootstrap 5.
+</p>
 
-[![AdminKit Demo](https://assets.adminkit.io/banners/adminkit-bootstrap-5-admin-template.png)](https://demo.adminkit.io/)
+<p align="center">
+  <a href="https://www.npmjs.com/package/@adminkit/core" rel="nofollow"><img src="https://img.shields.io/npm/v/@adminkit/core" alt="NPM version"></a>
+  <a href="https://github.com/adminkit/adminkit/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
+  <a href="https://github.com/adminkit/adminkit/issues?q=is%3Aopen+is%3Aissue"><img src="https://img.shields.io/github/issues/adminkit/adminkit.svg" alt="GitHub issues open"></a>
+  <a href="https://github.com/adminkit/adminkit/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/adminkit/adminkit.svg" alt="GitHub issues closed"></a>
+  <a href="https://demo.adminkit.io/" rel="nofollow"><img src="https://img.shields.io/badge/demo-online-green.svg" alt="Live Demo"></a>
+  <a href="https://adminkit.io/#download"><img src="https://img.shields.io/static/v1?label=download&message=ZIP&color=green" alt="Download"></a>
+  <br>
+<a href="https://github.com/adminkit/adminkit"><img alt="GitHub stars" src="https://img.shields.io/github/stars/adminkit/adminkit?style=social"></a>
+</p>
 
-## Status
+## Preview
+A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons. AdminKit **does not require jQuery** and neither does one of the 3rd party libraries AdminKit is using. [See demo](https://demo.adminkit.io/).
 
-[![Version](https://img.shields.io/npm/v/@adminkit/core)](https://www.npmjs.com/package/@adminkit/core) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/adminkit/adminkit/blob/master/LICENSE) [![GitHub issues open](https://img.shields.io/github/issues/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/adminkit/adminkit.svg)](https://github.com/adminkit/adminkit/issues?q=is%3Aissue+is%3Aclosed) [![GitHub Stars](https://img.shields.io/github/stars/adminkit/adminkit.svg?color=green)](https://github.com/adminkit/adminkit/stargazers) [![Live Demo](https://img.shields.io/badge/demo-online-green.svg)](https://demo.adminkit.io/)
-
-## Upgrade to PRO
-Get more power with AdminKit PRO, a premium variant of AdminKit, featuring hundreds of UI components, forms, tables, charts, pages, and icons.
-
-| Free Version        | [AdminKit PRO](https://adminkit.io/pricing/) |
-|---------------------|----------------------------------------------|
-| 15 Demo Pages       | ✔ 45+ Demo Pages                             |
-| 1 Plugin            | ✔ 10+ Plugins                                |
-| 1 Color Scheme      | ✔ 3 Color Schemes                            |
-|                     | ✔ All Bootstrap 5 Components                 |
-|                     | ✔ Dark Mode 🌙                               |
-|                     | ✔ Compact Sidebar                            |
-|                     | ✔ Calendar                                   |
-|                     | ✔ Advanced Forms                             |
-|                     | ✔ Drag and Drop                              |
-|                     | ✔ Toast Notifications                        |
-|                     | ✔ WYSIWYG Editors                            |
-|                     | ✔ Premium Support                            |
+<a href="https://demo.adminkit.io" target="_blank"><img src="https://assets.adminkit.io/banners/adminkit-bootstrap-5-admin-template.png" alt="AdminKit Demo"></a>
 
 ## Features
 
@@ -132,3 +128,21 @@ adminkit/
 ## Bugs and feature requests
 
 Found a bug or have a feature request? [Please open a new issue](https://github.com/adminkit/adminkit/issues/new).
+
+## Upgrade to PRO
+Get more power with AdminKit PRO, a premium variant of AdminKit, featuring hundreds of UI components, forms, tables, charts, pages, and icons.
+
+| Free Version        | [AdminKit PRO](https://adminkit.io/pricing/) |
+|---------------------|----------------------------------------------|
+| 15 Demo Pages       | ✔ 45+ Demo Pages                             |
+| 1 Plugin            | ✔ 10+ Plugins                                |
+| 1 Color Scheme      | ✔ 3 Color Schemes                            |
+|                     | ✔ All Bootstrap 5 Components                 |
+|                     | ✔ Dark Mode 🌙                               |
+|                     | ✔ Compact Sidebar                            |
+|                     | ✔ Calendar                                   |
+|                     | ✔ Advanced Forms                             |
+|                     | ✔ Drag and Drop                              |
+|                     | ✔ Toast Notifications                        |
+|                     | ✔ WYSIWYG Editors                            |
+|                     | ✔ Premium Support                            |
