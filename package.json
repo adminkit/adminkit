@@ -33,9 +33,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack -p --config webpack.config.js",
-    "watch": "webpack -p --config webpack.config.js --watch",
-    "start": "webpack-dev-server --config webpack.config.js",
+    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --progress",
+    "watch": "webpack --config webpack.config.js --watch --progress",
+    "start": "webpack serve --config webpack.config.js --progress",
     "prepublishOnly": "cross-env NODE_ENV=production webpack -p --config webpack.config.js"
   },
   "browserslist": [

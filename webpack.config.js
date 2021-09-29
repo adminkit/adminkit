@@ -2,7 +2,7 @@ const Webpack = require("webpack");
 const Path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
 
@@ -33,7 +33,7 @@ module.exports = {
           ecma: 5
         }
       }),
-      new OptimizeCSSAssetsPlugin({})
+      new CssMinimizerPlugin({})
     ],
     runtimeChunk: false
   },
@@ -52,10 +52,14 @@ module.exports = {
     }),
     // Copy dist folder to static
     new FileManagerPlugin({
-      onEnd: {
-        copy: [{ source: "./dist/**/*", destination: "./static" }]
+      events: {
+        onEnd: {
+          copy: [
+            { source: "./dist/", destination: "./static" }
+          ]
+        }
       }
-    })
+    }),
   ],
   module: {
     rules: [
@@ -63,7 +67,12 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /(node_modules)/,
-        loader: ["babel-loader?cacheDirectory=true"]
+        use: {
+          loader: "babel-loader",
+          options: {
+            cacheDirectory: true
+          }
+        }
       },
       // Css-loader & sass-loader
       {
@@ -78,31 +87,19 @@ module.exports = {
       // Load fonts
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "/[name].[ext]",
-              outputPath: "fonts/",
-              publicPath: "../fonts/"
-            }
-          }
-        ]
+        type: "asset/resource",
+        generator: {
+          filename: "fonts/[name][ext]"
+        }
       },
       // Load images
       {
         test: /\.(png|jpg|jpeg|gif)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "img/",
-              publicPath: "../img/"
-            }
-          }
-        ]
-      }
+        type: "asset/resource",
+        generator: {
+          filename: "img/[name][ext]"
+        }
+      },
     ]
   },
   resolve: {
@@ -113,7 +110,9 @@ module.exports = {
     }
   },
   devServer: {
-    contentBase: Path.join(__dirname, "static"),
+    static: {
+      directory: Path.join(__dirname, "static")
+    },
     compress: true,
     port: 8080,
     open: true
