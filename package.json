@@ -39,10 +39,17 @@
     "prepublishOnly": "cross-env NODE_ENV=production webpack -p --config webpack.config.js"
   },
   "browserslist": [
-    "> 0.25%",
-    "not op_mini all",
+    "> 0.5%",
+    "last 2 major versions",
     "not dead",
-    "not ie >= 0"
+    "Chrome >= 60",
+    "Firefox >= 60",
+    "not Edge < 79",
+    "Firefox ESR",
+    "iOS >= 10",
+    "Safari >= 10",
+    "Android >= 6",
+    "not Explorer <= 11"
   ],
   "dependencies": {
     "@babel/polyfill": "7.12.1",
