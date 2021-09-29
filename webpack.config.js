@@ -4,7 +4,6 @@ const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
-const HardSourceWebpackPlugin = require("hard-source-webpack-plugin");
 const FileManagerPlugin = require("filemanager-webpack-plugin");
 
 const opts = {
@@ -51,8 +50,6 @@ module.exports = {
         { from: "src/img", to: "img" }
       ]
     }),
-    // Speed up webpack build
-    new HardSourceWebpackPlugin(),
     // Copy dist folder to static
     new FileManagerPlugin({
       onEnd: {
