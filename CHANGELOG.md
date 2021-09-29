@@ -6,8 +6,8 @@ All notable changes to this project will be documented in this file.
 
 - Replace OptimizeCssAssetsPlugin with CssMinimizerPlugin
 - Remove HardSourceWebpackPlugin
-- Upgrade to Webpack 5.55.1
-- Upgrade to Bootstrap 5.1.1
+- Upgrade to Webpack v5.55.1
+- Upgrade to Bootstrap v5.1.1
 - Upgrade dependencies
 
 ## [3.0.2] 2021-05-19
