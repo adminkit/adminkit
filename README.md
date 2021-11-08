@@ -5,7 +5,7 @@
 <h3 align="center">AdminKit</h3>
 
 <p align="center">
-  AdminKit is an free & open-source HTML dashboard & admin template based on Bootstrap 5.
+  AdminKit is a free & open-source HTML dashboard & admin template based on Bootstrap 5.
 </p>
 
 <p align="center">
