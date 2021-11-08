@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/adminkit/adminkit"><img src="https://adminkit.io/icons/icon-512x512.png" alt="AdminKit is an free & open-source HTML dashboard & admin template based on Bootstrap 5" width="96"></a>
+  <a href="https://github.com/adminkit/adminkit"><img src="https://adminkit.io/icons/icon-512x512.png" alt="AdminKit is a free & open-source HTML dashboard & admin template based on Bootstrap 5" width="96"></a>
 </p>
 
 <h3 align="center">AdminKit</h3>
