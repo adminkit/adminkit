@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.2.0] 2022-02-04
+
+- Migrate to Dart Sass
+- Upgrade to Webpack v5.68.0
+- Upgrade to Bootstrap v5.1.3
+- Upgrade dependencies
+
 ## [3.1.0] 2021-09-29
 
 - Replace OptimizeCssAssetsPlugin with CssMinimizerPlugin
