@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.3.0] 2022-08-10
+
+- Fix table in card styling issues
+- Upgrade to Webpack v5.74.0
+- Upgrade to Bootstrap v5.2.0
+- Upgrade dependencies
+
 ## [3.2.0] 2022-02-04
 
 - Migrate to Dart Sass
