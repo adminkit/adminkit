@@ -17,20 +17,6 @@
   font-weight: $font-weight-normal;
 }
 
-.card-table {
-  margin-bottom: 0;
-}
-
-.card-table tr td:first-child,
-.card-table tr th:first-child {
-  padding-left: $card-spacer-x;
-}
-
-.card-table tr td:last-child,
-.card-table tr th:last-child {
-  padding-right: $card-spacer-x;
-}
-
 .card-img,
 .card-img-top,
 .card-img-bottom {
@@ -38,5 +24,16 @@
 
   @media all and (-ms-high-contrast:none) {
     height: 100%;
+  }
+}
+
+.card > .table > tbody {
+  tr:last-child td:first-child,
+  tr:last-child th:first-child {
+    border-bottom-left-radius: $card-border-radius;
+  }
+  tr:last-child td:last-child,
+  tr:last-child th:last-child {
+    border-bottom-right-radius: $card-border-radius;
   }
 }
