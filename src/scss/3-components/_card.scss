@@ -26,3 +26,14 @@
     height: 100%;
   }
 }
+
+.card > .table > tbody {
+  tr:last-child td:first-child,
+  tr:last-child th:first-child {
+    border-bottom-left-radius: $card-border-radius;
+  }
+  tr:last-child td:last-child,
+  tr:last-child th:last-child {
+    border-bottom-right-radius: $card-border-radius;
+  }
+}
