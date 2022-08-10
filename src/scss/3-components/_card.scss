@@ -17,20 +17,6 @@
   font-weight: $font-weight-normal;
 }
 
-.card-table {
-  margin-bottom: 0;
-}
-
-.card-table tr td:first-child,
-.card-table tr th:first-child {
-  padding-left: $card-spacer-x;
-}
-
-.card-table tr td:last-child,
-.card-table tr th:last-child {
-  padding-right: $card-spacer-x;
-}
-
 .card-img,
 .card-img-top,
 .card-img-bottom {
