@@ -27,8 +27,10 @@ Steps:
 
 ## Your Environment 🌎
 
-<!-- What browser, OS and screen size are you using -->
+<!-- What version, browser, OS and screen size are you using -->
 
+- Theme version:
+- Free or paid version: 
 - Browser:
 - OS:
 - Screen size:
