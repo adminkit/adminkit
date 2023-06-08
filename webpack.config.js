@@ -51,15 +51,17 @@ module.exports = {
       ]
     }),
     // Copy dist folder to static
-    new FileManagerPlugin({
-      events: {
-        onEnd: {
-          copy: [
-            { source: "./dist/", destination: "./static" }
-          ]
-        }
-      }
-    }),
+    ...(process.env.NODE_ENV === "production")? [
+      new FileManagerPlugin({
+        events: {
+          onEnd: {
+            copy: [
+              { source: "./dist/", destination: "./static" }
+            ]
+          }
+        },
+      })
+    ] : [],
   ],
   module: {
     rules: [
@@ -81,12 +83,7 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
-          {
-            loader: "sass-loader",
-            options: {
-              implementation: require.resolve("sass"),
-            }
-          }
+          "sass-loader"
         ]
       },
       // Load fonts
@@ -118,7 +115,6 @@ module.exports = {
     static: {
       directory: Path.join(__dirname, "static")
     },
-    compress: true,
     port: 8080,
     open: true
   }
