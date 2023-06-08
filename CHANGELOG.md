@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.4.0] 2023-06-08
+
+- Add error catching to JavaScript modules
+- Update browserslist file
+- Upgrade to Webpack v5.86.0
+- Upgrade to Bootstrap v5.3.0
+- Upgrade dependencies
+
 ## [3.3.0] 2022-08-10
 
 - Fix table in card styling issues
