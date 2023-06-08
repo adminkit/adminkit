@@ -39,16 +39,14 @@
     "prepublishOnly": "cross-env NODE_ENV=production webpack --progress --config webpack.config.js"
   },
   "browserslist": [
-    "> 0.5%",
+    ">= 0.5%",
     "last 2 major versions",
     "not dead",
     "Chrome >= 60",
     "Firefox >= 60",
-    "not Edge < 79",
     "Firefox ESR",
-    "iOS >= 10",
-    "Safari >= 10",
-    "Android >= 6",
+    "iOS >= 12",
+    "Safari >= 12",
     "not Explorer <= 11"
   ],
   "dependencies": {
