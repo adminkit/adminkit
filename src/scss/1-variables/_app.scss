@@ -50,6 +50,7 @@ $min-contrast-ratio: 3 !default;
 $enable-validation-icons: false !default;
 $enable-rfs: false !default;
 $enable-negative-margins: true !default;
+$enable-dark-mode: false !default;
 
 // Transitions
 $transition-base: all .35s ease-in-out !default;
@@ -205,6 +206,7 @@ $input-height-inner-lg: ($font-size-lg * $input-btn-line-height-lg) + ($input-bt
 $input-height-lg: calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
 
 // Cards
+$card-bg: $white !default;
 $card-border-radius: .25rem !default;
 $card-inner-border-radius: $card-border-radius !default;
 $card-border-width: 0 !default;
@@ -224,6 +226,7 @@ $table-cell-padding-y: .75rem !default;
 $table-cell-padding-x: .75rem !default;
 $table-cell-padding-y-sm: .3rem !default;
 $table-cell-padding-x-sm: .3rem !default;
+$table-bg: transparent !default;
 $table-striped-bg: $gray-100 !default;
 $table-hover-bg: rgba($black, .0375) !default;
 
@@ -292,6 +295,9 @@ $modal-transition: transform .25s ease-out !default;
 $badge-font-size: 80% !default;
 $badge-padding-y: .3em !default;
 $badge-padding-x: .45em !default;
+
+// Dropdowns
+$dropdown-bg: $white !default;
 
 // Main
 $main-box-shadow: inset .75rem 0px 1.5rem 0px rgba($black, 0.075);
