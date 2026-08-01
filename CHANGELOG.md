@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+## [3.5.0] 2026-08-01
+
+- Upgrade to Webpack v5.109.2
+- Upgrade to Bootstrap v5.3.8
+- Upgrade dependencies
+
 ## [3.4.0] 2023-06-08
 
 - Add error catching to JavaScript modules
