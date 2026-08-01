@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Fonts
 $font-family-sans-serif: "Inter", "Helvetica Neue", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-weight-light: 300 !default;
@@ -156,7 +158,7 @@ $box-shadow:       0 0.1rem 0.2rem rgba($black, .05) !default;
 $box-shadow-lg:    0 0.2rem 0.2rem rgba($black, .05) !default;
 
 // Navbar input
-$navbar-input-bg: darken($body-bg, 0.5%) !default;
+$navbar-input-bg: color.adjust($body-bg, $lightness: -0.5%) !default;
 
 // Border radius
 $border-radius-sm: .1rem !default;
@@ -215,7 +217,7 @@ $card-cap-bg: $white !default;
 $card-shadow: 0 0 .875rem 0 rgba($dark, 0.05) !default;
 $card-title-font-size: $font-size-lg !default;
 $card-title-font-weight: $font-weight-bold !default;
-$card-title-color: lighten($gray-600, 15%) !default;
+$card-title-color: color.adjust($gray-600, $lightness: 15%) !default;
 $card-spacer-y: 1.25rem !default;
 $card-spacer-x: 1.25rem !default;
 $card-cap-padding-y: 1rem !default;
@@ -318,6 +320,6 @@ $hamburger-width-middle: 24px !default;
 $hamburger-width-bottom: 16px !default;
 
 // Stats
-$stat-bg: lighten($primary, 35%) !default;
+$stat-bg: color.adjust($primary, $lightness: 35%) !default;
 $stat-icon-color: $primary !default;
 $stat-padding: $spacer * 0.75 !default;
