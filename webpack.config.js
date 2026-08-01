@@ -83,7 +83,14 @@ module.exports = {
           MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
-          "sass-loader"
+          {
+            loader: "sass-loader",
+            options: {
+              sassOptions: {
+                silenceDeprecations: ["import", "color-functions", "global-builtin", "if-function", "legacy-js-api"]
+              }
+            }
+          }
         ]
       },
       // Load fonts
