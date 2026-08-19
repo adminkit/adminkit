@@ -30,7 +30,8 @@
   "license": "MIT",
   "author": "Paul Laros <support@adminkit.io>",
   "files": [
-    "dist"
+    "dist",
+    "src/scss"
   ],
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --progress",
