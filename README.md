@@ -63,6 +63,14 @@ Compile, optimize, minify and uglify all source files to dist/ folder:
 npm run build
 ```
 
+### Deploy
+
+The compiled demo pages live in the `static/` folder, which can be served by any static host. The root `Staticfile` points Wasmer Edge at that folder.
+
+[![Deploy to Wasmer](https://img.shields.io/badge/Deploy%20to-Wasmer-171717?logo=wasmer&logoColor=white)](https://wasmer.io/apps/create?github=adminkit%2Fadminkit)
+
+The Wasmer button imports this repository; to customize the template and redeploy on push, import your own fork instead.
+
 ## CDN support
 
 All files included in the `@adminkit/core` npm package are available over a CDN.
