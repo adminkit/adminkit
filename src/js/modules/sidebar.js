@@ -31,12 +31,14 @@ const initializeSidebarCollapse = () => {
   const sidebarToggleElement = document.getElementsByClassName("js-sidebar-toggle")[0];
 
   if(sidebarElement && sidebarToggleElement) {
+    sidebarElement.addEventListener("transitionend", event => {
+      if (event.target === sidebarElement && event.propertyName === "margin-left") {
+        window.dispatchEvent(new Event("resize"));
+      }
+    });
+
     sidebarToggleElement.addEventListener("click", () => {
       sidebarElement.classList.toggle("collapsed");
-
-      sidebarElement.addEventListener("transitionend", () => {
-        window.dispatchEvent(new Event("resize"));
-      });
     });
   }
 }
