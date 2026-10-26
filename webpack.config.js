@@ -1,4 +1,3 @@
-const Webpack = require("webpack");
 const Path = require("path");
 const TerserPlugin = require("terser-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
