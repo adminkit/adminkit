@@ -44,7 +44,7 @@
 
 .nav-icon,
 .nav-flag {
-  padding: .1rem .8rem;
+  padding: 0.1rem 0.8rem;
   display: block;
   font-size: 1.5rem;
   color: $gray-600;
@@ -80,7 +80,7 @@
     top: 0;
     right: -8px;
     text-align: center;
-    transition: top .1s ease-out;
+    transition: top 0.1s ease-out;
     font-size: 0.675rem;
     color: $white;
   }
@@ -106,7 +106,7 @@
   }
 
   .nav-icon {
-    padding: .1rem .75rem;
+    padding: 0.1rem 0.75rem;
   }
 
   .dropdown,

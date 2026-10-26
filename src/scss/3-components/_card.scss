@@ -22,7 +22,7 @@
 .card-img-bottom {
   @include img-fluid;
 
-  @media all and (-ms-high-contrast:none) {
+  @media all and (-ms-high-contrast: none) {
     height: 100%;
   }
 }

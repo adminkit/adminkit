@@ -4,7 +4,7 @@ $flatpickr-tile-height: 45px;
   background: transparent;
   box-shadow: none;
   width: 100%;
-  
+
   .flatpickr-days {
     width: 100%;
   }
@@ -27,7 +27,7 @@ $flatpickr-tile-height: 45px;
       &:before {
         content: "";
         display: inline-block;
-        border-color: rgba(0,0,0,.2) transparent $primary;
+        border-color: rgba(0, 0, 0, 0.2) transparent $primary;
         border-style: solid;
         border-width: 0 0 7px 7px;
         position: absolute;
@@ -36,7 +36,7 @@ $flatpickr-tile-height: 45px;
       }
 
       &.selected:before {
-        border-color: rgba(0,0,0,.2) transparent $white;
+        border-color: rgba(0, 0, 0, 0.2) transparent $white;
       }
 
       &:hover {
@@ -83,7 +83,7 @@ $flatpickr-tile-height: 45px;
     .flatpickr-monthDropdown-months {
       appearance: none;
     }
-    
+
     .flatpickr-monthDropdown-months,
     input.cur-year {
       font-weight: $font-weight-normal;

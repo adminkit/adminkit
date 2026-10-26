@@ -7,12 +7,12 @@ const FileManagerPlugin = require("filemanager-webpack-plugin");
 
 const opts = {
   rootDir: process.cwd(),
-  devBuild: process.env.NODE_ENV !== "production"
+  devBuild: process.env.NODE_ENV !== "production",
 };
 
 module.exports = {
   entry: {
-    app: "./src/js/app.js"
+    app: "./src/js/app.js",
   },
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   devtool:
@@ -21,7 +21,7 @@ module.exports = {
     path: Path.join(opts.rootDir, "dist"),
     pathinfo: opts.devBuild,
     filename: "js/[name].js",
-    chunkFilename: 'js/[name].js',
+    chunkFilename: "js/[name].js",
   },
   performance: { hints: false },
   optimization: {
@@ -29,38 +29,38 @@ module.exports = {
       new TerserPlugin({
         parallel: true,
         terserOptions: {
-          ecma: 5
-        }
+          ecma: 5,
+        },
       }),
-      new CssMinimizerPlugin({})
+      new CssMinimizerPlugin({}),
     ],
-    runtimeChunk: false
+    runtimeChunk: false,
   },
   plugins: [
     // Extract css files to seperate bundle
     new MiniCssExtractPlugin({
       filename: "css/app.css",
-      chunkFilename: "css/app.css"
+      chunkFilename: "css/app.css",
     }),
     // Copy fonts and images to dist
     new CopyWebpackPlugin({
       patterns: [
         { from: "src/fonts", to: "fonts" },
-        { from: "src/img", to: "img" }
-      ]
+        { from: "src/img", to: "img" },
+      ],
     }),
     // Copy dist folder to static
-    ...(process.env.NODE_ENV === "production")? [
-      new FileManagerPlugin({
-        events: {
-          onEnd: {
-            copy: [
-              { source: "./dist/", destination: "./static" }
-            ]
-          }
-        },
-      })
-    ] : [],
+    ...(process.env.NODE_ENV === "production"
+      ? [
+          new FileManagerPlugin({
+            events: {
+              onEnd: {
+                copy: [{ source: "./dist/", destination: "./static" }],
+              },
+            },
+          }),
+        ]
+      : []),
   ],
   module: {
     rules: [
@@ -71,9 +71,9 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            cacheDirectory: true
-          }
-        }
+            cacheDirectory: true,
+          },
+        },
       },
       // Css-loader & sass-loader
       {
@@ -86,42 +86,48 @@ module.exports = {
             loader: "sass-loader",
             options: {
               sassOptions: {
-                silenceDeprecations: ["import", "color-functions", "global-builtin", "if-function", "legacy-js-api"]
-              }
-            }
-          }
-        ]
+                silenceDeprecations: [
+                  "import",
+                  "color-functions",
+                  "global-builtin",
+                  "if-function",
+                  "legacy-js-api",
+                ],
+              },
+            },
+          },
+        ],
       },
       // Load fonts
       {
         test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
         type: "asset/resource",
         generator: {
-          filename: "fonts/[name][ext]"
-        }
+          filename: "fonts/[name][ext]",
+        },
       },
       // Load images
       {
         test: /\.(png|jpg|jpeg|gif)(\?v=\d+\.\d+\.\d+)?$/,
         type: "asset/resource",
         generator: {
-          filename: "img/[name][ext]"
-        }
+          filename: "img/[name][ext]",
+        },
       },
-    ]
+    ],
   },
   resolve: {
     extensions: [".js", ".scss"],
     modules: ["node_modules"],
     alias: {
-      request$: "xhr"
-    }
+      request$: "xhr",
+    },
   },
   devServer: {
     static: {
-      directory: Path.join(__dirname, "static")
+      directory: Path.join(__dirname, "static"),
     },
     port: 8080,
-    open: true
-  }
+    open: true,
+  },
 };

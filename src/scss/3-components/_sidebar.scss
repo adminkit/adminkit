@@ -27,7 +27,7 @@ a.sidebar-link {
   display: block;
   padding: $sidebar-link-padding;
   font-weight: $sidebar-link-font-weight;
-  transition: background .1s ease-in-out;
+  transition: background 0.1s ease-in-out;
   position: relative;
   text-decoration: none;
   cursor: pointer;
@@ -39,7 +39,7 @@ a.sidebar-link {
 
   i,
   svg {
-    margin-right: .75rem;
+    margin-right: 0.75rem;
     color: $sidebar-link-icon-color;
   }
 }
@@ -105,7 +105,6 @@ a.sidebar-link {
   // Workaround for IE bug, more info:
   // https://stackoverflow.com/a/25850649
   @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
-
     // Sidebar default state (on mobile)
     margin-left: -$sidebar-width;
 

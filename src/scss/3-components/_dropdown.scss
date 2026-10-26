@@ -4,7 +4,7 @@
 
 .dropdown .dropdown-menu.show {
   animation-name: dropdownAnimation;
-  animation-duration: .25s;
+  animation-duration: 0.25s;
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
@@ -38,7 +38,7 @@
 }
 
 .dropdown-menu-lg {
-  min-width: $dropdown-min-width*2;
+  min-width: $dropdown-min-width * 2;
 }
 
 .dropdown .list-group .list-group-item {
@@ -57,14 +57,14 @@
 }
 
 .dropdown-menu-header {
-  padding: $spacer*0.75;
+  padding: $spacer * 0.75;
   text-align: center;
   font-weight: $font-weight-bold;
   border-bottom: 1px solid $gray-300;
 }
 
 .dropdown-menu-footer {
-  padding: $spacer*0.5;
+  padding: $spacer * 0.5;
   text-align: center;
   display: block;
   font-size: $font-size-sm;

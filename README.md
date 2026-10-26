@@ -20,26 +20,27 @@
 </p>
 
 ## Preview
+
 A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons. AdminKit **does not require jQuery** and neither does one of the 3rd party libraries AdminKit is using. [Open demo](https://demo.adminkit.io/).
 
 <a href="https://demo.adminkit.io" target="_blank"><img src="https://assets.adminkit.io/banners/github-1280%C3%97640px.png?2" alt="AdminKit Demo"></a>
 
 ## Features
 
-* **Customizable:** You don't need to be an expert to customize AdminKit. Our code is very readable and well documented.
-* **Fully Responsive:** With mobile, tablet & desktop support it doesn't matter what device you're using. AdminKit is responsive in all browsers.
-* **Cross-Browser:** Our themes are working perfectly with Chrome, Firefox, Safari, Opera, and Edge. We're working hard to support them.
-* **Clean Code:** We strictly follow Bootstrap's guidelines to make your integration as easy as possible. All code is handwritten.
-* **No jQuery:** AdminKit, and all third-party libraries used in the admin template, do not require jQuery as a dependency.
-* **Regular Updates:** From time to time you'll receive an update containing new components, improvements, and bugfixes.
+- **Customizable:** You don't need to be an expert to customize AdminKit. Our code is very readable and well documented.
+- **Fully Responsive:** With mobile, tablet & desktop support it doesn't matter what device you're using. AdminKit is responsive in all browsers.
+- **Cross-Browser:** Our themes are working perfectly with Chrome, Firefox, Safari, Opera, and Edge. We're working hard to support them.
+- **Clean Code:** We strictly follow Bootstrap's guidelines to make your integration as easy as possible. All code is handwritten.
+- **No jQuery:** AdminKit, and all third-party libraries used in the admin template, do not require jQuery as a dependency.
+- **Regular Updates:** From time to time you'll receive an update containing new components, improvements, and bugfixes.
 
 ## Quick start
 
 ### Download
 
-* Clone this repo `git clone https://github.com/adminkit/adminkit.git`
-* [Download from GitHub](https://github.com/adminkit/adminkit/archive/master.zip)
-* [Download from Website](https://adminkit.io/#download)
+- Clone this repo `git clone https://github.com/adminkit/adminkit.git`
+- [Download from GitHub](https://github.com/adminkit/adminkit/archive/master.zip)
+- [Download from Website](https://adminkit.io/#download)
 
 ### Build tools
 
@@ -70,7 +71,10 @@ All files included in the `@adminkit/core` npm package are available over a CDN.
 **CSS:**
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css"
+/>
 ```
 
 **Javascript:**
@@ -80,6 +84,7 @@ All files included in the `@adminkit/core` npm package are available over a CDN.
 ```
 
 ## File structure
+
 The package contains the following directories and files:
 
 ```
@@ -114,35 +119,36 @@ adminkit/
 ## Browser Support
 
 | <img src="https://assets.adminkit.io/browsers/edge.png" alt="Edge" width="24px" height="24px" /><br/>Edge | <img src="https://assets.adminkit.io/browsers/firefox.png" alt="Firefox" width="24px" height="24px" /><br/>Firefox | <img src="https://assets.adminkit.io/browsers/chrome.png" alt="Chrome" width="24px" height="24px" /><br/>Chrome | <img src="https://assets.adminkit.io/browsers/safari.png" alt="Safari" width="24px" height="24px" /><br/>Safari | <img src="https://assets.adminkit.io/browsers/safari-ios.png" alt="iOS Safari" width="24px" height="24px" /><br/>iOS Safari |
-| --------- | --------- | --------- | --------- | --------- |
-| last version| last 2 versions| last 2 versions| last 2 versions| last 2 versions
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| last version                                                                                              | last 2 versions                                                                                                    | last 2 versions                                                                                                 | last 2 versions                                                                                                 | last 2 versions                                                                                                             |
 
 ## Resources
 
-* [Demo](https://demo.adminkit.io/)
-* [Website](https://adminkit.io/)
-* [Documentation](https://adminkit.io/docs)
-* [Support](https://adminkit.io/support/)
-* [Affiliate Program](https://adminkit.io/affiliate-program)
+- [Demo](https://demo.adminkit.io/)
+- [Website](https://adminkit.io/)
+- [Documentation](https://adminkit.io/docs)
+- [Support](https://adminkit.io/support/)
+- [Affiliate Program](https://adminkit.io/affiliate-program)
 
 ## Bugs and feature requests
 
 Found a bug or have a feature request? [Please open a new issue](https://github.com/adminkit/adminkit/issues/new).
 
 ## Upgrade to PRO
+
 Get more power with AdminKit PRO, a premium variant of AdminKit, featuring hundreds of UI components, forms, tables, charts, pages, and icons.
 
-| Free Version        | [AdminKit PRO](https://adminkit.io/pricing/) |
-|---------------------|----------------------------------------------|
-| 15 Demo Pages       | ✔ 45+ Demo Pages                             |
-| 1 Plugin            | ✔ 10+ Plugins                                |
-| 1 Color Scheme      | ✔ 3 Color Schemes                            |
-|                     | ✔ All Bootstrap 5 Components                 |
-|                     | ✔ Dark Mode 🌙                               |
-|                     | ✔ Compact Sidebar                            |
-|                     | ✔ Calendar                                   |
-|                     | ✔ Advanced Forms                             |
-|                     | ✔ Drag and Drop                              |
-|                     | ✔ Toast Notifications                        |
-|                     | ✔ WYSIWYG Editors                            |
-|                     | ✔ Premium Support                            |
+| Free Version   | [AdminKit PRO](https://adminkit.io/pricing/) |
+| -------------- | -------------------------------------------- |
+| 15 Demo Pages  | ✔ 45+ Demo Pages                             |
+| 1 Plugin       | ✔ 10+ Plugins                                |
+| 1 Color Scheme | ✔ 3 Color Schemes                            |
+|                | ✔ All Bootstrap 5 Components                 |
+|                | ✔ Dark Mode 🌙                               |
+|                | ✔ Compact Sidebar                            |
+|                | ✔ Calendar                                   |
+|                | ✔ Advanced Forms                             |
+|                | ✔ Drag and Drop                              |
+|                | ✔ Toast Notifications                        |
+|                | ✔ WYSIWYG Editors                            |
+|                | ✔ Premium Support                            |

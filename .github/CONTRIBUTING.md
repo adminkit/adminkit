@@ -4,11 +4,11 @@ If you're reading this, you're awesome! Thank you for helping us make this proje
 
 ## Submitting a Pull Request
 
-* Include **screenshots** or animated GIFs in your pull request whenever possible
-* Use the **present** tense ("Add feature" not "Added feature")
-* Use the **imperative** mood ("Move cursor to..." not "Moves cursor to...")
-* Limit the first line to 72 characters or fewer
-* Reference issues and pull requests liberally
+- Include **screenshots** or animated GIFs in your pull request whenever possible
+- Use the **present** tense ("Add feature" not "Added feature")
+- Use the **imperative** mood ("Move cursor to..." not "Moves cursor to...")
+- Limit the first line to 72 characters or fewer
+- Reference issues and pull requests liberally
 
 ## Try your changes
 

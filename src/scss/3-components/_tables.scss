@@ -1,13 +1,18 @@
 .table {
-	thead, tbody, tfoot, tr, td, th {
-		border-color: $table-border-color;
-	}
-	
-	> :not(:last-child) > :last-child > * {
-		border-color: $table-border-color;
-	}
+  thead,
+  tbody,
+  tfoot,
+  tr,
+  td,
+  th {
+    border-color: $table-border-color;
+  }
+
+  > :not(:last-child) > :last-child > * {
+    border-color: $table-border-color;
+  }
 }
 
 .table > tbody > tr > td {
-	vertical-align: middle;
+  vertical-align: middle;
 }
