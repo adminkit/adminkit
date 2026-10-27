@@ -43,7 +43,7 @@
     "preview": "vite preview",
     "prepublishOnly": "npm run build",
     "prepare": "lefthook install",
-    "lint": "eslint . && prettier --check .",
+    "lint": "eslint . && prettier --check . && node scripts/check-icons.mjs",
     "format": "prettier --write .",
     "icons:list": "node scripts/generate-icon-list.mjs"
   },
