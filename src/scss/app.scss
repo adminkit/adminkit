@@ -1,9 +1,12 @@
+// Bootstrap's functions first: the variables use its contrast functions
+@import "bootstrap/scss/functions";
+@import "1-variables/functions";
+
 // Variables
 @import "1-variables/app";
 @import "1-variables/dark";
 
 // Bootstrap
-@import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
@@ -61,6 +64,7 @@
 
 // Theme utilities
 @import "4-utilities/cursors";
+@import "4-utilities/text";
 
 // 3rd party plugins
 @import "jsvectormap/dist/jsvectormap";

@@ -23,6 +23,13 @@ Free Bootstrap 5 admin template, published to npm as `@adminkit/core`.
 - `dist/` is the build output and is gitignored. Vercel builds it with `npm run build`.
 - `src/js/modules/vector-maps/` is vendored jsvectormap data and is excluded from ESLint and Prettier.
 
+## Accessibility
+
+- Target: WCAG 2.2 AA in light and dark mode, on every page including the sidebar and navbar: 4.5:1 for text, 3:1 for large text, icons and controls, no serious or critical axe violations.
+- Check with `@axe-core/playwright` on the built pages in both modes.
+- A new color that text or a control is drawn in must pass: use `ak-readable($color, $background)` (`src/scss/1-variables/_functions.scss`) and `$theme-text-colors` / `$theme-text-colors-dark` for theme colors as text; fills with white text must reach 4.5:1 (`ak-text-on()` picks white or dark text).
+- Icon-only links and buttons get an `aria-label`; links that act as buttons get `role="button"`; card titles are `h2.card-title` under the page's `h1`.
+
 ## Conventions
 
 - Commits follow Conventional Commits; see `CONTRIBUTING.md` for types, scopes and examples. lefthook enforces them.

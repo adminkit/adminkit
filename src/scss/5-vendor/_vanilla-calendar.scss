@@ -24,16 +24,8 @@ body {
   --vc-date-hover-edge-bg: var(--bs-gray-300);
   --vc-date-today-bg: transparent;
   --vc-date-today-color: var(--bs-gray-800);
-  --vc-date-today-outside-color: color-mix(
-    in srgb,
-    var(--bs-gray-800) 30%,
-    transparent
-  );
-  --vc-date-outside-color: color-mix(
-    in srgb,
-    var(--bs-gray-800) 30%,
-    transparent
-  );
+  --vc-date-today-outside-color: var(--bs-secondary-color);
+  --vc-date-outside-color: var(--bs-secondary-color);
   --vc-date-disabled-color: color-mix(
     in srgb,
     var(--bs-gray-800) 10%,
@@ -46,11 +38,7 @@ body {
   --vc-date-range-middle-bg: var(--bs-gray-200);
   --vc-date-range-middle-color: var(--bs-gray-800);
   --vc-date-range-middle-outside-bg: var(--bs-gray-200);
-  --vc-date-range-middle-outside-color: color-mix(
-    in srgb,
-    var(--bs-gray-800) 30%,
-    transparent
-  );
+  --vc-date-range-middle-outside-color: var(--bs-secondary-color);
   --vc-date-range-middle-weekend-bg: var(--bs-gray-200);
   --vc-date-range-middle-weekend-color: var(--bs-gray-800);
   --vc-date-weekend-color: var(--bs-gray-800);
@@ -58,11 +46,7 @@ body {
   --vc-date-weekend-hover-bg: var(--bs-gray-200);
   --vc-date-weekend-hover-edge-bg: var(--bs-gray-300);
   --vc-date-weekend-today-color: var(--bs-gray-800);
-  --vc-date-weekend-today-outside-color: color-mix(
-    in srgb,
-    var(--bs-gray-800) 30%,
-    transparent
-  );
+  --vc-date-weekend-today-outside-color: var(--bs-secondary-color);
   --vc-date-weekend-today-disabled-color: color-mix(
     in srgb,
     var(--bs-gray-800) 10%,
@@ -79,11 +63,7 @@ body {
     transparent
   );
   --vc-date-weekend-outside-bg: transparent;
-  --vc-date-weekend-outside-color: color-mix(
-    in srgb,
-    var(--bs-gray-800) 30%,
-    transparent
-  );
+  --vc-date-weekend-outside-color: var(--bs-secondary-color);
   --vc-date-weekend-outside-bg-hover: var(--bs-gray-200);
   --vc-date-weekend-outside-hover-bg: var(--bs-gray-200);
   --vc-date-weekend-selected-bg: #{$primary};

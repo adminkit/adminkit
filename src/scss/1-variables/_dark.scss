@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:map";
 
 // Dark color mode
 //
@@ -34,7 +35,8 @@ $grays-dark: (
 ) !default;
 
 // The theme colours that differ in dark mode; the others keep their light value
-$secondary-dark: $gray-400-dark !default;
+// Dark enough for white text on it; as text, see $theme-text-colors-dark
+$secondary-dark: ak-readable($gray-400-dark, #fff) !default;
 $light-dark: color.mix(#fff, $dark-theme-base, 5%) !default;
 $dark-dark: $gray-900-dark !default;
 
@@ -43,6 +45,20 @@ $theme-colors-dark: (
   "light": $light-dark,
   "dark": $dark-dark,
 ) !default;
+
+// Theme colours drawn as text, light enough for the dark surfaces
+$theme-text-colors-dark: () !default;
+
+@each $name, $value in map.merge($theme-colors, $theme-colors-dark) {
+  @if not map.has-key($theme-text-colors-dark, $name) {
+    $theme-text-colors-dark: map.merge(
+      $theme-text-colors-dark,
+      (
+        $name: ak-readable($value, $surface-bg-dark),
+      )
+    );
+  }
+}
 
 // Body
 $body-bg-dark: color.adjust($dark-theme-base, $lightness: -5%) !default;
@@ -57,10 +73,10 @@ $border-color-dark: $gray-200-dark !default;
 $border-color-translucent-dark: rgba(#fff, 0.175) !default;
 
 // Links, code and marks keep their light colours
-$link-color-dark: $primary !default;
-$link-hover-color-dark: color.mix(#000, $primary, 20%) !default;
-$code-color-dark: $pink !default;
-$mark-color-dark: $body-color-dark !default;
+$link-color-dark: ak-readable($primary, $surface-bg-dark) !default;
+$link-hover-color-dark: color.mix(#fff, $link-color-dark, 20%) !default;
+$code-color-dark: ak-readable($pink, $surface-bg-dark) !default;
+$mark-color-dark: $gray-900 !default;
 $mark-bg-dark: color.mix(#fff, $yellow, 80%) !default;
 
 // Theme colour text, backgrounds and borders, from the same formulas as in light mode
@@ -95,9 +111,9 @@ $dark-border-subtle-dark: $gray-500-dark !default;
 $form-select-indicator-color-dark: $gray-800-dark !default;
 $form-switch-color-dark: rgba(#fff, 0.5) !default;
 $form-check-input-border-color-dark: rgba(#fff, 0.5) !default;
-$form-valid-color-dark: $success !default;
+$form-valid-color-dark: map.get($theme-text-colors-dark, "success") !default;
 $form-valid-border-color-dark: $success !default;
-$form-invalid-color-dark: $danger !default;
+$form-invalid-color-dark: map.get($theme-text-colors-dark, "danger") !default;
 $form-invalid-border-color-dark: $danger !default;
 
 // Navbar

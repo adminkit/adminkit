@@ -1,0 +1,22 @@
+// Theme colour text reaches 4.5:1 on the page and surface backgrounds in both modes
+// ($theme-text-colors, $theme-text-colors-dark)
+@each $color, $value in $theme-text-colors {
+  @if $color != "light" and $color != "dark" {
+    .text-#{$color} {
+      color: rgba(#{to-rgb($value)}, var(--#{$prefix}text-opacity)) !important;
+    }
+  }
+}
+
+@include color-mode(dark) {
+  @each $color, $value in $theme-text-colors-dark {
+    @if $color != "light" and $color != "dark" {
+      .text-#{$color} {
+        color: rgba(
+          #{to-rgb($value)},
+          var(--#{$prefix}text-opacity)
+        ) !important;
+      }
+    }
+  }
+}

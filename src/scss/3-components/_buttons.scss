@@ -4,18 +4,40 @@
   height: 14px;
 }
 
+// White text, or dark text where white does not reach 4.5:1 on the colour (warning)
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
+    @include button-color(ak-text-on($value));
+    @include button-color-hover(ak-text-on($value));
+  }
+}
+
+// Outline buttons draw their label in the colour, as text on the surface
+@each $color, $value in $theme-text-colors {
+  @if $color != "light" and $color != "dark" {
+    .btn-outline-#{$color} {
+      --#{$prefix}btn-color: #{$value};
+    }
+  }
+}
+
+// Brand colours, darkened where white text does not reach 4.5:1 on them
+@each $color, $value in $social-colors {
+  $bg: ak-readable($value, $white);
+
+  .btn-#{$color} {
+    @include button-variant($bg, $bg);
     @include button-color($white);
     @include button-color-hover($white);
   }
 }
 
-@each $color, $value in $social-colors {
-  .btn-#{$color} {
-    @include button-variant($value, $value);
-    @include button-color($white);
-    @include button-color-hover($white);
+// Dark text on the badge colours where white does not reach 4.5:1 (warning)
+@each $color, $value in $theme-colors {
+  @if $color != "light" and ak-text-on($value) != #fff {
+    .badge.bg-#{$color} {
+      color: ak-text-on($value);
+    }
   }
 }
 
@@ -33,6 +55,14 @@
 
     .btn-outline-#{$color} {
       @include button-outline-variant($value);
+    }
+  }
+
+  @each $color, $value in $theme-text-colors-dark {
+    @if $color != "light" and $color != "dark" {
+      .btn-outline-#{$color} {
+        --#{$prefix}btn-color: #{$value};
+      }
     }
   }
 }

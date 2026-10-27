@@ -1,4 +1,5 @@
 @use "sass:color";
+@use "sass:map";
 
 // Fonts
 $font-family-sans-serif:
@@ -73,7 +74,7 @@ $container-max-widths: (
 $container-padding-x: 0.75rem !default;
 
 // Options
-$min-contrast-ratio: 3 !default;
+$min-contrast-ratio: 4.5 !default;
 $enable-validation-icons: false !default;
 $enable-rfs: false !default;
 $enable-negative-margins: true !default;
@@ -97,16 +98,16 @@ $transition-collapse-width: width var(--ak-duration-slow)
   var(--ak-ease-standard) !default;
 
 // Theme colors
-$blue: #3b7ddd !default;
+$blue: #266ed8 !default;
 $indigo: #0a0a0a !default;
 $purple: #6f42c1 !default;
 $pink: #e83e8c !default;
-$red: #dc3545 !default;
+$red: #da2839 !default;
 $orange: #fd7e14 !default;
 $yellow: #fcb92c !default;
-$green: #1cbb8c !default;
+$green: #138161 !default;
 $teal: #20c997 !default;
-$cyan: #17a2b8 !default;
+$cyan: #127d8e !default;
 
 $white: #fff !default;
 $gray-100: #f8f9fa !default;
@@ -114,7 +115,7 @@ $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: #6a737a !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
@@ -158,10 +159,29 @@ $social-colors: (
 // Body
 $body-bg: #f5f7fb !default;
 $body-color: $gray-700 !default;
+$body-secondary-color: $gray-600 !default;
 
 // Cards, dropdowns, inputs, the navbar and footer. Components use it as var(--ak-surface-bg),
 // which is $surface-bg-dark in dark mode.
 $surface-bg: $white !default;
+
+// Theme colours drawn as text (.text-*, outline buttons): the colour where it reaches 4.5:1
+// on the page background, a darker shade where it does not. Dark mode has
+// $theme-text-colors-dark.
+$theme-text-colors: () !default;
+
+@each $name, $value in $theme-colors {
+  @if not map.has-key($theme-text-colors, $name) {
+    $theme-text-colors: map.merge(
+      $theme-text-colors,
+      (
+        $name: ak-readable($value, $body-bg),
+      )
+    );
+  }
+}
+
+$code-color: ak-readable($pink, $body-bg) !default;
 
 // Links
 $link-decoration: none !default;
@@ -229,6 +249,8 @@ $navbar-bg: var(--ak-surface-bg) !default;
 $footer-bg: var(--ak-surface-bg) !default;
 
 // Forms
+// Stacked checks and radios 24px apart, the WCAG 2.2 target spacing
+$form-check-margin-bottom: 0.25rem !default;
 $input-bg: var(--ak-surface-bg) !default;
 $input-disabled-bg: var(--bs-secondary-bg) !default;
 $input-color: var(--bs-body-color) !default;
@@ -271,7 +293,7 @@ $card-shadow-hover: 0 0.5rem 1.5rem 0 rgba($dark, 0.1) !default;
 $card-hover-lift: -0.125rem !default;
 $card-title-font-size: $font-size-lg !default;
 $card-title-font-weight: $font-weight-bold !default;
-$card-title-color: color.adjust($gray-600, $lightness: 15%) !default;
+$card-title-color: $gray-600 !default;
 $card-spacer-y: 1.25rem !default;
 $card-spacer-x: 1.25rem !default;
 $card-cap-padding-y: 1rem !default;
@@ -311,7 +333,7 @@ $sidebar-header-color: $gray-400 !default;
 $sidebar-link-padding: 0.625rem 1.625rem !default;
 $sidebar-link-font-weight: 400 !default;
 $sidebar-link-bg: #222e3c !default;
-$sidebar-link-color: rgba($gray-200, 0.5) !default;
+$sidebar-link-color: rgba($gray-200, 0.6) !default;
 $sidebar-link-border-left-color: transparent !default;
 
 $sidebar-link-hover-font-weight: $font-weight-normal !default;

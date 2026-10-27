@@ -154,6 +154,10 @@ adminkit/
 
 `src/pages` holds one Handlebars template per page with YAML frontmatter; `src/layouts`, `src/partials` and `src/scripts` (inline page scripts) are the shared markup. `public/` is copied to `dist/` as it is.
 
+## Accessibility
+
+The template targets WCAG 2.2 AA in both color modes: 4.5:1 contrast for text, 3:1 for large text, icons and other controls, named controls and a logical heading order. Every page is checked in light and dark mode with axe (`@axe-core/playwright`), including the sidebar and navbar. New colors must pass too: derive text colors with `ak-readable($color, $background)` from `src/scss/1-variables/_functions.scss`, which darkens (or, on dark backgrounds, lightens) a color just enough, and use `$theme-text-colors` / `$theme-text-colors-dark` for theme colors drawn as text.
+
 ## Icons
 
 AdminKit uses [Lucide](https://lucide.dev/icons/) icons: `<i data-lucide="house"></i>` becomes an inline SVG when the page loads. `js/app.js` only bundles the icons the templates use, listed in `src/js/modules/icons.js`. To use another icon, import it there and add it to `icons`; `npm run lint` fails when a template uses an icon that is not bundled, or the list bundles one that no template uses. After adding icon markup at runtime, render it with `lucide.createIcons({ icons: lucide.icons })`.
