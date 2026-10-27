@@ -36,7 +36,7 @@ AdminKit PRO is the commercial edition, with more pages, dashboards and plugins,
 
 |                       | AdminKit      | [AdminKit PRO](https://adminkit.io/pricing/) |
 | --------------------- | ------------- | -------------------------------------------- |
-| Pages                 | 18            | 53                                           |
+| Pages                 | 20            | 53                                           |
 | Dashboards            | 1             | 5                                            |
 | Plugins               | 4             | 11                                           |
 | Icons                 | 1,908         | 4,071                                        |

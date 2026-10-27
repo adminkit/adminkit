@@ -1,0 +1,214 @@
+---
+name: pages-pricing
+title: Pricing
+layout: default.hbs
+active: { pages: true, pricing: true }
+meta_description: "Pricing page demo for the free AdminKit Bootstrap 5 admin template. Plan cards with monthly and annual billing tabs and a frequently asked questions section."
+---
+
+{{> site-title title=title badge="Get more page examples"}}
+
+<div class="row">
+  <div class="col-md-10 col-xl-8 mx-auto">
+    <div class="text-center">
+      <h2>We have a plan for everyone</h2>
+      <p class="lead mb-4">Whether you're a business or an individual: a 14-day trial, no credit card required.</p>
+    </div>
+
+    <div class="d-flex justify-content-center mt-3 mb-2">
+      <div class="btn-group" role="tablist" aria-label="Billing period">
+        <button type="button" class="btn btn-outline-primary active" id="monthly-tab" data-bs-toggle="tab" data-bs-target="#monthly" role="tab" aria-controls="monthly" aria-selected="true">Monthly billing</button>
+        <button type="button" class="btn btn-outline-primary" id="annual-tab" data-bs-toggle="tab" data-bs-target="#annual" role="tab" aria-controls="annual" aria-selected="false" tabindex="-1">Annual billing</button>
+      </div>
+    </div>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab" tabindex="0">
+        <h2 class="visually-hidden">Monthly plans</h2>
+        <div class="row g-3 py-4">
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-4">
+                  <h3 class="h5">Free</h3>
+                  <span class="display-4">$0</span>
+                  <p class="text-body-secondary mb-0">Free forever</p>
+                </div>
+                <h4 class="h6">Includes:</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">1 user</li>
+                  <li class="mb-2">5 projects</li>
+                  <li class="mb-2">5 GB storage</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="pages-sign-up.html" class="btn btn-lg btn-outline-primary">Sign up<span class="visually-hidden"> with Free</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-4">
+                  <h3 class="h5">Standard</h3>
+                  <span class="display-4">$19</span>
+                  <span class="text-body-secondary">/mo</span>
+                  <p class="text-body-secondary mb-0">Billed monthly</p>
+                </div>
+                <h4 class="h6">Includes:</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">5 users</li>
+                  <li class="mb-2">50 projects</li>
+                  <li class="mb-2">50 GB storage</li>
+                  <li class="mb-2">Security policy</li>
+                  <li class="mb-2">Weekly backups</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="pages-sign-up.html" class="btn btn-lg btn-primary">Start free trial<span class="visually-hidden"> with Standard</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-4">
+                  <h3 class="h5">Plus</h3>
+                  <span class="display-4">$39</span>
+                  <span class="text-body-secondary">/mo</span>
+                  <p class="text-body-secondary mb-0">Billed monthly</p>
+                </div>
+                <h4 class="h6">Includes:</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">Unlimited users</li>
+                  <li class="mb-2">Unlimited projects</li>
+                  <li class="mb-2">250 GB storage</li>
+                  <li class="mb-2">Priority support</li>
+                  <li class="mb-2">Security policy</li>
+                  <li class="mb-2">Daily backups</li>
+                  <li class="mb-2">Custom CSS</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="pages-sign-up.html" class="btn btn-lg btn-outline-primary">Start free trial<span class="visually-hidden"> with Plus</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="annual" role="tabpanel" aria-labelledby="annual-tab" tabindex="0">
+        <h2 class="visually-hidden">Annual plans</h2>
+        <div class="row g-3 py-4">
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-4">
+                  <h3 class="h5">Free</h3>
+                  <span class="display-4">$0</span>
+                  <p class="text-body-secondary mb-0">Free forever</p>
+                </div>
+                <h4 class="h6">Includes:</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">1 user</li>
+                  <li class="mb-2">5 projects</li>
+                  <li class="mb-2">5 GB storage</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="pages-sign-up.html" class="btn btn-lg btn-outline-primary">Sign up<span class="visually-hidden"> with Free</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-4">
+                  <h3 class="h5">Standard</h3>
+                  <span class="display-4">$190</span>
+                  <span class="text-body-secondary">/yr</span>
+                  <p class="text-body-secondary mb-0">$15.83 a month, billed yearly</p>
+                </div>
+                <h4 class="h6">Includes:</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">5 users</li>
+                  <li class="mb-2">50 projects</li>
+                  <li class="mb-2">50 GB storage</li>
+                  <li class="mb-2">Security policy</li>
+                  <li class="mb-2">Weekly backups</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="pages-sign-up.html" class="btn btn-lg btn-primary">Start free trial<span class="visually-hidden"> with Standard</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center h-100">
+              <div class="card-body d-flex flex-column">
+                <div class="mb-4">
+                  <h3 class="h5">Plus</h3>
+                  <span class="display-4">$390</span>
+                  <span class="text-body-secondary">/yr</span>
+                  <p class="text-body-secondary mb-0">$32.50 a month, billed yearly</p>
+                </div>
+                <h4 class="h6">Includes:</h4>
+                <ul class="list-unstyled">
+                  <li class="mb-2">Unlimited users</li>
+                  <li class="mb-2">Unlimited projects</li>
+                  <li class="mb-2">250 GB storage</li>
+                  <li class="mb-2">Priority support</li>
+                  <li class="mb-2">Security policy</li>
+                  <li class="mb-2">Daily backups</li>
+                  <li class="mb-2">Custom CSS</li>
+                </ul>
+                <div class="mt-auto">
+                  <a href="pages-sign-up.html" class="btn btn-lg btn-outline-primary">Start free trial<span class="visually-hidden"> with Plus</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="text-center my-4">
+      <h2>Frequently asked questions</h2>
+    </div>
+    <div class="row g-3">
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h6 card-title">Do I need a credit card to sign up?</h3>
+            <p class="mb-0">No. The Free plan and the 14-day trials of Standard and Plus start without one; you add a payment method only when you keep a paid plan.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h6 card-title">Do you offer a free trial?</h3>
+            <p class="mb-0">Yes. Standard and Plus come with a 14-day trial with every feature of the plan. At the end of the trial you choose a plan or stay on Free.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h6 card-title">What if I decide to cancel my plan?</h3>
+            <p class="mb-0">Your workspace moves to the Free plan at the end of the billing period. Your projects stay, and you can export them at any time.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="h6 card-title">Can I switch between monthly and annual billing?</h3>
+            <p class="mb-0">Yes, from the billing settings. Switching to annual billing takes effect immediately and credits the rest of your current month.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

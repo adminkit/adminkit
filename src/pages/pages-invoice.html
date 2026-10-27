@@ -1,0 +1,117 @@
+---
+name: pages-invoice
+title: Invoice
+layout: default.hbs
+active: { pages: true, invoice: true }
+meta_description: "Invoice page demo for the free AdminKit Bootstrap 5 admin template. A payment receipt with billing details, line items and totals that prints without the sidebar and navbar."
+---
+
+{{> site-title title=title badge="Get more page examples"}}
+
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body m-sm-3 m-md-5">
+        <h2 class="visually-hidden">Receipt 2026-0148</h2>
+        <p class="mb-4">
+          Hello <strong>Charles Hall</strong>,
+          <br />
+          This is the receipt for a payment of <strong>$308.75</strong> (USD) you made to AdminKit.
+        </p>
+
+        <div class="row">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <div class="text-body-secondary">Receipt No.</div>
+            <strong>2026-0148</strong>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="text-body-secondary">Payment Date</div>
+            <strong><time datetime="2026-10-14T15:45">October 14, 2026, 3:45 PM</time></strong>
+          </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <div class="row mb-4">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <div class="text-body-secondary">Client</div>
+            <strong>Charles Hall</strong>
+            <address class="mb-0">
+              4183 Forest Avenue<br />
+              New York, NY 10011<br />
+              USA<br />
+              <a href="mailto:charles.hall@example.com">charles.hall@example.com</a>
+            </address>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <div class="text-body-secondary">Payment To</div>
+            <strong>AdminKit LLC</strong>
+            <address class="mb-0">
+              354 Roy Alley<br />
+              Denver, CO 80202<br />
+              USA<br />
+              <a href="mailto:billing@example.com">billing@example.com</a>
+            </address>
+          </div>
+        </div>
+
+        <table class="table table-sm">
+          <caption class="visually-hidden">Items paid with receipt 2026-0148</caption>
+          <thead>
+            <tr>
+              <th scope="col">Description</th>
+              <th scope="col" class="text-end">Qty</th>
+              <th scope="col" class="text-end">Unit price</th>
+              <th scope="col" class="text-end">Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Theme customization (hours)</td>
+              <td class="text-end">2</td>
+              <td class="text-end">$75.00</td>
+              <td class="text-end">$150.00</td>
+            </tr>
+            <tr>
+              <td>Monthly subscription</td>
+              <td class="text-end">3</td>
+              <td class="text-end">$25.00</td>
+              <td class="text-end">$75.00</td>
+            </tr>
+            <tr>
+              <td>Onboarding session</td>
+              <td class="text-end">1</td>
+              <td class="text-end">$100.00</td>
+              <td class="text-end">$100.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="3" class="text-end fw-normal">Subtotal</th>
+              <td class="text-end">$325.00</td>
+            </tr>
+            <tr>
+              <th scope="row" colspan="3" class="text-end fw-normal">Discount (5%)</th>
+              <td class="text-end">&minus;$16.25</td>
+            </tr>
+            <tr>
+              <th scope="row" colspan="3" class="text-end">Total paid</th>
+              <td class="text-end fw-bold">$308.75</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <div class="text-center">
+          <p>
+            <strong>Note:</strong>
+            Paid by Visa ending in 4242. Thank you for your business.
+          </p>
+
+          <button type="button" class="btn btn-primary d-print-none" data-print>
+            Print this receipt
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
