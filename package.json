@@ -69,9 +69,9 @@
   "devDependencies": {
     "@commitlint/cli": "21.2.4",
     "@commitlint/config-conventional": "21.2.4",
-    "@eslint/js": "9.39.5",
-    "autoprefixer": "10.5.4",
-    "eslint": "9.39.5",
+    "@eslint/js": "10.0.1",
+    "autoprefixer": "10.6.2",
+    "eslint": "10.13.0",
     "globals": "17.13.0",
     "gray-matter": "4.0.3",
     "handlebars": "4.7.10",
