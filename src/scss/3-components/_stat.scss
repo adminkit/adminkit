@@ -7,7 +7,8 @@
   justify-content: center;
   display: flex;
 
-  svg {
+  svg,
+  i[data-lucide] {
     width: 18px;
     height: 18px;
     color: $stat-icon-color !important;

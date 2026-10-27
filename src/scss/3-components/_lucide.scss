@@ -4,6 +4,15 @@
   stroke-width: 2;
 }
 
+// <i data-lucide> stands in for the icon until js/app.js renders it. It takes the size the
+// SVG will have (the rules that size .lucide or svg in a component list it too), so the
+// layout does not move when the icons appear. :where() keeps .lucide-sm and -lg ahead.
+:where(i[data-lucide]) {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
 .lucide-sm {
   width: 14px;
   height: 14px;

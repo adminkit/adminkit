@@ -38,7 +38,8 @@
   display: block;
 
   svg,
-  .lucide {
+  .lucide,
+  i[data-lucide] {
     color: $navbar-brand-icon-color;
     height: 24px;
     width: 24px;
@@ -67,7 +68,8 @@
   }
 
   svg,
-  .lucide {
+  .lucide,
+  i[data-lucide] {
     width: 20px;
     height: 20px;
   }
