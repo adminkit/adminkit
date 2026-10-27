@@ -43,9 +43,11 @@
     "preview": "vite preview",
     "prepublishOnly": "npm run build",
     "prepare": "lefthook install",
-    "lint": "eslint . && prettier --check . && node scripts/check-icons.mjs",
+    "lint": "eslint . && prettier --check . && node scripts/check-icons.mjs && node scripts/stats.mjs --check",
     "format": "prettier --write .",
-    "icons:list": "node scripts/generate-icon-list.mjs"
+    "icons:list": "node scripts/generate-icon-list.mjs",
+    "stats": "node scripts/stats.mjs",
+    "stats:sync": "node scripts/stats.mjs --sync"
   },
   "browserslist": [
     "Chrome >= 111",
@@ -80,5 +82,8 @@
     "sass": "1.106.1",
     "vite": "8.3.5",
     "vite-plugin-handlebars": "2.0.3"
+  },
+  "adminkit": {
+    "edition": "free"
   }
 }

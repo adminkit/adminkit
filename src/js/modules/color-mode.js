@@ -1,9 +1,11 @@
 // Light, dark or auto (follows the operating system) colour mode. The mode is
 // data-bs-theme on <html>; the inline script in the page <head> sets it from localStorage
 // before the first paint, so this module only changes it afterwards.
+import appearance from "../../data/appearance.json" with { type: "json" };
 
 const storageKey = "adminkit_config_colorMode";
-const colorModes = ["light", "dark", "auto"];
+// src/data/appearance.json lists the modes css/app.css has; scripts/stats.mjs counts them
+const colorModes = [...appearance.colorModes, "auto"];
 const systemDark = window.matchMedia("(prefers-color-scheme: dark)");
 
 export const getStoredColorMode = () => {
