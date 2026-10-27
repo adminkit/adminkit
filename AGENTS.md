@@ -56,3 +56,4 @@ Free Bootstrap 5 admin template, published to npm as `@adminkit/core`.
 
 - Commits follow Conventional Commits; see `CONTRIBUTING.md` for types, scopes and examples. lefthook enforces them.
 - A PR that changes behaviour adds a line under `Unreleased` in `CHANGELOG.md`. Add it, or ask before opening the PR.
+- Changelog lines are short, imperative and user-facing, like the released entries: "Add pricing page (/pages-pricing.html)", "Replace Feather icons with Lucide", "Upgrade to Chart.js v4", "Upgrade dependencies". One line per change a template user would notice. No internal tooling (lint, CI, hooks, scripts), no explanations, no implementation details. Notable dependency majors get "Upgrade to X vN"; everything else is "Upgrade dependencies".

@@ -46,4 +46,4 @@ Page, plugin and icon counts are generated, never typed: `npm run stats` updates
 
 ## Changelog
 
-A PR that changes behaviour adds a line under `Unreleased` in `CHANGELOG.md`. The file follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Pure refactors, formatting and tooling changes that users never notice don't need an entry.
+A PR that changes behaviour adds a line under `Unreleased` in `CHANGELOG.md`. The file follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Pure refactors, formatting and tooling changes that users never notice don't need an entry. Keep each line short, imperative and user-facing, like the released entries ("Add pricing page (/pages-pricing.html)", "Upgrade to Bootstrap v5.3.8"); one line per change a template user would notice, no internal tooling and no explanations. Notable dependency majors get "Upgrade to X vN", the rest "Upgrade dependencies".
