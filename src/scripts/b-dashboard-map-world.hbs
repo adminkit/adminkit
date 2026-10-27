@@ -13,24 +13,32 @@
       { coords: [40.416775, -3.703790], name: "Madrid "}
     ];
 
-    var map = new jsVectorMap({
-      map: "world",
-      selector: "#world_map",
-      zoomButtons: true,
-      markers: markers,
-      markerStyle: {
-        initial: {
-          r: 9,
-          strokeWidth: 7,
-          stokeOpacity: .4,
-          fill: window.theme.primary
+    var map = adminkit.vectorMap(function(theme) {
+      return {
+        map: "world",
+        selector: "#world_map",
+        zoomButtons: true,
+        markers: markers,
+        markerStyle: {
+          initial: {
+            r: 9,
+            stroke: theme.white,
+            strokeWidth: 7,
+            stokeOpacity: .4,
+            fill: theme.primary
+          },
+          hover: {
+            fill: theme.primary,
+            stroke: theme.primary
+          }
         },
-        hover: {
-          fill: window.theme.primary,
-          stroke: window.theme.primary
-        }
-      },
-      zoomOnScroll: false
+        regionStyle: {
+          initial: {
+            fill: theme["gray-300"]
+          }
+        },
+        zoomOnScroll: false
+      };
     });
 
     window.addEventListener("resize", () => {

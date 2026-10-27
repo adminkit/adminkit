@@ -1,61 +1,63 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     // Bar chart
-    new Chart(document.getElementById("chartjs-bar"), {
-      type: "bar",
-      data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [{
-          label: "Last year",
-          backgroundColor: window.theme.{{theme.[0].name}},
-          borderColor: window.theme.{{theme.[0].name}},
-          hoverBackgroundColor: window.theme.{{theme.[0].name}},
-          hoverBorderColor: window.theme.{{theme.[0].name}},
-          data: [54,67,41,55,62,45,55,73,60,76,48,79],
-          barPercentage: .75,
-          categoryPercentage: .5
-        }, {
-          label: "This year",
-          backgroundColor: "#dee2e6",
-          borderColor: "#dee2e6",
-          hoverBackgroundColor: "#dee2e6",
-          hoverBorderColor: "#dee2e6",
-          data: [69,66,24,48,52,51,44,53,62,79,51,68],
-          barPercentage: .75,
-          categoryPercentage: .5
-        }]
-      },
-      options: {
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false
-          }
+    adminkit.chartjs("#chartjs-bar", function(theme) {
+      return {
+        type: "bar",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [{
+            label: "Last year",
+            backgroundColor: theme.{{theme.[0].name}},
+            borderColor: theme.{{theme.[0].name}},
+            hoverBackgroundColor: theme.{{theme.[0].name}},
+            hoverBorderColor: theme.{{theme.[0].name}},
+            data: [54,67,41,55,62,45,55,73,60,76,48,79],
+            barPercentage: .75,
+            categoryPercentage: .5
+          }, {
+            label: "This year",
+            backgroundColor: "#dee2e6",
+            borderColor: "#dee2e6",
+            hoverBackgroundColor: "#dee2e6",
+            hoverBorderColor: "#dee2e6",
+            data: [69,66,24,48,52,51,44,53,62,79,51,68],
+            barPercentage: .75,
+            categoryPercentage: .5
+          }]
         },
-        scales: {
-          y: {
-            grid: {
+        options: {
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
               display: false
-            },
-            border: {
-              display: false
-            },
-            stacked: false,
-            ticks: {
-              stepSize: 20
             }
           },
-          x: {
-            stacked: false,
-            grid: {
-              color: "transparent"
+          scales: {
+            y: {
+              grid: {
+                display: false
+              },
+              border: {
+                display: false
+              },
+              stacked: false,
+              ticks: {
+                stepSize: 20
+              }
             },
-            border: {
-              display: false
+            x: {
+              stacked: false,
+              grid: {
+                color: "transparent"
+              },
+              border: {
+                display: false
+              }
             }
           }
         }
-      }
+      };
     });
   });
 </script>

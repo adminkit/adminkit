@@ -1,74 +1,78 @@
-
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-
     var ctx = document.getElementById("chartjs-dashboard-line").getContext("2d");
 
-    var gradient = ctx.createLinearGradient(0, 0, 0, 225);
-
-    gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
-    gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
-
     // Line chart
-    new Chart(document.getElementById("chartjs-dashboard-line"), {
-      type: "line",
-      data: {
-        labels: ["Jan", "Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
-        datasets: [
-          {
-            label: "Sales ($)",
-            fill: true,
-            backgroundColor: gradient,
-            borderColor: window.theme.primary,
-            data: [
-              2115,
-              1562,
-              1584,
-              1892,
-              1587,
-              1923,
-              2566,
-              2448,
-              2805,
-              3438,
-              2917,
-              3327
-            ]
-          }
-        ]
-      },
-      options: {
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false
-          },
-          tooltip: {
-            intersect: false
-          },
-          filler: {
-            propagate: false
-          }
+    adminkit.chartjs("#chartjs-dashboard-line", function(theme) {
+      var gradient = ctx.createLinearGradient(0, 0, 0, 225);
+      if (theme.id === "light") {
+        gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
+        gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
+      } else {
+        gradient.addColorStop(0, "rgba(51, 66, 84, 1)");
+        gradient.addColorStop(1, "rgba(51, 66, 84, 0)");
+      }
+
+      return {
+        type: "line",
+        data: {
+          labels: ["Jan", "Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+          datasets: [
+            {
+              label: "Sales ($)",
+              fill: true,
+              backgroundColor: gradient,
+              borderColor: theme.primary,
+              data: [
+                2115,
+                1562,
+                1584,
+                1892,
+                1587,
+                1923,
+                2566,
+                2448,
+                2805,
+                3438,
+                2917,
+                3327
+              ]
+            }
+          ]
         },
-        scales: {
-          x: {
-            grid: {
-              color: "transparent"
-            },
-            border: {
+        options: {
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
               display: false
+            },
+            tooltip: {
+              intersect: false
+            },
+            filler: {
+              propagate: false
             }
           },
-          y: {
-            ticks: {
-              stepSize: 1000
+          scales: {
+            x: {
+              grid: {
+                color: "transparent"
+              },
+              border: {
+                display: false
+              }
             },
-            grid: {
-              color: "transparent"
+            y: {
+              ticks: {
+                stepSize: 1000
+              },
+              grid: {
+                color: "transparent"
+              }
             }
           }
         }
-      }
+      };
     });
   });
 </script>

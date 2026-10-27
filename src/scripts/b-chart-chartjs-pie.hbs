@@ -1,29 +1,31 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     // Pie chart
-    new Chart(document.getElementById("chartjs-pie"), {
-      type: "pie",
-      data: {
-        labels: ["Social", "Search Engines", "Direct", "Other"],
-        datasets: [{
-          data: [260, 125, 54, 146],
-          backgroundColor: [
-            window.theme.{{theme.[0].name}},
-            window.theme.{{theme.[4].name}},
-            window.theme.{{theme.[3].name}},
-            "#dee2e6"
-          ],
-          borderColor: "transparent"
-        }]
-      },
-      options: {
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false
+    adminkit.chartjs("#chartjs-pie", function(theme) {
+      return {
+        type: "pie",
+        data: {
+          labels: ["Social", "Search Engines", "Direct", "Other"],
+          datasets: [{
+            data: [260, 125, 54, 146],
+            backgroundColor: [
+              theme.{{theme.[0].name}},
+              theme.{{theme.[4].name}},
+              theme.{{theme.[3].name}},
+              "#dee2e6"
+            ],
+            borderColor: "transparent"
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
           }
         }
-      }
+      };
     });
   });
 </script>

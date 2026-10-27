@@ -1,52 +1,54 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     // Bar chart
-    new Chart(document.getElementById("chartjs-dashboard-bar"), {
-      type: "bar",
-      data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        datasets: [{
-          label: "This year",
-          backgroundColor: window.theme.primary,
-          borderColor: window.theme.primary,
-          hoverBackgroundColor: window.theme.primary,
-          hoverBorderColor: window.theme.primary,
-          data: [54,67,41,55,62,45,55,73,60,76,48,79],
-          barPercentage: .75,
-          categoryPercentage: .5
-        }]
-      },
-      options: {
-        maintainAspectRatio: false,
-        plugins: {
-          legend: {
-            display: false
-          }
+    adminkit.chartjs("#chartjs-dashboard-bar", function(theme) {
+      return {
+        type: "bar",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [{
+            label: "This year",
+            backgroundColor: theme.primary,
+            borderColor: theme.primary,
+            hoverBackgroundColor: theme.primary,
+            hoverBorderColor: theme.primary,
+            data: [54,67,41,55,62,45,55,73,60,76,48,79],
+            barPercentage: .75,
+            categoryPercentage: .5
+          }]
         },
-        scales: {
-          y: {
-            grid: {
+        options: {
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
               display: false
-            },
-            border: {
-              display: false
-            },
-            stacked: false,
-            ticks: {
-              stepSize: 20
             }
           },
-          x: {
-            stacked: false,
-            grid: {
-              color: "transparent"
+          scales: {
+            y: {
+              grid: {
+                display: false
+              },
+              border: {
+                display: false
+              },
+              stacked: false,
+              ticks: {
+                stepSize: 20
+              }
             },
-            border: {
-              display: false
+            x: {
+              stacked: false,
+              grid: {
+                color: "transparent"
+              },
+              border: {
+                display: false
+              }
             }
           }
         }
-      }
+      };
     });
   });
 </script>
