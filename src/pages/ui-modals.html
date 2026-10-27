@@ -1,0 +1,152 @@
+---
+name: ui-modals
+title: Modals
+layout: default.hbs
+active: { ui: true, modals: true }
+sizes: { small: sm, medium: md, large: lg }
+meta_description: "Bootstrap modal demo for the free AdminKit template. Default, colored, centered and sized dialogs for your dashboard."
+---
+
+{{> site-title title=title badge="Get more component examples"}}
+
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Default modal</h2>
+        <p class="h6 card-subtitle text-body-secondary">Default Bootstrap modal.</p>
+      </div>
+      <div class="card-body text-center">
+        <p>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+
+        {{#each (slice (splice theme "secondary") 0 4)}}
+            <button type="button" class="btn btn-{{this.name}}" data-bs-toggle="modal" data-bs-target="#defaultModal{{capitalize this.name}}">
+              {{capitalize this.name}}
+            </button>
+            <div class="modal fade" id="defaultModal{{capitalize this.name}}" tabindex="-1" aria-labelledby="defaultModal{{capitalize this.name}}Label" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title h5" id="defaultModal{{capitalize this.name}}Label">Default modal</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body m-3">
+                    <p class="mb-0">Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-{{this.name}}">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Colored modal</h2>
+        <p class="h6 card-subtitle text-body-secondary">Colored Bootstrap modal.</p>
+      </div>
+      <div class="card-body text-center">
+        <p>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+
+        {{#each (slice (splice theme "secondary") 0 4)}}
+            <button type="button" class="btn btn-{{this.name}}" data-bs-toggle="modal" data-bs-target="#coloredModal{{capitalize this.name}}">
+              {{capitalize this.name}}
+            </button>
+            <div class="modal modal-colored modal-{{this.name}} fade" id="coloredModal{{capitalize this.name}}" tabindex="-1" aria-labelledby="coloredModal{{capitalize this.name}}Label" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title h5" id="coloredModal{{capitalize this.name}}Label">Colored modal</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body m-3">
+                    <p class="mb-0">Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-light">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Centered modal</h2>
+        <p class="h6 card-subtitle text-body-secondary">Vertically centered modal.</p>
+      </div>
+      <div class="card-body text-center">
+        <p>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+
+        {{#each (slice (splice theme "secondary") 0 4)}}
+            <button type="button" class="btn btn-{{this.name}}" data-bs-toggle="modal" data-bs-target="#centeredModal{{capitalize this.name}}">
+              {{capitalize this.name}}
+            </button>
+            <div class="modal fade" id="centeredModal{{capitalize this.name}}" tabindex="-1" aria-labelledby="centeredModal{{capitalize this.name}}Label" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title h5" id="centeredModal{{capitalize this.name}}Label">Centered modal</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body m-3">
+                    <p class="mb-0">Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-{{this.name}}">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Modal sizes</h2>
+        <p class="h6 card-subtitle text-body-secondary">These sizes kick in at certain breakpoints to avoid scrollbars on smaller viewports.</p>
+      </div>
+      <div class="card-body text-center">
+        <p>Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+
+        {{#each sizes}}
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sizedModal{{capitalize this}}">
+              {{capitalize @key}}
+            </button>
+            <div class="modal fade" id="sizedModal{{capitalize this}}" tabindex="-1" aria-labelledby="sizedModal{{capitalize this}}Label" aria-hidden="true">
+              <div class="modal-dialog modal-{{this}}">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title h5" id="sizedModal{{capitalize this}}Label">{{capitalize @key}} modal</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body m-3">
+                    <p class="mb-0">Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, user notifications, or completely custom content.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</div>

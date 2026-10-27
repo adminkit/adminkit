@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Clickable cards (`a.card`, cards with a `.stretched-link`) lift on hover and keyboard focus
 - Everything animated respects `prefers-reduced-motion: reduce`: no movement, at most a fade; charts draw without their entrance animation
 - WCAG 2.2 AA in both color modes, checked with axe on every page; `ak-readable()` and `$theme-text-colors`/`$theme-text-colors-dark` keep text colors readable
+- 404 and 500 error pages, an Alerts page (default, icon, outline and colored outline alerts), a Modals page (default, colored, centered and sized dialogs) and a Tables page (basic, striped, condensed, hoverable, bordered, contextual and responsive tables), ported from AdminKit PRO and linked from the sidebar; `css/app.css` now holds Bootstrap's alert and modal styles with the `.alert-outline`, `.alert-outline-coloured`, `.alert-icon` and `.modal-colored` variants
 
 ### Changed
 
@@ -47,6 +48,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Components take their mode-dependent colors from custom properties: `--bs-gray-*` (which turn around in dark mode) and `--ak-surface-bg`
 - Build `window.theme` from the CSS custom properties of the current color mode; it keeps its keys, adds `id`, `name`, `body-bg`, `body-color` and `border-color`, and `document` fires `adminkit:themechange` when the mode changes
 - Create the charts and the world map with `adminkit.chartjs()` and `adminkit.vectorMap()`, which recolor them when the color mode changes; the dashboard calendar follows the mode too
+- Tables placed directly in a card line up with the card padding, and `.table-action` styles the edit and delete links in a table
 
 ### Removed
 

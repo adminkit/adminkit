@@ -14,12 +14,14 @@
 [data-bs-theme="light"] {
   --ak-surface-bg: #{$surface-bg};
   --ak-surface-bg-rgb: #{to-rgb($surface-bg)};
+  --ak-alert-color: #{$alert-color};
   --ak-form-check-input-border-color: var(--#{$prefix}border-color);
 }
 
 @include color-mode(dark, true) {
   --ak-surface-bg: #{$surface-bg-dark};
   --ak-surface-bg-rgb: #{to-rgb($surface-bg-dark)};
+  --ak-alert-color: #{$alert-color-dark};
   --ak-form-check-input-border-color: #{$form-check-input-border-color-dark};
 
   --#{$prefix}gray: #{$gray-600-dark};

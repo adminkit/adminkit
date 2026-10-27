@@ -248,6 +248,13 @@ $navbar-bg: var(--ak-surface-bg) !default;
 // Footer
 $footer-bg: var(--ak-surface-bg) !default;
 
+// Alerts
+$alert-padding-y: 0.95rem !default;
+$alert-padding-x: 0.95rem !default;
+$alert-border-width: 0 !default;
+$alert-color: $dark !default;
+$alert-bg-scale: -80% !default;
+
 // Forms
 // Stacked checks and radios 24px apart, the WCAG 2.2 target spacing
 $form-check-margin-bottom: 0.25rem !default;
@@ -383,6 +390,7 @@ $modal-lg: 900px !default;
 $modal-md: 600px !default;
 $modal-sm: 400px !default;
 $modal-transition: transform var(--ak-duration-base) var(--ak-ease-emphasized) !default;
+$modal-content-bg: var(--ak-surface-bg) !default;
 
 // Badges
 $badge-font-size: 80% !default;
