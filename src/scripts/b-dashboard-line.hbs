@@ -19,24 +19,11 @@
           labels: ["Jan", "Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
           datasets: [
             {
-              label: "Sales ($)",
+              label: "Visitors",
               fill: true,
               backgroundColor: gradient,
               borderColor: theme.primary,
-              data: [
-                2115,
-                1562,
-                1584,
-                1892,
-                1587,
-                1923,
-                2566,
-                2448,
-                2805,
-                3438,
-                2917,
-                3327
-              ]
+              data: [168400, 159200, 176900, 181300, 174800, 189600, 201200, 196500, 212800, 228400, 219700, 236100]
             }
           ]
         },
@@ -64,7 +51,7 @@
             },
             y: {
               ticks: {
-                stepSize: 1000
+                stepSize: 20000
               },
               grid: {
                 color: "transparent"

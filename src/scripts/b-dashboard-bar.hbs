@@ -5,14 +5,14 @@
       return {
         type: "bar",
         data: {
-          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          labels: ["Organic", "Direct", "Referral", "Social", "Email"],
           datasets: [{
-            label: "This year",
+            label: "Sessions",
             backgroundColor: theme.primary,
             borderColor: theme.primary,
             hoverBackgroundColor: theme.primary,
             hoverBorderColor: theme.primary,
-            data: [54,67,41,55,62,45,55,73,60,76,48,79],
+            data: [26480, 14120, 9310, 7560, 3840],
             barPercentage: .75,
             categoryPercentage: .5
           }]
@@ -34,7 +34,7 @@
               },
               stacked: false,
               ticks: {
-                stepSize: 20
+                stepSize: 10000
               }
             },
             x: {

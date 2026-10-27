@@ -25,11 +25,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- The dashboard (`index.html`) becomes the Analytics dashboard, also in the sidebar and the page title: visitors, page views, bounce rate and session duration, monthly visitors, traffic sources, real-time visitors and a top pages table replace the sales, earnings and orders widgets and the projects table, and the browser usage chart lists Edge instead of IE
 - Darken the theme colors to reach 4.5:1 contrast: primary `#266ed8` (was `#3b7ddd`), success `#138161`, info `#127d8e`, danger `#da2839`, gray-600/secondary `#6a737a`; warning keeps its yellow with dark text; card titles, secondary text and sidebar links follow
 - Bundle Inter from `@fontsource/inter` with `font-display: optional` (preloaded by the built pages) instead of loading it from Google Fonts; `dist/fonts` holds the files
 - Replace the deprecated `.text-muted` with `.text-body-secondary`
 - Card titles are `h2`, card subtitles paragraphs, so headings no longer skip levels; icon-only controls have accessible names, links that act as buttons have `role="button"`, and keyboard focus stays visible on the sidebar and navbar links
-- The dashboard projects table is dated 2026; the footer year and the `css/app.css` banner come from the build year and the `package.json` version
+- The footer year and the `css/app.css` banner come from the build year and the `package.json` version
 - Stat card numbers use `,` thousands separators
 - Require Node 24 (`.nvmrc`, `engines`)
 - Enforce Conventional Commits with commitlint and lefthook git hooks

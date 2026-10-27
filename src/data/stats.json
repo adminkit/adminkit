@@ -6,7 +6,7 @@
     "list": [
       { "file": "charts-chartjs.html", "title": "Chart.js" },
       { "file": "icons-lucide.html", "title": "Lucide" },
-      { "file": "index.html", "title": "Dashboard" },
+      { "file": "index.html", "title": "Analytics Dashboard" },
       { "file": "maps-google.html", "title": "Google Maps" },
       { "file": "pages-404.html", "title": "404" },
       { "file": "pages-500.html", "title": "500" },
@@ -26,7 +26,7 @@
   },
   "dashboards": {
     "count": 1,
-    "list": [{ "file": "index.html", "title": "Dashboard" }]
+    "list": [{ "file": "index.html", "title": "Analytics Dashboard" }]
   },
   "plugins": {
     "count": 4,

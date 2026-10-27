@@ -25,7 +25,7 @@ AdminKit is an admin and dashboard template built on Bootstrap 5, released under
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset=".github/screenshots/dashboard-dark.webp">
-  <img src=".github/screenshots/dashboard-light.webp" width="1600" height="1000" alt="The AdminKit dashboard: sales, visitors, earnings and orders, a line chart, a calendar, a world map and a projects table">
+  <img src=".github/screenshots/dashboard-light.webp" width="1600" height="1000" alt="The AdminKit Analytics dashboard: visitors, page views, bounce rate and session duration, monthly visitors, browser usage, a calendar, a real-time visitors map, top pages and traffic sources">
 </picture>
 
 ## AdminKit and AdminKit PRO
