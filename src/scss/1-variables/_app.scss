@@ -397,6 +397,16 @@ $badge-font-size: 80% !default;
 $badge-padding-y: 0.3em !default;
 $badge-padding-x: 0.45em !default;
 
+// Chevrons: dropdown carets (2-mixins/_chevron.scss)
+$chevron-padding: 2px !default;
+$chevron-border-width: 2px !default;
+
+// Inline carets centre on the text: Inter's cap height is 0.727em, so the middle of a capital
+// sits 0.3635em above the baseline, and the caret box rises to put its own middle there.
+$caret-vertical-align: calc(
+  0.3635em - #{$chevron-padding + $chevron-border-width * 0.5}
+) !default;
+
 // Dropdowns
 $dropdown-bg: var(--ak-surface-bg) !default;
 $dropdown-link-color: var(--bs-body-color) !default;
