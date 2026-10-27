@@ -22,17 +22,22 @@ export default function handlebarsPages({
     {
       name: "handlebars-pages",
       configureServer(server) {
-        // Layouts and partials live outside the Vite root, so watch them and reload on change
-        const directories = [layoutDirectory, ...partialDirectory];
+        // Layouts and partials live outside the Vite root, so watch them and reload when one
+        // changes, appears or disappears. vite-plugin-handlebars' own reload is switched off
+        // below: it compares un-normalised paths and misses on Windows, and would double up here.
+        const directories = [layoutDirectory, ...partialDirectory].map(
+          normalizePath
+        );
         server.watcher.add(directories);
-        server.watcher.on("change", (file) => {
+        const reload = (file) => {
           const changed = normalizePath(file);
-          if (
-            directories.some((dir) => changed.startsWith(normalizePath(dir)))
-          ) {
+          if (directories.some((dir) => changed.startsWith(dir))) {
             server.ws.send({ type: "full-reload" });
           }
-        });
+        };
+        server.watcher.on("change", reload);
+        server.watcher.on("add", reload);
+        server.watcher.on("unlink", reload);
       },
       transformIndexHtml: {
         order: "pre",
@@ -47,6 +52,7 @@ export default function handlebarsPages({
     },
     handlebars({
       partialDirectory: [layoutDirectory, ...partialDirectory],
+      reloadOnPartialChange: false,
       helpers,
       compileOptions,
       context: (pagePath) => ({ ...data, ...frontmatter.get(pagePath) }),

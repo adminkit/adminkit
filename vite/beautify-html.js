@@ -1,5 +1,5 @@
 // Formats the built pages the way the Metalsmith build did: tab indented, at most
-// one blank line in a row, inline scripts and styles left as written.
+// one blank line in a row. Inline scripts and styles are re-indented along with the markup.
 import beautify from "js-beautify";
 
 const options = {

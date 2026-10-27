@@ -14,17 +14,36 @@ const pages = Object.fromEntries(
     .map((file) => [basename(file, ".html"), src(`pages/${file}`)])
 );
 
+const bundles = {
+  app: src("js/app.js"),
+};
+
+for (const name of Object.keys(bundles)) {
+  if (name in pages) {
+    throw new Error(`src/pages/${name}.html clashes with the ${name} bundle`);
+  }
+}
+
 const assetDirectories = {
-  ".css": "css",
   ".woff": "fonts",
   ".woff2": "fonts",
   ".ttf": "fonts",
   ".eot": "fonts",
-  ".svg": "fonts",
+  ".svg": "img",
   ".png": "img",
   ".jpg": "img",
   ".jpeg": "img",
   ".gif": "img",
+};
+
+// The stylesheet keeps its name (templates and the npm package reference css/app.css);
+// fonts and images from different packages can share a basename, so they are hashed
+const assetFileName = ({ names: [name] }) => {
+  const extension = extname(name);
+  if (extension === ".css") {
+    return "css/[name][extname]";
+  }
+  return `${assetDirectories[extension] ?? "assets"}/[name]-[hash][extname]`;
 };
 
 export default defineConfig({
@@ -72,15 +91,11 @@ export default defineConfig({
     assetsInlineLimit: 0,
     modulePreload: { polyfill: false },
     rolldownOptions: {
-      input: {
-        ...pages,
-        app: src("js/app.js"),
-      },
+      input: { ...pages, ...bundles },
       output: {
         entryFileNames: "js/[name].js",
         chunkFileNames: "js/[name]-[hash].js",
-        assetFileNames: ({ names: [name] }) =>
-          `${assetDirectories[extname(name)] ?? "assets"}/[name][extname]`,
+        assetFileNames: assetFileName,
       },
     },
   },

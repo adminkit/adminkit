@@ -47,15 +47,11 @@
     "format": "prettier --write ."
   },
   "browserslist": [
-    ">= 0.5%",
-    "last 2 major versions",
-    "not dead",
-    "Chrome >= 60",
-    "Firefox >= 60",
-    "Firefox ESR",
-    "iOS >= 12",
-    "Safari >= 12",
-    "not Explorer <= 11"
+    "Chrome >= 111",
+    "Edge >= 111",
+    "Firefox >= 114",
+    "Safari >= 16.4",
+    "iOS >= 16.4"
   ],
   "dependencies": {
     "@popperjs/core": "2.11.8",

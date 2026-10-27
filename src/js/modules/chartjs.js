@@ -1,4 +1,6 @@
 // Usage: https://www.chartjs.org/
+// The theme colours this module reads are set by ./theme
+import "./theme";
 import Chart from "chart.js/auto";
 
 Chart.defaults.color = window.theme["gray-600"];
