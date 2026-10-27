@@ -64,7 +64,7 @@
     "feather-icons": "4.29.2",
     "flatpickr": "4.6.13",
     "jsvectormap": "1.7.0",
-    "simplebar": "5.3.9"
+    "simplebar": "6.3.3"
   },
   "devDependencies": {
     "@commitlint/cli": "21.2.4",
