@@ -19,6 +19,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Stop tracking the generated `static/` output; `npm run build` writes `dist/`, which Vercel, npm publishing and the GitHub release workflow build
 - Load `js/app.js` as an ES module (`<script type="module">`)
 - Attach a zip of the built template to GitHub releases on `v*` tags
+- Upgrade Chart.js to 4 and rewrite the chart configs for its options API; bars get rounded tops
+- Upgrade SimpleBar to 6
+- Replace flatpickr with Vanilla Calendar Pro for the dashboard calendar
+- Target the browsers Vite compiles for (Chrome and Edge 111, Firefox 114, Safari and iOS 16.4) and hash font and image assets
+- Upgrade ESLint to 10
 
 ## [3.5.0] - 2026-08-01
 

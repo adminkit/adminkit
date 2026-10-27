@@ -14,7 +14,7 @@ Free Bootstrap 5 admin template, published to npm as `@adminkit/core`.
 
 - `vite.config.js` is the build: a Vite multi-page app with `src/pages` as root. `vite/` holds the small in-repo plugins (Handlebars frontmatter and layouts, HTML beautifier).
 - `src/pages/*.html` are Handlebars page templates with YAML frontmatter (`layout`, `title`, `name`, `active`, `meta_description`). `src/layouts`, `src/partials` and `src/scripts` (inline page scripts) are Handlebars partials; `src/helpers` are the Handlebars helpers and `src/data` the global template data.
-- `src/js` and `src/scss` are the JavaScript and Sass sources, built to `js/app.js` and `css/app.css`. Keep those output names; the templates and the npm package (`@adminkit/core`, `files: ["dist"]`) reference them.
+- `src/js` and `src/scss` are the JavaScript and Sass sources, built to `js/app.js` and `css/app.css`. `src/js/modules/*.js` wrap the third-party plugins (Chart.js 4, SimpleBar 6, jsVectorMap, Vanilla Calendar Pro) and expose the globals the inline page scripts use. Keep those output names; the templates and the npm package (`@adminkit/core`, `files: ["dist"]`) reference them.
 - `public/` is copied verbatim into `dist/` (`img/`).
 - `dist/` is the build output and is gitignored. Vercel builds it with `npm run build`.
 - `src/js/modules/vector-maps/` is vendored jsvectormap data and is excluded from ESLint and Prettier.
