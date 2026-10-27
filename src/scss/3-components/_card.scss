@@ -3,6 +3,46 @@
   box-shadow: $card-shadow;
 }
 
+// Clickable cards, a.card or a card with a .stretched-link, lift on hover and keyboard focus
+a.card,
+.card:has(.stretched-link) {
+  @include transition(
+    transform var(--ak-duration-fast) var(--ak-ease-standard),
+    box-shadow var(--ak-duration-fast) var(--ak-ease-standard)
+  );
+}
+
+a.card {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.card:hover,
+.card:has(.stretched-link:hover) {
+  transform: translateY($card-hover-lift);
+  box-shadow: $card-shadow-hover;
+}
+
+a.card:focus-visible,
+.card:has(.stretched-link:focus-visible) {
+  outline: 0;
+  transform: translateY($card-hover-lift);
+  box-shadow:
+    $card-shadow-hover,
+    0 0 0 $focus-ring-width $focus-ring-color;
+
+  .stretched-link {
+    outline: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a.card,
+  .card:has(.stretched-link) {
+    transform: none !important;
+  }
+}
+
 .card-header {
   border-bottom-width: 1px;
 }

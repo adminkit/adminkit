@@ -267,6 +267,8 @@ $card-border-width: 0 !default;
 $card-border-color: transparent !default;
 $card-cap-bg: var(--ak-surface-bg) !default;
 $card-shadow: 0 0 0.875rem 0 rgba($dark, 0.05) !default;
+$card-shadow-hover: 0 0.5rem 1.5rem 0 rgba($dark, 0.1) !default;
+$card-hover-lift: -0.125rem !default;
 $card-title-font-size: $font-size-lg !default;
 $card-title-font-weight: $font-weight-bold !default;
 $card-title-color: color.adjust($gray-600, $lightness: 15%) !default;
