@@ -5,8 +5,7 @@ export default [
   {
     ignores: [
       "dist/**",
-      "static/**",
-      "_builder/**",
+      "public/**",
       "node_modules/**",
       "src/js/modules/vector-maps/**",
     ],
