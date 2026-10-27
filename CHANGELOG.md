@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Dark mode with Bootstrap 5.3 color modes: `data-bs-theme="dark"` on `<html>` switches `css/app.css` to the dark palette without reloading; an inline script in `<head>` sets the stored mode (light, dark or auto, which follows the operating system) before the first paint
+- Color mode toggle (Light / Dark / Auto) in the navbar
+
 ### Changed
 
 - Require Node 24 (`.nvmrc`, `engines`)
@@ -26,6 +31,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Upgrade ESLint to 10
 - Replace Feather icons with Lucide: markup uses `data-lucide` with Lucide's canonical names, the `.feather`, `.feather-sm` and `.feather-lg` classes become `.lucide`, `.lucide-sm` and `.lucide-lg`, and `js/app.js` only bundles the icons the templates use (`window.lucide.createIcons()` replaces `window.feather.replace()`)
 - Rename the Feather icons page to Lucide (`icons-lucide.html`), searchable by name and tag; `icons-feather.html` redirects to it
+- Components take their mode-dependent colors from custom properties: `--bs-gray-*` (which turn around in dark mode) and `--ak-surface-bg`
+- Build `window.theme` from the CSS custom properties of the current color mode; it keeps its keys, adds `id`, `name`, `body-bg`, `body-color` and `border-color`, and `document` fires `adminkit:themechange` when the mode changes
+- Create the charts and the world map with `adminkit.chartjs()` and `adminkit.vectorMap()`, which recolor them when the color mode changes; the dashboard calendar follows the mode too
 
 ### Removed
 

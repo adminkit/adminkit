@@ -81,6 +81,31 @@ All files included in the `@adminkit/core` npm package are available over a CDN.
 <script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
 ```
 
+## Dark mode
+
+`css/app.css` holds a light and a dark color mode, built on [Bootstrap's color modes](https://getbootstrap.com/docs/5.3/customize/color-modes/). Set `data-bs-theme="dark"` on `<html>` for dark mode, or on any other element for that part of the page. The navbar toggle switches between light, dark and auto (the operating system setting) and stores the choice in `localStorage` (`adminkit_config_colorMode`). To apply the stored mode before the first paint, put this script in `<head>`, before the stylesheet:
+
+```html
+<script>
+  (function () {
+    var mode;
+    try {
+      mode = localStorage.getItem("adminkit_config_colorMode");
+    } catch (e) {}
+    if (mode !== "light" && mode !== "dark") {
+      mode = matchMedia("(prefers-color-scheme: dark)").matches
+        ? "dark"
+        : "light";
+    }
+    document.documentElement.setAttribute("data-bs-theme", mode);
+  })();
+</script>
+```
+
+In your own styles, use the custom properties for colors that follow the mode: Bootstrap's `--bs-*`, the gray scale `--bs-gray-100` to `--bs-gray-900` (which turns around in dark mode) and `--ak-surface-bg`, the background of cards, dropdowns and inputs. The dark values live in `src/scss/1-variables/_dark.scss`.
+
+`window.theme` holds the theme colors of the current mode for charts and maps; `document` fires `adminkit:themechange` with the new colors when the mode changes. Charts and maps created with `adminkit.chartjs(element, theme => config)` and `adminkit.vectorMap(theme => options)` recolor themselves.
+
 ## File structure
 
 The package contains the following directories and files:
