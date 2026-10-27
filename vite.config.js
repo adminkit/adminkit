@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 import beautifyHtml from "./vite/beautify-html.js";
 import classicScript from "./vite/classic-script.js";
 import handlebarsPages from "./vite/handlebars-pages.js";
+import preloadFonts from "./vite/preload-fonts.js";
 import data from "./src/data/index.js";
 import * as helpers from "./src/helpers/index.js";
 
@@ -61,6 +62,8 @@ export default defineConfig({
       compileOptions: { preventIndent: true },
     }),
     beautifyHtml(),
+    // Inter's latin regular and semibold faces, which every page uses
+    preloadFonts(/inter-latin-(400|600)-normal/),
     classicScript(Object.keys(bundles)),
   ],
   resolve: {
