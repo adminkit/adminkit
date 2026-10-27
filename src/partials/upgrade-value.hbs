@@ -1,0 +1,9 @@
+{{~#compare (typeOf value) "===" "boolean"~}}
+  {{~#if value~}}
+    <i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span>
+  {{~else~}}
+    <i class="text-body-secondary" data-lucide="minus" aria-hidden="true"></i><span class="visually-hidden">No</span>
+  {{~/if~}}
+{{~else~}}
+  {{~#compare (typeOf value) "===" "number"~}}{{formatNumber value}}{{~else~}}{{value}}{{~/compare~}}
+{{~/compare~}}

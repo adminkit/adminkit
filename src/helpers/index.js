@@ -7,3 +7,4 @@ export { default as min } from "./min.js";
 export { default as plus } from "./plus.js";
 export { default as slice } from "./slice.js";
 export { default as splice } from "./splice.js";
+export { default as typeOf } from "./type-of.js";

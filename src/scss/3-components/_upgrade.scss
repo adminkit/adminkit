@@ -1,0 +1,15 @@
+// Upgrade page: the edition comparison table
+.upgrade-table {
+  tbody th {
+    font-weight: $font-weight-normal;
+  }
+
+  td {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .lucide,
+  i[data-lucide] {
+    vertical-align: -0.2em;
+  }
+}

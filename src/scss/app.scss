@@ -65,9 +65,11 @@
 @import "3-components/stat";
 @import "3-components/tables";
 @import "3-components/type";
+@import "3-components/upgrade";
 @import "3-components/wrapper";
 
 // Theme utilities
+@import "4-utilities/color-mode";
 @import "4-utilities/cursors";
 @import "4-utilities/text";
 

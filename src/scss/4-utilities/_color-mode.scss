@@ -1,0 +1,6 @@
+// Content for one color mode only, such as a light and a dark screenshot side by side in
+// the markup. Hidden content does not load when it is lazy (loading="lazy" images).
+html:not([data-bs-theme="dark"]) .ak-dark-only,
+[data-bs-theme="dark"] .ak-light-only {
+  display: none !important;
+}
