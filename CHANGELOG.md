@@ -11,9 +11,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Dark mode with Bootstrap 5.3 color modes: `data-bs-theme="dark"` on `<html>` switches `css/app.css` to the dark palette without reloading; an inline script in `<head>` sets the stored mode (light, dark or auto, which follows the operating system) before the first paint
 - Color mode toggle (Light / Dark / Auto) in the navbar
+- Motion tokens: `$ak-transition-duration-fast|base|slow` and `$ak-transition-easing-standard|emphasized`, exposed as `--ak-duration-*` and `--ak-ease-*`; Bootstrap's fade and collapse transitions, the dropdowns and the sidebar use them
+- Cards fade up as they scroll into view, staggered (`.ak-reveal-cards` on `<main>`, `.ak-reveal` on any element); the footer fades in with them. Copy the reveal script from `src/partials/site-meta.hbs` into your `<head>` along with the color mode script
+- `data-count-up` counts a number up from zero when it scrolls into view; the stat cards use it
+- Skeleton placeholders (`.ak-skeleton`, the `skeleton` partial) on the dashboard charts and map, cleared by `adminkit.chartjs()`, `adminkit.vectorMap()` or `adminkit.ready(element)`, which fire `adminkit:ready`
+- Clickable cards (`a.card`, cards with a `.stretched-link`) lift on hover and keyboard focus
+- Everything animated respects `prefers-reduced-motion: reduce`: no movement, at most a fade; charts draw without their entrance animation
+- WCAG 2.2 AA in both color modes, checked with axe on every page; `ak-readable()` and `$theme-text-colors`/`$theme-text-colors-dark` keep text colors readable
 
 ### Changed
 
+- Darken the theme colors to reach 4.5:1 contrast: primary `#266ed8` (was `#3b7ddd`), success `#138161`, info `#127d8e`, danger `#da2839`, gray-600/secondary `#6a737a`; warning keeps its yellow with dark text; card titles, secondary text and sidebar links follow
+- Bundle Inter from `@fontsource/inter` with `font-display: optional` (preloaded by the built pages) instead of loading it from Google Fonts; `dist/fonts` holds the files
+- Replace the deprecated `.text-muted` with `.text-body-secondary`
+- Card titles are `h2`, card subtitles paragraphs, so headings no longer skip levels; icon-only controls have accessible names, links that act as buttons have `role="button"`, and keyboard focus stays visible on the sidebar and navbar links
+- The dashboard projects table is dated 2026; the footer year and the `css/app.css` banner come from the build year and the `package.json` version
+- Stat card numbers use `,` thousands separators
 - Require Node 24 (`.nvmrc`, `engines`)
 - Enforce Conventional Commits with commitlint and lefthook git hooks
 - Replace ESLint 8 and babel-eslint with ESLint 9 flat config, add Prettier and `.editorconfig`
@@ -22,7 +35,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Remove the committed Google Maps API key. The Google Maps page loads the Maps JavaScript API without a key (`callback=initMaps&loading=async`), which Google draws for development only; add your own key, restricted by HTTP referrer, for production (see `src/scripts/a-maps-google.hbs`)
 - Replace webpack and Babel with a Vite 8 multi-page build and move the page sources from the separate adminkit-builder repo into `src/pages`, `src/layouts`, `src/partials` and `src/scripts`; images move to `public/img`
 - Stop tracking the generated `static/` output; `npm run build` writes `dist/`, which Vercel, npm publishing and the GitHub release workflow build
-- The demo pages load `js/app.js` with `<script type="module">`; the published `js/app.js` keeps working with a plain `<script src>` (npm and CDN), its code wrapped in a function scope so it adds no globals besides `window.bootstrap`, `window.lucide`, `window.theme` and `window.adminkit`
+- The demo pages load `js/app.js` with `<script type="module">`; the published `js/app.js` keeps working with a plain `<script src>` (npm and CDN), its code wrapped in a function scope so the only globals it adds are `window.bootstrap`, `window.lucide`, `window.theme`, `window.adminkit`, `window.Chart`, `window.jsVectorMap` and `window.VanillaCalendar` (plus `window.uidEvent`, which Bootstrap's event handler stores on `window` when it listens to window events)
 - Attach a zip of the built template to GitHub releases on `v*` tags
 - Upgrade Chart.js to 4 and rewrite the chart configs for its options API; bars get rounded tops
 - Upgrade SimpleBar to 6
@@ -37,6 +50,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Removed
 
+- The unused `unsplash-3.jpg` photo and the IE-only CSS
 - feather-icons
 
 ## [3.5.0] - 2026-08-01

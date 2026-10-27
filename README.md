@@ -154,6 +154,10 @@ adminkit/
 
 `src/pages` holds one Handlebars template per page with YAML frontmatter; `src/layouts`, `src/partials` and `src/scripts` (inline page scripts) are the shared markup. `public/` is copied to `dist/` as it is.
 
+## Motion
+
+Cards fade up as they scroll into view (`.ak-reveal-cards` on `<main>`, `.ak-reveal` on anything else), stat numbers with `data-count-up` count up, charts animate in, and cards whose content JavaScript draws show a skeleton placeholder until it is ready. Durations and easings are the `--ak-duration-fast|base|slow` and `--ak-ease-standard|emphasized` custom properties (`$ak-transition-*` in Sass). With `prefers-reduced-motion: reduce` nothing moves: content only fades in, numbers and charts show their final state at once. Keep the reveal script in `src/partials/site-meta.hbs` in your `<head>`; without it the content simply shows.
+
 ## Accessibility
 
 The template targets WCAG 2.2 AA in both color modes: 4.5:1 contrast for text, 3:1 for large text, icons and other controls, named controls and a logical heading order. Every page is checked in light and dark mode with axe (`@axe-core/playwright`), including the sidebar and navbar. New colors must pass too: derive text colors with `ak-readable($color, $background)` from `src/scss/1-variables/_functions.scss`, which darkens (or, on dark backgrounds, lightens) a color just enough, and use `$theme-text-colors` / `$theme-text-colors-dark` for theme colors drawn as text.
