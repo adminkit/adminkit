@@ -44,21 +44,19 @@ A professional Admin & Dashboard template based on Bootstrap 5 that comes with h
 
 ### Build tools
 
-The theme includes a custom Webpack file, which can be used to quickly recompile and minify theme assets while developing or for deployment. You'll need to install Node.js before using Webpack.
-
-Once Node.js is installed, run npm install to install the rest of AdminKit's dependencies. All dependencies will be downloaded to the node_modules directory.
+AdminKit is built with [Vite](https://vite.dev/). You need Node.js 24 (see `.nvmrc`). Install the dependencies once:
 
 ```sh
-npm install
+npm ci
 ```
 
-Now you're ready to modify the source files and generate new dist/ files. AdminKit uses webpack-dev-server to automatically detect file changes and start a local webserver at http://localhost:8080.
+Start a local server at http://localhost:8080 that reloads when you change a page, partial, stylesheet or script:
 
 ```sh
-npm start
+npm run dev
 ```
 
-Compile, optimize, minify and uglify all source files to dist/ folder:
+Build the production files into `dist/`: the HTML pages, `css/app.css`, `js/app.js` and `img/`, ready to deploy or drop into your own project:
 
 ```sh
 npm run build
@@ -89,19 +87,23 @@ The package contains the following directories and files:
 
 ```
 adminkit/
-├── .babelrc
-├── .eslintrc
 ├── .nvmrc
 ├── README.md
 ├── package.json
-├── postcss.config.js
-├── webpack.config.js
+├── postcss.config.mjs
+├── vite.config.js
+├── public/
+│   └── img/
 ├── src/
-│   ├── fonts/
-│   ├── img/
+│   ├── data/
+│   ├── helpers/
 │   ├── js/
 │   │   ├── modules/
 │   │   └── app.js
+│   ├── layouts/
+│   ├── pages/
+│   ├── partials/
+│   ├── scripts/
 │   └── scss/
 │       ├── 1-variables/
 │       ├── 2-mixins/
@@ -109,12 +111,17 @@ adminkit/
 │       ├── 4-utilities/
 │       ├── 5-vendor/
 │       └── app.scss
+├── vite/
 └── dist/
+    ├── *.html
     ├── css/
     │   └── app.css
+    ├── img/
     └── js/
         └── app.js
 ```
+
+`src/pages` holds one Handlebars template per page with YAML frontmatter; `src/layouts`, `src/partials` and `src/scripts` (inline page scripts) are the shared markup. `public/` is copied to `dist/` as it is.
 
 ## Browser Support
 

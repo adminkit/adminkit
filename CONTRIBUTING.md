@@ -9,10 +9,10 @@ Node 24 is required. The version is pinned in `.nvmrc`.
 ```sh
 nvm use
 npm ci
-npm start
+npm run dev
 ```
 
-`npm start` serves `static/` on http://localhost:8080 and rebuilds `src/` on change. `npm run build` creates a production build in `dist/` and copies it into `static/`. `npm ci` also installs the git hooks described below.
+`npm run dev` serves the pages on http://localhost:8080 and reloads on changes to `src/`. `npm run build` writes the production build to `dist/` (gitignored); `npm run preview` serves it. `npm ci` also installs the git hooks described below.
 
 ## Branches and PRs
 

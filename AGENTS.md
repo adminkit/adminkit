@@ -5,16 +5,18 @@ Free Bootstrap 5 admin template, published to npm as `@adminkit/core`.
 ## Commands
 
 - `npm ci` installs dependencies and the lefthook git hooks
-- `npm start` serves `static/` on http://localhost:8080 and rebuilds on change
-- `npm run build` builds `src/` into `dist/` and copies it into `static/`
+- `npm run dev` serves the pages on http://localhost:8080 and reloads on change (`npm start` also opens the browser)
+- `npm run build` builds everything into `dist/`; `npm run preview` serves that build
 - `npm run lint` runs ESLint and `prettier --check`
 - `npm run format` runs `prettier --write`
 
 ## Layout
 
-- `src/js` and `src/scss` are the source. Webpack builds them into `dist/` (gitignored); a production build copies `dist/` into `static/`.
-- `static/` holds the committed demo site: HTML pages plus the built `css`, `js`, `img` and `fonts`. Do not hand-edit the built assets.
-- The HTML pages are generated from the separate adminkit-builder repo; `_builder/` is untracked here. Phase 1 of the 2026 plan moves the page sources into this repo.
+- `vite.config.js` is the build: a Vite multi-page app with `src/pages` as root. `vite/` holds the small in-repo plugins (Handlebars frontmatter and layouts, HTML beautifier).
+- `src/pages/*.html` are Handlebars page templates with YAML frontmatter (`layout`, `title`, `name`, `active`, `meta_description`). `src/layouts`, `src/partials` and `src/scripts` (inline page scripts) are Handlebars partials; `src/helpers` are the Handlebars helpers and `src/data` the global template data.
+- `src/js` and `src/scss` are the JavaScript and Sass sources, built to `js/app.js` and `css/app.css`. Keep those output names; the templates and the npm package (`@adminkit/core`, `files: ["dist"]`) reference them.
+- `public/` is copied verbatim into `dist/` (`img/`).
+- `dist/` is the build output and is gitignored. Vercel builds it with `npm run build`.
 - `src/js/modules/vector-maps/` is vendored jsvectormap data and is excluded from ESLint and Prettier.
 
 ## Conventions
