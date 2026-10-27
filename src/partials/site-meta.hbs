@@ -24,4 +24,18 @@
   })();
 </script>
 
+<!-- Cards fade in as they scroll into view (js/modules/reveal.js). They stay visible
+     without JavaScript, and when the module has not started within 3 seconds. -->
+<script>
+  (function () {
+    var root = document.documentElement;
+    root.classList.add("js-reveal");
+    setTimeout(function () {
+      if (!root.classList.contains("js-reveal-ready")) {
+        root.classList.remove("js-reveal");
+      }
+    }, 3000);
+  })();
+</script>
+
 <link href="/css/app.css" rel="stylesheet">
