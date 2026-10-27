@@ -7,9 +7,3 @@ html,
 body {
   overflow-y: scroll;
 }
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html {
-    overflow-x: hidden;
-  }
-}

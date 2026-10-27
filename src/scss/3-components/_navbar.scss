@@ -100,12 +100,6 @@
   }
 }
 
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .navbar .avatar {
-    max-height: 47px;
-  }
-}
-
 @include media-breakpoint-down(sm) {
   .navbar {
     padding: 0.75rem;

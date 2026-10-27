@@ -27,10 +27,6 @@
 .card-img-top,
 .card-img-bottom {
   @include img-fluid;
-
-  @media all and (-ms-high-contrast: none) {
-    height: 100%;
-  }
 }
 
 .card > .table > tbody {
