@@ -2,7 +2,7 @@ import theme from "./colors-theme.json" with { type: "json" };
 import fa_brand from "./icons-fa-brand.json" with { type: "json" };
 import fa_regular from "./icons-fa-regular.json" with { type: "json" };
 import fa_solid from "./icons-fa-solid.json" with { type: "json" };
-import fe from "./icons-fe.json" with { type: "json" };
+import lucide from "./icons-lucide.json" with { type: "json" };
 
 export default {
   meta_title: "AdminKit Demo",
@@ -16,5 +16,5 @@ export default {
   fa_brand,
   fa_regular,
   fa_solid,
-  fe,
+  lucide,
 };

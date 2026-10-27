@@ -16,6 +16,7 @@ const pages = Object.fromEntries(
 
 const bundles = {
   app: src("js/app.js"),
+  "icons-all": src("js/icons-all.js"),
 };
 
 for (const name of Object.keys(bundles)) {

@@ -1,0 +1,25 @@
+---
+name: icons-lucide
+title: Lucide
+layout: default.hbs
+active: { icons: true, lucide: true }
+meta_description: "Lucide icons demo for the free AdminKit Bootstrap 5 admin template. 1,900+ clean and consistent open-source SVG icons for your dashboard."
+---
+
+{{> site-title title=title badge="Get more icons"}}
+
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Lucide Icons</h3>
+    <h6 class="card-subtitle text-muted">Beautiful and consistent open source icons</h6>
+  </div>
+  <div class="card-body">
+    <div class="row">
+      {{#each lucide}}
+        <div class="col-12 col-md-6 col-lg-3 mb-2">
+          <i class="align-middle me-2" data-lucide="{{this.name}}"></i> <span class="align-middle">{{this.name}}</span>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</div>

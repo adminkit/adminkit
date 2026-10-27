@@ -44,7 +44,8 @@
     "prepublishOnly": "npm run build",
     "prepare": "lefthook install",
     "lint": "eslint . && prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "icons:list": "node scripts/generate-icon-list.mjs"
   },
   "browserslist": [
     "Chrome >= 111",
@@ -57,8 +58,8 @@
     "@popperjs/core": "2.11.8",
     "bootstrap": "5.3.8",
     "chart.js": "4.6.1",
-    "feather-icons": "4.29.2",
     "jsvectormap": "1.7.0",
+    "lucide": "1.62.0",
     "simplebar": "6.3.3",
     "vanilla-calendar-pro": "3.4.0"
   },
@@ -73,6 +74,7 @@
     "handlebars": "4.7.10",
     "js-beautify": "2.0.3",
     "lefthook": "2.2.2",
+    "lucide-static": "1.62.0",
     "prettier": "3.9.10",
     "sass": "1.106.1",
     "vite": "8.3.5",
