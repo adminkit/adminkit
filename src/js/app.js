@@ -4,6 +4,7 @@ import "./modules/color-mode";
 import "./modules/sidebar";
 import "./modules/theme";
 import "./modules/icons";
+import "./modules/skeleton";
 import "./modules/reveal";
 import "./modules/count-up";
 

@@ -3,6 +3,7 @@
 import "./theme";
 import Chart from "chart.js/auto";
 import { color } from "chart.js/helpers";
+import { markReady } from "./skeleton";
 
 const setDefaults = (theme) => {
   Chart.defaults.color = theme["gray-600"];
@@ -46,6 +47,7 @@ const createChart = (element, config) => {
     typeof element === "string" ? document.querySelector(element) : element;
   const chart = new Chart(canvas, config(window.theme));
   configs.set(chart, config);
+  markReady(canvas);
   return chart;
 };
 

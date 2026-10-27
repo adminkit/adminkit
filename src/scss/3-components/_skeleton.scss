@@ -1,0 +1,15 @@
+// Loading placeholder (js/modules/skeleton.js) built from Bootstrap's .placeholder. An
+// .ak-skeleton covers the element that will hold the content, which keeps its final size
+// (a .chart, or a min-height), so nothing moves when the content replaces it.
+.ak-skeleton {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  pointer-events: none;
+
+  > .placeholder {
+    flex: 1;
+    border-radius: $border-radius-lg;
+  }
+}
