@@ -27,25 +27,33 @@
       },
       options: {
         maintainAspectRatio: false,
-        legend: {
-          display: false
+        plugins: {
+          legend: {
+            display: false
+          }
         },
         scales: {
-          yAxes: [{
-            gridLines: {
+          y: {
+            grid: {
+              display: false
+            },
+            border: {
               display: false
             },
             stacked: false,
             ticks: {
               stepSize: 20
             }
-          }],
-          xAxes: [{
+          },
+          x: {
             stacked: false,
-            gridLines: {
+            grid: {
               color: "transparent"
+            },
+            border: {
+              display: false
             }
-          }]
+          }
         }
       }
     });

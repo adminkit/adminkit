@@ -22,38 +22,34 @@
       },
       options: {
         maintainAspectRatio: false,
-        legend: {
-          display: false
-        },
-        tooltips: {
-          intersect: false
-        },
-        hover: {
-          intersect: true
-        },
         plugins: {
+          legend: {
+            display: false
+          },
+          tooltip: {
+            intersect: false
+          },
           filler: {
             propagate: false
           }
         },
         scales: {
-          xAxes: [{
-            reverse: true,
-            gridLines: {
+          x: {
+            grid: {
+              color: "rgba(0,0,0,0.05)"
+            },
+            border: {
               color: "rgba(0,0,0,0.05)"
             }
-          }],
-          yAxes: [{
+          },
+          y: {
             ticks: {
               stepSize: 500
             },
-            display: true,
-            borderDash: [5, 5],
-            gridLines: {
-              color: "rgba(0,0,0,0)",
-              fontColor: "#fff"
+            grid: {
+              color: "transparent"
             }
-          }]
+          }
         }
       }
     });

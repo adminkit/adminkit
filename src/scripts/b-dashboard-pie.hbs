@@ -16,12 +16,13 @@
         }]
       },
       options: {
-        responsive: !window.MSInputMethodContext,
         maintainAspectRatio: false,
-        legend: {
-          display: false
-        },
-        cutoutPercentage: 75
+        cutout: "75%",
+        plugins: {
+          legend: {
+            display: false
+          }
+        }
       }
     });
   });
