@@ -1,6 +1,7 @@
 export { default as capitalize } from "./capitalize.js";
 export { default as compare } from "./compare.js";
 export { default as divide } from "./divide.js";
+export { default as formatNumber } from "./format-number.js";
 export { default as loop } from "./loop.js";
 export { default as min } from "./min.js";
 export { default as plus } from "./plus.js";

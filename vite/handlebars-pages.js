@@ -4,6 +4,7 @@
 // `{{> @partial-block }}` in the layout receives the page. The layout directory is
 // registered as a partial directory alongside the others.
 import { basename } from "node:path";
+import Handlebars from "handlebars";
 import matter from "gray-matter";
 import handlebars from "vite-plugin-handlebars";
 import { normalizePath } from "vite";
@@ -17,6 +18,21 @@ export default function handlebarsPages({
   compileOptions,
 }) {
   const frontmatter = new Map();
+
+  // Frontmatter strings may use Handlebars expressions, such as a meta_description that
+  // quotes {{formatNumber stats.icons.lucide}}; they render with the global data. The layout
+  // escapes them where it outputs them.
+  const strings = Handlebars.create();
+  strings.registerHelper(helpers ?? {});
+  const renderFrontmatter = (values) =>
+    Object.fromEntries(
+      Object.entries(values).map(([key, value]) => [
+        key,
+        typeof value === "string" && value.includes("{{")
+          ? strings.compile(value, { noEscape: true })({ ...data, ...values })
+          : value,
+      ])
+    );
 
   return [
     {
@@ -43,7 +59,10 @@ export default function handlebarsPages({
         order: "pre",
         handler(html, ctx) {
           const page = matter(html);
-          frontmatter.set(normalizePath(ctx.path), page.data);
+          frontmatter.set(
+            normalizePath(ctx.path),
+            renderFrontmatter(page.data)
+          );
 
           const layout = basename(page.data.layout ?? defaultLayout, ".hbs");
           return `{{#> ${layout}}}${page.content}{{/${layout}}}`;
