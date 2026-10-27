@@ -12,12 +12,11 @@
   }
 }
 
-// Outline buttons draw their label in the colour, as text on the surface
+// Outline buttons draw their label and border in the colour, as text on the surface
 @each $color, $value in $theme-text-colors {
-  @if $color != "light" and $color != "dark" {
-    .btn-outline-#{$color} {
-      --#{$prefix}btn-color: #{$value};
-    }
+  .btn-outline-#{$color} {
+    --#{$prefix}btn-color: #{$value};
+    --#{$prefix}btn-border-color: #{$value};
   }
 }
 
@@ -51,6 +50,8 @@
   @each $color, $value in $theme-colors-dark {
     .btn-#{$color} {
       @include button-variant($value, $value);
+      @include button-color(ak-text-on($value));
+      @include button-color-hover(ak-text-on($value));
     }
 
     .btn-outline-#{$color} {
@@ -59,10 +60,9 @@
   }
 
   @each $color, $value in $theme-text-colors-dark {
-    @if $color != "light" and $color != "dark" {
-      .btn-outline-#{$color} {
-        --#{$prefix}btn-color: #{$value};
-      }
+    .btn-outline-#{$color} {
+      --#{$prefix}btn-color: #{$value};
+      --#{$prefix}btn-border-color: #{$value};
     }
   }
 }

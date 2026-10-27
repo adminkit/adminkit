@@ -61,6 +61,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The unused `unsplash-3.jpg` photo and the IE-only CSS
 - feather-icons
 
+### Fixed
+
+- Button contrast in both color modes: `.btn-dark` has dark text in dark mode, and every `.btn-outline-*` (including `light` and `dark`) draws its label and border in a color that reaches 4.5:1 on the page and card backgrounds
+
 ## [3.5.0] - 2026-08-01
 
 - Upgrade to Webpack v5.109.2
