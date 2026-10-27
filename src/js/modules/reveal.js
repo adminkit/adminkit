@@ -1,5 +1,6 @@
 // Cards fade up as they scroll into view: every top-level .card inside .ak-reveal-cards (the
-// layouts put it on <main>) and any element with .ak-reveal. Elements that come into view
+// layouts put it on <main>, which itself fades in once the page scripts have run) and any
+// element with .ak-reveal. Elements that come into view
 // together are staggered through --ak-reveal-index, capped at maxStagger steps. The hidden
 // state is CSS under html.js-reveal, which the inline script in <head> sets; without
 // JavaScript nothing is hidden. Styles: scss/3-components/_reveal.scss.
@@ -42,6 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!root.classList.contains("js-reveal")) {
     return;
   }
+
+  document.querySelectorAll(".ak-reveal-cards").forEach((element) => {
+    element.classList.add("ak-revealed");
+  });
 
   document.querySelectorAll(selector).forEach((element) => {
     observer.observe(element);
