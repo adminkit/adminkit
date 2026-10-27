@@ -4,7 +4,7 @@
 // The icons page loads js/icons-all.js with the full set, so it is skipped.
 import { readFile, readdir } from "node:fs/promises";
 import { createRequire } from "node:module";
-import { basename, extname, join, relative, sep } from "node:path";
+import { extname, join, relative, sep } from "node:path";
 
 const root = join(import.meta.dirname, "..");
 const src = join(root, "src");
@@ -47,7 +47,11 @@ for (const [file, source] of sources) {
     if (!value.includes("{{")) {
       use(value, file);
     } else if (param && file.startsWith(join(src, "partials"))) {
-      const partial = basename(file, ".hbs");
+      // Partials are named by their path in src/partials: dashboard/stats
+      const partial = relative(join(src, "partials"), file)
+        .split(sep)
+        .join("/")
+        .replace(/\.hbs$/, "");
       const call = new RegExp(
         String.raw`\{\{>\s*${partial}\s[^}]*\b${param}="([^"]+)"`,
         "g"

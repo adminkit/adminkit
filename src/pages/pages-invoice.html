@@ -115,3 +115,16 @@ meta_description: "Invoice page demo for the free AdminKit Bootstrap 5 admin tem
     </div>
   </div>
 </div>
+
+{{#push "scripts"}}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Print the receipt; the print styles leave out the sidebar, navbar and footer
+    document.querySelectorAll("[data-print]").forEach(function(button) {
+      button.addEventListener("click", function() {
+        window.print();
+      });
+    });
+  });
+</script>
+{{/push}}

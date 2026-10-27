@@ -1,3 +1,16 @@
+<div class="card flex-fill w-100">
+  <div class="card-header">
+    <h2 class="card-title">Line Chart</h2>
+    <p class="h6 card-subtitle text-body-secondary">A line chart is a way of plotting data points on a line.</p>
+  </div>
+  <div class="card-body">
+    <div class="chart">
+      <canvas id="chartjs-line"></canvas>
+    </div>
+  </div>
+</div>
+
+{{#push "scripts"}}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     // Line chart
@@ -57,3 +70,4 @@
     });
   });
 </script>
+{{/push}}

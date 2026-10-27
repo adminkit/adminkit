@@ -1,17 +1,30 @@
+<div class="card">
+  <div class="card-header">
+    <h2 class="card-title">Doughnut Chart</h2>
+    <p class="h6 card-subtitle text-body-secondary">Doughnut charts are excellent at showing the relational proportions between data.</p>
+  </div>
+  <div class="card-body">
+    <div class="chart chart-sm">
+      <canvas id="chartjs-doughnut"></canvas>
+    </div>
+  </div>
+</div>
+
+{{#push "scripts"}}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // Pie chart
-    adminkit.chartjs("#chartjs-pie", function(theme) {
+    // Doughnut chart
+    adminkit.chartjs("#chartjs-doughnut", function(theme) {
       return {
-        type: "pie",
+        type: "doughnut",
         data: {
           labels: ["Social", "Search Engines", "Direct", "Other"],
           datasets: [{
             data: [260, 125, 54, 146],
             backgroundColor: [
               theme.{{theme.[0].name}},
+              theme.{{theme.[2].name}},
               theme.{{theme.[4].name}},
-              theme.{{theme.[3].name}},
               "#dee2e6"
             ],
             borderColor: "transparent"
@@ -19,6 +32,7 @@
         },
         options: {
           maintainAspectRatio: false,
+          cutout: "65%",
           plugins: {
             legend: {
               display: false
@@ -29,3 +43,4 @@
     });
   });
 </script>
+{{/push}}

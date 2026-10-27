@@ -25,3 +25,40 @@ meta_description: "Lucide icons demo for the free AdminKit Bootstrap 5 admin tem
     <p class="text-body-secondary mb-0 d-none js-icons-empty">No icons match your search.</p>
   </div>
 </div>
+
+{{#push "scripts"}}
+<script type="module" src="/js/icons-all.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Filter the icons by name and tag
+    var input = document.querySelector(".js-icons-search");
+    var empty = document.querySelector(".js-icons-empty");
+    var icons = Array.prototype.map.call(document.querySelectorAll(".js-icons > [data-name]"), function(element) {
+      return {
+        element: element,
+        keywords: [element.dataset.name].concat(element.dataset.tags.split(",")).join("\n").toLowerCase()
+      };
+    });
+    var timeout;
+
+    input.addEventListener("input", function() {
+      clearTimeout(timeout);
+      timeout = setTimeout(function() {
+        var terms = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+        var matches = 0;
+
+        icons.forEach(function(icon) {
+          var match = terms.every(function(term) {
+            return icon.keywords.includes(term);
+          });
+          icon.element.classList.toggle("d-none", !match);
+          matches += match ? 1 : 0;
+        });
+
+        empty.classList.toggle("d-none", matches > 0);
+      }, 150);
+    });
+  });
+</script>
+{{/push}}

@@ -61,7 +61,7 @@ export default defineConfig({
       data,
       helpers: { ...helpers },
       layoutDirectory: src("layouts"),
-      partialDirectory: [src("partials"), src("scripts")],
+      partialDirectory: [src("partials")],
       compileOptions: { preventIndent: true },
     }),
     beautifyHtml(),

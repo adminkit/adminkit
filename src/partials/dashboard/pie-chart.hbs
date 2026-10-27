@@ -31,3 +31,37 @@
     </div>
   </div>
 </div>
+
+{{#push "scripts"}}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Pie chart
+    adminkit.chartjs("#chartjs-dashboard-pie", function(theme) {
+      return {
+        type: "pie",
+        data: {
+          labels: ["Chrome", "Firefox", "Edge"],
+          datasets: [{
+            data: [4306, 3801, 1689],
+            backgroundColor: [
+              theme.{{theme.[0].name}},
+              theme.{{theme.[4].name}},
+              theme.{{theme.[3].name}}
+            ],
+            borderWidth: 5
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          cutout: "75%",
+          plugins: {
+            legend: {
+              display: false
+            }
+          }
+        }
+      };
+    });
+  });
+</script>
+{{/push}}
