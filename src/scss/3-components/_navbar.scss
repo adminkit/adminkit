@@ -97,7 +97,7 @@
     top: -4px;
   }
 
-  a:focus {
+  a:focus:not(:focus-visible) {
     outline: 0;
   }
 }

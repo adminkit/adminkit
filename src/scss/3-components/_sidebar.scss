@@ -46,7 +46,7 @@ a.sidebar-link {
   }
 }
 
-.sidebar-link:focus {
+.sidebar-link:focus:not(:focus-visible) {
   outline: 0;
 }
 
@@ -86,7 +86,7 @@ a.sidebar-link {
     color: $sidebar-brand-color;
   }
 
-  &:focus {
+  &:focus:not(:focus-visible) {
     outline: 0;
   }
 }
