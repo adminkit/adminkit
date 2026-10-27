@@ -8,7 +8,7 @@ import "./modules/feather";
 import "./modules/chartjs";
 
 // Forms
-import "./modules/flatpickr";
+import "./modules/vanilla-calendar";
 
 // Maps
 import "./modules/vector-maps";

@@ -62,9 +62,9 @@
     "bootstrap": "5.3.8",
     "chart.js": "4.6.1",
     "feather-icons": "4.29.2",
-    "flatpickr": "4.6.13",
     "jsvectormap": "1.7.0",
-    "simplebar": "6.3.3"
+    "simplebar": "6.3.3",
+    "vanilla-calendar-pro": "3.4.0"
   },
   "devDependencies": {
     "@commitlint/cli": "21.2.4",
