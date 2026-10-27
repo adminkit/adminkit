@@ -12,7 +12,7 @@ meta_description: "Bootstrap forms demo for the free AdminKit template. Inputs, 
   <div class="col-12 col-lg-6">
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title mb-0">Input</h5>
+        <h2 class="card-title mb-0">Input</h2>
       </div>
       <div class="card-body">
         <input type="text" class="form-control" placeholder="Input">
@@ -21,7 +21,7 @@ meta_description: "Bootstrap forms demo for the free AdminKit template. Inputs, 
 
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title mb-0">Textarea</h5>
+        <h2 class="card-title mb-0">Textarea</h2>
       </div>
       <div class="card-body">
         <textarea class="form-control" rows="2" placeholder="Textarea"></textarea>
@@ -30,7 +30,7 @@ meta_description: "Bootstrap forms demo for the free AdminKit template. Inputs, 
 
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title mb-0">Checkboxes</h5>
+        <h2 class="card-title mb-0">Checkboxes</h2>
       </div>
       <div class="card-body">
         <div>
@@ -72,7 +72,7 @@ meta_description: "Bootstrap forms demo for the free AdminKit template. Inputs, 
 
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title mb-0">Read only</h5>
+        <h2 class="card-title mb-0">Read only</h2>
       </div>
       <div class="card-body">
         <input class="form-control" type="text" placeholder="Readonly input" readonly>
@@ -83,7 +83,7 @@ meta_description: "Bootstrap forms demo for the free AdminKit template. Inputs, 
   <div class="col-12 col-lg-6">
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title mb-0">Radios</h5>
+        <h2 class="card-title mb-0">Radios</h2>
       </div>
       <div class="card-body">
         <div>
@@ -131,17 +131,17 @@ meta_description: "Bootstrap forms demo for the free AdminKit template. Inputs, 
 
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title mb-0">Selects</h5>
+        <h2 class="card-title mb-0">Selects</h2>
       </div>
       <div class="card-body">
-        <select class="form-select mb-3">
+        <select class="form-select mb-3" aria-label="Example select">
           <option selected>Open this select menu</option>
           <option>One</option>
           <option>Two</option>
           <option>Three</option>
         </select>
 
-        <select multiple class="form-control">
+        <select multiple class="form-control" aria-label="Example multiple select">
           <option>One</option>
           <option>Two</option>
           <option>Three</option>
@@ -152,7 +152,7 @@ meta_description: "Bootstrap forms demo for the free AdminKit template. Inputs, 
 
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title mb-0">Disabled</h5>
+        <h2 class="card-title mb-0">Disabled</h2>
       </div>
       <div class="card-body">
         <div class="mb-3">
@@ -160,8 +160,8 @@ meta_description: "Bootstrap forms demo for the free AdminKit template. Inputs, 
           <input type="text" class="form-control" placeholder="Disabled input" disabled>
         </div>
         <div class="mb-3">
-          <label class="form-label">Disabled select menu</label>
-          <select class="form-control" disabled>
+          <label class="form-label" for="disabled-select">Disabled select menu</label>
+          <select class="form-control" id="disabled-select" disabled>
             <option>Disabled select</option>
           </select>
         </div>

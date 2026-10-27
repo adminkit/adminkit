@@ -1,13 +1,14 @@
-<nav class="navbar navbar-expand navbar-light navbar-bg">
-  <a class="sidebar-toggle js-sidebar-toggle">
+<nav class="navbar navbar-expand navbar-light navbar-bg" aria-label="Top bar">
+  <button type="button" class="sidebar-toggle js-sidebar-toggle" aria-label="Toggle sidebar">
     <i class="hamburger align-self-center"></i>
-  </a>
+  </button>
 
   <div class="navbar-collapse collapse">
     <ul class="navbar-nav navbar-align">
       <li class="nav-item dropdown">
-        <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" data-bs-toggle="dropdown">
+        <a class="nav-icon dropdown-toggle" href="#" id="alertsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <div class="position-relative">
+            <span class="visually-hidden">Notifications</span>
             <i class="align-middle" data-lucide="bell"></i>
             <span class="indicator">4</span>
           </div>
@@ -71,7 +72,7 @@
         </div>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" data-bs-toggle="dropdown">
+        <a class="nav-icon dropdown-toggle" href="#" id="messagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Messages">
           <div class="position-relative">
             <i class="align-middle" data-lucide="message-square"></i>
           </div>
@@ -162,11 +163,11 @@
         </ul>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
+        <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Account">
           <i class="align-middle" data-lucide="settings"></i>
         </a>
 
-        <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" data-bs-toggle="dropdown">
+        <a class="nav-link dropdown-toggle d-none d-sm-inline-block" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           <img src="/img/avatars/avatar.jpg" class="avatar img-fluid rounded me-1" alt="Charles Hall" /> <span class="text-dark">Charles Hall</span>
         </a>
         <div class="dropdown-menu dropdown-menu-end">
