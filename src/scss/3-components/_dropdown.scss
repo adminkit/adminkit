@@ -3,11 +3,12 @@
 }
 
 .dropdown .dropdown-menu.show {
-  animation-name: dropdownAnimation;
-  animation-duration: 0.25s;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
+  animation: dropdownAnimation var(--ak-duration-base) var(--ak-ease-emphasized)
+    forwards;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation-name: dropdownFade;
+  }
 }
 
 @keyframes dropdownAnimation {
@@ -21,6 +22,12 @@
   }
 }
 
+@keyframes dropdownFade {
+  from {
+    opacity: 0;
+  }
+}
+
 .dropdown-toggle:after {
   border: solid;
   border-width: 0 2px 2px 0;
@@ -30,7 +37,7 @@
 }
 
 .dropdown-item {
-  transition: $transition-appearance-fast;
+  @include transition($transition-appearance-fast);
 }
 
 .dropdown-menu {

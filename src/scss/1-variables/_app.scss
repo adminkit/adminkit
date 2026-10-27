@@ -79,8 +79,22 @@ $enable-rfs: false !default;
 $enable-negative-margins: true !default;
 $enable-dark-mode: true !default; // Dark mode values live in 1-variables/_dark.scss
 
-// Transitions
-$transition-base: all 0.35s ease-in-out !default;
+// Motion. Components read these as custom properties (--ak-duration-fast|base|slow and
+// --ak-ease-standard|emphasized, set on :root in 3-components/_root.scss) so they can be
+// tuned at runtime. Under prefers-reduced-motion: reduce, Bootstrap's transition() mixin
+// drops the transitions and AdminKit's own animations only fade.
+$ak-transition-duration-fast: 0.15s !default;
+$ak-transition-duration-base: 0.25s !default;
+$ak-transition-duration-slow: 0.35s !default;
+$ak-transition-easing-standard: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$ak-transition-easing-emphasized: cubic-bezier(0.2, 0, 0, 1) !default;
+
+// Bootstrap transitions on the motion tokens
+$transition-base: all var(--ak-duration-slow) var(--ak-ease-standard) !default;
+$transition-fade: opacity var(--ak-duration-fast) linear !default;
+$transition-collapse: height var(--ak-duration-slow) var(--ak-ease-standard) !default;
+$transition-collapse-width: width var(--ak-duration-slow)
+  var(--ak-ease-standard) !default;
 
 // Theme colors
 $blue: #3b7ddd !default;
@@ -273,10 +287,10 @@ $table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.0375) !default;
 // Sidebar general
 $sidebar-width: 260px !default;
 $sidebar-transition:
-  margin-left 0.35s ease-in-out,
-  left 0.35s ease-in-out,
-  margin-right 0.35s ease-in-out,
-  right 0.35s ease-in-out !default;
+  margin-left var(--ak-duration-slow) var(--ak-ease-standard),
+  left var(--ak-duration-slow) var(--ak-ease-standard),
+  margin-right var(--ak-duration-slow) var(--ak-ease-standard),
+  right var(--ak-duration-slow) var(--ak-ease-standard) !default;
 $sidebar-bg: #222e3c !default;
 
 // Sidebar brand
@@ -327,14 +341,14 @@ $sidebar-cta-border-radius: $border-radius-lg !default;
 
 // Transitions
 $transition-appearance:
-  background 0.4s ease-in-out,
-  color 0.4s ease-in-out !default;
+  background var(--ak-duration-base) var(--ak-ease-standard),
+  color var(--ak-duration-base) var(--ak-ease-standard) !default;
 $transition-appearance-slow:
-  background 0.6s ease-in-out,
-  color 0.6s ease-in-out !default;
+  background var(--ak-duration-slow) var(--ak-ease-standard),
+  color var(--ak-duration-slow) var(--ak-ease-standard) !default;
 $transition-appearance-fast:
-  background 0.1s ease-in-out,
-  color 0.1s ease-in-out !default;
+  background var(--ak-duration-fast) var(--ak-ease-standard),
+  color var(--ak-duration-fast) var(--ak-ease-standard) !default;
 
 // Modals
 $modal-content-border-width: 0 !default;
@@ -344,7 +358,7 @@ $modal-xl: 1140px !default;
 $modal-lg: 900px !default;
 $modal-md: 600px !default;
 $modal-sm: 400px !default;
-$modal-transition: transform 0.25s ease-out !default;
+$modal-transition: transform var(--ak-duration-base) var(--ak-ease-emphasized) !default;
 
 // Badges
 $badge-font-size: 80% !default;

@@ -8,7 +8,7 @@
   background: var(--#{$prefix}gray-700);
   display: block;
   content: "";
-  transition: $transition-appearance-fast;
+  @include transition($transition-appearance-fast);
 }
 
 .hamburger {

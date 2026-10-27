@@ -3,7 +3,7 @@
   width: 100%;
   min-width: 0;
   min-height: 100vh;
-  transition: $sidebar-transition;
+  @include transition($sidebar-transition);
   background: var(--#{$prefix}body-bg);
   flex-direction: column;
   overflow: hidden;

@@ -36,12 +36,29 @@ const initializeSidebarCollapse = () => {
     document.getElementsByClassName("js-sidebar-toggle")[0];
 
   if (sidebarElement && sidebarToggleElement) {
+    // Charts resize once the sidebar has moved; without a transition (reduced motion)
+    // there is no transitionend, so they resize right away
+    const resize = () => window.dispatchEvent(new Event("resize"));
+
     sidebarToggleElement.addEventListener("click", () => {
       sidebarElement.classList.toggle("collapsed");
 
-      sidebarElement.addEventListener("transitionend", () => {
-        window.dispatchEvent(new Event("resize"));
-      });
+      const duration = parseFloat(
+        getComputedStyle(sidebarElement).transitionDuration
+      );
+
+      if (!duration) {
+        resize();
+        return;
+      }
+
+      const onTransitionEnd = (event) => {
+        if (event.target === sidebarElement) {
+          sidebarElement.removeEventListener("transitionend", onTransitionEnd);
+          resize();
+        }
+      };
+      sidebarElement.addEventListener("transitionend", onTransitionEnd);
     });
   }
 };

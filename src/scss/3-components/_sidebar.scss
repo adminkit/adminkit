@@ -1,13 +1,13 @@
 .sidebar {
   min-width: $sidebar-width;
   max-width: $sidebar-width;
-  transition: $sidebar-transition;
+  @include transition($sidebar-transition);
   direction: ltr;
   background: $sidebar-bg;
 }
 
 .sidebar-content {
-  transition: $sidebar-transition;
+  @include transition($sidebar-transition);
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -27,7 +27,9 @@ a.sidebar-link {
   display: block;
   padding: $sidebar-link-padding;
   font-weight: $sidebar-link-font-weight;
-  transition: background 0.1s ease-in-out;
+  @include transition(
+    background var(--ak-duration-fast) var(--ak-ease-standard)
+  );
   position: relative;
   text-decoration: none;
   cursor: pointer;
