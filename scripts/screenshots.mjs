@@ -30,18 +30,12 @@ const editions = {
     shots: [
       { name: "analytics", page: "index.html" },
       { name: "ecommerce", page: "dashboard-ecommerce.html" },
+      { name: "crm", page: "dashboard-crm.html" },
       { name: "crypto", page: "dashboard-crypto.html" },
       { name: "ai-usage", page: "dashboard-ai.html" },
       { name: "ai-chat", page: "pages-chat-ai.html" },
       { name: "calendar", page: "calendar.html" },
-      {
-        name: "datatables",
-        page: "tables-datatables-responsive.html",
-        // The "Separate bundle" note above the table is for developers
-        async prepare(page) {
-          await page.locator(".alert .btn-close").first().click();
-        },
-      },
+      { name: "datatables", page: "tables-datatables-responsive.html" },
       {
         name: "settings",
         page: "index.html",
