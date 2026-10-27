@@ -1,13 +1,23 @@
+// Below lg the sidebar is a Bootstrap offcanvas sheet (.offcanvas-lg in the markup), from lg
+// up a column of the layout that the toggle hides and shows
 .sidebar {
+  --#{$prefix}offcanvas-width: #{$sidebar-width};
+  --#{$prefix}offcanvas-transition: #{$sidebar-sheet-transition};
   min-width: $sidebar-width;
   max-width: $sidebar-width;
-  @include transition($sidebar-transition);
   direction: ltr;
   background: $sidebar-bg;
+
+  @include media-breakpoint-up(lg) {
+    @include transition($sidebar-transition);
+
+    &.collapsed {
+      margin-left: -$sidebar-width;
+    }
+  }
 }
 
 .sidebar-content {
-  @include transition($sidebar-transition);
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -100,24 +110,6 @@ a.sidebar-link {
   width: 26px;
   height: 26px;
   display: flex;
-}
-
-.sidebar {
-  &.collapsed {
-    margin-left: -$sidebar-width;
-  }
-
-  // Workaround for IE bug, more info:
-  // https://stackoverflow.com/a/25850649
-  @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
-    // Sidebar default state (on mobile)
-    margin-left: -$sidebar-width;
-
-    // Sidebar collapsed state (on mobile)
-    &.collapsed {
-      margin-left: 0;
-    }
-  }
 }
 
 .sidebar-toggle {

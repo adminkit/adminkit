@@ -317,11 +317,11 @@ $table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.0375) !default;
 
 // Sidebar general
 $sidebar-width: 260px !default;
-$sidebar-transition:
-  margin-left var(--ak-duration-slow) var(--ak-ease-standard),
-  left var(--ak-duration-slow) var(--ak-ease-standard),
-  margin-right var(--ak-duration-slow) var(--ak-ease-standard),
-  right var(--ak-duration-slow) var(--ak-ease-standard) !default;
+// Hiding and showing the sidebar from lg up
+$sidebar-transition: margin-left var(--ak-duration-slow) var(--ak-ease-standard) !default;
+// The sheet below lg, Bootstrap's offcanvas transition on the motion tokens
+$sidebar-sheet-transition: transform var(--ak-duration-slow)
+  var(--ak-ease-standard) !default;
 $sidebar-bg: #222e3c !default;
 
 // Sidebar brand

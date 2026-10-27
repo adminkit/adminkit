@@ -56,6 +56,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Redesign the Upgrade to Pro page: a comparison table generated from the AdminKit and AdminKit PRO stats, screenshots of AdminKit PRO in the active color mode, and a link to the pricing
 - The Lucide page's meta description quotes the generated icon count; the color mode toggle takes the modes from `src/data/appearance.json`
 - Rewrite the README: generated feature table, screenshots, a one-command start, npm and CDN usage and the framework guides
+- Below the lg breakpoint the sidebar is a Bootstrap offcanvas sheet (`.offcanvas-lg`, so `css/app.css` now includes Bootstrap's offcanvas styles): the navbar toggle opens it over a backdrop; Escape, the backdrop and following a link close it, focus stays inside and returns to the toggle, and the page does not scroll behind it. From lg up the toggle hides and shows the sidebar as before. The toggle is named for its action (Collapse sidebar / Expand sidebar) and has `aria-expanded`
 
 ### Removed
 
