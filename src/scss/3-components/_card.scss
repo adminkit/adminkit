@@ -13,6 +13,12 @@
   color: $card-title-color;
 }
 
+@include color-mode(dark) {
+  .card-title {
+    color: $card-title-color-dark;
+  }
+}
+
 .card-subtitle {
   font-weight: $font-weight-normal;
 }

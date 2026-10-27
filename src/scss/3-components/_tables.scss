@@ -1,3 +1,9 @@
+@include color-mode(dark) {
+  .table {
+    --#{$prefix}table-striped-bg: #{$table-striped-bg-dark};
+  }
+}
+
 .table {
   thead,
   tbody,

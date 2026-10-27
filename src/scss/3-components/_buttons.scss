@@ -20,6 +20,18 @@
 
 .btn-light,
 .btn-white {
-  @include button-color($gray-800);
-  @include button-color-hover($gray-800);
+  @include button-color(var(--#{$prefix}gray-800));
+  @include button-color-hover(var(--#{$prefix}gray-800));
+}
+
+@include color-mode(dark) {
+  @each $color, $value in $theme-colors-dark {
+    .btn-#{$color} {
+      @include button-variant($value, $value);
+    }
+
+    .btn-outline-#{$color} {
+      @include button-outline-variant($value);
+    }
+  }
 }

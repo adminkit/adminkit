@@ -1,0 +1,28 @@
+// AdminKit's custom properties, next to the ones Bootstrap puts on :root. Bootstrap keeps the
+// gray scale and the theme colours the same in both modes; AdminKit's dark palette turns the
+// grays and the secondary, light and dark colours around, so components that should follow
+// the mode use var(--bs-gray-*), var(--bs-secondary) and friends rather than Sass values.
+:root,
+[data-bs-theme="light"] {
+  --ak-surface-bg: #{$surface-bg};
+  --ak-surface-bg-rgb: #{to-rgb($surface-bg)};
+  --ak-form-check-input-border-color: var(--#{$prefix}border-color);
+}
+
+@include color-mode(dark, true) {
+  --ak-surface-bg: #{$surface-bg-dark};
+  --ak-surface-bg-rgb: #{to-rgb($surface-bg-dark)};
+  --ak-form-check-input-border-color: #{$form-check-input-border-color-dark};
+
+  --#{$prefix}gray: #{$gray-600-dark};
+  --#{$prefix}gray-dark: #{$gray-800-dark};
+
+  @each $step, $value in $grays-dark {
+    --#{$prefix}gray-#{$step}: #{$value};
+  }
+
+  @each $color, $value in $theme-colors-dark {
+    --#{$prefix}#{$color}: #{$value};
+    --#{$prefix}#{$color}-rgb: #{to-rgb($value)};
+  }
+}

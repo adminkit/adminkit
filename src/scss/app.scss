@@ -7,10 +7,12 @@
 
 // Variables
 @import "1-variables/app";
+@import "1-variables/dark";
 
 // Bootstrap
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
 @import "bootstrap/scss/utilities";
@@ -39,6 +41,7 @@
 @import "2-mixins/button";
 
 // Theme components
+@import "3-components/root";
 @import "3-components/avatar";
 @import "3-components/buttons";
 @import "3-components/card";

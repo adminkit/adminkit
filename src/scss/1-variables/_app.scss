@@ -77,7 +77,7 @@ $min-contrast-ratio: 3 !default;
 $enable-validation-icons: false !default;
 $enable-rfs: false !default;
 $enable-negative-margins: true !default;
-$enable-dark-mode: false !default;
+$enable-dark-mode: true !default; // Dark mode values live in 1-variables/_dark.scss
 
 // Transitions
 $transition-base: all 0.35s ease-in-out !default;
@@ -145,6 +145,10 @@ $social-colors: (
 $body-bg: #f5f7fb !default;
 $body-color: $gray-700 !default;
 
+// Cards, dropdowns, inputs, the navbar and footer. Components use it as var(--ak-surface-bg),
+// which is $surface-bg-dark in dark mode.
+$surface-bg: $white !default;
+
 // Links
 $link-decoration: none !default;
 $link-hover-decoration: underline !default;
@@ -178,9 +182,9 @@ $display-font-sizes: (
 ) !default;
 
 // Shadows
-$box-shadow-sm: 0 0.05rem 0.2rem rgba($black, 0.05) !default;
-$box-shadow: 0 0.1rem 0.2rem rgba($black, 0.05) !default;
-$box-shadow-lg: 0 0.2rem 0.2rem rgba($black, 0.05) !default;
+$box-shadow-sm: 0 0.05rem 0.2rem rgba(var(--bs-emphasis-color-rgb), 0.05) !default;
+$box-shadow: 0 0.1rem 0.2rem rgba(var(--bs-emphasis-color-rgb), 0.05) !default;
+$box-shadow-lg: 0 0.2rem 0.2rem rgba(var(--bs-emphasis-color-rgb), 0.05) !default;
 
 // Navbar input
 $navbar-input-bg: color.adjust($body-bg, $lightness: -0.5%) !default;
@@ -200,20 +204,22 @@ $navbar-box-shadow: 0 0 2rem 0 rgba($dark, 0.1) !default;
 // Navbar brand
 $navbar-brand-padding-y: $spacer * 0.875 !default;
 $navbar-brand-padding-x: 0 !default;
-$navbar-brand-color: $gray-100 !default;
+$navbar-brand-color: var(--bs-gray-100) !default;
 $navbar-brand-font-weight: $font-weight-normal !default;
 $navbar-brand-font-size: 1.15rem !default;
 $navbar-brand-icon-color: $primary !default;
 
-$navbar-bg: $white !default;
+$navbar-bg: var(--ak-surface-bg) !default;
 
 // Footer
-$footer-bg: $white !default;
+$footer-bg: var(--ak-surface-bg) !default;
 
 // Forms
-$input-bg: $white !default;
-$input-disabled-bg: $gray-200 !default;
-$input-color: $gray-700 !default;
+$input-bg: var(--ak-surface-bg) !default;
+$input-disabled-bg: var(--bs-secondary-bg) !default;
+$input-color: var(--bs-body-color) !default;
+$form-check-input-border: var(--bs-border-width) solid
+  var(--ak-form-check-input-border-color) !default;
 $input-btn-border-width: $border-width !default;
 $input-btn-line-height: $line-height-base !default;
 $input-btn-line-height-sm: $line-height-sm !default;
@@ -240,12 +246,12 @@ $input-height-lg: calc(
 ) !default;
 
 // Cards
-$card-bg: $white !default;
+$card-bg: var(--ak-surface-bg) !default;
 $card-border-radius: 0.25rem !default;
 $card-inner-border-radius: $card-border-radius !default;
 $card-border-width: 0 !default;
 $card-border-color: transparent !default;
-$card-cap-bg: $white !default;
+$card-cap-bg: var(--ak-surface-bg) !default;
 $card-shadow: 0 0 0.875rem 0 rgba($dark, 0.05) !default;
 $card-title-font-size: $font-size-lg !default;
 $card-title-font-weight: $font-weight-bold !default;
@@ -262,7 +268,7 @@ $table-cell-padding-y-sm: 0.3rem !default;
 $table-cell-padding-x-sm: 0.3rem !default;
 $table-bg: transparent !default;
 $table-striped-bg: $gray-100 !default;
-$table-hover-bg: rgba($black, 0.0375) !default;
+$table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.0375) !default;
 
 // Sidebar general
 $sidebar-width: 260px !default;
@@ -346,7 +352,10 @@ $badge-padding-y: 0.3em !default;
 $badge-padding-x: 0.45em !default;
 
 // Dropdowns
-$dropdown-bg: $white !default;
+$dropdown-bg: var(--ak-surface-bg) !default;
+$dropdown-link-color: var(--bs-body-color) !default;
+$dropdown-link-hover-bg: var(--bs-tertiary-bg) !default;
+$dropdown-header-color: var(--bs-gray-600) !default;
 
 // Main
 $main-box-shadow: inset 0.75rem 0px 1.5rem 0px rgba($black, 0.075);

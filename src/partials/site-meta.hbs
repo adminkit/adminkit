@@ -11,5 +11,19 @@
 
 <title>{{#if title}}{{ title }} | {{/if}}{{ meta_title }}{{#unless title}} - {{ meta_slogan }}{{/unless}}</title>
 
+<!-- Color mode (light, dark or auto), set before the first paint -->
+<script>
+  (function () {
+    var mode;
+    try {
+      mode = localStorage.getItem("adminkit_config_colorMode");
+    } catch (e) {}
+    if (mode !== "light" && mode !== "dark") {
+      mode = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    }
+    document.documentElement.setAttribute("data-bs-theme", mode);
+  })();
+</script>
+
 <link href="/css/app.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
