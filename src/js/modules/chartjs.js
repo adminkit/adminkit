@@ -19,6 +19,24 @@ Chart.defaults.elements.bar.borderRadius = 10;
 Chart.defaults.elements.line.tension = 0.4;
 Chart.overrides.radar.elements = { line: { tension: 0 } };
 
+// Charts animate in, except under reduced motion. Colour mode changes update without
+// animation (see below).
+// Doughnut, pie and polar area charts set their own animation in the dataset defaults.
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const animations = new Map(
+  [Chart.defaults, ...Object.values(Chart.defaults.datasets)]
+    .filter((scope) => scope.animation !== undefined)
+    .map((scope) => [scope, scope.animation])
+);
+const setAnimation = () => {
+  for (const [scope, animation] of animations) {
+    scope.animation = reducedMotion.matches ? false : animation;
+  }
+};
+
+setAnimation();
+reducedMotion.addEventListener("change", setAnimation);
+
 const configs = new WeakMap();
 
 // Creates a chart from config(window.theme) and calls config again with the new colours
