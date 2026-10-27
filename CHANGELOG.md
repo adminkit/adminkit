@@ -24,6 +24,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace flatpickr with Vanilla Calendar Pro for the dashboard calendar
 - Target the browsers Vite compiles for (Chrome and Edge 111, Firefox 114, Safari and iOS 16.4) and hash font and image assets
 - Upgrade ESLint to 10
+- Replace Feather icons with Lucide: markup uses `data-lucide` with Lucide's canonical names, the `.feather`, `.feather-sm` and `.feather-lg` classes become `.lucide`, `.lucide-sm` and `.lucide-lg`, and `js/app.js` only bundles the icons the templates use (`window.lucide.createIcons()` replaces `window.feather.replace()`)
+- Rename the Feather icons page to Lucide (`icons-lucide.html`), searchable by name and tag; `icons-feather.html` redirects to it
+
+### Removed
+
+- feather-icons
 
 ## [3.5.0] - 2026-08-01
 
