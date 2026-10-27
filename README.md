@@ -106,6 +106,10 @@ In your own styles, use the custom properties for colors that follow the mode: B
 
 `window.theme` holds the theme colors of the current mode for charts and maps; `document` fires `adminkit:themechange` with the new colors when the mode changes. Charts and maps created with `adminkit.chartjs(element, theme => config)` and `adminkit.vectorMap(theme => options)` recolor themselves.
 
+## Google Maps
+
+The Google Maps page loads the Maps JavaScript API without an API key, so Google marks the maps "For development purposes only" and logs a `NoApiKeys` warning (and an `ApiProjectMapError` per map) in the console. For production, create a key in Google Cloud, restrict it by HTTP referrer and add `key=YOUR_KEY` to the script URL in `src/scripts/a-maps-google.hbs`.
+
 ## File structure
 
 The package contains the following directories and files:

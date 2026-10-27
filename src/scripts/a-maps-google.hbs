@@ -16,5 +16,6 @@
   }
 </script>
 
-<!-- Replace YOUR_GOOGLE_MAPS_API_KEY with your own key. Restrict it by HTTP referrer in Google Cloud. -->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMaps" async defer></script>
+<!-- Without a key Google draws the maps for development only. For production, create an API key
+     in Google Cloud, restrict it by HTTP referrer and add key=YOUR_KEY to this URL. -->
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMaps&loading=async" async></script>

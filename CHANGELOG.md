@@ -19,7 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace ESLint 8 and babel-eslint with ESLint 9 flat config, add Prettier and `.editorconfig`
 - Add GitHub Actions CI: lint, build and commitlint on pull requests and pushes to `main`
 - Track `package-lock.json`
-- Replace the committed Google Maps API key with a `YOUR_GOOGLE_MAPS_API_KEY` placeholder
+- Remove the committed Google Maps API key. The Google Maps page loads the Maps JavaScript API without a key (`callback=initMaps&loading=async`), which Google draws for development only; add your own key, restricted by HTTP referrer, for production (see `src/scripts/a-maps-google.hbs`)
 - Replace webpack and Babel with a Vite 8 multi-page build and move the page sources from the separate adminkit-builder repo into `src/pages`, `src/layouts`, `src/partials` and `src/scripts`; images move to `public/img`
 - Stop tracking the generated `static/` output; `npm run build` writes `dist/`, which Vercel, npm publishing and the GitHub release workflow build
 - The demo pages load `js/app.js` with `<script type="module">`; the published `js/app.js` keeps working with a plain `<script src>` (npm and CDN), its code wrapped in a function scope so it adds no globals besides `window.bootstrap`, `window.lucide`, `window.theme` and `window.adminkit`
