@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace the committed Google Maps API key with a `YOUR_GOOGLE_MAPS_API_KEY` placeholder
 - Replace webpack and Babel with a Vite 8 multi-page build and move the page sources from the separate adminkit-builder repo into `src/pages`, `src/layouts`, `src/partials` and `src/scripts`; images move to `public/img`
 - Stop tracking the generated `static/` output; `npm run build` writes `dist/`, which Vercel, npm publishing and the GitHub release workflow build
-- Load `js/app.js` as an ES module (`<script type="module">`)
+- The demo pages load `js/app.js` with `<script type="module">`; the published `js/app.js` keeps working with a plain `<script src>` (npm and CDN), its code wrapped in a function scope so it adds no globals besides `window.bootstrap`, `window.lucide`, `window.theme` and `window.adminkit`
 - Attach a zip of the built template to GitHub releases on `v*` tags
 - Upgrade Chart.js to 4 and rewrite the chart configs for its options API; bars get rounded tops
 - Upgrade SimpleBar to 6

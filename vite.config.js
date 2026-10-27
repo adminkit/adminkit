@@ -2,6 +2,7 @@ import { readdirSync } from "node:fs";
 import { basename, extname, resolve } from "node:path";
 import { defineConfig } from "vite";
 import beautifyHtml from "./vite/beautify-html.js";
+import classicScript from "./vite/classic-script.js";
 import handlebarsPages from "./vite/handlebars-pages.js";
 import data from "./src/data/index.js";
 import * as helpers from "./src/helpers/index.js";
@@ -60,6 +61,7 @@ export default defineConfig({
       compileOptions: { preventIndent: true },
     }),
     beautifyHtml(),
+    classicScript(Object.keys(bundles)),
   ],
   resolve: {
     // Pages live in src/pages, so the dev server cannot reach ../js and ../scss by relative URL.
