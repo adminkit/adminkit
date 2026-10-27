@@ -129,7 +129,7 @@ In your own styles, use the custom properties for colors that follow the mode: B
 
 ## Google Maps
 
-The Google Maps page loads the Maps JavaScript API without an API key, so Google marks the maps "For development purposes only" and logs a `NoApiKeys` warning (and an `ApiProjectMapError` per map) in the console. For production, create a key in Google Cloud, restrict it by HTTP referrer and add `key=YOUR_KEY` to the script URL in `src/scripts/a-maps-google.hbs`.
+The Google Maps page loads the Maps JavaScript API without an API key, so Google marks the maps "For development purposes only" and logs a `NoApiKeys` warning (and an `ApiProjectMapError` per map) in the console. For production, create a key in Google Cloud, restrict it by HTTP referrer and add `key=YOUR_KEY` to the script URL in `src/pages/maps-google.html`.
 
 ## File structure
 
@@ -154,7 +154,8 @@ adminkit/
 │   ├── layouts/
 │   ├── pages/
 │   ├── partials/
-│   ├── scripts/
+│   │   ├── charts/
+│   │   └── dashboard/
 │   └── scss/
 │       ├── 1-variables/
 │       ├── 2-mixins/
@@ -173,7 +174,7 @@ adminkit/
         └── icons-all.js
 ```
 
-`src/pages` holds one Handlebars template per page with YAML frontmatter; `src/layouts`, `src/partials` and `src/scripts` (inline page scripts) are the shared markup. `public/` is copied to `dist/` as it is.
+`src/pages` holds one Handlebars template per page with YAML frontmatter; `src/layouts` and `src/partials` are the shared markup, with the chart and dashboard widgets in `src/partials/charts` and `src/partials/dashboard`; a page's inline script sits at the end of the page, a widget's script in the widget's partial. `public/` is copied to `dist/` as it is.
 
 ## Sidebar
 

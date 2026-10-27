@@ -17,7 +17,7 @@ Free Bootstrap 5 admin template, published to npm as `@adminkit/core`.
 ## Layout
 
 - `vite.config.js` is the build: a Vite multi-page app with `src/pages` as root. `vite/` holds the small in-repo plugins (Handlebars frontmatter and layouts, HTML beautifier).
-- `src/pages/*.html` are Handlebars page templates with YAML frontmatter (`layout`, `title`, `name`, `active`, `meta_description`; `label` names a page without a `title` in the stats, and `category: dashboard` marks dashboards). String values may hold Handlebars expressions, rendered with the global data (`meta_description: "... {{formatNumber stats.icons.lucide}} icons"`). `src/layouts`, `src/partials` and `src/scripts` (inline page scripts) are Handlebars partials; `src/helpers` are the Handlebars helpers and `src/data` the global template data.
+- `src/pages/*.html` are Handlebars page templates with YAML frontmatter (`layout`, `title`, `name`, `active`, `meta_description`; `label` names a page without a `title` in the stats, and `category: dashboard` marks dashboards). String values may hold Handlebars expressions, rendered with the global data (`meta_description: "... {{formatNumber stats.icons.lucide}} icons"`). `src/layouts` and `src/partials` are Handlebars partials, named by their path in the directory (`{{> dashboard/line-chart }}` is `src/partials/dashboard/line-chart.hbs`); `src/helpers` are the Handlebars helpers and `src/data` the global template data.
 - `src/js` and `src/scss` are the JavaScript and Sass sources, built to `js/app.js` and `css/app.css`; `js/icons-all.js` holds every Lucide icon and is loaded by the icons page only. `src/js/modules/*.js` wrap the third-party plugins (Chart.js 4, SimpleBar 6, jsVectorMap, Vanilla Calendar Pro, Lucide icons) and expose the globals the inline page scripts use. Keep those output names; the templates and the npm package (`@adminkit/core`, `files: ["dist"]`) reference them.
 - Icons are Lucide: markup is `<i data-lucide="<canonical name>"></i>` (canonical names from https://lucide.dev/icons/, not deprecated aliases such as `home`), styled through `.lucide` in `src/scss/3-components/_lucide.scss`. A new icon must be imported and added to `icons` in `src/js/modules/icons.js`, or `npm run lint` fails. `js/icons-all.js` is built from `lucide-static/icon-nodes.json` so it shares no chunk with `js/app.js`, which must stay one self-contained file for the npm package.
 - Color modes: `css/app.css` serves light and dark; `data-bs-theme` on `<html>` picks the mode, set before the first paint by the inline script in `src/partials/site-meta.hbs` and changed afterwards only through `src/js/modules/color-mode.js` (`adminkit_config_colorMode` in localStorage: `light`, `dark`, `auto`). Dark values are `$*-dark` variables in `src/scss/1-variables/_dark.scss`. A component color that follows the mode uses a custom property (`var(--bs-gray-200)`, `var(--ak-surface-bg)`, `var(--bs-body-color)`; `--bs-gray-*` and `--bs-secondary`/`--bs-light`/`--bs-dark` turn around in dark mode, see `3-components/_root.scss`); where a component needs a different color in dark mode, add an `@include color-mode(dark) { ... }` block at the end of its partial. Check both modes.
@@ -26,6 +26,31 @@ Free Bootstrap 5 admin template, published to npm as `@adminkit/core`.
 - `public/` is copied verbatim into `dist/` (`img/`, including the PRO screenshots in `img/screenshots/pro/` that the upgrade page shows). The README screenshots live in `.github/screenshots/`, outside the build.
 - `dist/` is the build output and is gitignored. Vercel builds it with `npm run build`.
 - `src/js/modules/vector-maps/` is vendored jsvectormap data and is excluded from ESLint and Prettier.
+
+## Page scripts
+
+- A script only one page runs sits at the end of that page in `src/pages/*.html`. A widget's script sits in the widget's partial, after its markup (`src/partials/charts/`, `src/partials/dashboard/`), so every page that renders the widget gets it and no other page does. Both are wrapped in `{{#push "scripts"}}...{{/push}}`.
+- `{{#push "scripts"}}` (`src/helpers/stack.js`) adds the block's output to the `scripts` stack, and `{{stack "scripts"}}` at the end of `<body>` in both layouts prints it after `js/app.js`, in render order, which is document order: the layout renders the page before it reaches `{{stack}}`. The stack lives on `@root`, so it belongs to one page render. The icons page loads `js/icons-all.js` in its push block, before the inline script that uses it.
+- What differs per page, such as a widget's title, is a partial parameter (`{{> dashboard/line-chart title="Monthly Visitors" size="sm" }}`); a widget never checks which page it is on.
+- Every inline script runs its code inside `document.addEventListener("DOMContentLoaded", ...)`. Inline scripts run as soon as they are parsed, while `js/app.js` is a module script, which is deferred: `adminkit` and the other globals exist once it has run, just before `DOMContentLoaded`. The one exception is `maps-google.html`, whose `initMaps` is the callback of the Maps API script.
+- No page renders the same widget twice. A second copy would push its script again and needs its own element ids first.
+
+<!-- prettier-ignore -->
+```hbs
+<div class="chart">
+  <canvas id="chartjs-sales"></canvas>
+</div>
+
+{{#push "scripts"}}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    adminkit.chartjs("#chartjs-sales", function(theme) {
+      return { type: "line", data: { labels: ["Jan", "Feb"], datasets: [{ data: [3, 5], borderColor: theme.primary }] } };
+    });
+  });
+</script>
+{{/push}}
+```
 
 ## Counts
 
