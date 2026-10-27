@@ -42,7 +42,7 @@ AdminKit PRO is the commercial edition, with more pages, dashboards and plugins,
 | Icons                 | 1,908         | 4,071                                        |
 | Sidebar color schemes | 1             | 3                                            |
 | Dark mode             | Yes           | Yes                                          |
-| AI chat               | No            | Full                                         |
+| AI chat               | No            | Yes                                          |
 | Settings panel        | No            | Yes                                          |
 | Support               | GitHub issues | Email                                        |
 | License               | MIT           | Commercial                                   |

@@ -74,7 +74,7 @@
       "pro": 3
     },
     { "id": "darkMode", "label": "Dark mode", "free": true, "pro": true },
-    { "id": "aiChat", "label": "AI chat", "free": false, "pro": "Full" },
+    { "id": "aiChat", "label": "AI chat", "free": false, "pro": true },
     {
       "id": "settingsPanel",
       "label": "Settings panel",
