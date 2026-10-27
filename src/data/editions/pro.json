@@ -2,12 +2,13 @@
   "edition": "pro",
   "version": "3.5.0",
   "pages": {
-    "count": 52,
+    "count": 53,
     "list": [
       { "file": "calendar.html", "title": "Calendar" },
       { "file": "charts-apexcharts.html", "title": "ApexCharts" },
       { "file": "charts-chartjs.html", "title": "Chart.js" },
-      { "file": "dashboard-ai.html", "title": "AI Usage Dashboard" },
+      { "file": "dashboard-ai.html", "title": "AI Analytics Dashboard" },
+      { "file": "dashboard-crm.html", "title": "CRM Dashboard" },
       { "file": "dashboard-crypto.html", "title": "Crypto Dashboard" },
       { "file": "dashboard-ecommerce.html", "title": "E-Commerce Dashboard" },
       { "file": "forms-advanced-inputs.html", "title": "Advanced Inputs" },
@@ -71,9 +72,10 @@
     ]
   },
   "dashboards": {
-    "count": 4,
+    "count": 5,
     "list": [
-      { "file": "dashboard-ai.html", "title": "AI Usage Dashboard" },
+      { "file": "dashboard-ai.html", "title": "AI Analytics Dashboard" },
+      { "file": "dashboard-crm.html", "title": "CRM Dashboard" },
       { "file": "dashboard-crypto.html", "title": "Crypto Dashboard" },
       { "file": "dashboard-ecommerce.html", "title": "E-Commerce Dashboard" },
       { "file": "index.html", "title": "Analytics Dashboard" }
@@ -165,14 +167,14 @@
   "aiPages": {
     "count": 3,
     "list": [
-      { "file": "dashboard-ai.html", "title": "AI Usage Dashboard" },
+      { "file": "dashboard-ai.html", "title": "AI Analytics Dashboard" },
       { "file": "pages-chat-ai.html", "title": "AI Chat" },
       { "file": "pages-prompts.html", "title": "Prompt Library" }
     ]
   },
   "comparison": [
-    { "id": "pages", "label": "Pages", "pro": 52 },
-    { "id": "dashboards", "label": "Dashboards", "pro": 4 },
+    { "id": "pages", "label": "Pages", "pro": 53 },
+    { "id": "dashboards", "label": "Dashboards", "pro": 5 },
     { "id": "plugins", "label": "Plugins", "pro": 11 },
     { "id": "icons", "label": "Icons", "pro": 4071 },
     { "id": "colorSchemes", "label": "Sidebar color schemes", "pro": 3 },

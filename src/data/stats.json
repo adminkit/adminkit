@@ -61,8 +61,8 @@
   "colorModes": { "count": 2, "list": ["light", "dark"] },
   "colorSchemes": { "count": 1, "list": ["default"] },
   "comparison": [
-    { "id": "pages", "label": "Pages", "free": 18, "pro": 52 },
-    { "id": "dashboards", "label": "Dashboards", "free": 1, "pro": 4 },
+    { "id": "pages", "label": "Pages", "free": 18, "pro": 53 },
+    { "id": "dashboards", "label": "Dashboards", "free": 1, "pro": 5 },
     { "id": "plugins", "label": "Plugins", "free": 4, "pro": 11 },
     { "id": "icons", "label": "Icons", "free": 1908, "pro": 4071 },
     {
