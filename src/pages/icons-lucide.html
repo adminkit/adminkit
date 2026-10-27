@@ -14,12 +14,14 @@ meta_description: "Lucide icons demo for the free AdminKit Bootstrap 5 admin tem
     <h6 class="card-subtitle text-muted">Beautiful and consistent open source icons</h6>
   </div>
   <div class="card-body">
-    <div class="row">
+    <input type="search" class="form-control mb-4 js-icons-search" placeholder="Search {{lucide.length}} icons by name or tag" aria-label="Search icons" autocomplete="off">
+    <div class="row js-icons">
       {{#each lucide}}
-        <div class="col-12 col-md-6 col-lg-3 mb-2">
+        <div class="col-12 col-md-6 col-lg-3 mb-2" data-name="{{this.name}}" data-tags="{{this.tags}}">
           <i class="align-middle me-2" data-lucide="{{this.name}}"></i> <span class="align-middle">{{this.name}}</span>
         </div>
       {{/each}}
     </div>
+    <p class="text-muted mb-0 d-none js-icons-empty">No icons match your search.</p>
   </div>
 </div>
