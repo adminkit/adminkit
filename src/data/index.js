@@ -3,6 +3,7 @@ import fa_brand from "./icons-fa-brand.json" with { type: "json" };
 import fa_regular from "./icons-fa-regular.json" with { type: "json" };
 import fa_solid from "./icons-fa-solid.json" with { type: "json" };
 import lucide from "./icons-lucide.json" with { type: "json" };
+import pkg from "../../package.json" with { type: "json" };
 
 export default {
   meta_title: "AdminKit Demo",
@@ -17,4 +18,7 @@ export default {
   fa_regular,
   fa_solid,
   lucide,
+  // The footer and the stylesheet banner take the version and year from the build
+  version: pkg.version,
+  year: new Date().getFullYear(),
 };

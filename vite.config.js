@@ -1,6 +1,7 @@
 import { readdirSync } from "node:fs";
 import { basename, extname, resolve } from "node:path";
 import { defineConfig } from "vite";
+import banner from "./vite/banner.js";
 import beautifyHtml from "./vite/beautify-html.js";
 import classicScript from "./vite/classic-script.js";
 import handlebarsPages from "./vite/handlebars-pages.js";
@@ -64,6 +65,15 @@ export default defineConfig({
     beautifyHtml(),
     // Inter's latin regular and semibold faces, which every page uses
     preloadFonts(/inter-latin-(400|600)-normal/),
+    banner(
+      "css/app.css",
+      `/*!
+ * AdminKit v${data.version} (https://adminkit.io/)
+ * Copyright ${data.year} Paul Laros
+ * Copyright ${data.year} AdminKit
+ * Licensed under MIT (https://github.com/adminkit/adminkit/blob/master/LICENSE)
+ */`
+    ),
     classicScript(Object.keys(bundles)),
   ],
   resolve: {
