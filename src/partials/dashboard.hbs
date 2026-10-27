@@ -1,0 +1,43 @@
+<h1 class="h3 mb-3"><strong>Analytics</strong> Dashboard</h1>
+
+<div class="row">
+  <div class="col-xl-6 col-xxl-5 d-flex">
+    <div class="w-100">
+      <div class="row">
+        <div class="col-sm-6">
+          {{> dashboard-stats icon="truck" title="Sales" number="2.382" percentage="-3.65" percentage-color="danger" percentage-text="Since last week" color="primary" }}
+          {{> dashboard-stats icon="users" title="Visitors" number="14.212" percentage="5.25" percentage-color="success" percentage-text="Since last week" color="primary" }}
+        </div>
+        <div class="col-sm-6">
+          {{> dashboard-stats icon="dollar-sign" title="Earnings" number="$21.300" percentage="6.65" percentage-color="success" percentage-text="Since last week" color="primary" }}
+          {{> dashboard-stats icon="shopping-cart" title="Orders" number=64 percentage="-2.25" percentage-color="danger" percentage-text="Since last week" color="primary" }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xl-6 col-xxl-7">
+    {{> dashboard-line title="Recent Movement" size="sm" }}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-md-6 col-xxl-3 d-flex order-2 order-xxl-3">
+    {{> dashboard-pie }}
+  </div>
+  <div class="col-12 col-md-12 col-xxl-6 d-flex order-3 order-xxl-2">
+    {{> dashboard-map-world }}
+  </div>
+  <div class="col-12 col-md-6 col-xxl-3 d-flex order-1 order-xxl-1">
+    {{> dashboard-datetimepicker }}
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-lg-8 col-xxl-9 d-flex">
+    {{> dashboard-table-projects }}
+  </div>
+  <div class="col-12 col-lg-4 col-xxl-3 d-flex">
+    {{> dashboard-bar title="Monthly Sales" }}
+  </div>
+</div>

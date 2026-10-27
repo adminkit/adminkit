@@ -1,0 +1,23 @@
+<script type="module" src="/js/app.js"></script>
+
+{{!-- PARTIALS --}}
+{{#if active.analytics}}
+  {{> b-dashboard-line}}
+  {{> b-dashboard-pie}}
+  {{> b-dashboard-bar}}
+  {{> b-dashboard-map-world}}
+  {{> b-dashboard-datetimepicker}}
+{{/if}}
+
+{{#if active.chartjs}}
+  {{> b-chart-chartjs-line}}
+  {{> b-chart-chartjs-bar}}
+  {{> b-chart-chartjs-doughtnut}}
+  {{> b-chart-chartjs-pie}}
+{{/if}}
+
+{{!-- PAGES --}}
+{{#if active.google-maps}}
+  {{> a-maps-google}}
+{{/if}}
+

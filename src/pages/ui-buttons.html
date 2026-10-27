@@ -1,0 +1,117 @@
+---
+name: ui-buttons
+title: Buttons
+layout: default.hbs
+active: { ui: true, buttons: true }
+meta_description: "Bootstrap buttons demo for the free AdminKit template. Solid, outline, icon and button group styles for your dashboard."
+---
+
+{{> site-title title=title badge="Get more button examples"}}
+
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Basic Buttons</h5>
+        <h6 class="card-subtitle text-muted">Default Bootstrap buttons style.</h6>
+      </div>
+      <div class="card-body text-center">
+        <div class="mb-3">
+          {{#each theme}}
+          <button class="btn btn-{{this.name}}">{{capitalize this.name}}</button>
+          {{/each}}
+        </div>
+        <div>
+          {{#each theme}}
+          <button class="btn btn-{{this.name}}" disabled>{{capitalize this.name}}</button>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Button Sizes</h5>
+        <h6 class="card-subtitle text-muted">Fancy larger or smaller buttons.</h6>
+      </div>
+      <div class="card-body text-center">
+        <div class="mb-3">
+          <button class="btn btn-primary btn-sm">Small</button>
+          <button class="btn btn-primary">Medium</button>
+          <button class="btn btn-primary btn-lg">Large</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h5 class="card-title">Button Group</h5>
+        <h6 class="card-subtitle text-muted">Button group components.</h6>
+      </div>
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">Horizontal button group</h6>
+        <div class="btn-group btn-group-lg mb-3" role="group" aria-label="Large button group">
+          <button type="button" class="btn btn-secondary">Left</button>
+          <button type="button" class="btn btn-secondary">Middle</button>
+          <button type="button" class="btn btn-secondary">Right</button>
+        </div>
+        <br>
+        <div class="btn-group mb-3" role="group" aria-label="Default button group">
+          <button type="button" class="btn btn-secondary">Left</button>
+          <button type="button" class="btn btn-secondary">Middle</button>
+          <button type="button" class="btn btn-secondary">Right</button>
+        </div>
+        <br>
+        <div class="btn-group btn-group-sm mb-4" role="group" aria-label="Small button group">
+          <button type="button" class="btn btn-secondary">Left</button>
+          <button type="button" class="btn btn-secondary">Middle</button>
+          <button type="button" class="btn btn-secondary">Right</button>
+        </div>
+
+        <h6 class="card-subtitle mb-2 text-muted">Button toolbar</h6>
+        <div class="btn-toolbar mb-4" role="toolbar" aria-label="Toolbar with button groups">
+          <div class="btn-group me-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-secondary">1</button>
+            <button type="button" class="btn btn-secondary">2</button>
+            <button type="button" class="btn btn-secondary">3</button>
+            <button type="button" class="btn btn-secondary">4</button>
+          </div>
+          <div class="btn-group me-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-secondary">5</button>
+            <button type="button" class="btn btn-secondary">6</button>
+            <button type="button" class="btn btn-secondary">7</button>
+          </div>
+          <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-secondary">8</button>
+          </div>
+        </div>
+
+        <h6 class="card-subtitle mb-2 text-muted">Vertical button group</h6>
+        <div class="btn-toolbar">
+          <div class="btn-group-vertical me-2" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+            <button type="button" class="btn btn-primary">Button</button>
+          </div>
+          <div class="btn-group-vertical me-2" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-success">Button</button>
+            <button type="button" class="btn btn-success">Button</button>
+            <button type="button" class="btn btn-success">Button</button>
+          </div>
+          <div class="btn-group-vertical me-2" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-warning">Button</button>
+            <button type="button" class="btn btn-warning">Button</button>
+            <button type="button" class="btn btn-warning">Button</button>
+          </div>
+          <div class="btn-group-vertical me-2" role="group" aria-label="Vertical button group">
+            <button type="button" class="btn btn-danger">Button</button>
+            <button type="button" class="btn btn-danger">Button</button>
+            <button type="button" class="btn btn-danger">Button</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

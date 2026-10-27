@@ -1,0 +1,27 @@
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Pie chart
+    new Chart(document.getElementById("chartjs-pie"), {
+      type: "pie",
+      data: {
+        labels: ["Social", "Search Engines", "Direct", "Other"],
+        datasets: [{
+          data: [260, 125, 54, 146],
+          backgroundColor: [
+            window.theme.{{theme.[0].name}},
+            window.theme.{{theme.[4].name}},
+            window.theme.{{theme.[3].name}},
+            "#dee2e6"
+          ],
+          borderColor: "transparent"
+        }]
+      },
+      options: {
+        maintainAspectRatio: false,
+        legend: {
+          display: false
+        }
+      }
+    });
+  });
+</script>

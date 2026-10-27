@@ -1,0 +1,20 @@
+[
+  {
+    "name": "primary"
+  },
+  {
+    "name": "secondary"
+  },
+  {
+    "name": "success"
+  },
+  {
+    "name": "danger"
+  },
+  {
+    "name": "warning"
+  },
+  {
+    "name": "info"
+  }
+]
