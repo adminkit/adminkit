@@ -182,7 +182,7 @@ From Bootstrap's lg breakpoint (992px) up, the navbar toggle hides and shows the
 
 ## Motion
 
-Cards fade up as they scroll into view (`.ak-reveal-cards` on `<main>`, `.ak-reveal` on anything else), stat numbers with `data-count-up` count up, charts animate in, and cards whose content JavaScript draws show a skeleton placeholder until it is ready. Durations and easings are the `--ak-duration-fast|base|slow` and `--ak-ease-standard|emphasized` custom properties (`$ak-transition-*` in Sass). With `prefers-reduced-motion: reduce` nothing moves: content only fades in, numbers and charts show their final state at once. Keep the reveal script in `src/partials/site-meta.hbs` in your `<head>`; without it the content simply shows.
+Cards fade up as they scroll into view (`.ak-reveal-cards` on `<main>`, `.ak-reveal` on anything else), stat numbers with `data-count-up` count up, charts animate in, and cards whose content JavaScript draws show a skeleton placeholder until it is ready. Durations and easings are the `--ak-duration-fast|base|slow` and `--ak-ease-standard|emphasized` custom properties (`$ak-transition-*` in Sass). With `prefers-reduced-motion: reduce` nothing moves: content only fades in, numbers and charts show their final state at once. Keep the reveal script in `src/partials/site-meta.hbs` in your `<head>`; without it the content still shows.
 
 ## Accessibility
 
@@ -194,7 +194,7 @@ AdminKit uses [Lucide](https://lucide.dev/icons/) icons: `<i data-lucide="house"
 
 The icons page loads `js/icons-all.js`, which holds every Lucide icon. Its icon list, `src/data/icons-lucide.json`, is generated from `lucide-static`; run `npm run icons:list` after upgrading `lucide` and `lucide-static`.
 
-## Browser Support
+## Browser support
 
 The build targets the browsers Vite calls "baseline widely available". The `browserslist` field in `package.json` lists the same set for Autoprefixer.
 
@@ -212,4 +212,4 @@ The build targets the browsers Vite calls "baseline widely available". The `brow
 
 ## Bugs and feature requests
 
-Found a bug or have a feature request? [Please open a new issue](https://github.com/adminkit/adminkit/issues/new).
+To report a bug or request a feature, [open a new issue](https://github.com/adminkit/adminkit/issues/new).

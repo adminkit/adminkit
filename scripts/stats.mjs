@@ -317,10 +317,10 @@ const renderSummary = (stats) => {
     );
   }
   return [
-    `- **${stats.pages.count} pages**, ${stats.dashboards.count === 1 ? "one of them a dashboard" : `${stats.dashboards.count} of them dashboards`}: ${titles(stats.dashboards)}`,
-    `- **${stats.plugins.count} plugins**: ${list(stats.plugins.list.map((plugin) => `[${plugin.name}](${plugin.url})`))}`,
-    `- **${number(icons.total)} icons**: ${list(iconSets)}`,
-    `- **${stats.colorModes.count} color modes**: ${list(stats.colorModes.list)}, picked by hand or following the system, and **${stats.colorSchemes.count} sidebar color ${stats.colorSchemes.count === 1 ? "scheme" : "schemes"}**`,
+    `- ${stats.pages.count} pages, ${stats.dashboards.count === 1 ? "one of them a dashboard" : `${stats.dashboards.count} of them dashboards`}: ${titles(stats.dashboards)}`,
+    `- ${stats.plugins.count} plugins: ${list(stats.plugins.list.map((plugin) => `[${plugin.name}](${plugin.url})`))}`,
+    `- ${number(icons.total)} icons: ${list(iconSets)}`,
+    `- ${stats.colorModes.count} color modes: ${list(stats.colorModes.list)}, picked by hand or following the system, and ${stats.colorSchemes.count} sidebar color ${stats.colorSchemes.count === 1 ? "scheme" : "schemes"}`,
   ].join("\n");
 };
 
