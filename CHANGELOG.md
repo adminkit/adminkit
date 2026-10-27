@@ -69,6 +69,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Button contrast in both color modes: `.btn-dark` has dark text in dark mode, and every `.btn-outline-*` (including `light` and `dark`) draws its label and border in a color that reaches 4.5:1 on the page and card backgrounds
 - Dropdown carets are drawn by one `chevron()` mixin that centres the visible V on its box, and the inline carets sit on the middle of the text
 - `npm ci` no longer fails without a `.git` directory (Vercel CLI deploys, tarballs, Docker builds): the `prepare` script is gone and lefthook's own `postinstall` installs the git hooks, skipping CI
+- The calendar on the Analytics dashboard fits its card at every width: it no longer keeps Vanilla Calendar Pro's 17rem minimum, its seven columns share the width (`minmax(0, 1fr)`), and in narrow cards (under 18rem, a container query) the arrows, title and rows get smaller, so the Saturday column no longer sticks out of the quarter-width card from the xxl breakpoint up
 
 ## [3.5.0] - 2026-08-01
 

@@ -71,19 +71,10 @@ body {
 }
 
 .vc {
-  width: 100%;
-  padding: 0;
-  background-color: transparent;
   font-family: $font-family-base;
 
   [data-vc-arrow] {
-    height: 45px;
-    width: 45px;
     border-radius: $border-radius;
-
-    &::before {
-      background-size: 1.5rem;
-    }
 
     &:hover {
       background-color: var(--#{$prefix}gray-200);
@@ -96,12 +87,10 @@ body {
   }
 
   [data-vc-week-day] {
-    min-height: 45px;
     font-weight: $font-weight-normal;
   }
 
   [data-vc-date-btn] {
-    min-height: 45px;
     font-size: $font-size-base;
     border-radius: $border-radius;
   }
@@ -126,5 +115,86 @@ body {
   [data-vc-date-today][data-vc-date-selected] [data-vc-date-btn]::after {
     border-color: rgba(var(--#{$prefix}emphasis-color-rgb), 0.2) transparent
       $white;
+  }
+}
+
+// Inline calendar, which fills its card at every width. The plugin sizes the calendar
+// for a popup (17rem minimum, header padding, 1.875rem minimum day cells, `1fr` columns
+// that grow to their content), which is wider than a quarter-width dashboard card, so the
+// inline calendar drops those minimums and its seven columns share the width evenly.
+.vc:not([data-vc-input]) {
+  container-type: inline-size;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  background-color: transparent;
+
+  [data-vc="wrapper"],
+  [data-vc="content"],
+  [data-vc="dates"],
+  [data-vc="months"],
+  [data-vc="years"] {
+    min-width: 0;
+  }
+
+  [data-vc-header="content"] {
+    min-width: 0;
+    padding-right: $spacer * 0.5;
+    padding-left: $spacer * 0.5;
+  }
+
+  [data-vc-arrow] {
+    flex-shrink: 0;
+    height: 45px;
+    width: 45px;
+
+    &::before {
+      background-size: 1.5rem;
+    }
+  }
+
+  [data-vc="week"],
+  [data-vc-dates="row"] {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  [data-vc-week-day],
+  [data-vc-date-btn] {
+    min-width: 0;
+  }
+
+  [data-vc-week-day] {
+    min-height: 45px;
+  }
+
+  [data-vc-date-btn] {
+    min-height: 45px;
+  }
+
+  // Narrow cards (a quarter-width dashboard column, phones): smaller arrows, title and rows
+  @container (width < 18rem) {
+    [data-vc-header="content"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    [data-vc-arrow] {
+      height: 2rem;
+      width: 2rem;
+
+      &::before {
+        background-size: 1.25rem;
+      }
+    }
+
+    [data-vc="month"],
+    [data-vc="year"] {
+      font-size: $font-size-base;
+    }
+
+    [data-vc-week-day],
+    [data-vc-date-btn] {
+      min-height: 2.25rem;
+    }
   }
 }
