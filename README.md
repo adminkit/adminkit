@@ -21,65 +21,86 @@
 
 ## Preview
 
-A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons. AdminKit **does not require jQuery** and neither does one of the 3rd party libraries AdminKit is using. [Open demo](https://demo.adminkit.io/).
+AdminKit is an admin and dashboard template built on Bootstrap 5, released under the MIT license. It needs no jQuery, and neither do the plugins it uses. It has light and dark mode and targets WCAG 2.2 AA in both. [Open the demo](https://demo.adminkit.io/).
 
-<a href="https://demo.adminkit.io" target="_blank"><img src="https://assets.adminkit.io/banners/github-1280%C3%97640px.png?2" alt="AdminKit Demo"></a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/screenshots/dashboard-dark.webp">
+  <img src=".github/screenshots/dashboard-light.webp" width="1600" height="1000" alt="The AdminKit dashboard: sales, visitors, earnings and orders, a line chart, a calendar, a world map and a projects table">
+</picture>
 
-## Features
+## AdminKit and AdminKit PRO
 
-- **Customizable:** You don't need to be an expert to customize AdminKit. Our code is very readable and well documented.
-- **Fully Responsive:** With mobile, tablet & desktop support it doesn't matter what device you're using. AdminKit is responsive in all browsers.
-- **Cross-Browser:** Our themes are working perfectly with Chrome, Firefox, Safari, Opera, and Edge. We're working hard to support them.
-- **Clean Code:** We strictly follow Bootstrap's guidelines to make your integration as easy as possible. All code is handwritten.
-- **No jQuery:** AdminKit, and all third-party libraries used in the admin template, do not require jQuery as a dependency.
-- **Regular Updates:** From time to time you'll receive an update containing new components, improvements, and bugfixes.
+AdminKit PRO is the commercial edition, with more pages, dashboards and plugins, a settings panel and an AI chat. The table is generated from `src/data/stats.json` and the PRO snapshot in `src/data/editions/pro.json`; the template's Upgrade to Pro page (`upgrade-to-pro.html`) shows the same comparison with screenshots of AdminKit PRO, and [adminkit.io/pricing](https://adminkit.io/pricing/) has the prices and licenses.
+
+<!-- stats:start -->
+
+|                       | AdminKit      | [AdminKit PRO](https://adminkit.io/pricing/) |
+| --------------------- | ------------- | -------------------------------------------- |
+| Pages                 | 18            | 52                                           |
+| Dashboards            | 1             | 4                                            |
+| Plugins               | 4             | 11                                           |
+| Icons                 | 1,908         | 4,071                                        |
+| Sidebar color schemes | 1             | 3                                            |
+| Dark mode             | Yes           | Yes                                          |
+| AI chat               | No            | Full                                         |
+| Settings panel        | No            | Yes                                          |
+| Support               | GitHub issues | Email                                        |
+| License               | MIT           | Commercial                                   |
+
+<!-- stats:end -->
 
 ## Quick start
 
-### Download
-
-- Clone this repo `git clone https://github.com/adminkit/adminkit.git`
-- [Download from GitHub](https://github.com/adminkit/adminkit/archive/master.zip)
-- [Download from Website](https://adminkit.io/#download)
-
-### Build tools
-
-AdminKit is built with [Vite](https://vite.dev/). You need Node.js 24 (see `.nvmrc`). Install the dependencies once:
+You need Node.js 24 (see `.nvmrc`). Clone the repository, install the dependencies and start the development server on http://localhost:8080:
 
 ```sh
-npm ci
+git clone --depth 1 https://github.com/adminkit/adminkit.git my-admin && cd my-admin && npm ci && npm run dev
 ```
 
-Start a local server at http://localhost:8080 that reloads when you change a page, partial, stylesheet or script:
-
-```sh
-npm run dev
-```
-
-Build the production files into `dist/`: the HTML pages, `css/app.css`, `js/app.js` and `img/`, ready to deploy or drop into your own project:
+The server reloads when you change a page, partial, stylesheet or script. Build the production files into `dist/`, the HTML pages, `css/app.css`, `js/app.js`, `fonts/` and `img/`, ready to deploy or copy into your own project:
 
 ```sh
 npm run build
 ```
 
-## CDN support
+`npm run preview` serves that build. You can also [download the repository as a zip](https://github.com/adminkit/adminkit/archive/master.zip) or [from the website](https://adminkit.io/#download).
 
-All files included in the `@adminkit/core` npm package are available over a CDN.
+## npm and CDN
 
-**CSS:**
+The built CSS and JavaScript are published to npm as [`@adminkit/core`](https://www.npmjs.com/package/@adminkit/core):
+
+```sh
+npm install @adminkit/core
+```
+
+The same files are on the unpkg CDN. `js/app.js` is a plain script, so it needs no build step or `type="module"`:
 
 ```html
 <link
   rel="stylesheet"
   href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css"
 />
-```
-
-**Javascript:**
-
-```html
 <script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
 ```
+
+Pin an exact version instead of `@latest` in production. The script adds `window.bootstrap`, `window.adminkit`, `window.lucide`, `window.theme`, `window.Chart`, `window.jsVectorMap` and `window.VanillaCalendar`.
+
+## Frameworks
+
+AdminKit is plain HTML, CSS and JavaScript, so it works with any back end or front-end framework. The documentation has a setup guide for each of these:
+
+- [HTML](https://adminkit.io/docs/frameworks/html/)
+- [Laravel](https://adminkit.io/docs/frameworks/laravel/)
+- [Django](https://adminkit.io/docs/frameworks/django/)
+- [Rails](https://adminkit.io/docs/frameworks/rails/)
+- [Symfony](https://adminkit.io/docs/frameworks/symfony/)
+- [React](https://adminkit.io/docs/frameworks/react/)
+- [Next.js](https://adminkit.io/docs/frameworks/nextjs/)
+- [Vue](https://adminkit.io/docs/frameworks/vue/)
+- [Nuxt](https://adminkit.io/docs/frameworks/nuxt/)
+- [Angular](https://adminkit.io/docs/frameworks/angular/)
+- [SvelteKit](https://adminkit.io/docs/frameworks/sveltekit/)
+- [Astro](https://adminkit.io/docs/frameworks/astro/)
 
 ## Dark mode
 
@@ -187,24 +208,3 @@ The build targets the browsers Vite calls "baseline widely available". The `brow
 ## Bugs and feature requests
 
 Found a bug or have a feature request? [Please open a new issue](https://github.com/adminkit/adminkit/issues/new).
-
-## AdminKit and AdminKit PRO
-
-AdminKit PRO is the commercial edition. The table is generated from `src/data/stats.json` and the PRO snapshot in `src/data/editions/pro.json`; [adminkit.io/pricing](https://adminkit.io/pricing/) has the prices and licenses.
-
-<!-- stats:start -->
-
-|                       | AdminKit      | [AdminKit PRO](https://adminkit.io/pricing/) |
-| --------------------- | ------------- | -------------------------------------------- |
-| Pages                 | 18            | 52                                           |
-| Dashboards            | 1             | 4                                            |
-| Plugins               | 4             | 11                                           |
-| Icons                 | 1,908         | 4,071                                        |
-| Sidebar color schemes | 1             | 3                                            |
-| Dark mode             | Yes           | Yes                                          |
-| AI chat               | No            | Full                                         |
-| Settings panel        | No            | Yes                                          |
-| Support               | GitHub issues | Email                                        |
-| License               | MIT           | Commercial                                   |
-
-<!-- stats:end -->

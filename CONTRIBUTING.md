@@ -40,6 +40,10 @@ chore(deps): upgrade bootstrap to 5.3.8
 
 [lefthook](https://github.com/evilmartians/lefthook) enforces this locally. The `commit-msg` hook runs commitlint on your message and the `pre-commit` hook runs ESLint and Prettier on staged files. Run `npm run lint` to check the whole repo and `npm run format` to fix formatting.
 
+## Counts
+
+Page, plugin and icon counts are generated, never typed: `npm run stats` updates `src/data/stats.json` and the README table, and `npm run lint` fails while either is stale. When AdminKit PRO's pages, plugins or icons change, and before every release, refresh the PRO snapshot with `npm run stats:sync -- --pro ../adminkit-pro` and commit `src/data/editions/pro.json`.
+
 ## Changelog
 
 A PR that changes behaviour adds a line under `Unreleased` in `CHANGELOG.md`. The file follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Pure refactors, formatting and tooling changes that users never notice don't need an entry.
