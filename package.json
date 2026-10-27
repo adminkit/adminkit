@@ -1,6 +1,6 @@
 {
   "name": "@adminkit/core",
-  "version": "3.5.0",
+  "version": "4.0.0",
   "description": "AdminKit - Bootstrap 5 Admin Template",
   "engines": {
     "node": ">=24"
