@@ -175,6 +175,10 @@ adminkit/
 
 `src/pages` holds one Handlebars template per page with YAML frontmatter; `src/layouts`, `src/partials` and `src/scripts` (inline page scripts) are the shared markup. `public/` is copied to `dist/` as it is.
 
+## Sidebar
+
+From Bootstrap's lg breakpoint (992px) up, the navbar toggle hides and shows the sidebar. On smaller screens the sidebar is a Bootstrap offcanvas (`.offcanvas-lg` on `#sidebar`): the toggle opens it as a sheet over the page, Escape, the backdrop or a link close it, and focus stays inside while it is open.
+
 ## Motion
 
 Cards fade up as they scroll into view (`.ak-reveal-cards` on `<main>`, `.ak-reveal` on anything else), stat numbers with `data-count-up` count up, charts animate in, and cards whose content JavaScript draws show a skeleton placeholder until it is ready. Durations and easings are the `--ak-duration-fast|base|slow` and `--ak-ease-standard|emphasized` custom properties (`$ak-transition-*` in Sass). With `prefers-reduced-motion: reduce` nothing moves: content only fades in, numbers and charts show their final state at once. Keep the reveal script in `src/partials/site-meta.hbs` in your `<head>`; without it the content simply shows.
