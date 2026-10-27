@@ -5,6 +5,7 @@ import "./modules/sidebar";
 import "./modules/theme";
 import "./modules/icons";
 import "./modules/reveal";
+import "./modules/count-up";
 
 // Charts
 import "./modules/chartjs";
