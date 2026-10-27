@@ -138,6 +138,30 @@
         </div>
       </li>
       <li class="nav-item dropdown">
+        <a class="nav-icon dropdown-toggle" href="#" id="colorModeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Color mode" data-color-mode-toggle>
+          <span data-color-mode-icon="light" hidden><i class="align-middle" data-lucide="sun"></i></span>
+          <span data-color-mode-icon="dark" hidden><i class="align-middle" data-lucide="moon"></i></span>
+          <span data-color-mode-icon="auto"><i class="align-middle" data-lucide="sun-moon"></i></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="colorModeDropdown">
+          <li>
+            <button type="button" class="dropdown-item" data-color-mode-value="light" aria-pressed="false">
+              <i class="align-middle me-1" data-lucide="sun"></i> Light
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item" data-color-mode-value="dark" aria-pressed="false">
+              <i class="align-middle me-1" data-lucide="moon"></i> Dark
+            </button>
+          </li>
+          <li>
+            <button type="button" class="dropdown-item" data-color-mode-value="auto" aria-pressed="false">
+              <i class="align-middle me-1" data-lucide="sun-moon"></i> Auto
+            </button>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item dropdown">
         <a class="nav-icon dropdown-toggle d-inline-block d-sm-none" href="#" data-bs-toggle="dropdown">
           <i class="align-middle" data-lucide="settings"></i>
         </a>
