@@ -36,6 +36,26 @@
     "dist"
   ],
   "type": "module",
+  "main": "./dist/js/app.js",
+  "types": "./dist/js/app.d.ts",
+  "style": "./dist/css/app.css",
+  "exports": {
+    ".": {
+      "types": "./dist/js/app.d.ts",
+      "default": "./dist/js/app.js"
+    },
+    "./css": {
+      "types": "./dist/css/app.d.css.ts",
+      "default": "./dist/css/app.css"
+    },
+    "./head": "./dist/js/head.js",
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": [
+    "*.css",
+    "*.js"
+  ],
   "scripts": {
     "dev": "vite",
     "start": "vite --open",
@@ -84,6 +104,9 @@
     "sharp": "0.35.5",
     "vite": "8.3.5",
     "vite-plugin-handlebars": "2.0.3"
+  },
+  "allowScripts": {
+    "lefthook": true
   },
   "adminkit": {
     "edition": "free"

@@ -73,6 +73,15 @@ The built CSS and JavaScript are published to npm as [`@adminkit/core`](https://
 npm install @adminkit/core
 ```
 
+With a bundler, import the stylesheet and the script once, in the entry module or root layout:
+
+```js
+import "@adminkit/core/css";
+import "@adminkit/core";
+```
+
+`@adminkit/core` is `dist/js/app.js` and `@adminkit/core/css` is `dist/css/app.css`; `@adminkit/core/head` is `dist/js/head.js`, and every other file stays available under `@adminkit/core/dist/`. The package ships TypeScript declarations for the import and the globals it adds. Imported during server-side rendering, where there is no `window`, the script does nothing, so it can be imported at the top of a module that also runs on the server.
+
 The same files are on the unpkg CDN. `js/app.js` is a plain script, so it needs no build step or `type="module"`:
 
 ```html

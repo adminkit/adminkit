@@ -4,6 +4,7 @@ import { defineConfig } from "vite";
 import banner from "./vite/banner.js";
 import beautifyHtml from "./vite/beautify-html.js";
 import classicScript from "./vite/classic-script.js";
+import declarations from "./vite/declarations.js";
 import handlebarsPages from "./vite/handlebars-pages.js";
 import preloadFonts from "./vite/preload-fonts.js";
 import stats from "./vite/stats.js";
@@ -78,6 +79,10 @@ export default defineConfig({
  */`
     ),
     classicScript(Object.keys(bundles)),
+    declarations({
+      "js/app.d.ts": src("types/app.d.ts"),
+      "css/app.d.css.ts": src("types/app.d.css.ts"),
+    }),
   ],
   resolve: {
     // Pages live in src/pages, so the dev server cannot reach ../js and ../scss by relative URL.
