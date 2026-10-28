@@ -215,6 +215,9 @@ $display-font-sizes: (
   6: 2.5rem,
 ) !default;
 
+// Progress
+$progress-height-sm: 0.4rem !default;
+
 // Shadows
 $box-shadow-sm: 0 0.05rem 0.2rem rgba(var(--bs-emphasis-color-rgb), 0.05) !default;
 $box-shadow: 0 0.1rem 0.2rem rgba(var(--bs-emphasis-color-rgb), 0.05) !default;

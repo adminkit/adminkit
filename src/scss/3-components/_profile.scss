@@ -1,0 +1,15 @@
+// Profile page (pages-profile.html)
+
+// Smaller avatar in the profile header on phones, so the name keeps its line
+.profile-avatar {
+  @include media-breakpoint-down(sm) {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+// Keeps the progress bars in the projects table the same length
+.profile-progress-value {
+  min-width: 2.5rem;
+  text-align: end;
+}

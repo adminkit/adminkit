@@ -30,6 +30,7 @@
 @import "bootstrap/scss/badge";
 @import "bootstrap/scss/list-group";
 @import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
 @import "bootstrap/scss/close";
 @import "bootstrap/scss/modal";
 @import "bootstrap/scss/offcanvas";
@@ -38,6 +39,7 @@
 @import "bootstrap/scss/utilities/api";
 
 // Theme mixins
+@import "2-mixins/badge";
 @import "2-mixins/button";
 @import "2-mixins/chevron";
 @import "2-mixins/modal";
@@ -47,6 +49,7 @@
 @import "3-components/fonts";
 @import "3-components/alert";
 @import "3-components/avatar";
+@import "3-components/badges";
 @import "3-components/buttons";
 @import "3-components/card";
 @import "3-components/chart";
@@ -54,12 +57,16 @@
 @import "3-components/dropdown";
 @import "3-components/footer";
 @import "3-components/hamburger";
+@import "3-components/invoice";
 @import "3-components/list-group";
 @import "3-components/lucide";
 @import "3-components/main";
 @import "3-components/modal";
 @import "3-components/navbar";
+@import "3-components/pricing";
 @import "3-components/print";
+@import "3-components/profile";
+@import "3-components/progress";
 @import "3-components/reboot";
 @import "3-components/reveal";
 @import "3-components/sidebar";

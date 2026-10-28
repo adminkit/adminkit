@@ -1,0 +1,24 @@
+@use "sass:color";
+
+// A 15% tint of the colour with the text darkened (lightened in dark mode) to 4.5:1
+@each $color, $value in $theme-colors {
+  a.badge-#{$color}-light,
+  .badge-#{$color}-light {
+    @include badge-variant(
+      rgba($value, 0.15),
+      ak-readable($value, color.mix($value, $surface-bg, 15%))
+    );
+  }
+}
+
+@include color-mode(dark) {
+  @each $color, $value in map-merge($theme-colors, $theme-colors-dark) {
+    a.badge-#{$color}-light,
+    .badge-#{$color}-light {
+      @include badge-variant(
+        rgba($value, 0.15),
+        ak-readable($value, color.mix($value, $surface-bg-dark, 15%))
+      );
+    }
+  }
+}

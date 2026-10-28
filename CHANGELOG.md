@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add print styles
 - Update Analytics dashboard with website metrics
 - Redesign the Upgrade to Pro page
+- Redesign invoice, pricing and profile pages
 - Rename Feather icons page to Lucide (/icons-lucide.html)
 - Replace Feather icons with Lucide (`data-feather` → `data-lucide`)
 - Replace flatpickr with Vanilla Calendar Pro

@@ -1,10 +1,17 @@
 // Printing (the invoice's Print button): only the page content, without the sidebar,
-// navbar, footer and card chrome, and with every card shown, revealed or not
+// navbar, footer and card chrome, on a white page whatever the color mode, and with every
+// card shown, revealed or not. The invoice resets its own colors in _invoice.scss.
 @media print {
   .sidebar,
   .navbar,
   .footer {
     display: none !important;
+  }
+
+  body,
+  .wrapper,
+  .main {
+    background: $white !important;
   }
 
   .main,

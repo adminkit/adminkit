@@ -3,127 +3,308 @@ name: pages-invoice
 title: Invoice
 layout: default.hbs
 active: { pages: true, invoice: true }
-meta_description: "Invoice page demo for the free AdminKit Bootstrap 5 template. A receipt with billing details, line items and totals that prints without the sidebar and navbar."
+meta_description: "Invoice page demo for the free AdminKit Bootstrap 5 template. An invoice with status, billing details, line items, totals and payment details that prints without the sidebar and navbar."
 ---
 
-{{> site-title title=title badge="Get more page examples"}}
+<div class="row align-items-center g-2 mb-3 d-print-none">
+  <div class="col-12 col-sm">
+    <h1 class="h3 d-inline align-middle">{{title}}</h1>
+    <a class="badge bg-dark text-light ms-2" href="upgrade-to-pro.html">Get more page examples</a>
+  </div>
+  <div class="col-12 col-sm-auto d-flex flex-wrap gap-2">
+    <button type="button" class="btn btn-outline-primary" data-invoice-print>
+      <i class="align-middle me-1" data-lucide="printer"></i> Print
+    </button>
+    <button type="button" class="btn btn-outline-primary" data-invoice-print>
+      <i class="align-middle me-1" data-lucide="download"></i> Download PDF
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#invoice-send">
+      <i class="align-middle me-1" data-lucide="send"></i> Send invoice
+    </button>
+  </div>
+</div>
 
 <div class="row">
-  <div class="col-12">
-    <div class="card">
-      <div class="card-body m-sm-3 m-md-5">
-        <h2 class="visually-hidden">Receipt 2026-0148</h2>
-        <p class="mb-4">
-          Hello <strong>Charles Hall</strong>,
-          <br />
-          This is the receipt for a payment of <strong>$308.75</strong> (USD) you made to AdminKit.
-        </p>
-
-        <div class="row">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <div class="text-body-secondary">Receipt No.</div>
-            <strong>2026-0148</strong>
+  <div class="col-12 col-xl-8 col-xxl-9">
+    <article class="card invoice" aria-labelledby="invoice-title">
+      <div class="card-body p-4 p-md-5">
+        <div class="d-flex flex-wrap justify-content-between align-items-start gap-3 mb-4">
+          <div class="d-flex align-items-center text-primary">
+            <svg class="me-2" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true">
+              <path d="M12 4L20 8.00004L12 12L4 8.00004L12 4Z"></path>
+              <path d="M20 12L12 16L4 12"></path>
+              <path d="M20 16L12 20L4 16"></path>
+            </svg>
+            <span class="fs-3 fw-bold text-body-emphasis">AdminKit</span>
           </div>
-          <div class="col-md-6 text-md-end">
-            <div class="text-body-secondary">Payment Date</div>
-            <strong><time datetime="2026-10-14T15:45">October 14, 2026, 3:45 PM</time></strong>
+          <div class="text-sm-end">
+            <h2 class="h3 mb-1" id="invoice-title">Invoice</h2>
+            <div class="text-body-secondary mb-2">INV-2026-0148</div>
+            <span class="badge bg-warning">Unpaid</span>
           </div>
         </div>
 
+        <dl class="row invoice-meta g-3 mb-0">
+          <div class="col-6 col-md-3">
+            <dt>Issued</dt>
+            <dd><time datetime="2026-10-14">October 14, 2026</time></dd>
+          </div>
+          <div class="col-6 col-md-3">
+            <dt>Due date</dt>
+            <dd><time datetime="2026-11-13">November 13, 2026</time></dd>
+          </div>
+          <div class="col-6 col-md-3">
+            <dt>Purchase order</dt>
+            <dd>PO-7731</dd>
+          </div>
+          <div class="col-6 col-md-3">
+            <dt>Amount due</dt>
+            <dd class="fw-bold text-body-emphasis">$9,579.60</dd>
+          </div>
+        </dl>
+
         <hr class="my-4" />
 
-        <div class="row mb-4">
-          <div class="col-md-6 mb-3 mb-md-0">
-            <div class="text-body-secondary">Client</div>
-            <strong>Charles Hall</strong>
-            <address class="mb-0">
-              4183 Forest Avenue<br />
-              New York, NY 10011<br />
-              USA<br />
-              <a href="mailto:charles.hall@example.com">charles.hall@example.com</a>
-            </address>
-          </div>
-          <div class="col-md-6 text-md-end">
-            <div class="text-body-secondary">Payment To</div>
-            <strong>AdminKit LLC</strong>
-            <address class="mb-0">
+        <div class="row g-4 mb-4">
+          <div class="col-sm-6">
+            <div class="h6 text-body-secondary mb-2">From</div>
+            <strong class="d-block text-body-emphasis">AdminKit LLC</strong>
+            <address class="text-body-secondary mb-0">
               354 Roy Alley<br />
               Denver, CO 80202<br />
               USA<br />
               <a href="mailto:billing@example.com">billing@example.com</a>
             </address>
           </div>
+          <div class="col-sm-6">
+            <div class="h6 text-body-secondary mb-2">Billed to</div>
+            <strong class="d-block text-body-emphasis">Ashton Cox</strong>
+            <address class="text-body-secondary mb-0">
+              Levitz Furniture<br />
+              4183 Forest Avenue<br />
+              New York, NY 10011<br />
+              USA<br />
+              <a href="mailto:ashton.cox@example.com">ashton.cox@example.com</a>
+            </address>
+          </div>
         </div>
 
-        <table class="table table-sm">
-          <caption class="visually-hidden">Items paid with receipt 2026-0148</caption>
+        <table class="table invoice-items mb-0">
+          <caption class="visually-hidden">Items on invoice INV-2026-0148</caption>
           <thead>
             <tr>
               <th scope="col">Description</th>
-              <th scope="col" class="text-end">Qty</th>
-              <th scope="col" class="text-end">Unit price</th>
+              <th scope="col" class="text-end d-none d-sm-table-cell">Qty</th>
+              <th scope="col" class="text-end d-none d-sm-table-cell">Unit price</th>
               <th scope="col" class="text-end">Amount</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Theme customization (hours)</td>
-              <td class="text-end">2</td>
-              <td class="text-end">$75.00</td>
-              <td class="text-end">$150.00</td>
+              <td>
+                <div class="fw-medium text-body-emphasis">Website redesign, design phase</div>
+                <div class="text-body-secondary small">Homepage, product and checkout templates</div>
+              </td>
+              <td class="text-end d-none d-sm-table-cell">1</td>
+              <td class="text-end text-nowrap d-none d-sm-table-cell">$4,800.00</td>
+              <td class="text-end text-nowrap">$4,800.00</td>
             </tr>
             <tr>
-              <td>Monthly subscription</td>
-              <td class="text-end">3</td>
-              <td class="text-end">$25.00</td>
-              <td class="text-end">$75.00</td>
+              <td>
+                <div class="fw-medium text-body-emphasis">Front-end development</div>
+                <div class="text-body-secondary small">Bootstrap 5 build, hours<span class="d-sm-none"> &middot; 32 &times; $95.00</span></div>
+              </td>
+              <td class="text-end d-none d-sm-table-cell">32</td>
+              <td class="text-end text-nowrap d-none d-sm-table-cell">$95.00</td>
+              <td class="text-end text-nowrap">$3,040.00</td>
             </tr>
             <tr>
-              <td>Onboarding session</td>
-              <td class="text-end">1</td>
-              <td class="text-end">$100.00</td>
-              <td class="text-end">$100.00</td>
+              <td>
+                <div class="fw-medium text-body-emphasis">Content migration</div>
+                <div class="text-body-secondary small">Product pages moved from the old store<span class="d-sm-none"> &middot; 120 &times; $6.50</span></div>
+              </td>
+              <td class="text-end d-none d-sm-table-cell">120</td>
+              <td class="text-end text-nowrap d-none d-sm-table-cell">$6.50</td>
+              <td class="text-end text-nowrap">$780.00</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="fw-medium text-body-emphasis">Hosting and maintenance</div>
+                <div class="text-body-secondary small">October 2026</div>
+              </td>
+              <td class="text-end d-none d-sm-table-cell">1</td>
+              <td class="text-end text-nowrap d-none d-sm-table-cell">$250.00</td>
+              <td class="text-end text-nowrap">$250.00</td>
             </tr>
           </tbody>
-          <tfoot>
-            <tr>
-              <th scope="row" colspan="3" class="text-end fw-normal">Subtotal</th>
-              <td class="text-end">$325.00</td>
-            </tr>
-            <tr>
-              <th scope="row" colspan="3" class="text-end fw-normal">Discount (5%)</th>
-              <td class="text-end">&minus;$16.25</td>
-            </tr>
-            <tr>
-              <th scope="row" colspan="3" class="text-end">Total paid</th>
-              <td class="text-end fw-bold">$308.75</td>
-            </tr>
-          </tfoot>
         </table>
 
-        <div class="text-center">
-          <p>
-            <strong>Note:</strong>
-            Paid by Visa ending in 4242. Thank you for your business.
-          </p>
+        <div class="row">
+          <div class="col-sm-8 col-md-6 col-lg-5 ms-auto">
+            <table class="table table-sm table-borderless invoice-totals mb-0">
+              <caption class="visually-hidden">Totals</caption>
+              <tbody>
+                <tr>
+                  <th scope="row" class="fw-normal text-body-secondary">Subtotal</th>
+                  <td class="text-end">$8,870.00</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-normal text-body-secondary">Sales tax (8%)</th>
+                  <td class="text-end">$709.60</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-normal text-body-secondary">Total</th>
+                  <td class="text-end">$9,579.60</td>
+                </tr>
+                <tr>
+                  <th scope="row" class="fw-normal text-body-secondary">Amount paid</th>
+                  <td class="text-end">$0.00</td>
+                </tr>
+                <tr class="invoice-due">
+                  <th scope="row">Amount due (USD)</th>
+                  <td class="text-end">$9,579.60</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-          <button type="button" class="btn btn-primary d-print-none" data-print>
-            Print this receipt
-          </button>
+        <hr class="my-4" />
+
+        <div class="row g-4">
+          <div class="col-md-6">
+            <h3 class="h6 text-body-secondary mb-2">Payment details</h3>
+            <dl class="row invoice-payment mb-0">
+              <dt class="col-5">Bank</dt>
+              <dd class="col-7">Front Range Bank</dd>
+              <dt class="col-5">Account name</dt>
+              <dd class="col-7">AdminKit LLC</dd>
+              <dt class="col-5">Account</dt>
+              <dd class="col-7">Ending in 4821</dd>
+              <dt class="col-5">Reference</dt>
+              <dd class="col-7">INV-2026-0148</dd>
+            </dl>
+          </div>
+          <div class="col-md-6">
+            <h3 class="h6 text-body-secondary mb-2">Notes</h3>
+            <p class="text-body-secondary mb-2">
+              Thank you for your business. Please include the invoice number with your payment. Payment is due within 30 days.
+            </p>
+            <p class="text-body-secondary mb-0">
+              Questions about this invoice? Email <a href="mailto:billing@example.com">billing@example.com</a> or call +1 (303) 555-0142.
+            </p>
+          </div>
         </div>
       </div>
+    </article>
+  </div>
+
+  <div class="col-12 col-xl-4 col-xxl-3 d-print-none">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title mb-0">Activity</h2>
+      </div>
+      <ul class="list-group list-group-flush invoice-activity" data-invoice-activity>
+        <li class="list-group-item d-flex gap-3">
+          <i class="text-body-secondary flex-shrink-0" data-lucide="bell"></i>
+          <div>
+            <div>Reminder scheduled</div>
+            <div class="text-body-secondary small"><time datetime="2026-11-10">Nov 10, 2026</time></div>
+          </div>
+        </li>
+        <li class="list-group-item d-flex gap-3">
+          <i class="text-body-secondary flex-shrink-0" data-lucide="eye"></i>
+          <div>
+            <div>Viewed by Ashton Cox</div>
+            <div class="text-body-secondary small"><time datetime="2026-10-15T14:40">Oct 15, 2026, 2:40 PM</time></div>
+          </div>
+        </li>
+        <li class="list-group-item d-flex gap-3">
+          <i class="text-body-secondary flex-shrink-0" data-lucide="send"></i>
+          <div>
+            <div>Sent to ashton.cox@example.com</div>
+            <div class="text-body-secondary small"><time datetime="2026-10-14T09:15">Oct 14, 2026, 9:15 AM</time></div>
+          </div>
+        </li>
+        <li class="list-group-item d-flex gap-3">
+          <i class="text-body-secondary flex-shrink-0" data-lucide="file"></i>
+          <div>
+            <div>Created by Charles Hall</div>
+            <div class="text-body-secondary small"><time datetime="2026-10-14T09:12">Oct 14, 2026, 9:12 AM</time></div>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
+</div>
+
+<div class="modal fade" id="invoice-send" tabindex="-1" aria-labelledby="invoice-send-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <form class="modal-content" data-invoice-send>
+      <div class="modal-header">
+        <h2 class="modal-title h5" id="invoice-send-title">Send invoice</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label class="form-label" for="invoice-send-to">To</label>
+          <input type="email" class="form-control" id="invoice-send-to" value="ashton.cox@example.com" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="invoice-send-subject">Subject</label>
+          <input type="text" class="form-control" id="invoice-send-subject" value="Invoice INV-2026-0148 from AdminKit" required />
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="invoice-send-message">Message</label>
+          <textarea class="form-control" id="invoice-send-message" rows="6">Hi Ashton,
+
+Please find attached invoice INV-2026-0148 for $9,579.60, due November 13, 2026.
+
+Thanks,
+Charles</textarea>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="invoice-send-pdf" checked />
+          <label class="form-check-label" for="invoice-send-pdf">Attach the invoice as a PDF</label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+    </form>
   </div>
 </div>
 
 {{#push "scripts"}}
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // Print the receipt; the print styles leave out the sidebar, navbar and footer
-    document.querySelectorAll("[data-print]").forEach(function(button) {
+    // Print and Download PDF open the print dialog, which can also save the invoice as a PDF;
+    // the print styles leave out the sidebar, navbar, actions and activity
+    document.querySelectorAll("[data-invoice-print]").forEach(function(button) {
       button.addEventListener("click", function() {
         window.print();
       });
+    });
+
+    // Demo only: "sending" closes the dialog and adds the event to the activity list
+    var form = document.querySelector("[data-invoice-send]");
+    var activity = document.querySelector("[data-invoice-activity]");
+
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      var item = document.createElement("li");
+      item.className = "list-group-item d-flex gap-3";
+      item.innerHTML = '<i class="text-body-secondary flex-shrink-0" data-lucide="send"></i><div><div></div><div class="text-body-secondary small">Just now</div></div>';
+      item.querySelector("div > div").textContent = "Sent to " + form.querySelector("#invoice-send-to").value;
+      activity.prepend(item);
+
+      bootstrap.Modal.getOrCreateInstance(form.closest(".modal")).hide();
     });
   });
 </script>
