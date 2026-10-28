@@ -258,6 +258,11 @@ $alert-border-width: 0 !default;
 $alert-color: $dark !default;
 $alert-bg-scale: -80% !default;
 
+// List group
+$list-group-bg: var(--ak-surface-bg) !default;
+$list-group-item-padding-y: 0.75rem !default;
+$list-group-item-padding-x: 1.25rem !default;
+
 // Forms
 // Stacked checks and radios 24px apart, the WCAG 2.2 target spacing
 $form-check-margin-bottom: 0.25rem !default;
