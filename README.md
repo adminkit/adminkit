@@ -76,6 +76,7 @@ npm install @adminkit/core
 The same files are on the unpkg CDN. `js/app.js` is a plain script, so it needs no build step or `type="module"`:
 
 ```html
+<script src="https://unpkg.com/@adminkit/core@latest/dist/js/head.js"></script>
 <link
   rel="stylesheet"
   href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css"
@@ -104,24 +105,14 @@ AdminKit is plain HTML, CSS and JavaScript, so it works with any back end or fro
 
 ## Dark mode
 
-`css/app.css` holds a light and a dark color mode, built on [Bootstrap's color modes](https://getbootstrap.com/docs/5.3/customize/color-modes/). Set `data-bs-theme="dark"` on `<html>` for dark mode, or on any other element for that part of the page. The navbar toggle switches between light, dark and auto (the operating system setting) and stores the choice in `localStorage` (`adminkit_config_colorMode`). To apply the stored mode before the first paint, put this script in `<head>`, before the stylesheet:
+`css/app.css` holds a light and a dark color mode, built on [Bootstrap's color modes](https://getbootstrap.com/docs/5.3/customize/color-modes/). Set `data-bs-theme="dark"` on `<html>` for dark mode, or on any other element for that part of the page. The navbar toggle switches between light, dark and auto (the operating system setting) and stores the choice in `localStorage` (`adminkit_config_colorMode`). To apply the stored mode before the first paint, load `js/head.js` in `<head>`, before the stylesheet, as a plain blocking script (no `defer` or `type="module"`):
 
 ```html
-<script>
-  (function () {
-    var mode;
-    try {
-      mode = localStorage.getItem("adminkit_config_colorMode");
-    } catch (e) {}
-    if (mode !== "light" && mode !== "dark") {
-      mode = matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light";
-    }
-    document.documentElement.setAttribute("data-bs-theme", mode);
-  })();
-</script>
+<script src="js/head.js"></script>
+<link rel="stylesheet" href="css/app.css" />
 ```
+
+It is a few hundred bytes, needs no `unsafe-inline` in a Content Security Policy and also hides the cards that fade in until `js/app.js` runs. Without it `js/app.js` still sets the mode, after the first paint.
 
 In your own styles, use the custom properties for colors that follow the mode: Bootstrap's `--bs-*`, the gray scale `--bs-gray-100` to `--bs-gray-900` (which turns around in dark mode) and `--ak-surface-bg`, the background of cards, dropdowns and inputs. The dark values live in `src/scss/1-variables/_dark.scss`.
 
@@ -171,6 +162,7 @@ adminkit/
     ├── img/
     └── js/
         ├── app.js
+        ├── head.js
         └── icons-all.js
 ```
 
@@ -182,7 +174,7 @@ From Bootstrap's lg breakpoint (992px) up, the navbar toggle hides and shows the
 
 ## Motion
 
-Cards fade up as they scroll into view (`.ak-reveal-cards` on `<main>`, `.ak-reveal` on anything else), stat numbers with `data-count-up` count up, charts animate in, and cards whose content JavaScript draws show a skeleton placeholder until it is ready. Durations and easings are the `--ak-duration-fast|base|slow` and `--ak-ease-standard|emphasized` custom properties (`$ak-transition-*` in Sass). With `prefers-reduced-motion: reduce` nothing moves: content only fades in, numbers and charts show their final state at once. Keep the reveal script in `src/partials/site-meta.hbs` in your `<head>`; without it the content still shows.
+Cards fade up as they scroll into view (`.ak-reveal-cards` on `<main>`, `.ak-reveal` on anything else), stat numbers with `data-count-up` count up, charts animate in, and cards whose content JavaScript draws show a skeleton placeholder until it is ready. Durations and easings are the `--ak-duration-fast|base|slow` and `--ak-ease-standard|emphasized` custom properties (`$ak-transition-*` in Sass). With `prefers-reduced-motion: reduce` nothing moves: content only fades in, numbers and charts show their final state at once. The cards only fade in on pages that load `js/head.js`; without it the content shows at once.
 
 ## Accessibility
 

@@ -1,7 +1,7 @@
 // Cards fade up as they scroll into view (js/modules/reveal.js): the top-level cards in
 // .ak-reveal-cards and any .ak-reveal element. The hidden state only applies under
-// html.js-reveal, which the inline script in <head> sets, so without JavaScript nothing is
-// hidden. Reduced motion keeps the fade and drops the movement.
+// html.js-reveal, which js/head.js sets, so without JavaScript nothing is hidden. Reduced
+// motion keeps the fade and drops the movement.
 $reveal-items: ".ak-reveal, .ak-reveal-cards .card:not(.card .card)";
 
 .js-reveal :is(#{$reveal-items}):not(.ak-revealed) {

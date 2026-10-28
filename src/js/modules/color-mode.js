@@ -1,6 +1,6 @@
 // Light, dark or auto (follows the operating system) colour mode. The mode is
-// data-bs-theme on <html>; the inline script in the page <head> sets it from localStorage
-// before the first paint, so this module only changes it afterwards.
+// data-bs-theme on <html>; js/head.js sets it from localStorage before the first paint, so
+// this module only changes it afterwards, or sets it when the page has no js/head.js.
 import appearance from "../../data/appearance.json" with { type: "json" };
 
 const storageKey = "adminkit_config_colorMode";

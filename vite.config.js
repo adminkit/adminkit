@@ -20,6 +20,7 @@ const pages = Object.fromEntries(
 
 const bundles = {
   app: src("js/app.js"),
+  head: src("js/head.js"),
   "icons-all": src("js/icons-all.js"),
 };
 

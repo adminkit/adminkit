@@ -21,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace Feather icons with Lucide (`data-feather` → `data-lucide`)
 - Replace flatpickr with Vanilla Calendar Pro
 - Use `data-bs-theme="dark"` on `<html>` for dark mode
+- Load the color mode script from `js/head.js` instead of an inline script
 - Improve color contrast to meet WCAG 2.2 AA
 - Update demo data to 2026
 - Load Google Maps without an API key

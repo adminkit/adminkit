@@ -2,6 +2,7 @@
 // <script src>. Vite emits ES module chunks whose top-level declarations would
 // become globals in a classic script, so the self-contained bundles are wrapped
 // in a function scope. They still work as <script type="module">.
+// js/head.js runs before the first paint, so it must stay one small file of its own.
 export default function classicScript(names) {
   return {
     name: "classic-script",
@@ -14,6 +15,12 @@ export default function classicScript(names) {
         throw new Error(
           `js/${chunk.name}.js must not import or export, or it cannot load as a classic script`
         );
+      }
+      if (
+        chunk.name === "head" &&
+        this.getModuleInfo(chunk.facadeModuleId).importedIds.length > 0
+      ) {
+        throw new Error("js/head.js must not import anything");
       }
       return { code: `(() => {\n${code}\n})();\n`, map: null };
     },
