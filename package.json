@@ -1,7 +1,10 @@
 {
   "name": "@adminkit/core",
-  "version": "3.5.0",
+  "version": "4.0.0",
   "description": "AdminKit - Bootstrap 5 Admin Template",
+  "engines": {
+    "node": ">=24"
+  },
   "keywords": [
     "bootstrap",
     "bootstrap 5",
@@ -32,57 +35,80 @@
   "files": [
     "dist"
   ],
+  "type": "module",
+  "main": "./dist/js/app.js",
+  "types": "./dist/js/app.d.ts",
+  "style": "./dist/css/app.css",
+  "exports": {
+    ".": {
+      "types": "./dist/js/app.d.ts",
+      "default": "./dist/js/app.js"
+    },
+    "./css": {
+      "types": "./dist/css/app.d.css.ts",
+      "default": "./dist/css/app.css"
+    },
+    "./head": "./dist/js/head.js",
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "sideEffects": [
+    "*.css",
+    "*.js"
+  ],
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config webpack.config.js --progress",
-    "watch": "webpack --config webpack.config.js --watch --progress",
-    "start": "webpack serve --config webpack.config.js --progress",
-    "prepublishOnly": "cross-env NODE_ENV=production webpack --progress --config webpack.config.js"
+    "dev": "vite",
+    "start": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint . && prettier --check . && node scripts/check-icons.mjs && node scripts/stats.mjs --check",
+    "format": "prettier --write .",
+    "icons:list": "node scripts/generate-icon-list.mjs",
+    "stats": "node scripts/stats.mjs",
+    "stats:sync": "node scripts/stats.mjs --sync",
+    "screenshots": "node scripts/screenshots.mjs"
   },
   "browserslist": [
-    ">= 0.5%",
-    "last 2 major versions",
-    "not dead",
-    "Chrome >= 60",
-    "Firefox >= 60",
-    "Firefox ESR",
-    "iOS >= 12",
-    "Safari >= 12",
-    "not Explorer <= 11"
+    "Chrome >= 111",
+    "Edge >= 111",
+    "Firefox >= 114",
+    "Safari >= 16.4",
+    "iOS >= 16.4"
   ],
   "dependencies": {
-    "@babel/polyfill": "7.12.1",
+    "@fontsource/inter": "5.3.0",
     "@popperjs/core": "2.11.8",
     "bootstrap": "5.3.8",
-    "chart.js": "2.9.4",
-    "feather-icons": "4.29.2",
-    "flatpickr": "4.6.13",
+    "chart.js": "4.6.1",
     "jsvectormap": "1.7.0",
-    "simplebar": "5.3.9"
+    "lucide": "1.62.0",
+    "simplebar": "6.3.3",
+    "vanilla-calendar-pro": "3.4.0"
   },
   "devDependencies": {
-    "@babel/core": "7.29.7",
-    "@babel/plugin-syntax-dynamic-import": "7.8.3",
-    "@babel/preset-env": "7.29.7",
-    "@babel/register": "7.29.7",
-    "autoprefixer": "10.5.4",
-    "babel-eslint": "10.1.0",
-    "babel-loader": "9.2.1",
-    "copy-webpack-plugin": "11.0.0",
-    "cross-env": "7.0.3",
-    "css-loader": "6.11.0",
-    "css-minimizer-webpack-plugin": "5.0.1",
-    "eslint": "8.57.1",
-    "file-loader": "6.2.0",
-    "filemanager-webpack-plugin": "8.0.0",
-    "hard-source-webpack-plugin": "0.13.1",
-    "mini-css-extract-plugin": "2.10.2",
-    "postcss-loader": "7.3.4",
-    "sass": "1.102.0",
-    "sass-loader": "13.3.3",
-    "terser-webpack-plugin": "5.6.1",
-    "url-loader": "4.1.1",
-    "webpack": "5.109.2",
-    "webpack-cli": "5.1.4",
-    "webpack-dev-server": "4.15.2"
+    "@commitlint/cli": "21.2.4",
+    "@commitlint/config-conventional": "21.2.4",
+    "@eslint/js": "10.0.1",
+    "autoprefixer": "10.6.2",
+    "eslint": "10.13.0",
+    "globals": "17.13.0",
+    "gray-matter": "4.0.3",
+    "handlebars": "4.7.10",
+    "js-beautify": "2.0.3",
+    "lefthook": "2.2.2",
+    "lucide-static": "1.62.0",
+    "playwright": "1.64.1",
+    "prettier": "3.9.10",
+    "sass": "1.106.1",
+    "sharp": "0.35.5",
+    "vite": "8.3.5",
+    "vite-plugin-handlebars": "2.0.3"
+  },
+  "allowScripts": {
+    "lefthook": true
+  },
+  "adminkit": {
+    "edition": "free"
   }
 }

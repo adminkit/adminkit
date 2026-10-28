@@ -1,0 +1,62 @@
+[
+  {
+    "id": "pages",
+    "label": "Pages",
+    "value": {
+      "stat": "pages.count"
+    }
+  },
+  {
+    "id": "dashboards",
+    "label": "Dashboards",
+    "value": {
+      "stat": "dashboards.count"
+    }
+  },
+  {
+    "id": "plugins",
+    "label": "Plugins",
+    "value": {
+      "stat": "plugins.count"
+    }
+  },
+  {
+    "id": "icons",
+    "label": "Icons",
+    "value": {
+      "stat": "icons.total"
+    }
+  },
+  {
+    "id": "colorSchemes",
+    "label": "Sidebar color schemes",
+    "value": {
+      "stat": "colorSchemes.count"
+    }
+  },
+  {
+    "id": "darkMode",
+    "label": "Dark mode",
+    "value": true
+  },
+  {
+    "id": "aiChat",
+    "label": "AI chat",
+    "value": false
+  },
+  {
+    "id": "settingsPanel",
+    "label": "Settings panel",
+    "value": false
+  },
+  {
+    "id": "support",
+    "label": "Support",
+    "value": "GitHub issues"
+  },
+  {
+    "id": "license",
+    "label": "License",
+    "value": "MIT"
+  }
+]

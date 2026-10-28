@@ -1,11 +1,9 @@
 # dependencies
 /node_modules
-/package-lock.json
 /yarn.lock
 
 # production
 /dist
-/_builder
 
 # misc
 .DS_Store

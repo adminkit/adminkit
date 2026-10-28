@@ -7,10 +7,21 @@
   justify-content: center;
   display: flex;
 
-  svg {
+  svg,
+  i[data-lucide] {
     width: 18px;
     height: 18px;
     color: $stat-icon-color !important;
     stroke-width: 1.5;
+  }
+}
+
+@include color-mode(dark) {
+  .stat {
+    background: $stat-bg-dark;
+
+    svg {
+      color: $stat-icon-color-dark !important;
+    }
   }
 }

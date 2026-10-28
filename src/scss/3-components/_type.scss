@@ -6,8 +6,9 @@
   font-size: $font-size-lg;
 }
 
-b, strong {
-	font-weight: $font-weight-bold;
+b,
+strong {
+  font-weight: $font-weight-bold;
 }
 
 pre.snippet {
@@ -18,4 +19,11 @@ pre.snippet {
 
 a {
   cursor: pointer;
+}
+
+// Links in running text are underlined, so they do not rely on colour alone
+:is(p, li, dd, small, .card-subtitle, .form-text, .alert-message)
+  > a:not([class]) {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
 }

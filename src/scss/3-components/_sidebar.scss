@@ -1,13 +1,23 @@
+// Below lg the sidebar is a Bootstrap offcanvas sheet (.offcanvas-lg in the markup), from lg
+// up a column of the layout that the toggle hides and shows
 .sidebar {
+  --#{$prefix}offcanvas-width: #{$sidebar-width};
+  --#{$prefix}offcanvas-transition: #{$sidebar-sheet-transition};
   min-width: $sidebar-width;
   max-width: $sidebar-width;
-  transition: $sidebar-transition;
   direction: ltr;
   background: $sidebar-bg;
+
+  @include media-breakpoint-up(lg) {
+    @include transition($sidebar-transition);
+
+    &.collapsed {
+      margin-left: -$sidebar-width;
+    }
+  }
 }
 
 .sidebar-content {
-  transition: $sidebar-transition;
   display: flex;
   height: 100vh;
   flex-direction: column;
@@ -27,7 +37,9 @@ a.sidebar-link {
   display: block;
   padding: $sidebar-link-padding;
   font-weight: $sidebar-link-font-weight;
-  transition: background .1s ease-in-out;
+  @include transition(
+    background var(--ak-duration-fast) var(--ak-ease-standard)
+  );
   position: relative;
   text-decoration: none;
   cursor: pointer;
@@ -39,12 +51,12 @@ a.sidebar-link {
 
   i,
   svg {
-    margin-right: .75rem;
+    margin-right: 0.75rem;
     color: $sidebar-link-icon-color;
   }
 }
 
-.sidebar-link:focus {
+.sidebar-link:focus:not(:focus-visible) {
   outline: 0;
 }
 
@@ -84,36 +96,20 @@ a.sidebar-link {
     color: $sidebar-brand-color;
   }
 
-  &:focus {
+  &:focus:not(:focus-visible) {
     outline: 0;
   }
 }
 
 // Toggle states
 .sidebar-toggle {
+  background: none;
+  border: 0;
+  padding: 0;
   cursor: pointer;
   width: 26px;
   height: 26px;
   display: flex;
-}
-
-.sidebar {
-  &.collapsed {
-    margin-left: -$sidebar-width;
-  }
-
-  // Workaround for IE bug, more info:
-  // https://stackoverflow.com/a/25850649
-  @media (min-width: 1px) and (max-width: #{map-get($grid-breakpoints, 'lg') - .02px}) {
-
-    // Sidebar default state (on mobile)
-    margin-left: -$sidebar-width;
-
-    // Sidebar collapsed state (on mobile)
-    &.collapsed {
-      margin-left: 0;
-    }
-  }
 }
 
 .sidebar-toggle {

@@ -1,0 +1,34 @@
+{
+  "plugins": [
+    {
+      "name": "Chart.js",
+      "package": "chart.js",
+      "url": "https://www.chartjs.org/",
+      "license": "MIT"
+    },
+    {
+      "name": "jsVectorMap",
+      "package": "jsvectormap",
+      "url": "https://jvm-docs.vercel.app/",
+      "license": "MIT"
+    },
+    {
+      "name": "SimpleBar",
+      "package": "simplebar",
+      "url": "https://grsmto.github.io/simplebar/",
+      "license": "MIT"
+    },
+    {
+      "name": "Vanilla Calendar Pro",
+      "package": "vanilla-calendar-pro",
+      "url": "https://vanilla-calendar.pro/",
+      "license": "MIT"
+    }
+  ],
+  "notPlugins": {
+    "@fontsource/inter": "Font: the Inter typeface",
+    "@popperjs/core": "Positions Bootstrap's dropdowns, popovers and tooltips",
+    "bootstrap": "The framework the template is built on",
+    "lucide": "Icon set, counted under icons"
+  }
+}

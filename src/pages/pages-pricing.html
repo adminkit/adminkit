@@ -1,0 +1,282 @@
+---
+name: pages-pricing
+title: Pricing
+layout: default.hbs
+active: { pages: true, pricing: true }
+meta_description: "Pricing page demo for the free AdminKit Bootstrap 5 admin template. Three plans with a monthly and yearly billing switch, a plan comparison table and frequently asked questions."
+---
+
+{{> site-title title=title badge="Get more page examples"}}
+
+<div class="row">
+  <div class="col-12 col-xxl-10 mx-auto">
+    <div class="text-center mb-4">
+      <h2 class="h3">Choose the plan that fits your team</h2>
+      <p class="text-body-secondary mb-4">Start free and upgrade when you need more. Paid plans come with a 14-day trial, no credit card required.</p>
+
+      <div class="btn-group" role="group" aria-label="Billing period">
+        <input type="radio" class="btn-check" name="billing-period" id="billing-monthly" value="monthly" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="billing-monthly">Monthly</label>
+        <input type="radio" class="btn-check" name="billing-period" id="billing-yearly" value="yearly" autocomplete="off">
+        <label class="btn btn-outline-primary" for="billing-yearly">Yearly <span class="badge bg-success-subtle text-success-emphasis ms-1">Save 20%</span></label>
+      </div>
+    </div>
+
+    <div class="pricing-plans mb-3">
+      <div class="card">
+        <div class="card-body p-3 p-xl-4">
+          <h3 class="h5 mb-1">Free</h3>
+          <p class="text-body-secondary">For individuals and small teams getting started.</p>
+          <p class="pricing-price mb-0">
+            <span class="display-6 fw-semibold">$0</span>
+            <span class="text-body-secondary text-nowrap">per user / month</span>
+          </p>
+          <p class="small text-body-secondary mb-4">Free forever</p>
+          <div class="mb-4">
+            <a href="pages-sign-up.html" class="btn btn-outline-primary w-100">Get started<span class="visually-hidden"> with Free</span></a>
+          </div>
+          <ul class="pricing-features list-unstyled border-top pt-4 mb-0">
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Up to 3 users</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>5 projects</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>2 GB storage</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Tasks, boards and calendar</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Two-factor authentication</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card pricing-plan-featured">
+        <div class="card-body p-3 p-xl-4">
+          <div class="d-flex align-items-center justify-content-between gap-2 mb-1">
+            <h3 class="h5 mb-0">Standard</h3>
+            <span class="badge bg-primary">Most popular</span>
+          </div>
+          <p class="text-body-secondary">For growing teams that need more room and integrations.</p>
+          <p class="pricing-price mb-0">
+            <span class="display-6 fw-semibold" data-monthly="$15" data-yearly="$12">$15</span>
+            <span class="text-body-secondary text-nowrap">per user / month</span>
+          </p>
+          <p class="small text-body-secondary mb-4" data-monthly="Billed monthly" data-yearly="$144 per user, billed yearly">Billed monthly</p>
+          <div class="mb-4">
+            <a href="pages-sign-up.html" class="btn btn-primary w-100">Start free trial<span class="visually-hidden"> with Standard</span></a>
+          </div>
+          <ul class="pricing-features list-unstyled border-top pt-4 mb-0">
+            <li class="fw-semibold">Everything in Free, plus:</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Up to 50 users</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Unlimited projects</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>100 GB storage</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Advanced reports and exports</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Integrations and API access</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Email support</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body p-3 p-xl-4">
+          <h3 class="h5 mb-1">Plus</h3>
+          <p class="text-body-secondary">For companies that need security and admin controls.</p>
+          <p class="pricing-price mb-0">
+            <span class="display-6 fw-semibold" data-monthly="$30" data-yearly="$24">$30</span>
+            <span class="text-body-secondary text-nowrap">per user / month</span>
+          </p>
+          <p class="small text-body-secondary mb-4" data-monthly="Billed monthly" data-yearly="$288 per user, billed yearly">Billed monthly</p>
+          <div class="mb-4">
+            <a href="pages-sign-up.html" class="btn btn-outline-primary w-100">Start free trial<span class="visually-hidden"> with Plus</span></a>
+          </div>
+          <ul class="pricing-features list-unstyled border-top pt-4 mb-0">
+            <li class="fw-semibold">Everything in Standard, plus:</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Unlimited users</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>1 TB storage</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Single sign-on (SAML)</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Custom roles and permissions</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Audit log and daily backups</li>
+            <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Priority support</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <p class="text-center small text-body-secondary mb-5">Prices in USD, excluding VAT. Need more than 500 users or an invoice-based contract? <a href="#">Contact sales</a></p>
+
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Compare plans</h2>
+        <p class="h6 card-subtitle text-body-secondary">Every limit and feature, side by side.</p>
+      </div>
+      <div class="table-responsive-lg">
+        <table class="table pricing-table mb-0">
+          <thead>
+            <tr>
+              <th scope="col"><span class="visually-hidden">Feature</span></th>
+              <th scope="col">
+                <span class="d-block h5 mb-1">Free</span>
+                <span class="d-block mb-2"><span class="fs-4 fw-semibold">$0</span> <span class="small fw-normal text-body-secondary">per user / month</span></span>
+                <a href="pages-sign-up.html" class="btn btn-sm btn-outline-primary">Get started<span class="visually-hidden"> with Free</span></a>
+              </th>
+              <th scope="col">
+                <span class="d-block h5 mb-1">Standard</span>
+                <span class="d-block mb-2"><span class="fs-4 fw-semibold" data-monthly="$15" data-yearly="$12">$15</span> <span class="small fw-normal text-body-secondary">per user / month</span></span>
+                <a href="pages-sign-up.html" class="btn btn-sm btn-primary">Start trial<span class="visually-hidden"> with Standard</span></a>
+              </th>
+              <th scope="col">
+                <span class="d-block h5 mb-1">Plus</span>
+                <span class="d-block mb-2"><span class="fs-4 fw-semibold" data-monthly="$30" data-yearly="$24">$30</span> <span class="small fw-normal text-body-secondary">per user / month</span></span>
+                <a href="pages-sign-up.html" class="btn btn-sm btn-outline-primary">Start trial<span class="visually-hidden"> with Plus</span></a>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="pricing-table-group">
+              <th scope="colgroup" colspan="4"><i data-lucide="gauge" aria-hidden="true"></i>Usage</th>
+            </tr>
+            <tr>
+              <th scope="row">Users</th>
+              <td>Up to 3</td>
+              <td>Up to 50</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <th scope="row">Projects</th>
+              <td>5</td>
+              <td>Unlimited</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <th scope="row">Storage</th>
+              <td>2 GB</td>
+              <td>100 GB</td>
+              <td>1 TB</td>
+            </tr>
+            <tr>
+              <th scope="row">Guest access</th>
+              <td><i class="text-body-secondary" data-lucide="minus" aria-hidden="true"></i><span class="visually-hidden">No</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+            </tr>
+            <tr class="pricing-table-group">
+              <th scope="colgroup" colspan="4"><i data-lucide="layout-grid" aria-hidden="true"></i>Features</th>
+            </tr>
+            <tr>
+              <th scope="row">Tasks, boards and calendar</th>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Reports</th>
+              <td>Basic</td>
+              <td>Advanced</td>
+              <td>Advanced</td>
+            </tr>
+            <tr>
+              <th scope="row">Integrations and API access</th>
+              <td><i class="text-body-secondary" data-lucide="minus" aria-hidden="true"></i><span class="visually-hidden">No</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Custom roles and permissions</th>
+              <td><i class="text-body-secondary" data-lucide="minus" aria-hidden="true"></i><span class="visually-hidden">No</span></td>
+              <td><i class="text-body-secondary" data-lucide="minus" aria-hidden="true"></i><span class="visually-hidden">No</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+            </tr>
+            <tr class="pricing-table-group">
+              <th scope="colgroup" colspan="4"><i data-lucide="shield-check" aria-hidden="true"></i>Security</th>
+            </tr>
+            <tr>
+              <th scope="row">Two-factor authentication</th>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Backups</th>
+              <td>Weekly</td>
+              <td>Weekly</td>
+              <td>Daily</td>
+            </tr>
+            <tr>
+              <th scope="row">Single sign-on (SAML)</th>
+              <td><i class="text-body-secondary" data-lucide="minus" aria-hidden="true"></i><span class="visually-hidden">No</span></td>
+              <td><i class="text-body-secondary" data-lucide="minus" aria-hidden="true"></i><span class="visually-hidden">No</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Audit log</th>
+              <td><i class="text-body-secondary" data-lucide="minus" aria-hidden="true"></i><span class="visually-hidden">No</span></td>
+              <td><i class="text-body-secondary" data-lucide="minus" aria-hidden="true"></i><span class="visually-hidden">No</span></td>
+              <td>1 year</td>
+            </tr>
+            <tr class="pricing-table-group">
+              <th scope="colgroup" colspan="4"><i data-lucide="life-buoy" aria-hidden="true"></i>Support</th>
+            </tr>
+            <tr>
+              <th scope="row">Help center and community</th>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+              <td><i class="text-success" data-lucide="check" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Email support</th>
+              <td><i class="text-body-secondary" data-lucide="minus" aria-hidden="true"></i><span class="visually-hidden">No</span></td>
+              <td>1 business day</td>
+              <td>4 hours</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Frequently asked questions</h2>
+      </div>
+      <div class="card-body">
+        <div class="row g-4">
+          <div class="col-12 col-md-6">
+            <h3 class="h6">Do I need a credit card to start a trial?</h3>
+            <p class="text-body-secondary mb-0">No. You add a payment method only when you decide to keep a paid plan at the end of the 14-day trial.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 class="h6">What happens when the trial ends?</h3>
+            <p class="text-body-secondary mb-0">You choose a paid plan or your workspace moves to Free. Your projects stay; anything above the Free limits becomes read-only.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 class="h6">Can I change plans later?</h3>
+            <p class="text-body-secondary mb-0">Yes, at any time from the billing settings. Upgrades apply right away and are prorated; downgrades apply at the next renewal.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 class="h6">How are users counted?</h3>
+            <p class="text-body-secondary mb-0">You pay for each member of your workspace. Guests who can only view or comment on shared projects are free.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 class="h6">Which payment methods do you accept?</h3>
+            <p class="text-body-secondary mb-0">All major credit and debit cards. Yearly plans can also be paid by bank transfer against an invoice.</p>
+          </div>
+          <div class="col-12 col-md-6">
+            <h3 class="h6">Can I cancel at any time?</h3>
+            <p class="text-body-secondary mb-0">Yes. Your plan stays active until the end of the billing period, and you can export your data whenever you want.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{#push "scripts"}}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Show the monthly or yearly prices for the selected billing period
+    document.addEventListener("change", function(event) {
+      if (event.target.name !== "billing-period") {
+        return;
+      }
+
+      var period = event.target.value;
+
+      document.querySelectorAll("[data-monthly][data-yearly]").forEach(function(element) {
+        element.textContent = element.dataset[period];
+      });
+    });
+  });
+</script>
+{{/push}}

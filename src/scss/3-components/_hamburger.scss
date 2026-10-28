@@ -5,10 +5,10 @@
   border-radius: 1px;
   height: 3px;
   width: $hamburger-width-middle;
-  background: $gray-700;
+  background: var(--#{$prefix}gray-700);
   display: block;
-  content: '';
-  transition: $transition-appearance-fast;
+  content: "";
+  @include transition($transition-appearance-fast);
 }
 
 .hamburger {

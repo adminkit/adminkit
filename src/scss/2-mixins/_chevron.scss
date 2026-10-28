@@ -1,0 +1,17 @@
+// A chevron drawn as the right and bottom borders of a box rotated by $angle (45deg points it
+// down, -135deg up). The ink of the V does not sit on the box centre: it is offset towards the
+// point by half the padding along both rotated axes. Translating it back by that much centres
+// the V itself on the box, so flex centring, `top: 50%` or `vertical-align` place the visible
+// chevron, whichever way it points. $before goes ahead of the rotation (`translateY(-50%)`).
+@mixin chevron(
+  $angle: 45deg,
+  $padding: $chevron-padding,
+  $border-width: $chevron-border-width,
+  $before: null
+) {
+  display: inline-block;
+  padding: $padding;
+  border: solid;
+  border-width: 0 $border-width $border-width 0;
+  transform: $before rotate($angle) translate($padding * -0.5, $padding * -0.5);
+}

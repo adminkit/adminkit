@@ -1,0 +1,34 @@
+// Printing (the invoice's Print button): only the page content, without the sidebar,
+// navbar, footer and card chrome, on a white page whatever the color mode, and with every
+// card shown, revealed or not. The invoice resets its own colors in _invoice.scss.
+@media print {
+  .sidebar,
+  .navbar,
+  .footer {
+    display: none !important;
+  }
+
+  body,
+  .wrapper,
+  .main {
+    background: $white !important;
+  }
+
+  .main,
+  .content {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .card {
+    border: 0;
+    box-shadow: none;
+  }
+
+  .js-reveal .ak-reveal-cards,
+  .js-reveal :is(.ak-reveal, .ak-reveal-cards .card) {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

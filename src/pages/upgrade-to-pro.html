@@ -1,0 +1,161 @@
+---
+name: upgrade-to-pro
+title: Upgrade to Pro
+layout: default.hbs
+active: { pro: true }
+meta_description: "Compare the free AdminKit with AdminKit PRO: {{editions.pro.pages.count}} pages, {{editions.pro.dashboards.count}} dashboards, {{editions.pro.plugins.count}} plugins and {{formatNumber editions.pro.icons.total}} icons for Bootstrap 5."
+pricing: https://adminkit.io/pricing/
+demo: https://demo.adminkit.io/
+screenshots:
+  - name: analytics
+    title: Analytics dashboard
+    text: Visitors, page views, bounce rate and session duration, with browser usage, real-time visitors and top pages.
+  - name: ecommerce
+    title: E-commerce dashboard
+    text: Income, orders and revenue by month, with sales by state and the top-selling products.
+  - name: crm
+    title: CRM dashboard
+    text: Customers, deals, revenue and win rate, with revenue against target, the sales pipeline and upcoming tasks.
+  - name: crypto
+    title: Crypto dashboard
+    text: Balances and rates per coin, a candlestick chart with time ranges and a markets table.
+  - name: ai-usage
+    title: AI analytics dashboard
+    text: Tokens, cost, requests, latency and error rate per model over 7, 30 or 90 days.
+  - name: ai-chat
+    title: AI chat
+    text: Conversation history, streamed replies with tables and code, reasoning, tool calls, sources and a model picker.
+  - name: calendar
+    title: Calendar
+    text: Month, week and day views with events you can drag to another day or time.
+  - name: datatables
+    title: Advanced tables
+    text: Sorting, search and paging, responsive columns, export buttons, fixed headers and row selection.
+  - name: settings
+    title: Settings panel
+    text: Color mode, sidebar color scheme, sidebar layout and position and the page layout, remembered for the next visit.
+---
+
+<div class="card">
+  <div class="card-body p-4 p-xl-5">
+    <div class="row g-4 g-xl-5 align-items-center">
+      <div class="col-12 col-xl-5">
+        <h1 class="h2 mb-3">Upgrade to AdminKit PRO</h1>
+        <p class="lead mb-4">The commercial edition of this template: the same Bootstrap 5 code and conventions, with more dashboards, pages and components.</p>
+        <ul class="upgrade-features list-unstyled mb-4">
+          <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>{{editions.pro.dashboards.count}} dashboards and {{editions.pro.pages.count}} pages in total</li>
+          <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>An AI chat and a settings panel for color mode and layout</li>
+          <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>Advanced tables, a calendar, rich text editors and more form inputs</li>
+          <li><i class="text-success" data-lucide="check" aria-hidden="true"></i>{{editions.pro.colorSchemes.count}} sidebar color schemes and email support</li>
+        </ul>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="{{pricing}}" class="btn btn-primary btn-lg">Get AdminKit PRO</a>
+          <a href="{{demo}}" class="btn btn-outline-primary btn-lg">View the live demo</a>
+        </div>
+      </div>
+      <div class="col-12 col-xl-7">
+        <div class="upgrade-hero-shot border rounded-3 overflow-hidden">
+          {{> upgrade-screenshot name="crm" title="CRM dashboard" mode="light" imgClass="img-fluid d-block" sizes="(min-width: 1200px) 50vw, 100vw" }}
+          {{> upgrade-screenshot name="crm" title="CRM dashboard" mode="dark" imgClass="img-fluid d-block" sizes="(min-width: 1200px) 50vw, 100vw" }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card-body border-top px-4 px-xl-5">
+    <ul class="row g-3 list-unstyled mb-0 text-center">
+      {{> upgrade-stat value=editions.pro.pages.count label="pages" }}
+      {{> upgrade-stat value=editions.pro.dashboards.count label="dashboards" }}
+      {{> upgrade-stat value=editions.pro.plugins.count label="plugins" }}
+      {{> upgrade-stat value=editions.pro.icons.total label="icons" }}
+    </ul>
+  </div>
+</div>
+
+<div class="mt-4 mb-3">
+  <h2 class="h4 mb-1">What's in AdminKit PRO</h2>
+  <p class="text-body-secondary mb-0">Screenshots of the PRO demo, in the color mode you have selected.</p>
+</div>
+
+<div class="row">
+  {{#each screenshots}}
+    <div class="col-12 col-md-6 col-xl-4">
+      <figure class="card">
+        {{> upgrade-screenshot mode="light" sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, 100vw" }}
+        {{> upgrade-screenshot mode="dark" sizes="(min-width: 1200px) 30vw, (min-width: 768px) 45vw, 100vw" }}
+        <figcaption class="card-body border-top">
+          <h3 class="h5 mb-1">{{title}}</h3>
+          <p class="mb-0 text-body-secondary">{{text}}</p>
+        </figcaption>
+      </figure>
+    </div>
+  {{/each}}
+</div>
+
+<div class="row">
+  <div class="col-12 col-xl-7">
+    <div class="card" id="compare">
+      <div class="card-header">
+        <h2 class="card-title">AdminKit and AdminKit PRO compared</h2>
+        <p class="h6 card-subtitle text-body-secondary">Counted from the source of each edition.</p>
+      </div>
+      <div class="table-responsive">
+        <table class="table upgrade-table mb-0">
+          <thead>
+            <tr>
+              <th scope="col"><span class="visually-hidden">Feature</span></th>
+              <th scope="col">AdminKit</th>
+              <th scope="col">AdminKit PRO</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each stats.comparison}}
+              <tr>
+                <th scope="row">{{label}}</th>
+                <td>{{~> upgrade-value value=free ~}}</td>
+                <td class="fw-semibold">{{~> upgrade-value value=pro ~}}</td>
+              </tr>
+            {{/each}}
+          </tbody>
+        </table>
+      </div>
+      <div class="card-body border-top">
+        <p class="mb-3">
+          One-time licenses: <strong>Hobby</strong> for one developer, <strong>Company</strong> for teams of up to five and <strong>Enterprise</strong> for unlimited developers.
+        </p>
+        <a href="{{pricing}}" class="btn btn-primary">See prices and licenses</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-xl-5">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title mb-0">Frequently asked questions</h2>
+      </div>
+      <div class="card-body">
+        <div class="vstack gap-4">
+          <div>
+            <h3 class="h6">Can I move a project from the free version?</h3>
+            <p class="text-body-secondary mb-0">Yes. PRO uses the same markup, Sass variables and JavaScript modules, so pages built on the free version carry over and you add the PRO pages and components you need.</p>
+          </div>
+          <div>
+            <h3 class="h6">Is it a one-time payment?</h3>
+            <p class="text-body-secondary mb-0">Yes. You pay once, use the code in your product for as long as you like and get every update.</p>
+          </div>
+          <div>
+            <h3 class="h6">Is support included?</h3>
+            <p class="text-body-secondary mb-0">Every license comes with premium email support; how long depends on the license.</p>
+          </div>
+          <div>
+            <h3 class="h6">Does it work with my back end?</h3>
+            <p class="text-body-secondary mb-0">Yes. The build is plain HTML, CSS and JavaScript, so it works with Laravel, Rails, ASP.NET, Django or any other stack.</p>
+          </div>
+          <div>
+            <h3 class="h6">Can I get a refund?</h3>
+            <p class="text-body-secondary mb-0">Within 30 days of purchase. Email <a href="mailto:info@adminkit.io">info@adminkit.io</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

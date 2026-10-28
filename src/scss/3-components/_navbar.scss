@@ -24,6 +24,12 @@
   background: $navbar-bg;
 }
 
+@include color-mode(dark) {
+  .navbar-bg {
+    background: $navbar-bg-dark;
+  }
+}
+
 .navbar-brand {
   font-weight: $navbar-brand-font-weight;
   font-size: $navbar-brand-font-size;
@@ -32,7 +38,8 @@
   display: block;
 
   svg,
-  .feather {
+  .lucide,
+  i[data-lucide] {
     color: $navbar-brand-icon-color;
     height: 24px;
     width: 24px;
@@ -44,11 +51,11 @@
 
 .nav-icon,
 .nav-flag {
-  padding: .1rem .8rem;
+  padding: 0.1rem 0.8rem;
   display: block;
   font-size: 1.5rem;
-  color: $gray-600;
-  transition: $transition-appearance-fast;
+  color: var(--#{$prefix}gray-600);
+  @include transition($transition-appearance-fast);
   line-height: 1.4;
 
   &:after {
@@ -61,7 +68,8 @@
   }
 
   svg,
-  .feather {
+  .lucide,
+  i[data-lucide] {
     width: 20px;
     height: 20px;
   }
@@ -80,7 +88,7 @@
     top: 0;
     right: -8px;
     text-align: center;
-    transition: top .1s ease-out;
+    @include transition(top var(--ak-duration-fast) var(--ak-ease-standard));
     font-size: 0.675rem;
     color: $white;
   }
@@ -89,14 +97,8 @@
     top: -4px;
   }
 
-  a:focus {
+  a:focus:not(:focus-visible) {
     outline: 0;
-  }
-}
-
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  .navbar .avatar {
-    max-height: 47px;
   }
 }
 
@@ -106,7 +108,7 @@
   }
 
   .nav-icon {
-    padding: .1rem .75rem;
+    padding: 0.1rem 0.75rem;
   }
 
   .dropdown,

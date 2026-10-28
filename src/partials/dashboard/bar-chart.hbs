@@ -1,0 +1,69 @@
+<div class="card flex-fill w-100">
+  <div class="card-header">
+    
+    <h2 class="card-title mb-0">{{ title }}</h2>
+  </div>
+  <div class="card-body d-flex w-100" aria-busy="true">
+    <div class="align-self-center chart chart-lg">
+      {{> skeleton }}
+      <canvas id="chartjs-dashboard-bar"></canvas>
+    </div>
+  </div>
+</div>
+
+{{#push "scripts"}}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Bar chart
+    adminkit.chartjs("#chartjs-dashboard-bar", function(theme) {
+      return {
+        type: "bar",
+        data: {
+          labels: ["Organic", "Direct", "Referral", "Social", "Email"],
+          datasets: [{
+            label: "Sessions",
+            backgroundColor: theme.primary,
+            borderColor: theme.primary,
+            hoverBackgroundColor: theme.primary,
+            hoverBorderColor: theme.primary,
+            data: [26480, 14120, 9310, 7560, 3840],
+            barPercentage: .75,
+            categoryPercentage: .5
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              grid: {
+                display: false
+              },
+              border: {
+                display: false
+              },
+              stacked: false,
+              ticks: {
+                stepSize: 10000
+              }
+            },
+            x: {
+              stacked: false,
+              grid: {
+                color: "transparent"
+              },
+              border: {
+                display: false
+              }
+            }
+          }
+        }
+      };
+    });
+  });
+</script>
+{{/push}}

@@ -20,83 +20,142 @@
 </p>
 
 ## Preview
-A professional Admin & Dashboard template based on Bootstrap 5 that comes with hundreds of UI components, forms, tables, charts, pages and icons. AdminKit **does not require jQuery** and neither does one of the 3rd party libraries AdminKit is using. [Open demo](https://demo.adminkit.io/).
 
-<a href="https://demo.adminkit.io" target="_blank"><img src="https://assets.adminkit.io/banners/github-1280%C3%97640px.png?2" alt="AdminKit Demo"></a>
+AdminKit is an admin and dashboard template built on Bootstrap 5, released under the MIT license. It needs no jQuery, and neither do the plugins it uses. It has light and dark mode and targets WCAG 2.2 AA in both. [Open the demo](https://demo.adminkit.io/).
 
-## Features
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/screenshots/dashboard-dark.webp">
+  <img src=".github/screenshots/dashboard-light.webp" width="1600" height="1000" alt="The AdminKit Analytics dashboard: visitors, page views, bounce rate and session duration, monthly visitors, browser usage, a calendar, a real-time visitors map, top pages and traffic sources">
+</picture>
 
-* **Customizable:** You don't need to be an expert to customize AdminKit. Our code is very readable and well documented.
-* **Fully Responsive:** With mobile, tablet & desktop support it doesn't matter what device you're using. AdminKit is responsive in all browsers.
-* **Cross-Browser:** Our themes are working perfectly with Chrome, Firefox, Safari, Opera, and Edge. We're working hard to support them.
-* **Clean Code:** We strictly follow Bootstrap's guidelines to make your integration as easy as possible. All code is handwritten.
-* **No jQuery:** AdminKit, and all third-party libraries used in the admin template, do not require jQuery as a dependency.
-* **Regular Updates:** From time to time you'll receive an update containing new components, improvements, and bugfixes.
+## AdminKit and AdminKit PRO
+
+AdminKit PRO is the commercial edition, with more pages, dashboards and plugins, a settings panel and an AI chat. The table is generated from `src/data/stats.json` and the PRO snapshot in `src/data/editions/pro.json`; the template's Upgrade to Pro page (`upgrade-to-pro.html`) shows the same comparison with screenshots of AdminKit PRO, and [adminkit.io/pricing](https://adminkit.io/pricing/) has the prices and licenses.
+
+<!-- stats:start -->
+
+|                       | AdminKit      | [AdminKit PRO](https://adminkit.io/pricing/) |
+| --------------------- | ------------- | -------------------------------------------- |
+| Pages                 | 20            | 53                                           |
+| Dashboards            | 1             | 5                                            |
+| Plugins               | 4             | 11                                           |
+| Icons                 | 1,908         | 4,071                                        |
+| Sidebar color schemes | 1             | 3                                            |
+| Dark mode             | Yes           | Yes                                          |
+| AI chat               | No            | Yes                                          |
+| Settings panel        | No            | Yes                                          |
+| Support               | GitHub issues | Email                                        |
+| License               | MIT           | Commercial                                   |
+
+<!-- stats:end -->
 
 ## Quick start
 
-### Download
-
-* Clone this repo `git clone https://github.com/adminkit/adminkit.git`
-* [Download from GitHub](https://github.com/adminkit/adminkit/archive/master.zip)
-* [Download from Website](https://adminkit.io/#download)
-
-### Build tools
-
-The theme includes a custom Webpack file, which can be used to quickly recompile and minify theme assets while developing or for deployment. You'll need to install Node.js before using Webpack.
-
-Once Node.js is installed, run npm install to install the rest of AdminKit's dependencies. All dependencies will be downloaded to the node_modules directory.
+You need Node.js 24 (see `.nvmrc`). Clone the repository, install the dependencies and start the development server on http://localhost:8080:
 
 ```sh
-npm install
+git clone --depth 1 https://github.com/adminkit/adminkit.git my-admin && cd my-admin && npm ci && npm run dev
 ```
 
-Now you're ready to modify the source files and generate new dist/ files. AdminKit uses webpack-dev-server to automatically detect file changes and start a local webserver at http://localhost:8080.
-
-```sh
-npm start
-```
-
-Compile, optimize, minify and uglify all source files to dist/ folder:
+The server reloads when you change a page, partial, stylesheet or script. Build the production files into `dist/`, the HTML pages, `css/app.css`, `js/app.js`, `fonts/` and `img/`, ready to deploy or copy into your own project:
 
 ```sh
 npm run build
 ```
 
-## CDN support
+`npm run preview` serves that build. You can also [download the repository as a zip](https://github.com/adminkit/adminkit/archive/master.zip) or [from the website](https://adminkit.io/#download).
 
-All files included in the `@adminkit/core` npm package are available over a CDN.
+## npm and CDN
 
-**CSS:**
+The built CSS and JavaScript are published to npm as [`@adminkit/core`](https://www.npmjs.com/package/@adminkit/core):
 
-```html
-<link rel="stylesheet" href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css">
+```sh
+npm install @adminkit/core
 ```
 
-**Javascript:**
+With a bundler, import the stylesheet and the script once, in the entry module or root layout:
+
+```js
+import "@adminkit/core/css";
+import "@adminkit/core";
+```
+
+`@adminkit/core` is `dist/js/app.js` and `@adminkit/core/css` is `dist/css/app.css`; `@adminkit/core/head` is `dist/js/head.js`, and every other file stays available under `@adminkit/core/dist/`. The package ships TypeScript declarations for the import and the globals it adds. Imported during server-side rendering, where there is no `window`, the script does nothing, so it can be imported at the top of a module that also runs on the server.
+
+The same files are on the unpkg CDN. `js/app.js` is a plain script, so it needs no build step or `type="module"`:
 
 ```html
+<script src="https://unpkg.com/@adminkit/core@latest/dist/js/head.js"></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@adminkit/core@latest/dist/css/app.css"
+/>
 <script src="https://unpkg.com/@adminkit/core@latest/dist/js/app.js"></script>
 ```
 
+Pin an exact version instead of `@latest` in production. The script adds `window.bootstrap`, `window.adminkit`, `window.lucide`, `window.theme`, `window.Chart`, `window.jsVectorMap` and `window.VanillaCalendar`.
+
+## Frameworks
+
+AdminKit is plain HTML, CSS and JavaScript, so it works with any back end or front-end framework. `js/app.js` also sets up icons, the sidebar and the other markup it enhances when a framework renders them after the page has loaded. The documentation has a setup guide for each of these:
+
+- [HTML](https://adminkit.io/docs/frameworks/html/)
+- [Laravel](https://adminkit.io/docs/frameworks/laravel/)
+- [Django](https://adminkit.io/docs/frameworks/django/)
+- [Rails](https://adminkit.io/docs/frameworks/rails/)
+- [Symfony](https://adminkit.io/docs/frameworks/symfony/)
+- [React](https://adminkit.io/docs/frameworks/react/)
+- [Next.js](https://adminkit.io/docs/frameworks/nextjs/)
+- [Vue](https://adminkit.io/docs/frameworks/vue/)
+- [Nuxt](https://adminkit.io/docs/frameworks/nuxt/)
+- [Angular](https://adminkit.io/docs/frameworks/angular/)
+- [SvelteKit](https://adminkit.io/docs/frameworks/sveltekit/)
+- [Astro](https://adminkit.io/docs/frameworks/astro/)
+
+## Dark mode
+
+`css/app.css` holds a light and a dark color mode, built on [Bootstrap's color modes](https://getbootstrap.com/docs/5.3/customize/color-modes/). Set `data-bs-theme="dark"` on `<html>` for dark mode, or on any other element for that part of the page. The navbar toggle switches between light, dark and auto (the operating system setting) and stores the choice in `localStorage` (`adminkit_config_colorMode`). To apply the stored mode before the first paint, load `js/head.js` in `<head>`, before the stylesheet, as a plain blocking script (no `defer` or `type="module"`):
+
+```html
+<script src="js/head.js"></script>
+<link rel="stylesheet" href="css/app.css" />
+```
+
+It is a few hundred bytes, needs no `unsafe-inline` in a Content Security Policy and also hides the cards that fade in until `js/app.js` runs. Without it `js/app.js` still sets the mode, after the first paint.
+
+In your own styles, use the custom properties for colors that follow the mode: Bootstrap's `--bs-*`, the gray scale `--bs-gray-100` to `--bs-gray-900` (which turns around in dark mode) and `--ak-surface-bg`, the background of cards, dropdowns and inputs. The dark values live in `src/scss/1-variables/_dark.scss`.
+
+`window.theme` holds the theme colors of the current mode for charts and maps; `document` fires `adminkit:themechange` with the new colors when the mode changes. Charts and maps created with `adminkit.chartjs(element, theme => config)` and `adminkit.vectorMap(theme => options)` recolor themselves.
+
+## Google Maps
+
+The Google Maps page loads the Maps JavaScript API without an API key, so Google marks the maps "For development purposes only" and logs a `NoApiKeys` warning (and an `ApiProjectMapError` per map) in the console. For production, create a key in Google Cloud, restrict it by HTTP referrer and add `key=YOUR_KEY` to the script URL in `src/pages/maps-google.html`.
+
 ## File structure
+
 The package contains the following directories and files:
 
 ```
 adminkit/
-├── .babelrc
-├── .eslintrc
 ├── .nvmrc
 ├── README.md
 ├── package.json
-├── postcss.config.js
-├── webpack.config.js
+├── postcss.config.mjs
+├── vite.config.js
+├── public/
+│   └── img/
+├── scripts/
 ├── src/
-│   ├── fonts/
-│   ├── img/
+│   ├── data/
+│   ├── helpers/
 │   ├── js/
 │   │   ├── modules/
 │   │   └── app.js
+│   ├── layouts/
+│   ├── pages/
+│   ├── partials/
+│   │   ├── charts/
+│   │   └── dashboard/
 │   └── scss/
 │       ├── 1-variables/
 │       ├── 2-mixins/
@@ -104,45 +163,54 @@ adminkit/
 │       ├── 4-utilities/
 │       ├── 5-vendor/
 │       └── app.scss
+├── vite/
 └── dist/
+    ├── *.html
     ├── css/
     │   └── app.css
+    ├── img/
     └── js/
-        └── app.js
+        ├── app.js
+        ├── head.js
+        └── icons-all.js
 ```
 
-## Browser Support
+`src/pages` holds one Handlebars template per page with YAML frontmatter; `src/layouts` and `src/partials` are the shared markup, with the chart and dashboard widgets in `src/partials/charts` and `src/partials/dashboard`; a page's inline script sits at the end of the page, a widget's script in the widget's partial. `public/` is copied to `dist/` as it is.
+
+## Sidebar
+
+From Bootstrap's lg breakpoint (992px) up, the navbar toggle hides and shows the sidebar. On smaller screens the sidebar is a Bootstrap offcanvas (`.offcanvas-lg` on `#sidebar`): the toggle opens it as a sheet over the page, Escape, the backdrop or a link close it, and focus stays inside while it is open.
+
+## Motion
+
+Cards fade up as they scroll into view (`.ak-reveal-cards` on `<main>`, `.ak-reveal` on anything else), stat numbers with `data-count-up` count up, charts animate in, and cards whose content JavaScript draws show a skeleton placeholder until it is ready. Durations and easings are the `--ak-duration-fast|base|slow` and `--ak-ease-standard|emphasized` custom properties (`$ak-transition-*` in Sass). With `prefers-reduced-motion: reduce` nothing moves: content only fades in, numbers and charts show their final state at once. The cards only fade in on pages that load `js/head.js`; without it the content shows at once.
+
+## Accessibility
+
+The template targets WCAG 2.2 AA in both color modes: 4.5:1 contrast for text, 3:1 for large text, icons and other controls, named controls and a logical heading order. Every page is checked in light and dark mode with axe (`@axe-core/playwright`), including the sidebar and navbar. New colors must pass too: derive text colors with `ak-readable($color, $background)` from `src/scss/1-variables/_functions.scss`, which darkens (or, on dark backgrounds, lightens) a color just enough, and use `$theme-text-colors` / `$theme-text-colors-dark` for theme colors drawn as text.
+
+## Icons
+
+AdminKit uses [Lucide](https://lucide.dev/icons/) icons: `<i data-lucide="house"></i>` gets the icon as an inline SVG inside it, also when the markup is added after the page has loaded. `js/app.js` only bundles the icons the templates use, listed in `src/js/modules/icons.js`. To use another icon, import it there and add it to `icons`; `npm run lint` fails when a template uses an icon that is not bundled, or the list bundles one that no template uses.
+
+The icons page loads `js/icons-all.js`, which holds every Lucide icon. Its icon list, `src/data/icons-lucide.json`, is generated from `lucide-static`; run `npm run icons:list` after upgrading `lucide` and `lucide-static`.
+
+## Browser support
+
+The build targets the browsers Vite calls "baseline widely available". The `browserslist` field in `package.json` lists the same set for Autoprefixer.
 
 | <img src="https://assets.adminkit.io/browsers/edge.png" alt="Edge" width="24px" height="24px" /><br/>Edge | <img src="https://assets.adminkit.io/browsers/firefox.png" alt="Firefox" width="24px" height="24px" /><br/>Firefox | <img src="https://assets.adminkit.io/browsers/chrome.png" alt="Chrome" width="24px" height="24px" /><br/>Chrome | <img src="https://assets.adminkit.io/browsers/safari.png" alt="Safari" width="24px" height="24px" /><br/>Safari | <img src="https://assets.adminkit.io/browsers/safari-ios.png" alt="iOS Safari" width="24px" height="24px" /><br/>iOS Safari |
-| --------- | --------- | --------- | --------- | --------- |
-| last version| last 2 versions| last 2 versions| last 2 versions| last 2 versions
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 111+                                                                                                      | 114+                                                                                                               | 111+                                                                                                            | 16.4+                                                                                                           | 16.4+                                                                                                                       |
 
 ## Resources
 
-* [Demo](https://demo.adminkit.io/)
-* [Website](https://adminkit.io/)
-* [Documentation](https://adminkit.io/docs)
-* [Support](https://adminkit.io/support/)
-* [Affiliate Program](https://adminkit.io/affiliate-program)
+- [Demo](https://demo.adminkit.io/)
+- [Website](https://adminkit.io/)
+- [Documentation](https://adminkit.io/docs)
+- [Support](https://adminkit.io/support/)
+- [Affiliate Program](https://adminkit.io/affiliate-program)
 
 ## Bugs and feature requests
 
-Found a bug or have a feature request? [Please open a new issue](https://github.com/adminkit/adminkit/issues/new).
-
-## Upgrade to PRO
-Get more power with AdminKit PRO, a premium variant of AdminKit, featuring hundreds of UI components, forms, tables, charts, pages, and icons.
-
-| Free Version        | [AdminKit PRO](https://adminkit.io/pricing/) |
-|---------------------|----------------------------------------------|
-| 15 Demo Pages       | ✔ 45+ Demo Pages                             |
-| 1 Plugin            | ✔ 10+ Plugins                                |
-| 1 Color Scheme      | ✔ 3 Color Schemes                            |
-|                     | ✔ All Bootstrap 5 Components                 |
-|                     | ✔ Dark Mode 🌙                               |
-|                     | ✔ Compact Sidebar                            |
-|                     | ✔ Calendar                                   |
-|                     | ✔ Advanced Forms                             |
-|                     | ✔ Drag and Drop                              |
-|                     | ✔ Toast Notifications                        |
-|                     | ✔ WYSIWYG Editors                            |
-|                     | ✔ Premium Support                            |
+To report a bug or request a feature, [open a new issue](https://github.com/adminkit/adminkit/issues/new).

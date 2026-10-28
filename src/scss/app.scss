@@ -1,72 +1,93 @@
-/*!
- * AdminKit v3.5.0 (https://adminkit.io/)
- * Copyright 2023 Paul Laros
- * Copyright 2023 AdminKit
- * Licensed under MIT (https://github.com/adminkit/adminkit/blob/master/LICENSE)
- */
+// Bootstrap's functions first: the variables use its contrast functions
+@import "bootstrap/scss/functions";
+@import "1-variables/functions";
 
 // Variables
 @import "1-variables/app";
+@import "1-variables/dark";
 
 // Bootstrap
-@import "~bootstrap/scss/functions";
-@import "~bootstrap/scss/variables";
-@import "~bootstrap/scss/maps";
-@import "~bootstrap/scss/mixins";
-@import "~bootstrap/scss/utilities";
-@import "~bootstrap/scss/root";
-@import "~bootstrap/scss/reboot";
-@import "~bootstrap/scss/type";
-@import "~bootstrap/scss/images";
-@import "~bootstrap/scss/containers";
-@import "~bootstrap/scss/grid";
-@import "~bootstrap/scss/tables";
-@import "~bootstrap/scss/forms";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/transitions";
-@import "~bootstrap/scss/dropdown";
-@import "~bootstrap/scss/button-group";
-@import "~bootstrap/scss/nav";
-@import "~bootstrap/scss/navbar";
-@import "~bootstrap/scss/card";
-@import "~bootstrap/scss/badge";
-@import "~bootstrap/scss/list-group";
-@import "~bootstrap/scss/close";
-@import "~bootstrap/scss/helpers";
-@import "~bootstrap/scss/utilities/api";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+@import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/card";
+@import "bootstrap/scss/badge";
+@import "bootstrap/scss/list-group";
+@import "bootstrap/scss/alert";
+@import "bootstrap/scss/progress";
+@import "bootstrap/scss/close";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/placeholders";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";
 
 // Theme mixins
+@import "2-mixins/badge";
 @import "2-mixins/button";
+@import "2-mixins/chevron";
+@import "2-mixins/modal";
 
 // Theme components
+@import "3-components/root";
+@import "3-components/fonts";
+@import "3-components/alert";
 @import "3-components/avatar";
+@import "3-components/badges";
 @import "3-components/buttons";
 @import "3-components/card";
 @import "3-components/chart";
 @import "3-components/content";
 @import "3-components/dropdown";
-@import "3-components/feather";
 @import "3-components/footer";
 @import "3-components/hamburger";
+@import "3-components/invoice";
 @import "3-components/list-group";
+@import "3-components/lucide";
 @import "3-components/main";
+@import "3-components/modal";
 @import "3-components/navbar";
+@import "3-components/pricing";
+@import "3-components/print";
+@import "3-components/profile";
+@import "3-components/progress";
 @import "3-components/reboot";
+@import "3-components/reveal";
 @import "3-components/sidebar";
+@import "3-components/skeleton";
 @import "3-components/sizing";
 @import "3-components/stat";
 @import "3-components/tables";
 @import "3-components/type";
+@import "3-components/upgrade";
 @import "3-components/wrapper";
 
 // Theme utilities
+@import "4-utilities/color-mode";
 @import "4-utilities/cursors";
+@import "4-utilities/text";
 
 // 3rd party plugins
-@import "~jsvectormap/dist/jsvectormap";
-@import "~simplebar/dist/simplebar";
-@import "~flatpickr/dist/flatpickr";
+@import "jsvectormap/dist/jsvectormap";
+@import "simplebar/dist/simplebar.css";
+@import "vanilla-calendar-pro/styles/core.css";
 
 // 3rd party plugin styles
-@import "5-vendor/flatpickr";
 @import "5-vendor/simplebar";
+@import "5-vendor/vanilla-calendar";

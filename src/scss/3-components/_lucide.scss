@@ -1,0 +1,29 @@
+.lucide {
+  width: 18px;
+  height: 18px;
+  stroke-width: 2;
+}
+
+// js/app.js renders each icon as an <svg> inside its <i data-lucide>. Until then the empty
+// <i> takes the size the SVG will have (the rules that size .lucide or svg in a component
+// list it too), so the layout does not move when the icons appear; after that it leaves
+// the layout to the SVG. :where() keeps .lucide-sm and -lg ahead.
+:where(i[data-lucide]:empty) {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+
+i[data-lucide]:not(:empty) {
+  display: contents;
+}
+
+.lucide-sm {
+  width: 14px;
+  height: 14px;
+}
+
+.lucide-lg {
+  width: 36px;
+  height: 36px;
+}

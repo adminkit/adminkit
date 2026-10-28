@@ -1,0 +1,80 @@
+// Invoice page (pages-invoice.html)
+
+.invoice-meta,
+.invoice-payment {
+  dt {
+    font-weight: $font-weight-normal;
+    color: var(--#{$prefix}secondary-color);
+  }
+
+  dd {
+    margin-bottom: 0;
+  }
+}
+
+.invoice-meta dd {
+  color: var(--#{$prefix}emphasis-color);
+}
+
+.invoice-payment dd {
+  margin-bottom: $spacer * 0.25;
+}
+
+// The item and total columns line up with the text above them
+.invoice-items,
+.invoice-totals {
+  > :not(caption) > * > :first-child {
+    padding-left: 0;
+  }
+
+  > :not(caption) > * > :last-child {
+    padding-right: 0;
+  }
+}
+
+.invoice-items {
+  thead th {
+    font-weight: $font-weight-normal;
+    color: var(--#{$prefix}secondary-color);
+  }
+
+  td {
+    padding-top: $spacer * 0.75;
+    padding-bottom: $spacer * 0.75;
+  }
+}
+
+.invoice-totals {
+  margin-top: $spacer * 0.5;
+
+  .invoice-due > * {
+    border-top: var(--#{$prefix}border-width) solid
+      var(--#{$prefix}border-color);
+    padding-top: $spacer * 0.75;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: var(--#{$prefix}emphasis-color);
+  }
+}
+
+// Printing, with the rules in _print.scss: the invoice without its padding and in the light
+// colors whatever the color mode
+@media print {
+  .invoice {
+    --#{$prefix}body-color: #{$body-color};
+    --#{$prefix}body-bg: #{$white};
+    --#{$prefix}emphasis-color: #{$body-emphasis-color};
+    --#{$prefix}emphasis-color-rgb: #{to-rgb($body-emphasis-color)};
+    --#{$prefix}secondary-color: #{$body-secondary-color};
+    --#{$prefix}secondary-color-rgb: #{to-rgb($body-secondary-color)};
+    --#{$prefix}heading-color: #{$headings-color};
+    --#{$prefix}border-color: #{$border-color};
+    --#{$prefix}link-color-rgb: #{to-rgb($link-color)};
+    color: var(--#{$prefix}body-color);
+    background: $white;
+
+    .card-body {
+      padding: 0 !important;
+    }
+  }
+}

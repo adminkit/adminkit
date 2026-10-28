@@ -1,23 +1,24 @@
+// Chart.js sizes its canvas from the container, so the container has an explicit height
 .chart {
   margin: auto;
   position: relative;
   width: 100%;
-  min-height: 300px;
+  height: 300px;
 
   &-xs {
-    min-height: 200px;
+    height: 200px;
   }
 
   &-sm {
-    min-height: 252px;
+    height: 252px;
   }
 
   &-lg {
-    min-height: 350px;
+    height: 350px;
   }
 
   &-xl {
-    min-height: 500px;
+    height: 500px;
   }
 
   canvas {

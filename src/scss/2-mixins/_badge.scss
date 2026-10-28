@@ -1,0 +1,20 @@
+@use "sass:color";
+
+@mixin badge-variant($bg, $color) {
+  color: $color;
+  background-color: $bg;
+
+  &:is(a) {
+    &:hover,
+    &:focus {
+      color: $color;
+      background-color: color.adjust($bg, $lightness: -10%);
+    }
+
+    &:focus,
+    &.focus {
+      outline: 0;
+      box-shadow: 0 0 0 1px rgba($bg, 0.5);
+    }
+  }
+}

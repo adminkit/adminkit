@@ -1,0 +1,33 @@
+@use "sass:color";
+
+// WCAG 2.2 AA asks for 4.5:1 for text, 3:1 for large text, icons and other UI parts.
+// ak-readable() returns $color, mixed with black (on a light $background) or white (on a
+// dark one) in 1% steps until it reaches $min contrast with $background; a colour that
+// passes comes back unchanged. Use it for every colour that text or a control is drawn in.
+// contrast-ratio() and luminance() come from Bootstrap's functions.
+@function ak-readable($color, $background, $min: 4.5) {
+  $towards: #000;
+
+  @if luminance($background) < 0.18 {
+    $towards: #fff;
+  }
+
+  @for $weight from 0 through 100 {
+    $candidate: color.mix($towards, $color, $weight * 1%);
+
+    @if contrast-ratio($background, $candidate) >= $min {
+      @return $candidate;
+    }
+  }
+
+  @return $towards;
+}
+
+// White, or the darkest gray when white does not reach 4.5:1 on $background
+@function ak-text-on($background) {
+  @if contrast-ratio($background, #fff) >= 4.5 {
+    @return #fff;
+  }
+
+  @return #212529;
+}

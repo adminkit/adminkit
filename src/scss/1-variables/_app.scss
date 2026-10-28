@@ -1,13 +1,27 @@
 @use "sass:color";
+@use "sass:map";
 
 // Fonts
-$font-family-sans-serif: "Inter", "Helvetica Neue", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-sans-serif:
+  "Inter",
+  "Helvetica Neue",
+  Arial,
+  -apple-system,
+  BlinkMacSystemFont,
+  "Segoe UI",
+  Roboto,
+  "Noto Sans",
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
 $font-weight-light: 300 !default;
 $font-weight-normal: 400 !default;
 $font-weight-bold: 600 !default;
-$font-size-base: .875rem !default;
-$font-size-lg: .925rem !default;
-$font-size-sm: .75rem !default;
+$font-size-base: 0.875rem !default;
+$font-size-lg: 0.925rem !default;
+$font-size-sm: 0.75rem !default;
 $small-font-size: 80% !default;
 
 // Spacer
@@ -15,13 +29,25 @@ $spacer: 1rem !default;
 
 $spacers: (
   0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
+  1: (
+    $spacer * 0.25,
+  ),
+  2: (
+    $spacer * 0.5,
+  ),
   3: $spacer,
-  4: ($spacer * 1.5),
-  5: ($spacer * 3),
-  6: ($spacer * 4.5),
-  7: ($spacer * 6)
+  4: (
+    $spacer * 1.5,
+  ),
+  5: (
+    $spacer * 3,
+  ),
+  6: (
+    $spacer * 4.5,
+  ),
+  7: (
+    $spacer * 6,
+  ),
 ) !default;
 
 // Grid breakpoints
@@ -31,7 +57,7 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1440px
+  xxl: 1440px,
 ) !default;
 
 // Grid gutter
@@ -42,53 +68,67 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: 1200px
+  xl: 1200px,
 ) !default;
 
-$container-padding-x: .75rem !default;
+$container-padding-x: 0.75rem !default;
 
 // Options
-$min-contrast-ratio: 3 !default;
+$min-contrast-ratio: 4.5 !default;
 $enable-validation-icons: false !default;
 $enable-rfs: false !default;
 $enable-negative-margins: true !default;
-$enable-dark-mode: false !default;
+$enable-dark-mode: true !default; // Dark mode values live in 1-variables/_dark.scss
 
-// Transitions
-$transition-base: all .35s ease-in-out !default;
+// Motion. Components read these as custom properties (--ak-duration-fast|base|slow and
+// --ak-ease-standard|emphasized, set on :root in 3-components/_root.scss) so they can be
+// tuned at runtime. Under prefers-reduced-motion: reduce, Bootstrap's transition() mixin
+// drops the transitions and AdminKit's own animations only fade.
+$ak-transition-duration-fast: 0.15s !default;
+$ak-transition-duration-base: 0.25s !default;
+$ak-transition-duration-slow: 0.35s !default;
+$ak-transition-easing-standard: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$ak-transition-easing-emphasized: cubic-bezier(0.2, 0, 0, 1) !default;
+
+// Bootstrap transitions on the motion tokens
+$transition-base: all var(--ak-duration-slow) var(--ak-ease-standard) !default;
+$transition-fade: opacity var(--ak-duration-fast) linear !default;
+$transition-collapse: height var(--ak-duration-slow) var(--ak-ease-standard) !default;
+$transition-collapse-width: width var(--ak-duration-slow)
+  var(--ak-ease-standard) !default;
 
 // Theme colors
-$blue:    #3B7DDD !default;
-$indigo:  #0a0a0a !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #fcb92c !default;
-$green:   #1cbb8c !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue: #266ed8 !default;
+$indigo: #0a0a0a !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #da2839 !default;
+$orange: #fd7e14 !default;
+$yellow: #fcb92c !default;
+$green: #138161 !default;
+$teal: #20c997 !default;
+$cyan: #127d8e !default;
 
-$white:    #fff !default;
+$white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
+$gray-600: #6a737a !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
-$success:       $green !default;
-$info:          $cyan !default;
-$warning:       $yellow !default;
-$danger:        $red !default;
-$light:         #f5f7fb !default;
-$dark:          $gray-900 !default;
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: #f5f7fb !default;
+$dark: $gray-900 !default;
 
 $theme-colors: (
   "primary": $primary,
@@ -98,7 +138,7 @@ $theme-colors: (
   "warning": $warning,
   "danger": $danger,
   "light": $light,
-  "dark": $dark
+  "dark": $dark,
 ) !default;
 
 // Social colors
@@ -113,12 +153,35 @@ $social-colors: (
   "instagram": #e4405f,
   "pinterest": #bd081c,
   "flickr": #0063dc,
-  "bitbucket": #0052cc
+  "bitbucket": #0052cc,
 ) !default;
 
 // Body
 $body-bg: #f5f7fb !default;
 $body-color: $gray-700 !default;
+$body-secondary-color: $gray-600 !default;
+
+// Cards, dropdowns, inputs, the navbar and footer. Components use it as var(--ak-surface-bg),
+// which is $surface-bg-dark in dark mode.
+$surface-bg: $white !default;
+
+// Theme colours drawn as text (.text-*, outline buttons): the colour where it reaches 4.5:1
+// on the page background, a darker shade where it does not. Dark mode has
+// $theme-text-colors-dark.
+$theme-text-colors: () !default;
+
+@each $name, $value in $theme-colors {
+  @if not map.has-key($theme-text-colors, $name) {
+    $theme-text-colors: map.merge(
+      $theme-text-colors,
+      (
+        $name: ak-readable($value, $body-bg),
+      )
+    );
+  }
+}
+
+$code-color: ak-readable($pink, $body-bg) !default;
 
 // Links
 $link-decoration: none !default;
@@ -144,98 +207,130 @@ $headings-font-weight: 400 !default;
 
 // Displays
 $display-font-sizes: (
-	1: 6rem,
+  1: 6rem,
   2: 5.5rem,
   3: 4.5rem,
   4: 3.5rem,
   5: 3rem,
-  6: 2.5rem
-  ) !default;
+  6: 2.5rem,
+) !default;
+
+// Progress
+$progress-height-sm: 0.4rem !default;
 
 // Shadows
-$box-shadow-sm:    0 0.05rem 0.2rem rgba($black, .05) !default;
-$box-shadow:       0 0.1rem 0.2rem rgba($black, .05) !default;
-$box-shadow-lg:    0 0.2rem 0.2rem rgba($black, .05) !default;
+$box-shadow-sm: 0 0.05rem 0.2rem rgba(var(--bs-emphasis-color-rgb), 0.05) !default;
+$box-shadow: 0 0.1rem 0.2rem rgba(var(--bs-emphasis-color-rgb), 0.05) !default;
+$box-shadow-lg: 0 0.2rem 0.2rem rgba(var(--bs-emphasis-color-rgb), 0.05) !default;
 
 // Navbar input
 $navbar-input-bg: color.adjust($body-bg, $lightness: -0.5%) !default;
 
 // Border radius
-$border-radius-sm: .1rem !default;
-$border-radius:    .2rem !default;
-$border-radius-lg: .3rem !default;
+$border-radius-sm: 0.1rem !default;
+$border-radius: 0.2rem !default;
+$border-radius-lg: 0.3rem !default;
 
 // Navbar
-$navbar-padding-y: $spacer*0.875 !default;
-$navbar-padding-x: $spacer*1.375 !default;
-$navbar-nav-link-padding-x: .5rem !default;
+$navbar-padding-y: $spacer * 0.875 !default;
+$navbar-padding-x: $spacer * 1.375 !default;
+$navbar-nav-link-padding-x: 0.5rem !default;
 $navbar-border-bottom: 0 !default;
-$navbar-box-shadow: 0 0 2rem 0 rgba($dark, .1) !default;
+$navbar-box-shadow: 0 0 2rem 0 rgba($dark, 0.1) !default;
 
 // Navbar brand
-$navbar-brand-padding-y: $spacer*0.875 !default;
+$navbar-brand-padding-y: $spacer * 0.875 !default;
 $navbar-brand-padding-x: 0 !default;
-$navbar-brand-color: $gray-100 !default;
+$navbar-brand-color: var(--bs-gray-100) !default;
 $navbar-brand-font-weight: $font-weight-normal !default;
 $navbar-brand-font-size: 1.15rem !default;
 $navbar-brand-icon-color: $primary !default;
 
-$navbar-bg: $white !default;
+$navbar-bg: var(--ak-surface-bg) !default;
 
 // Footer
-$footer-bg: $white !default;
+$footer-bg: var(--ak-surface-bg) !default;
+
+// Alerts
+$alert-padding-y: 0.95rem !default;
+$alert-padding-x: 0.95rem !default;
+$alert-border-width: 0 !default;
+$alert-color: $dark !default;
+$alert-bg-scale: -80% !default;
+
+// List group
+$list-group-bg: var(--ak-surface-bg) !default;
+$list-group-item-padding-y: 0.75rem !default;
+$list-group-item-padding-x: 1.25rem !default;
 
 // Forms
-$input-bg: $white !default;
-$input-disabled-bg: $gray-200 !default;
-$input-color: $gray-700 !default;
+// Stacked checks and radios 24px apart, the WCAG 2.2 target spacing
+$form-check-margin-bottom: 0.25rem !default;
+$input-bg: var(--ak-surface-bg) !default;
+$input-disabled-bg: var(--bs-secondary-bg) !default;
+$input-color: var(--bs-body-color) !default;
+$form-check-input-border: var(--bs-border-width) solid
+  var(--ak-form-check-input-border-color) !default;
 $input-btn-border-width: $border-width !default;
 $input-btn-line-height: $line-height-base !default;
 $input-btn-line-height-sm: $line-height-sm !default;
 $input-btn-line-height-lg: $line-height-lg !default;
-$input-btn-focus-width: .2rem !default;
-$input-btn-padding-y: .3rem !default;
-$input-btn-padding-y-sm: .2rem !default;
-$input-btn-padding-y-lg: .4rem !default;
-$input-btn-padding-x: .85rem !default;
+$input-btn-focus-width: 0.2rem !default;
+$input-btn-padding-y: 0.3rem !default;
+$input-btn-padding-y-sm: 0.2rem !default;
+$input-btn-padding-y-lg: 0.4rem !default;
+$input-btn-padding-x: 0.85rem !default;
 $input-border-width: $input-btn-border-width !default;
 $input-height-border: $input-border-width * 2 !default;
-$input-height-inner: ($font-size-base * $input-btn-line-height) + ($input-btn-padding-y * 2) !default;
+$input-height-inner: ($font-size-base * $input-btn-line-height) +
+  ($input-btn-padding-y * 2) !default;
 $input-height: calc(#{$input-height-inner} + #{$input-height-border}) !default;
-$input-height-inner-sm: ($font-size-sm * $input-btn-line-height-sm) + ($input-btn-padding-y-sm * 2) !default;
-$input-height-sm: calc(#{$input-height-inner-sm} + #{$input-height-border}) !default;
-$input-height-inner-lg: ($font-size-lg * $input-btn-line-height-lg) + ($input-btn-padding-y-lg * 2) !default;
-$input-height-lg: calc(#{$input-height-inner-lg} + #{$input-height-border}) !default;
+$input-height-inner-sm: ($font-size-sm * $input-btn-line-height-sm) +
+  ($input-btn-padding-y-sm * 2) !default;
+$input-height-sm: calc(
+  #{$input-height-inner-sm} + #{$input-height-border}
+) !default;
+$input-height-inner-lg: ($font-size-lg * $input-btn-line-height-lg) +
+  ($input-btn-padding-y-lg * 2) !default;
+$input-height-lg: calc(
+  #{$input-height-inner-lg} + #{$input-height-border}
+) !default;
 
 // Cards
-$card-bg: $white !default;
-$card-border-radius: .25rem !default;
+$card-bg: var(--ak-surface-bg) !default;
+$card-border-radius: 0.25rem !default;
 $card-inner-border-radius: $card-border-radius !default;
 $card-border-width: 0 !default;
 $card-border-color: transparent !default;
-$card-cap-bg: $white !default;
-$card-shadow: 0 0 .875rem 0 rgba($dark, 0.05) !default;
+$card-cap-bg: var(--ak-surface-bg) !default;
+$card-shadow: 0 0 0.875rem 0 rgba($dark, 0.05) !default;
+$card-shadow-hover: 0 0.5rem 1.5rem 0 rgba($dark, 0.1) !default;
+$card-hover-lift: -0.125rem !default;
 $card-title-font-size: $font-size-lg !default;
 $card-title-font-weight: $font-weight-bold !default;
-$card-title-color: color.adjust($gray-600, $lightness: 15%) !default;
+$card-title-color: $gray-600 !default;
 $card-spacer-y: 1.25rem !default;
 $card-spacer-x: 1.25rem !default;
 $card-cap-padding-y: 1rem !default;
 $card-cap-padding-x: $card-spacer-x !default;
 
 // Tables
-$table-cell-padding-y: .75rem !default;
-$table-cell-padding-x: .75rem !default;
-$table-cell-padding-y-sm: .3rem !default;
-$table-cell-padding-x-sm: .3rem !default;
+$table-cell-padding-y: 0.75rem !default;
+$table-cell-padding-x: 0.75rem !default;
+$table-cell-padding-y-sm: 0.3rem !default;
+$table-cell-padding-x-sm: 0.3rem !default;
 $table-bg: transparent !default;
 $table-striped-bg: $gray-100 !default;
-$table-hover-bg: rgba($black, .0375) !default;
+$table-hover-bg: rgba(var(--bs-emphasis-color-rgb), 0.0375) !default;
 
 // Sidebar general
 $sidebar-width: 260px !default;
-$sidebar-transition: margin-left .35s ease-in-out, left .35s ease-in-out, margin-right .35s ease-in-out, right .35s ease-in-out !default;
-$sidebar-bg: #222E3C !default;
+// Hiding and showing the sidebar from lg up
+$sidebar-transition: margin-left var(--ak-duration-slow) var(--ak-ease-standard) !default;
+// The sheet below lg, Bootstrap's offcanvas transition on the motion tokens
+$sidebar-sheet-transition: transform var(--ak-duration-slow)
+  var(--ak-ease-standard) !default;
+$sidebar-bg: #222e3c !default;
 
 // Sidebar brand
 $sidebar-brand-padding-y: 1.15rem !default;
@@ -250,19 +345,24 @@ $sidebar-header-font-size: $font-size-sm !default;
 $sidebar-header-color: $gray-400 !default;
 
 // Sidebar link
-$sidebar-link-padding: .625rem 1.625rem !default;
+$sidebar-link-padding: 0.625rem 1.625rem !default;
 $sidebar-link-font-weight: 400 !default;
-$sidebar-link-bg: #222E3C !default;
-$sidebar-link-color: rgba($gray-200, 0.5) !default;
+$sidebar-link-bg: #222e3c !default;
+$sidebar-link-color: rgba($gray-200, 0.6) !default;
 $sidebar-link-border-left-color: transparent !default;
 
 $sidebar-link-hover-font-weight: $font-weight-normal !default;
-$sidebar-link-hover-bg: #222E3C !default;
+$sidebar-link-hover-bg: #222e3c !default;
 $sidebar-link-hover-color: #{rgba($gray-200, 0.75)} !default;
 $sidebar-link-hover-border-left-color: transparent !default;
 
 $sidebar-link-active-font-weight: $font-weight-normal !default;
-$sidebar-link-active-bg: #{linear-gradient(90deg, rgba($primary,0.1) 0%, rgba($primary,0.0875) 50%, rgba($black, 0) 100%)} !default;
+$sidebar-link-active-bg: #{linear-gradient(
+    90deg,
+    rgba($primary, 0.1) 0%,
+    rgba($primary, 0.0875) 50%,
+    rgba($black, 0) 100%
+  )} !default;
 $sidebar-link-active-color: $gray-200 !default;
 $sidebar-link-active-border-left-color: $primary !default;
 
@@ -273,15 +373,21 @@ $sidebar-link-icon-active-color: $gray-200 !default;
 
 // Sidebar bottom
 $sidebar-cta-color: $gray-200 !default;
-$sidebar-cta-bg: #2B3947 !default;
-$sidebar-cta-padding: $spacer*1.5 !default;
-$sidebar-cta-margin: $spacer*1.75 !default;
+$sidebar-cta-bg: #2b3947 !default;
+$sidebar-cta-padding: $spacer * 1.5 !default;
+$sidebar-cta-margin: $spacer * 1.75 !default;
 $sidebar-cta-border-radius: $border-radius-lg !default;
 
 // Transitions
-$transition-appearance: background .4s ease-in-out, color .4s ease-in-out !default;
-$transition-appearance-slow: background .6s ease-in-out, color .6s ease-in-out !default;
-$transition-appearance-fast: background .1s ease-in-out, color .1s ease-in-out !default;
+$transition-appearance:
+  background var(--ak-duration-base) var(--ak-ease-standard),
+  color var(--ak-duration-base) var(--ak-ease-standard) !default;
+$transition-appearance-slow:
+  background var(--ak-duration-slow) var(--ak-ease-standard),
+  color var(--ak-duration-slow) var(--ak-ease-standard) !default;
+$transition-appearance-fast:
+  background var(--ak-duration-fast) var(--ak-ease-standard),
+  color var(--ak-duration-fast) var(--ak-ease-standard) !default;
 
 // Modals
 $modal-content-border-width: 0 !default;
@@ -291,22 +397,36 @@ $modal-xl: 1140px !default;
 $modal-lg: 900px !default;
 $modal-md: 600px !default;
 $modal-sm: 400px !default;
-$modal-transition: transform .25s ease-out !default;
+$modal-transition: transform var(--ak-duration-base) var(--ak-ease-emphasized) !default;
+$modal-content-bg: var(--ak-surface-bg) !default;
 
 // Badges
 $badge-font-size: 80% !default;
-$badge-padding-y: .3em !default;
-$badge-padding-x: .45em !default;
+$badge-padding-y: 0.3em !default;
+$badge-padding-x: 0.45em !default;
+
+// Chevrons: dropdown carets (2-mixins/_chevron.scss)
+$chevron-padding: 2px !default;
+$chevron-border-width: 2px !default;
+
+// Inline carets centre on the text: Inter's cap height is 0.727em, so the middle of a capital
+// sits 0.3635em above the baseline, and the caret box rises to put its own middle there.
+$caret-vertical-align: calc(
+  0.3635em - #{$chevron-padding + $chevron-border-width * 0.5}
+) !default;
 
 // Dropdowns
-$dropdown-bg: $white !default;
+$dropdown-bg: var(--ak-surface-bg) !default;
+$dropdown-link-color: var(--bs-body-color) !default;
+$dropdown-link-hover-bg: var(--bs-tertiary-bg) !default;
+$dropdown-header-color: var(--bs-gray-600) !default;
 
 // Main
-$main-box-shadow: inset .75rem 0px 1.5rem 0px rgba($black, 0.075);
+$main-box-shadow: inset 0.75rem 0px 1.5rem 0px rgba($black, 0.075);
 
 // Content
 $content-padding-desktop: 3rem 3rem 1.5rem !default;
-$content-padding-mobile: 1.5rem 1.5rem .75rem !default;
+$content-padding-mobile: 1.5rem 1.5rem 0.75rem !default;
 
 // Datetimepicker
 $bs-datetimepicker-active-bg: $primary !default;

@@ -1,0 +1,27 @@
+<div class="card flex-fill">
+  <div class="card-header">
+    
+    <h2 class="card-title mb-0">Calendar</h2>
+  </div>
+  <div class="card-body d-flex">
+    <div class="align-self-center w-100">
+      <div id="datetimepicker-dashboard"></div>
+    </div>
+  </div>
+</div>
+
+{{#push "scripts"}}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var date = new Date(Date.now() - 5 * 24 * 60 * 60 * 1000);
+
+    new VanillaCalendar.Calendar("#datetimepicker-dashboard", {
+      selectedDates: [date],
+      enableJumpToSelectedDate: true,
+      firstWeekday: 0,
+      selectedTheme: "system",
+      themeAttrDetect: "html[data-bs-theme]"
+    }).init();
+  });
+</script>
+{{/push}}

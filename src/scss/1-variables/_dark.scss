@@ -1,0 +1,134 @@
+@use "sass:color";
+@use "sass:map";
+
+// Dark color mode
+//
+// The values behind [data-bs-theme="dark"]: Bootstrap's $*-dark variables (see
+// bootstrap/scss/_variables-dark.scss) and AdminKit's own, used in 3-components/_root.scss
+// and the component dark rules. The palette is the light one with the gray scale turned
+// around on a navy base, so gray-100 is the step closest to the surface in both modes.
+
+$dark-theme-base: #222e3c !default;
+
+$surface-bg-dark: $dark-theme-base !default;
+
+$gray-100-dark: color.mix(#fff, $dark-theme-base, 10%) !default;
+$gray-200-dark: color.mix(#fff, $dark-theme-base, 20%) !default;
+$gray-300-dark: color.mix(#fff, $dark-theme-base, 30%) !default;
+$gray-400-dark: color.mix(#fff, $dark-theme-base, 40%) !default;
+$gray-500-dark: color.mix(#fff, $dark-theme-base, 50%) !default;
+$gray-600-dark: color.mix(#fff, $dark-theme-base, 60%) !default;
+$gray-700-dark: color.mix(#fff, $dark-theme-base, 70%) !default;
+$gray-800-dark: color.mix(#fff, $dark-theme-base, 80%) !default;
+$gray-900-dark: color.mix(#fff, $dark-theme-base, 90%) !default;
+
+$grays-dark: (
+  "100": $gray-100-dark,
+  "200": $gray-200-dark,
+  "300": $gray-300-dark,
+  "400": $gray-400-dark,
+  "500": $gray-500-dark,
+  "600": $gray-600-dark,
+  "700": $gray-700-dark,
+  "800": $gray-800-dark,
+  "900": $gray-900-dark,
+) !default;
+
+// The theme colours that differ in dark mode; the others keep their light value
+// Dark enough for white text on it; as text, see $theme-text-colors-dark
+$secondary-dark: ak-readable($gray-400-dark, #fff) !default;
+$light-dark: color.mix(#fff, $dark-theme-base, 5%) !default;
+$dark-dark: $gray-900-dark !default;
+
+$theme-colors-dark: (
+  "secondary": $secondary-dark,
+  "light": $light-dark,
+  "dark": $dark-dark,
+) !default;
+
+// Theme colours drawn as text, light enough for the dark surfaces
+$theme-text-colors-dark: () !default;
+
+@each $name, $value in map.merge($theme-colors, $theme-colors-dark) {
+  @if not map.has-key($theme-text-colors-dark, $name) {
+    $theme-text-colors-dark: map.merge(
+      $theme-text-colors-dark,
+      (
+        $name: ak-readable($value, $surface-bg-dark),
+      )
+    );
+  }
+}
+
+// Body
+$body-bg-dark: color.adjust($dark-theme-base, $lightness: -5%) !default;
+$body-color-dark: $gray-700-dark !default;
+$body-secondary-color-dark: rgba($body-color-dark, 0.75) !default;
+$body-secondary-bg-dark: $gray-200-dark !default;
+$body-tertiary-color-dark: rgba($body-color-dark, 0.5) !default;
+$body-tertiary-bg-dark: $gray-100-dark !default;
+$body-emphasis-color-dark: #fff !default;
+$headings-color-dark: #fff !default;
+$border-color-dark: $gray-200-dark !default;
+$border-color-translucent-dark: rgba(#fff, 0.175) !default;
+
+// Links, code and marks keep their light colours
+$link-color-dark: ak-readable($primary, $surface-bg-dark) !default;
+$link-hover-color-dark: color.mix(#fff, $link-color-dark, 20%) !default;
+$code-color-dark: ak-readable($pink, $surface-bg-dark) !default;
+$mark-color-dark: $gray-900 !default;
+$mark-bg-dark: color.mix(#fff, $yellow, 80%) !default;
+
+// Theme colour text, backgrounds and borders, from the same formulas as in light mode
+$primary-text-emphasis-dark: color.mix(#000, $primary, 60%) !default;
+$secondary-text-emphasis-dark: color.mix(#000, $secondary-dark, 60%) !default;
+$success-text-emphasis-dark: color.mix(#000, $success, 60%) !default;
+$info-text-emphasis-dark: color.mix(#000, $info, 60%) !default;
+$warning-text-emphasis-dark: color.mix(#000, $warning, 60%) !default;
+$danger-text-emphasis-dark: color.mix(#000, $danger, 60%) !default;
+$light-text-emphasis-dark: $gray-700-dark !default;
+$dark-text-emphasis-dark: $gray-700-dark !default;
+
+$primary-bg-subtle-dark: color.mix(#fff, $primary, 80%) !default;
+$secondary-bg-subtle-dark: color.mix(#fff, $secondary-dark, 80%) !default;
+$success-bg-subtle-dark: color.mix(#fff, $success, 80%) !default;
+$info-bg-subtle-dark: color.mix(#fff, $info, 80%) !default;
+$warning-bg-subtle-dark: color.mix(#fff, $warning, 80%) !default;
+$danger-bg-subtle-dark: color.mix(#fff, $danger, 80%) !default;
+$light-bg-subtle-dark: color.mix($gray-100-dark, $surface-bg-dark) !default;
+$dark-bg-subtle-dark: $gray-400-dark !default;
+
+$primary-border-subtle-dark: color.mix(#fff, $primary, 60%) !default;
+$secondary-border-subtle-dark: color.mix(#fff, $secondary-dark, 60%) !default;
+$success-border-subtle-dark: color.mix(#fff, $success, 60%) !default;
+$info-border-subtle-dark: color.mix(#fff, $info, 60%) !default;
+$warning-border-subtle-dark: color.mix(#fff, $warning, 60%) !default;
+$danger-border-subtle-dark: color.mix(#fff, $danger, 60%) !default;
+$light-border-subtle-dark: $gray-200-dark !default;
+$dark-border-subtle-dark: $gray-500-dark !default;
+
+// Forms
+$form-select-indicator-color-dark: $gray-800-dark !default;
+$form-switch-color-dark: rgba(#fff, 0.5) !default;
+$form-check-input-border-color-dark: rgba(#fff, 0.5) !default;
+$form-valid-color-dark: map.get($theme-text-colors-dark, "success") !default;
+$form-valid-border-color-dark: $success !default;
+$form-invalid-color-dark: map.get($theme-text-colors-dark, "danger") !default;
+$form-invalid-border-color-dark: $danger !default;
+
+// Navbar
+$navbar-bg-dark: transparent !default;
+
+// Cards
+$card-title-color-dark: $gray-800-dark !default;
+
+// Alerts
+$alert-color-dark: #fff !default;
+$alert-bg-scale-dark: 50% !default;
+
+// Tables
+$table-striped-bg-dark: $light-dark !default;
+
+// Stats
+$stat-bg-dark: $gray-100-dark !default;
+$stat-icon-color-dark: #fff !default;

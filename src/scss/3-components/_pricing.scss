@@ -1,0 +1,153 @@
+// Pricing page (pages-pricing.html)
+
+// Plan cards. From lg up the cards share the rows of one grid (subgrid), so the name,
+// description, price, button and feature list line up across the cards whatever their length.
+.pricing-plans {
+  display: grid;
+  gap: $spacer;
+
+  > .card {
+    margin-bottom: 0;
+  }
+
+  @include media-breakpoint-up(lg) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 0;
+
+    > .card,
+    > .card > .card-body {
+      display: grid;
+      grid-row: span 6;
+      grid-template-rows: subgrid;
+    }
+  }
+}
+
+// The highlighted plan: a primary ring outside the card, so its content lines up with the others
+.pricing-plan-featured {
+  box-shadow:
+    0 0 0 2px var(--#{$prefix}primary),
+    $card-shadow;
+}
+
+.pricing-price {
+  font-variant-numeric: tabular-nums;
+}
+
+.pricing-features {
+  li {
+    display: flex;
+    gap: $spacer * 0.5;
+  }
+
+  li + li {
+    margin-top: $spacer * 0.625;
+  }
+
+  svg,
+  i[data-lucide] {
+    flex-shrink: 0;
+    margin-top: 0.125em;
+  }
+}
+
+// Comparison table: plan header row, a tinted Standard column and grouped rows
+.pricing-table {
+  --ak-pricing-featured-bg: rgba(var(--#{$prefix}primary-rgb), 0.05);
+
+  > :not(caption) > * > * {
+    padding-top: $spacer * 0.875;
+    padding-bottom: $spacer * 0.875;
+  }
+
+  thead th {
+    padding-top: $spacer * 1.25;
+    padding-bottom: $spacer * 1.25;
+    font-weight: $font-weight-normal;
+    vertical-align: bottom;
+    background-color: var(--ak-surface-bg);
+  }
+
+  thead th:not(:first-child),
+  td {
+    width: 22%;
+    min-width: 9.5rem;
+    text-align: center;
+  }
+
+  tbody th {
+    font-weight: $font-weight-normal;
+    vertical-align: middle;
+  }
+
+  td {
+    font-variant-numeric: tabular-nums;
+  }
+
+  // The Standard column
+  > :not(caption) > tr > :nth-child(3) {
+    --#{$prefix}table-bg-state: var(--ak-pricing-featured-bg);
+  }
+
+  .pricing-table-group th {
+    padding-top: $spacer * 1.5;
+    font-weight: $font-weight-semibold;
+
+    svg,
+    i[data-lucide] {
+      margin-right: $spacer * 0.5;
+      color: var(--#{$prefix}primary);
+      vertical-align: -0.2em;
+    }
+  }
+
+  tbody tr:last-child > * {
+    border-bottom-width: 0;
+  }
+
+  td .lucide,
+  td i[data-lucide] {
+    vertical-align: -0.2em;
+  }
+
+  // From lg up the plan header row stays in view while the table scrolls by
+  @include media-breakpoint-up(lg) {
+    thead th {
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  // Below lg the table scrolls sideways inside the card; the feature names stay in view
+  @include media-breakpoint-down(lg) {
+    th:first-child {
+      position: sticky;
+      left: 0;
+      min-width: 10rem;
+      background-color: var(--ak-surface-bg);
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-sm;
+
+    > :not(caption) > * > * {
+      padding-inline: $spacer * 0.5;
+    }
+
+    thead th:not(:first-child),
+    td {
+      min-width: 7.5rem;
+    }
+
+    th:first-child {
+      min-width: 8rem;
+    }
+  }
+}
+
+@include color-mode(dark) {
+  .pricing-table {
+    --ak-pricing-featured-bg: rgba(var(--#{$prefix}primary-rgb), 0.08);
+  }
+}

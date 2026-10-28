@@ -1,0 +1,92 @@
+{
+  "edition": "free",
+  "version": "4.0.0",
+  "pages": {
+    "count": 20,
+    "list": [
+      { "file": "charts-chartjs.html", "title": "Chart.js" },
+      { "file": "icons-lucide.html", "title": "Lucide" },
+      { "file": "index.html", "title": "Analytics Dashboard" },
+      { "file": "maps-google.html", "title": "Google Maps" },
+      { "file": "pages-404.html", "title": "404" },
+      { "file": "pages-500.html", "title": "500" },
+      { "file": "pages-blank.html", "title": "Blank Page" },
+      { "file": "pages-invoice.html", "title": "Invoice" },
+      { "file": "pages-pricing.html", "title": "Pricing" },
+      { "file": "pages-profile.html", "title": "Profile" },
+      { "file": "pages-sign-in.html", "title": "Sign In" },
+      { "file": "pages-sign-up.html", "title": "Sign Up" },
+      { "file": "tables-bootstrap.html", "title": "Tables" },
+      { "file": "ui-alerts.html", "title": "Alerts" },
+      { "file": "ui-buttons.html", "title": "Buttons" },
+      { "file": "ui-cards.html", "title": "Cards" },
+      { "file": "ui-forms.html", "title": "Forms" },
+      { "file": "ui-modals.html", "title": "Modals" },
+      { "file": "ui-typography.html", "title": "Typography" },
+      { "file": "upgrade-to-pro.html", "title": "Upgrade to Pro" }
+    ]
+  },
+  "dashboards": {
+    "count": 1,
+    "list": [{ "file": "index.html", "title": "Analytics Dashboard" }]
+  },
+  "plugins": {
+    "count": 4,
+    "list": [
+      {
+        "name": "Chart.js",
+        "package": "chart.js",
+        "url": "https://www.chartjs.org/",
+        "license": "MIT"
+      },
+      {
+        "name": "jsVectorMap",
+        "package": "jsvectormap",
+        "url": "https://jvm-docs.vercel.app/",
+        "license": "MIT"
+      },
+      {
+        "name": "SimpleBar",
+        "package": "simplebar",
+        "url": "https://grsmto.github.io/simplebar/",
+        "license": "MIT"
+      },
+      {
+        "name": "Vanilla Calendar Pro",
+        "package": "vanilla-calendar-pro",
+        "url": "https://vanilla-calendar.pro/",
+        "license": "MIT"
+      }
+    ]
+  },
+  "icons": { "total": 1908, "lucide": 1908 },
+  "colorModes": { "count": 2, "list": ["light", "dark"] },
+  "colorSchemes": { "count": 1, "list": ["default"] },
+  "comparison": [
+    { "id": "pages", "label": "Pages", "free": 20, "pro": 53 },
+    { "id": "dashboards", "label": "Dashboards", "free": 1, "pro": 5 },
+    { "id": "plugins", "label": "Plugins", "free": 4, "pro": 11 },
+    { "id": "icons", "label": "Icons", "free": 1908, "pro": 4071 },
+    {
+      "id": "colorSchemes",
+      "label": "Sidebar color schemes",
+      "free": 1,
+      "pro": 3
+    },
+    { "id": "darkMode", "label": "Dark mode", "free": true, "pro": true },
+    { "id": "aiChat", "label": "AI chat", "free": false, "pro": true },
+    {
+      "id": "settingsPanel",
+      "label": "Settings panel",
+      "free": false,
+      "pro": true
+    },
+    {
+      "id": "support",
+      "label": "Support",
+      "free": "GitHub issues",
+      "pro": "Email"
+    },
+    { "id": "license", "label": "License", "free": "MIT", "pro": "Commercial" }
+  ]
+}

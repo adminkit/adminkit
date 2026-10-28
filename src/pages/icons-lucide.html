@@ -1,0 +1,64 @@
+---
+name: icons-lucide
+title: Lucide
+layout: default.hbs
+active: { icons: true, lucide: true }
+meta_description: "Lucide icons demo for the free AdminKit Bootstrap 5 admin template. {{formatNumber stats.icons.lucide}} open-source SVG icons for your dashboard."
+---
+
+{{> site-title title=title badge="Get more icons"}}
+
+<div class="card">
+  <div class="card-header">
+    <h2 class="card-title">Lucide Icons</h2>
+    <p class="h6 card-subtitle text-body-secondary">Open-source SVG icons</p>
+  </div>
+  <div class="card-body">
+    <input type="search" class="form-control mb-4 js-icons-search" placeholder="Search {{lucide.length}} icons by name or tag" aria-label="Search icons" autocomplete="off">
+    <div class="row js-icons">
+      {{#each lucide}}
+        <div class="col-12 col-md-6 col-lg-3 mb-2" data-name="{{this.name}}" data-tags="{{this.tags}}">
+          <i class="align-middle me-2" data-lucide="{{this.name}}"></i> <span class="align-middle">{{this.name}}</span>
+        </div>
+      {{/each}}
+    </div>
+    <p class="text-body-secondary mb-0 d-none js-icons-empty">No icons match your search.</p>
+  </div>
+</div>
+
+{{#push "scripts"}}
+<script type="module" src="/js/icons-all.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Filter the icons by name and tag
+    var input = document.querySelector(".js-icons-search");
+    var empty = document.querySelector(".js-icons-empty");
+    var icons = Array.prototype.map.call(document.querySelectorAll(".js-icons > [data-name]"), function(element) {
+      return {
+        element: element,
+        keywords: [element.dataset.name].concat(element.dataset.tags.split(",")).join("\n").toLowerCase()
+      };
+    });
+    var timeout;
+
+    input.addEventListener("input", function() {
+      clearTimeout(timeout);
+      timeout = setTimeout(function() {
+        var terms = input.value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+        var matches = 0;
+
+        icons.forEach(function(icon) {
+          var match = terms.every(function(term) {
+            return icon.keywords.includes(term);
+          });
+          icon.element.classList.toggle("d-none", !match);
+          matches += match ? 1 : 0;
+        });
+
+        empty.classList.toggle("d-none", matches > 0);
+      }, 150);
+    });
+  });
+</script>
+{{/push}}

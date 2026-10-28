@@ -1,0 +1,443 @@
+---
+name: tables-bootstrap
+title: Tables
+layout: default.hbs
+active: { bootstrap-tables: true }
+meta_description: "Bootstrap tables demo for the free AdminKit template. Basic, striped, bordered, hoverable and responsive tables for your dashboard."
+---
+
+{{> site-title title=title badge="Get DataTables examples"}}
+
+<div class="row">
+  <div class="col-12 col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Basic Table</h2>
+        <p class="h6 card-subtitle text-body-secondary">Using the most basic table markup, here’s how .table-based tables look in Bootstrap.</p>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th style="width:40%;">Name</th>
+            <th style="width:25%">Phone Number</th>
+            <th class="d-none d-md-table-cell" style="width:25%">Date of Birth</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vanessa Tucker</td>
+            <td>864-348-0485</td>
+            <td class="d-none d-md-table-cell">June 21, 1961</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>William Harris</td>
+            <td>914-939-2458</td>
+            <td class="d-none d-md-table-cell">May 15, 1948</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Sharon Lessman</td>
+            <td>704-993-5435</td>
+            <td class="d-none d-md-table-cell">September 14, 1965</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Christina Mason</td>
+            <td>765-382-8195</td>
+            <td class="d-none d-md-table-cell">April 2, 1971</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Robin Schneiders</td>
+            <td>202-672-1407</td>
+            <td class="d-none d-md-table-cell">October 12, 1966</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-12 col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Striped Rows</h2>
+        <p class="h6 card-subtitle text-body-secondary">Use <code>.table-striped</code> to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</p>
+      </div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th style="width:40%;">Name</th>
+            <th style="width:25%">Phone Number</th>
+            <th class="d-none d-md-table-cell" style="width:25%">Date of Birth</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vanessa Tucker</td>
+            <td>864-348-0485</td>
+            <td class="d-none d-md-table-cell">June 21, 1961</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>William Harris</td>
+            <td>914-939-2458</td>
+            <td class="d-none d-md-table-cell">May 15, 1948</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Sharon Lessman</td>
+            <td>704-993-5435</td>
+            <td class="d-none d-md-table-cell">September 14, 1965</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Christina Mason</td>
+            <td>765-382-8195</td>
+            <td class="d-none d-md-table-cell">April 2, 1971</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Robin Schneiders</td>
+            <td>202-672-1407</td>
+            <td class="d-none d-md-table-cell">October 12, 1966</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-12 col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Condensed Table</h2>
+        <p class="h6 card-subtitle text-body-secondary">Add <code>.table-sm</code> to make tables more compact by cutting cell padding in half.</p>
+      </div>
+      <table class="table table-striped table-sm">
+        <thead>
+          <tr>
+            <th>Operating system</th>
+            <th class="text-end">Users</th>
+            <th class="text-end">Share</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Windows</td>
+            <td class="text-end">8,232</td>
+            <td class="text-end">38.0%</td>
+          </tr>
+          <tr>
+            <td>macOS</td>
+            <td class="text-end">4,108</td>
+            <td class="text-end">19.0%</td>
+          </tr>
+          <tr>
+            <td>Android</td>
+            <td class="text-end">3,950</td>
+            <td class="text-end">18.3%</td>
+          </tr>
+          <tr>
+            <td>iOS</td>
+            <td class="text-end">3,317</td>
+            <td class="text-end">15.3%</td>
+          </tr>
+          <tr>
+            <td>Linux</td>
+            <td class="text-end">1,184</td>
+            <td class="text-end">5.5%</td>
+          </tr>
+          <tr>
+            <td>ChromeOS</td>
+            <td class="text-end">642</td>
+            <td class="text-end">3.0%</td>
+          </tr>
+          <tr>
+            <td>Other</td>
+            <td class="text-end">205</td>
+            <td class="text-end">0.9%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-12 col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Hoverable Rows</h2>
+        <p class="h6 card-subtitle text-body-secondary">Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</p>
+      </div>
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Date of Birth</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="/img/avatars/avatar-5.jpg" width="48" height="48" class="rounded-circle me-2" alt=""> Vanessa Tucker
+            </td>
+            <td>864-348-0485</td>
+            <td>June 21, 1961</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="/img/avatars/avatar-2.jpg" width="48" height="48" class="rounded-circle me-2" alt=""> William Harris
+            </td>
+            <td>914-939-2458</td>
+            <td>May 15, 1948</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="/img/avatars/avatar-3.jpg" width="48" height="48" class="rounded-circle me-2" alt=""> Sharon Lessman
+            </td>
+            <td>704-993-5435</td>
+            <td>September 14, 1965</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="/img/avatars/avatar-4.jpg" width="48" height="48" class="rounded-circle me-2" alt=""> Christina Mason
+            </td>
+            <td>765-382-8195</td>
+            <td>April 2, 1971</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-12 col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Bordered Table</h2>
+        <p class="h6 card-subtitle text-body-secondary">Add <code>.table-bordered</code> for borders on all sides of the table and cells.</p>
+      </div>
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th style="width:40%;">Name</th>
+            <th style="width:25%">Phone Number</th>
+            <th class="d-none d-md-table-cell" style="width:25%">Date of Birth</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vanessa Tucker</td>
+            <td>864-348-0485</td>
+            <td class="d-none d-md-table-cell">June 21, 1961</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>William Harris</td>
+            <td>914-939-2458</td>
+            <td class="d-none d-md-table-cell">May 15, 1948</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Sharon Lessman</td>
+            <td>704-993-5435</td>
+            <td class="d-none d-md-table-cell">September 14, 1965</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Christina Mason</td>
+            <td>765-382-8195</td>
+            <td class="d-none d-md-table-cell">April 2, 1971</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Robin Schneiders</td>
+            <td>202-672-1407</td>
+            <td class="d-none d-md-table-cell">October 12, 1966</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-12 col-xl-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Contextual Classes</h2>
+        <p class="h6 card-subtitle text-body-secondary">Use contextual classes to color table rows or individual cells.</p>
+      </div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th style="width:40%;">Name</th>
+            <th style="width:25%">Phone Number</th>
+            <th class="d-none d-md-table-cell" style="width:25%">Date of Birth</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Vanessa Tucker</td>
+            <td>864-348-0485</td>
+            <td class="d-none d-md-table-cell">June 21, 1961</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr class="table-primary">
+            <td>William Harris</td>
+            <td>914-939-2458</td>
+            <td class="d-none d-md-table-cell">May 15, 1948</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Sharon Lessman</td>
+            <td>704-993-5435</td>
+            <td class="d-none d-md-table-cell">September 14, 1965</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr class="table-success">
+            <td>Christina Mason</td>
+            <td>765-382-8195</td>
+            <td class="d-none d-md-table-cell">April 2, 1971</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>Robin Schneiders</td>
+            <td>202-672-1407</td>
+            <td class="d-none d-md-table-cell">October 12, 1966</td>
+            <td class="table-action">
+              <a href="#" aria-label="Edit"><i class="align-middle" data-lucide="pen"></i></a>
+              <a href="#" aria-label="Delete"><i class="align-middle" data-lucide="trash"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title" id="table-responsive-title">Always responsive</h2>
+        <p class="h6 card-subtitle text-body-secondary">Across every breakpoint, use <code>.table-responsive</code> for horizontally scrolling tables.</p>
+      </div>
+      <div class="table-responsive" role="region" tabindex="0" aria-labelledby="table-responsive-title">
+        <table class="table mb-0">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+              <th scope="col">Heading</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+              <td>Cell</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

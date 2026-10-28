@@ -1,13 +1,80 @@
+@include color-mode(dark) {
+  .table {
+    --#{$prefix}table-striped-bg: #{$table-striped-bg-dark};
+  }
+}
+
 .table {
-	thead, tbody, tfoot, tr, td, th {
-		border-color: $table-border-color;
-	}
-	
-	> :not(:last-child) > :last-child > * {
-		border-color: $table-border-color;
-	}
+  thead,
+  tbody,
+  tfoot,
+  tr,
+  td,
+  th {
+    border-color: $table-border-color;
+  }
+
+  > :not(:last-child) > :last-child > * {
+    border-color: $table-border-color;
+  }
+}
+
+.card {
+  > .table,
+  > .table-responsive .table,
+  > .table-responsive-sm .table,
+  > .table-responsive-md .table,
+  > .table-responsive-lg .table,
+  > .table-responsive-xl .table {
+    border-right: 0;
+    border-bottom: 0;
+    border-left: 0;
+    margin-bottom: 0;
+
+    td:first-child,
+    th:first-child {
+      border-left: 0;
+      padding-left: $spacer * 1.25;
+    }
+
+    td:last-child,
+    th:last-child {
+      border-right: 0;
+      padding-right: $spacer * 1.25;
+    }
+
+    tr:first-child td,
+    tr:first-child th {
+      border-top: 0;
+    }
+
+    tr:last-child td,
+    tbody tr:last-child th {
+      border-bottom: 0;
+    }
+  }
+
+  .card-header + .table {
+    border-top: 0;
+  }
+}
+
+.table-action {
+  a {
+    color: var(--bs-gray-600);
+
+    &:hover {
+      color: var(--bs-gray-900);
+    }
+  }
+
+  .lucide,
+  i[data-lucide] {
+    width: 18px;
+    height: 18px;
+  }
 }
 
 .table > tbody > tr > td {
-	vertical-align: middle;
+  vertical-align: middle;
 }

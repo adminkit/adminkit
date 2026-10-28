@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> site-meta }}
+</head>
+<body>
+  <div class="wrapper">
+    {{> site-sidebar }}
+
+    <div class="main">
+      {{> site-navbar }}
+
+      <main class="content ak-reveal-cards">
+        <div class="container-fluid p-0">
+          {{> @partial-block }}
+        </div>
+      </main>
+
+      {{> site-footer }}
+    </div>
+  </div>
+
+  <script type="module" src="/js/app.js"></script>
+  {{stack "scripts"}}
+</body>
+</html>

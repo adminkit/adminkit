@@ -1,0 +1,81 @@
+.alert {
+  padding: 0;
+  display: flex;
+  color: var(--ak-alert-color);
+}
+
+.alert-outline,
+.alert-outline-coloured {
+  color: var(--bs-body-color);
+  background: var(--ak-surface-bg);
+
+  hr {
+    border-top-color: var(--bs-gray-400);
+  }
+
+  .alert-message {
+    @include border-end-radius($alert-border-radius);
+    @include border-start-radius($alert-border-radius);
+    border: 1px solid var(--bs-gray-400);
+  }
+
+  .alert-message:not(:nth-child(2)) {
+    @include border-start-radius(0);
+    border-left: 0;
+  }
+
+  .alert-icon {
+    @include border-start-radius($alert-border-radius);
+  }
+
+  // White icons, or dark ones where white does not reach 3:1 (warning)
+  @each $color, $value in $theme-colors {
+    &.alert-#{$color} .alert-icon {
+      background-color: var(--#{$prefix}#{$color});
+      color: ak-text-on($value);
+    }
+  }
+}
+
+.alert-outline-coloured {
+  @each $color, $value in $theme-colors {
+    &.alert-#{$color} .alert-message {
+      border-color: var(--#{$prefix}#{$color});
+    }
+  }
+}
+
+.alert-icon {
+  padding: $alert-padding-y $alert-padding-x;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.alert-message {
+  padding: $alert-padding-y $alert-padding-x;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+// .alert sets no padding, so the message keeps the close button's space free
+.alert-dismissible .alert-message {
+  padding-right: $alert-dismissible-padding-r;
+}
+
+@each $color, $value in $theme-colors {
+  .alert-#{$color}:not(.alert-outline):not(.alert-outline-coloured) {
+    background: shift-color($value, $alert-bg-scale);
+  }
+}
+
+@include color-mode(dark) {
+  @each $color, $value in map-merge($theme-colors, $theme-colors-dark) {
+    .alert-#{$color}:not(.alert-outline):not(.alert-outline-coloured) {
+      background: shift-color($value, $alert-bg-scale-dark);
+    }
+  }
+}
+
+// Code in an alert takes the alert's text colour, which is readable on its tint
+.alert-message :is(code, pre) {
+  color: inherit;
+}

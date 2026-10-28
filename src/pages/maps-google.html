@@ -1,0 +1,58 @@
+---
+name: maps-google
+title: Google Maps
+layout: default.hbs
+active: { maps: true, google-maps: true }
+meta_description: "Google Maps demo for the free AdminKit Bootstrap 5 admin template. Embed interactive maps with markers directly into your dashboard."
+---
+
+{{> site-title title=title badge="Get more Google Maps examples"}}
+
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Default Map</h2>
+        <p class="h6 card-subtitle text-body-secondary">Displays the default road map view.</p>
+      </div>
+      <div class="card-body">
+        <div class="content" id="default_map" style="height: 300px;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Hybrid Map</h2>
+        <p class="h6 card-subtitle text-body-secondary">Displays a mixture of normal and satellite views.</p>
+      </div>
+      <div class="card-body">
+        <div class="content" id="hybrid_map" style="height: 300px;"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{#push "scripts"}}
+<script>
+  function initMaps() {
+    var defaultMap = {
+      zoom: 14,
+      center: {lat: 40.712784, lng: -74.005941},
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    new google.maps.Map(document.getElementById("default_map"), defaultMap);
+
+    var hybridMap = {
+      zoom: 14,
+      center: {lat: 40.712784, lng: -74.005941},
+      mapTypeId: google.maps.MapTypeId.HYBRID
+    };
+    new google.maps.Map(document.getElementById("hybrid_map"), hybridMap);
+  }
+</script>
+
+<!-- Without a key Google draws the maps for development only. For production, create an API key
+     in Google Cloud, restrict it by HTTP referrer and add key=YOUR_KEY to this URL. -->
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMaps&loading=async" async></script>
+{{/push}}

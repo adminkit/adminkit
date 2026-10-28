@@ -1,0 +1,200 @@
+// Vanilla Calendar Pro, coloured with the theme variables. Weekends keep the weekday colours.
+body {
+  --vc-bg: var(--ak-surface-bg);
+  --vc-color: var(--bs-body-color);
+  --vc-focus-outline-color: #{$primary};
+  --vc-header-color: var(--bs-gray-900);
+  --vc-title-color: var(--bs-gray-900);
+  --vc-title-color-hover: var(--bs-gray-600);
+  --vc-title-color-disabled: var(--bs-gray-400);
+  --vc-months-years-bg: transparent;
+  --vc-months-years-bg-hover: var(--bs-gray-200);
+  --vc-months-years-color: var(--bs-gray-800);
+  --vc-months-years-color-disabled: var(--bs-gray-400);
+  --vc-months-years-bg-selected: #{$primary};
+  --vc-months-years-color-selected: #{$white};
+  --vc-week-day-color: var(--bs-gray-600);
+  --vc-week-day-color-hover: var(--bs-gray-800);
+  --vc-week-day-off-color: var(--bs-gray-600);
+  --vc-week-day-off-color-hover: var(--bs-gray-800);
+  --vc-date-bg: transparent;
+  --vc-date-color: var(--bs-gray-800);
+  --vc-date-bg-hover: var(--bs-gray-200);
+  --vc-date-hover-bg: var(--bs-gray-200);
+  --vc-date-hover-edge-bg: var(--bs-gray-300);
+  --vc-date-today-bg: transparent;
+  --vc-date-today-color: var(--bs-gray-800);
+  --vc-date-today-outside-color: var(--bs-secondary-color);
+  --vc-date-outside-color: var(--bs-secondary-color);
+  --vc-date-disabled-color: color-mix(
+    in srgb,
+    var(--bs-gray-800) 10%,
+    transparent
+  );
+  --vc-date-selected-bg: #{$primary};
+  --vc-date-selected-color: #{$white};
+  --vc-date-selected-outside-bg: #{rgba($primary, 0.5)};
+  --vc-date-selected-outside-color: #{$white};
+  --vc-date-range-middle-bg: var(--bs-gray-200);
+  --vc-date-range-middle-color: var(--bs-gray-800);
+  --vc-date-range-middle-outside-bg: var(--bs-gray-200);
+  --vc-date-range-middle-outside-color: var(--bs-secondary-color);
+  --vc-date-range-middle-weekend-bg: var(--bs-gray-200);
+  --vc-date-range-middle-weekend-color: var(--bs-gray-800);
+  --vc-date-weekend-color: var(--bs-gray-800);
+  --vc-date-weekend-bg-hover: var(--bs-gray-200);
+  --vc-date-weekend-hover-bg: var(--bs-gray-200);
+  --vc-date-weekend-hover-edge-bg: var(--bs-gray-300);
+  --vc-date-weekend-today-color: var(--bs-gray-800);
+  --vc-date-weekend-today-outside-color: var(--bs-secondary-color);
+  --vc-date-weekend-today-disabled-color: color-mix(
+    in srgb,
+    var(--bs-gray-800) 10%,
+    transparent
+  );
+  --vc-date-weekend-disabled-color: color-mix(
+    in srgb,
+    var(--bs-gray-800) 10%,
+    transparent
+  );
+  --vc-date-weekend-disabled-outside-color: color-mix(
+    in srgb,
+    var(--bs-gray-800) 10%,
+    transparent
+  );
+  --vc-date-weekend-outside-bg: transparent;
+  --vc-date-weekend-outside-color: var(--bs-secondary-color);
+  --vc-date-weekend-outside-bg-hover: var(--bs-gray-200);
+  --vc-date-weekend-outside-hover-bg: var(--bs-gray-200);
+  --vc-date-weekend-selected-bg: #{$primary};
+  --vc-date-weekend-selected-color: #{$white};
+}
+
+.vc {
+  font-family: $font-family-base;
+
+  [data-vc-arrow] {
+    border-radius: $border-radius;
+
+    &:hover {
+      background-color: var(--#{$prefix}gray-200);
+    }
+  }
+
+  [data-vc="month"],
+  [data-vc="year"] {
+    font-weight: $font-weight-normal;
+  }
+
+  [data-vc-week-day] {
+    font-weight: $font-weight-normal;
+  }
+
+  [data-vc-date-btn] {
+    font-size: $font-size-base;
+    border-radius: $border-radius;
+  }
+
+  // Today marker, like the one the previous date picker drew
+  [data-vc-date-today] [data-vc-date-btn] {
+    position: relative;
+    font-weight: $font-weight-normal;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 4px;
+      bottom: 4px;
+      border-style: solid;
+      border-width: 0 0 7px 7px;
+      border-color: rgba(var(--#{$prefix}emphasis-color-rgb), 0.2) transparent
+        $primary;
+    }
+  }
+
+  [data-vc-date-today][data-vc-date-selected] [data-vc-date-btn]::after {
+    border-color: rgba(var(--#{$prefix}emphasis-color-rgb), 0.2) transparent
+      $white;
+  }
+}
+
+// Inline calendar, which fills its card at every width. The plugin sizes the calendar
+// for a popup (17rem minimum, header padding, 1.875rem minimum day cells, `1fr` columns
+// that grow to their content), which is wider than a quarter-width dashboard card, so the
+// inline calendar drops those minimums and its seven columns share the width evenly.
+.vc:not([data-vc-input]) {
+  container-type: inline-size;
+  width: 100%;
+  min-width: 0;
+  padding: 0;
+  background-color: transparent;
+
+  [data-vc="wrapper"],
+  [data-vc="content"],
+  [data-vc="dates"],
+  [data-vc="months"],
+  [data-vc="years"] {
+    min-width: 0;
+  }
+
+  [data-vc-header="content"] {
+    min-width: 0;
+    padding-right: $spacer * 0.5;
+    padding-left: $spacer * 0.5;
+  }
+
+  [data-vc-arrow] {
+    flex-shrink: 0;
+    height: 45px;
+    width: 45px;
+
+    &::before {
+      background-size: 1.5rem;
+    }
+  }
+
+  [data-vc="week"],
+  [data-vc-dates="row"] {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  [data-vc-week-day],
+  [data-vc-date-btn] {
+    min-width: 0;
+  }
+
+  [data-vc-week-day] {
+    min-height: 45px;
+  }
+
+  [data-vc-date-btn] {
+    min-height: 45px;
+  }
+
+  // Narrow cards (a quarter-width dashboard column, phones): smaller arrows, title and rows
+  @container (width < 18rem) {
+    [data-vc-header="content"] {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    [data-vc-arrow] {
+      height: 2rem;
+      width: 2rem;
+
+      &::before {
+        background-size: 1.25rem;
+      }
+    }
+
+    [data-vc="month"],
+    [data-vc="year"] {
+      font-size: $font-size-base;
+    }
+
+    [data-vc-week-day],
+    [data-vc-date-btn] {
+      min-height: 2.25rem;
+    }
+  }
+}

@@ -1,0 +1,77 @@
+<div class="card">
+  <div class="card-header">
+    <h2 class="card-title">Bar Chart</h2>
+    <p class="h6 card-subtitle text-body-secondary">A bar chart provides a way of showing data values represented as vertical bars.</p>
+  </div>
+  <div class="card-body">
+    <div class="chart">
+      <canvas id="chartjs-bar"></canvas>
+    </div>
+  </div>
+</div>
+
+{{#push "scripts"}}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Bar chart
+    adminkit.chartjs("#chartjs-bar", function(theme) {
+      return {
+        type: "bar",
+        data: {
+          labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+          datasets: [{
+            label: "Last year",
+            backgroundColor: theme.{{theme.[0].name}},
+            borderColor: theme.{{theme.[0].name}},
+            hoverBackgroundColor: theme.{{theme.[0].name}},
+            hoverBorderColor: theme.{{theme.[0].name}},
+            data: [54,67,41,55,62,45,55,73,60,76,48,79],
+            barPercentage: .75,
+            categoryPercentage: .5
+          }, {
+            label: "This year",
+            backgroundColor: "#dee2e6",
+            borderColor: "#dee2e6",
+            hoverBackgroundColor: "#dee2e6",
+            hoverBorderColor: "#dee2e6",
+            data: [69,66,24,48,52,51,44,53,62,79,51,68],
+            barPercentage: .75,
+            categoryPercentage: .5
+          }]
+        },
+        options: {
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              grid: {
+                display: false
+              },
+              border: {
+                display: false
+              },
+              stacked: false,
+              ticks: {
+                stepSize: 20
+              }
+            },
+            x: {
+              stacked: false,
+              grid: {
+                color: "transparent"
+              },
+              border: {
+                display: false
+              }
+            }
+          }
+        }
+      };
+    });
+  });
+</script>
+{{/push}}

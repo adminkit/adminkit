@@ -1,0 +1,178 @@
+---
+name: ui-alerts
+title: Alerts
+layout: default.hbs
+active: { ui: true, alerts: true }
+meta_description: "Bootstrap alerts demo for the free AdminKit template. Contextual, icon and outline alert styles for your dashboard."
+---
+
+{{> site-title title=title badge="Get more notification examples"}}
+
+<div class="row">
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Default alerts</h2>
+        <p class="h6 card-subtitle text-body-secondary">Alerts with contextual background color.</p>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          {{#each theme}}
+            <div class="alert alert-{{this.name}} alert-dismissible" role="alert">
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <div class="alert-message">
+                <strong>Hello there!</strong> A simple {{this.name}} alert—check it out!
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Icon alerts</h2>
+        <p class="h6 card-subtitle text-body-secondary">Alerts with icon and background color.</p>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          {{#each theme}}
+            <div class="alert alert-{{this.name}} alert-dismissible" role="alert">
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <div class="alert-icon">
+                <i class="align-middle" data-lucide="bell"></i>
+              </div>
+              <div class="alert-message">
+                <strong>Hello there!</strong> A simple {{this.name}} alert—check it out!
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Outline alerts</h2>
+        <p class="h6 card-subtitle text-body-secondary">Alerts with contextual icon background.</p>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          {{#each theme}}
+            <div class="alert alert-{{this.name}} alert-outline alert-dismissible" role="alert">
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <div class="alert-icon">
+                <i class="align-middle" data-lucide="bell"></i>
+              </div>
+              <div class="alert-message">
+                <strong>Hello there!</strong> A simple {{this.name}} alert—check it out!
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Colored outline alerts</h2>
+        <p class="h6 card-subtitle text-body-secondary">Alerts with contextual outline color.</p>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          {{#each theme}}
+            <div class="alert alert-{{this.name}} alert-outline-coloured alert-dismissible" role="alert">
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              <div class="alert-icon">
+                <i class="align-middle" data-lucide="bell"></i>
+              </div>
+              <div class="alert-message">
+                <strong>Hello there!</strong> A simple {{this.name}} alert—check it out!
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Alerts with additional content</h2>
+        <p class="h6 card-subtitle text-body-secondary">Alerts with large contents.</p>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div class="alert-message">
+              <h3 class="h4 alert-heading">Well done!</h3>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <hr>
+              <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="alert alert-primary alert-outline alert-dismissible" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div class="alert-message">
+              <h3 class="h4 alert-heading">Well done!</h3>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <hr>
+              <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-lg-6">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title">Alerts with buttons</h2>
+        <p class="h6 card-subtitle text-body-secondary">Alerts with actions.</p>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <div class="alert alert-success alert-dismissible" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div class="alert-message">
+              <h3 class="h4 alert-heading">Well done!</h3>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <hr>
+              <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-light" type="button">Okay</button>
+                <button class="btn btn-secondary" type="button">No, thanks</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="alert alert-primary alert-outline alert-dismissible" role="alert">
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            <div class="alert-message">
+              <h3 class="h4 alert-heading">Well done!</h3>
+              <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+              <hr>
+              <div class="d-flex flex-wrap gap-2">
+                <button class="btn btn-success" type="button">Okay</button>
+                <button class="btn btn-danger" type="button">No, thanks</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

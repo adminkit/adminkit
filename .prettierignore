@@ -1,0 +1,8 @@
+dist
+public
+node_modules
+package-lock.json
+src/js/modules/vector-maps
+# Handlebars templates break Prettier's HTML parser
+*.hbs
+src/pages/*.html

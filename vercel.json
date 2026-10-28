@@ -1,6 +1,19 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "outputDirectory": "static",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/icons-feather",
+      "destination": "/icons-lucide",
+      "permanent": true
+    },
+    {
+      "source": "/icons-feather.html",
+      "destination": "/icons-lucide",
+      "permanent": true
+    }
+  ]
 }

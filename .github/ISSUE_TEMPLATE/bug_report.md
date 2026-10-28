@@ -30,7 +30,7 @@ Steps:
 <!-- What version, browser, OS and screen size are you using -->
 
 - Theme version:
-- Free or paid version: 
+- Free or paid version:
 - Browser:
 - OS:
 - Screen size:

@@ -1,0 +1,187 @@
+{
+  "edition": "pro",
+  "version": "4.0.0",
+  "pages": {
+    "count": 53,
+    "list": [
+      { "file": "calendar.html", "title": "Calendar" },
+      { "file": "charts-apexcharts.html", "title": "ApexCharts" },
+      { "file": "charts-chartjs.html", "title": "Chart.js" },
+      { "file": "dashboard-ai.html", "title": "AI Analytics Dashboard" },
+      { "file": "dashboard-crm.html", "title": "CRM Dashboard" },
+      { "file": "dashboard-crypto.html", "title": "Crypto Dashboard" },
+      { "file": "dashboard-ecommerce.html", "title": "E-Commerce Dashboard" },
+      { "file": "forms-advanced-inputs.html", "title": "Advanced Inputs" },
+      { "file": "forms-basic-inputs.html", "title": "Basic Inputs" },
+      { "file": "forms-editors.html", "title": "Editors" },
+      { "file": "forms-input-groups.html", "title": "Input Groups" },
+      { "file": "forms-layouts.html", "title": "Form Layouts" },
+      { "file": "forms-validation.html", "title": "Validation" },
+      { "file": "icons-font-awesome.html", "title": "Font Awesome" },
+      { "file": "icons-lucide.html", "title": "Lucide" },
+      { "file": "index.html", "title": "Analytics Dashboard" },
+      { "file": "maps-google.html", "title": "Google Maps" },
+      { "file": "maps-vector.html", "title": "Vector Maps" },
+      { "file": "notifications.html", "title": "Notifications" },
+      { "file": "pages-404.html", "title": "404" },
+      { "file": "pages-500.html", "title": "500" },
+      { "file": "pages-blank.html", "title": "Blank Page" },
+      { "file": "pages-chat-ai.html", "title": "AI Chat" },
+      { "file": "pages-chat.html", "title": "Messages" },
+      { "file": "pages-clients.html", "title": "Clients" },
+      { "file": "pages-invoice.html", "title": "Invoice" },
+      { "file": "pages-orders.html", "title": "Orders" },
+      { "file": "pages-pricing.html", "title": "Plans & Pricing" },
+      { "file": "pages-profile.html", "title": "Profile" },
+      { "file": "pages-projects.html", "title": "Projects" },
+      { "file": "pages-prompts.html", "title": "Prompt Library" },
+      { "file": "pages-reset-password.html", "title": "Reset Password" },
+      { "file": "pages-settings.html", "title": "Settings" },
+      { "file": "pages-sign-in.html", "title": "Sign In" },
+      { "file": "pages-sign-up.html", "title": "Sign Up" },
+      { "file": "pages-tasks.html", "title": "Tasks" },
+      { "file": "tables-bootstrap.html", "title": "Tables" },
+      { "file": "tables-datatables-ajax.html", "title": "Ajax Sourced Data" },
+      {
+        "file": "tables-datatables-buttons.html",
+        "title": "Table with Buttons"
+      },
+      {
+        "file": "tables-datatables-column-search.html",
+        "title": "Column Search"
+      },
+      {
+        "file": "tables-datatables-fixed-header.html",
+        "title": "Fixed Header"
+      },
+      { "file": "tables-datatables-multi.html", "title": "Multi Selection" },
+      {
+        "file": "tables-datatables-responsive.html",
+        "title": "Responsive DataTables"
+      },
+      { "file": "ui-alerts.html", "title": "Alerts" },
+      { "file": "ui-buttons.html", "title": "Buttons" },
+      { "file": "ui-cards.html", "title": "Cards" },
+      { "file": "ui-general.html", "title": "General" },
+      { "file": "ui-grid.html", "title": "Grid" },
+      { "file": "ui-modals.html", "title": "Modals" },
+      { "file": "ui-offcanvas.html", "title": "Offcanvas" },
+      { "file": "ui-placeholders.html", "title": "Placeholders" },
+      { "file": "ui-tabs.html", "title": "Tabs" },
+      { "file": "ui-typography.html", "title": "Typography" }
+    ]
+  },
+  "dashboards": {
+    "count": 5,
+    "list": [
+      { "file": "dashboard-ai.html", "title": "AI Analytics Dashboard" },
+      { "file": "dashboard-crm.html", "title": "CRM Dashboard" },
+      { "file": "dashboard-crypto.html", "title": "Crypto Dashboard" },
+      { "file": "dashboard-ecommerce.html", "title": "E-Commerce Dashboard" },
+      { "file": "index.html", "title": "Analytics Dashboard" }
+    ]
+  },
+  "plugins": {
+    "count": 11,
+    "list": [
+      {
+        "name": "ApexCharts",
+        "package": "apexcharts",
+        "url": "https://apexcharts.com/",
+        "license": "MIT"
+      },
+      {
+        "name": "Chart.js",
+        "package": "chart.js",
+        "url": "https://www.chartjs.org/",
+        "license": "MIT"
+      },
+      {
+        "name": "Choices.js",
+        "package": "choices.js",
+        "url": "https://github.com/Choices-js/Choices",
+        "license": "MIT"
+      },
+      {
+        "name": "DataTables",
+        "package": "datatables.net",
+        "url": "https://datatables.net/",
+        "license": "MIT"
+      },
+      {
+        "name": "FullCalendar",
+        "package": "fullcalendar",
+        "url": "https://fullcalendar.io/",
+        "license": "MIT"
+      },
+      {
+        "name": "Inputmask",
+        "package": "inputmask",
+        "url": "https://github.com/RobinHerbots/Inputmask",
+        "license": "MIT"
+      },
+      {
+        "name": "jsVectorMap",
+        "package": "jsvectormap",
+        "url": "https://jvm-docs.vercel.app/",
+        "license": "MIT"
+      },
+      {
+        "name": "Quill",
+        "package": "quill",
+        "url": "https://quilljs.com/",
+        "license": "BSD-3-Clause"
+      },
+      {
+        "name": "SimpleBar",
+        "package": "simplebar",
+        "url": "https://grsmto.github.io/simplebar/",
+        "license": "MIT"
+      },
+      {
+        "name": "SortableJS",
+        "package": "sortablejs",
+        "url": "https://sortablejs.github.io/Sortable/",
+        "license": "MIT"
+      },
+      {
+        "name": "Vanilla Calendar Pro",
+        "package": "vanilla-calendar-pro",
+        "url": "https://vanilla-calendar.pro/",
+        "license": "MIT"
+      }
+    ]
+  },
+  "icons": {
+    "total": 4071,
+    "lucide": 1908,
+    "fontAwesome": {
+      "solid": 1422,
+      "regular": 169,
+      "brands": 572,
+      "total": 2163
+    }
+  },
+  "colorModes": { "count": 2, "list": ["light", "dark"] },
+  "colorSchemes": { "count": 3, "list": ["default", "colored", "light"] },
+  "aiPages": {
+    "count": 3,
+    "list": [
+      { "file": "dashboard-ai.html", "title": "AI Analytics Dashboard" },
+      { "file": "pages-chat-ai.html", "title": "AI Chat" },
+      { "file": "pages-prompts.html", "title": "Prompt Library" }
+    ]
+  },
+  "comparison": [
+    { "id": "pages", "label": "Pages", "pro": 53 },
+    { "id": "dashboards", "label": "Dashboards", "pro": 5 },
+    { "id": "plugins", "label": "Plugins", "pro": 11 },
+    { "id": "icons", "label": "Icons", "pro": 4071 },
+    { "id": "colorSchemes", "label": "Sidebar color schemes", "pro": 3 },
+    { "id": "darkMode", "label": "Dark mode", "pro": true },
+    { "id": "aiChat", "label": "AI chat", "pro": true },
+    { "id": "settingsPanel", "label": "Settings panel", "pro": true },
+    { "id": "support", "label": "Support", "pro": "Email" },
+    { "id": "license", "label": "License", "pro": "Commercial" }
+  ]
+}

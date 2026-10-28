@@ -1,0 +1,38 @@
+// Cards fade up as they scroll into view (js/modules/reveal.js): the top-level cards in
+// .ak-reveal-cards and any .ak-reveal element. The hidden state only applies under
+// html.js-reveal, which js/head.js sets, so without JavaScript nothing is hidden. Reduced
+// motion keeps the fade and drops the movement.
+$reveal-items: ".ak-reveal, .ak-reveal-cards .card:not(.card .card)";
+
+.js-reveal :is(#{$reveal-items}):not(.ak-revealed) {
+  opacity: 0;
+  transform: translateY(0.75rem);
+}
+
+// The rest of the content (page title, columns) waits for the page scripts too, so plugins
+// that change the layout on DOMContentLoaded do so before anything is seen
+.js-reveal .ak-reveal-cards {
+  opacity: 0;
+
+  &.ak-revealed {
+    opacity: 1;
+    transition: opacity var(--ak-duration-fast) var(--ak-ease-standard);
+  }
+}
+
+.js-reveal .ak-revealing {
+  transition:
+    opacity var(--ak-duration-slow) var(--ak-ease-standard),
+    transform var(--ak-duration-slow) var(--ak-ease-emphasized);
+  transition-delay: calc(var(--ak-reveal-index, 0) * 60ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .js-reveal :is(#{$reveal-items}):not(.ak-revealed) {
+    transform: none;
+  }
+
+  .js-reveal .ak-revealing {
+    transition-property: opacity;
+  }
+}

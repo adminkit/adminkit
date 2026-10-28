@@ -1,0 +1,366 @@
+---
+name: pages-profile
+title: Profile
+layout: default.hbs
+active: { pages: true, profile: true }
+meta_description: "User profile demo for the free AdminKit Bootstrap 5 admin template. Profile header with stats, about and skills, team, projects and an activity feed."
+---
+
+{{> site-title title=title badge="Get more page examples"}}
+
+<div class="card">
+  <div class="card-body">
+    <div class="row g-3 align-items-center">
+      <div class="col-auto">
+        <img src="/img/avatars/avatar.jpg" alt="Charles Hall" class="rounded-circle profile-avatar" width="96" height="96" />
+      </div>
+      <div class="col">
+        <h2 class="h3 mb-1">Charles Hall</h2>
+        <p class="text-body-secondary mb-2">Senior Product Designer, Design team</p>
+        <ul class="list-inline small text-body-secondary mb-0">
+          <li class="list-inline-item me-3"><i class="lucide-sm align-text-bottom me-1" data-lucide="map-pin"></i>San Francisco, CA</li>
+          <li class="list-inline-item me-3"><i class="lucide-sm align-text-bottom me-1" data-lucide="calendar"></i>Joined March 2022</li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-auto d-flex flex-wrap gap-2">
+        <button class="btn btn-outline-primary" type="button" data-profile-copy>
+          <i class="align-middle me-1" data-lucide="copy"></i> <span data-profile-copy-label>Copy profile link</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="card-body border-top">
+    <dl class="row row-cols-2 row-cols-md-4 g-3 mb-0">
+      <div class="col">
+        <dt class="small fw-normal text-body-secondary">Active projects</dt>
+        <dd class="h3 mb-0">6</dd>
+      </div>
+      <div class="col">
+        <dt class="small fw-normal text-body-secondary">Tasks done in October</dt>
+        <dd class="h3 mb-0">148</dd>
+      </div>
+      <div class="col">
+        <dt class="small fw-normal text-body-secondary">Hours logged in October</dt>
+        <dd class="h3 mb-0">126</dd>
+      </div>
+      <div class="col">
+        <dt class="small fw-normal text-body-secondary">Delivered on time</dt>
+        <dd class="h3 mb-0">94%</dd>
+      </div>
+    </dl>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xl-4">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title mb-0">About</h2>
+      </div>
+      <div class="card-body">
+        <p>
+          I look after the design system and work with the developers on the CRM and the customer portal. Before joining the team I spent six years designing booking tools for travel companies.
+        </p>
+        <ul class="list-unstyled mb-0">
+          <li class="d-flex align-items-center gap-2 mb-2">
+            <i class="text-body-secondary flex-shrink-0" data-lucide="mail"></i>
+            <a class="text-break" href="mailto:charles.hall@example.com">charles.hall@example.com</a>
+          </li>
+          <li class="d-flex align-items-center gap-2 mb-2">
+            <i class="text-body-secondary flex-shrink-0" data-lucide="phone"></i>
+            <a href="tel:+14155550132">+1 415 555 0132</a>
+          </li>
+          <li class="d-flex align-items-center gap-2 mb-2">
+            <i class="text-body-secondary flex-shrink-0" data-lucide="users"></i>
+            <span>Reports to Sharon Lessman</span>
+          </li>
+          <li class="d-flex align-items-center gap-2">
+            <i class="text-body-secondary flex-shrink-0" data-lucide="briefcase"></i>
+            <span>Full time, Pacific Time (UTC&minus;7)</span>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body border-top">
+        <h3 class="h6 card-title">Skills</h3>
+        <ul class="list-inline mb-0">
+          <li class="list-inline-item badge badge-primary-light me-1 my-1">Figma</li>
+          <li class="list-inline-item badge badge-primary-light me-1 my-1">Design systems</li>
+          <li class="list-inline-item badge badge-primary-light me-1 my-1">Prototyping</li>
+          <li class="list-inline-item badge badge-primary-light me-1 my-1">User research</li>
+          <li class="list-inline-item badge badge-primary-light me-1 my-1">Accessibility</li>
+          <li class="list-inline-item badge badge-primary-light me-1 my-1">HTML &amp; CSS</li>
+          <li class="list-inline-item badge badge-primary-light me-1 my-1">Usability testing</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title mb-0">Team</h2>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex align-items-center gap-3">
+          <img src="/img/avatars/avatar-3.jpg" class="rounded-circle flex-shrink-0" alt="" width="40" height="40" />
+          <div class="flex-grow-1">
+            <div class="fw-semibold">Sharon Lessman</div>
+            <div class="small text-body-secondary">Head of Design</div>
+          </div>
+          <a class="btn btn-sm btn-light border" href="mailto:sharon.lessman@example.com" aria-label="Email Sharon Lessman"><i class="align-middle" data-lucide="mail"></i></a>
+        </li>
+        <li class="list-group-item d-flex align-items-center gap-3">
+          <img src="/img/avatars/avatar-4.jpg" class="rounded-circle flex-shrink-0" alt="" width="40" height="40" />
+          <div class="flex-grow-1">
+            <div class="fw-semibold">Christina Mason</div>
+            <div class="small text-body-secondary">Lead Developer</div>
+          </div>
+          <a class="btn btn-sm btn-light border" href="mailto:christina.mason@example.com" aria-label="Email Christina Mason"><i class="align-middle" data-lucide="mail"></i></a>
+        </li>
+        <li class="list-group-item d-flex align-items-center gap-3">
+          <img src="/img/avatars/avatar-2.jpg" class="rounded-circle flex-shrink-0" alt="" width="40" height="40" />
+          <div class="flex-grow-1">
+            <div class="fw-semibold">William Harris</div>
+            <div class="small text-body-secondary">Product Manager</div>
+          </div>
+          <a class="btn btn-sm btn-light border" href="mailto:william.harris@example.com" aria-label="Email William Harris"><i class="align-middle" data-lucide="mail"></i></a>
+        </li>
+        <li class="list-group-item d-flex align-items-center gap-3">
+          <img src="/img/avatars/avatar-5.jpg" class="rounded-circle flex-shrink-0" alt="" width="40" height="40" />
+          <div class="flex-grow-1">
+            <div class="fw-semibold">Vanessa Tucker</div>
+            <div class="small text-body-secondary">UX Researcher</div>
+          </div>
+          <a class="btn btn-sm btn-light border" href="mailto:vanessa.tucker@example.com" aria-label="Email Vanessa Tucker"><i class="align-middle" data-lucide="mail"></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-xl-8">
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title mb-0" id="profile-projects-title">Projects</h2>
+      </div>
+      <div class="table-responsive" role="region" tabindex="0" aria-labelledby="profile-projects-title">
+        <table class="table my-0">
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Status</th>
+              <th class="d-none d-md-table-cell w-25">Progress</th>
+              <th class="d-none d-sm-table-cell text-nowrap">Due date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="fw-semibold">Company posters</div>
+                <div class="small text-body-secondary">Lead designer</div>
+              </td>
+              <td><span class="badge badge-warning-light">In progress</span></td>
+              <td class="d-none d-md-table-cell">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress progress-sm flex-grow-1" role="progressbar" aria-label="Company posters progress" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 75%"></div>
+                  </div>
+                  <span class="small text-body-secondary profile-progress-value">75%</span>
+                </div>
+              </td>
+              <td class="d-none d-sm-table-cell text-nowrap">Nov 6, 2026</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="fw-semibold">Upgrade CRM software</div>
+                <div class="small text-body-secondary">UI design</div>
+              </td>
+              <td><span class="badge badge-warning-light">In progress</span></td>
+              <td class="d-none d-md-table-cell">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress progress-sm flex-grow-1" role="progressbar" aria-label="Upgrade CRM software progress" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 50%"></div>
+                  </div>
+                  <span class="small text-body-secondary profile-progress-value">50%</span>
+                </div>
+              </td>
+              <td class="d-none d-sm-table-cell text-nowrap">Nov 20, 2026</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="fw-semibold">New company logo</div>
+                <div class="small text-body-secondary">Brand design</div>
+              </td>
+              <td><span class="badge badge-danger-light">On hold</span></td>
+              <td class="d-none d-md-table-cell">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress progress-sm flex-grow-1" role="progressbar" aria-label="New company logo progress" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 20%"></div>
+                  </div>
+                  <span class="small text-body-secondary profile-progress-value">20%</span>
+                </div>
+              </td>
+              <td class="d-none d-sm-table-cell text-nowrap">Dec 4, 2026</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="fw-semibold">Landing page redesign</div>
+                <div class="small text-body-secondary">Lead designer</div>
+              </td>
+              <td><span class="badge badge-success-light">Finished</span></td>
+              <td class="d-none d-md-table-cell">
+                <div class="d-flex align-items-center gap-2">
+                  <div class="progress progress-sm flex-grow-1" role="progressbar" aria-label="Landing page redesign progress" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar bg-success" style="width: 100%"></div>
+                  </div>
+                  <span class="small text-body-secondary profile-progress-value">100%</span>
+                </div>
+              </td>
+              <td class="d-none d-sm-table-cell text-nowrap">Oct 16, 2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h2 class="card-title mb-0">Activity</h2>
+      </div>
+      <div class="card-body">
+        <h3 class="h6 text-body-secondary mb-3">Today</h3>
+        <ul class="list-unstyled vstack gap-4 mb-4">
+          <li class="d-flex gap-3">
+            <img src="/img/avatars/avatar-4.jpg" class="rounded-circle flex-shrink-0" alt="" width="36" height="36" />
+            <div class="flex-grow-1">
+              <div class="d-flex justify-content-between gap-2">
+                <p class="mb-0"><strong>Christina Mason</strong> commented on Company posters</p>
+                <time class="small text-body-secondary text-nowrap" datetime="2026-10-28T09:42">9:42 am</time>
+              </div>
+              <p class="border rounded small text-body-secondary px-3 py-2 mt-2 mb-0">
+                The A2 export looks right now. Can you send the print files to the agency before Friday?
+              </p>
+            </div>
+          </li>
+          <li class="d-flex gap-3">
+            <img src="/img/avatars/avatar.jpg" class="rounded-circle flex-shrink-0" alt="" width="36" height="36" />
+            <div class="flex-grow-1">
+              <div class="d-flex justify-content-between gap-2">
+                <p class="mb-0"><strong>You</strong> uploaded 2 files to Company posters</p>
+                <time class="small text-body-secondary text-nowrap" datetime="2026-10-28T09:05">9:05 am</time>
+              </div>
+              <div class="d-flex flex-wrap gap-2 mt-2">
+                <a class="d-inline-flex align-items-center gap-2 border rounded px-2 py-1 small text-reset text-decoration-none" href="#">
+                  <i class="text-body-secondary" data-lucide="file"></i>
+                  <span class="text-break">posters-a2-final.pdf</span>
+                  <span class="text-body-secondary">4.2 MB</span>
+                </a>
+                <a class="d-inline-flex align-items-center gap-2 border rounded px-2 py-1 small text-reset text-decoration-none" href="#">
+                  <i class="text-body-secondary" data-lucide="file"></i>
+                  <span class="text-break">posters-a3-final.pdf</span>
+                  <span class="text-body-secondary">2.8 MB</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="d-flex gap-3">
+            <img src="/img/avatars/avatar-3.jpg" class="rounded-circle flex-shrink-0" alt="" width="36" height="36" />
+            <div class="flex-grow-1">
+              <div class="d-flex justify-content-between gap-2">
+                <p class="mb-0"><strong>Sharon Lessman</strong> assigned you Review the onboarding screens in Upgrade CRM software</p>
+                <time class="small text-body-secondary text-nowrap" datetime="2026-10-28T08:17">8:17 am</time>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <h3 class="h6 text-body-secondary mb-3">Yesterday</h3>
+        <ul class="list-unstyled vstack gap-4 mb-4">
+          <li class="d-flex gap-3">
+            <img src="/img/avatars/avatar-2.jpg" class="rounded-circle flex-shrink-0" alt="" width="36" height="36" />
+            <div class="flex-grow-1">
+              <div class="d-flex justify-content-between gap-2">
+                <p class="mb-0"><strong>William Harris</strong> moved New company logo to <span class="badge badge-danger-light">On hold</span></p>
+                <time class="small text-body-secondary text-nowrap" datetime="2026-10-27T16:30">4:30 pm</time>
+              </div>
+              <p class="border rounded small text-body-secondary px-3 py-2 mt-2 mb-0">
+                Parking this until the brand workshop on November 12. We'll pick it up with the new brief.
+              </p>
+            </div>
+          </li>
+          <li class="d-flex gap-3">
+            <img src="/img/avatars/avatar.jpg" class="rounded-circle flex-shrink-0" alt="" width="36" height="36" />
+            <div class="flex-grow-1">
+              <div class="d-flex justify-content-between gap-2">
+                <p class="mb-0"><strong>You</strong> completed 4 tasks in Upgrade CRM software</p>
+                <time class="small text-body-secondary text-nowrap" datetime="2026-10-27T14:12">2:12 pm</time>
+              </div>
+            </div>
+          </li>
+          <li class="d-flex gap-3">
+            <img src="/img/avatars/avatar-5.jpg" class="rounded-circle flex-shrink-0" alt="" width="36" height="36" />
+            <div class="flex-grow-1">
+              <div class="d-flex justify-content-between gap-2">
+                <p class="mb-0"><strong>Vanessa Tucker</strong> shared the results of usability test round 3</p>
+                <time class="small text-body-secondary text-nowrap" datetime="2026-10-27T10:48">10:48 am</time>
+              </div>
+              <p class="border rounded small text-body-secondary px-3 py-2 mt-2 mb-0">
+                7 of 8 people finished the new checkout without help. Most of the trouble was on the address step.
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <div id="profile-older-activity" hidden>
+          <h3 class="h6 text-body-secondary mb-3" tabindex="-1">Monday, October 26</h3>
+          <ul class="list-unstyled vstack gap-4 mb-4">
+            <li class="d-flex gap-3">
+              <img src="/img/avatars/avatar.jpg" class="rounded-circle flex-shrink-0" alt="" width="36" height="36" />
+              <div class="flex-grow-1">
+                <div class="d-flex justify-content-between gap-2">
+                  <p class="mb-0"><strong>You</strong> published version 2.4 of the design system</p>
+                  <time class="small text-body-secondary text-nowrap" datetime="2026-10-26T15:20">3:20 pm</time>
+                </div>
+              </div>
+            </li>
+            <li class="d-flex gap-3">
+              <img src="/img/avatars/avatar-4.jpg" class="rounded-circle flex-shrink-0" alt="" width="36" height="36" />
+              <div class="flex-grow-1">
+                <div class="d-flex justify-content-between gap-2">
+                  <p class="mb-0"><strong>Christina Mason</strong> added you to Upgrade CRM software</p>
+                  <time class="small text-body-secondary text-nowrap" datetime="2026-10-26T09:02">9:02 am</time>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <button class="btn btn-light border w-100" type="button" aria-controls="profile-older-activity" data-profile-older>Show older activity</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{#push "scripts"}}
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var copyButton = document.querySelector("[data-profile-copy]");
+    var copyLabel = document.querySelector("[data-profile-copy-label]");
+    var olderButton = document.querySelector("[data-profile-older]");
+    var older = document.getElementById("profile-older-activity");
+
+    copyButton.addEventListener("click", function() {
+      if (!navigator.clipboard) return;
+      navigator.clipboard.writeText(window.location.href).then(function() {
+        copyLabel.textContent = "Link copied";
+        setTimeout(function() {
+          copyLabel.textContent = "Copy profile link";
+        }, 2000);
+      });
+    });
+
+    olderButton.addEventListener("click", function() {
+      older.hidden = false;
+      olderButton.remove();
+      older.querySelector("h3").focus();
+    });
+  });
+</script>
+{{/push}}

@@ -1,16 +1,18 @@
-import "../scss/app.scss";
-
 // AdminKit (required)
 import "./modules/bootstrap";
+import "./modules/color-mode";
 import "./modules/sidebar";
 import "./modules/theme";
-import "./modules/feather";
+import "./modules/icons";
+import "./modules/skeleton";
+import "./modules/reveal";
+import "./modules/count-up";
 
 // Charts
 import "./modules/chartjs";
 
 // Forms
-import "./modules/flatpickr";
+import "./modules/vanilla-calendar";
 
 // Maps
 import "./modules/vector-maps";

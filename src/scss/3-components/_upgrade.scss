@@ -1,0 +1,77 @@
+// Upgrade page
+
+// What PRO adds, as a list of checks next to the hero screenshot
+.upgrade-features {
+  li {
+    display: flex;
+    gap: $spacer * 0.5;
+  }
+
+  li + li {
+    margin-top: $spacer * 0.625;
+  }
+
+  svg,
+  i[data-lucide] {
+    flex-shrink: 0;
+    margin-top: 0.125em;
+  }
+}
+
+// The edition comparison table, with the PRO column tinted
+.upgrade-table {
+  --ak-upgrade-pro-bg: rgba(var(--#{$prefix}primary-rgb), 0.05);
+
+  > :not(caption) > * > * {
+    padding-top: $spacer * 0.75;
+    padding-bottom: $spacer * 0.75;
+  }
+
+  thead th:not(:first-child),
+  td {
+    width: 30%;
+    min-width: 8rem;
+    text-align: center;
+  }
+
+  tbody th {
+    font-weight: $font-weight-normal;
+  }
+
+  td {
+    font-variant-numeric: tabular-nums;
+  }
+
+  > :not(caption) > tr > :nth-child(3) {
+    --#{$prefix}table-bg-state: var(--ak-upgrade-pro-bg);
+  }
+
+  tbody tr:last-child > * {
+    border-bottom-width: 0;
+  }
+
+  .lucide,
+  i[data-lucide] {
+    vertical-align: -0.2em;
+  }
+
+  // On phones the three columns share the card's width instead of scrolling
+  @include media-breakpoint-down(sm) {
+    font-size: $font-size-sm;
+
+    > :not(caption) > * > * {
+      padding-inline: $spacer * 0.5;
+    }
+
+    thead th:not(:first-child),
+    td {
+      min-width: 0;
+    }
+  }
+}
+
+@include color-mode(dark) {
+  .upgrade-table {
+    --ak-upgrade-pro-bg: rgba(var(--#{$prefix}primary-rgb), 0.08);
+  }
+}
