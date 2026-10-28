@@ -1,5 +1,6 @@
 {{!-- One color mode of an upgrade page screenshot; the other mode's picture is hidden and,
-      being lazy, never loads --}}
+      being lazy, never loads. imgClass and sizes default to a card's top image in a
+      two-column grid --}}
 <picture class="ak-{{mode}}-only">
-  <img class="card-img-top" src="/img/screenshots/pro/{{name}}-{{mode}}.webp" srcset="/img/screenshots/pro/{{name}}-{{mode}}-800.webp 800w, /img/screenshots/pro/{{name}}-{{mode}}.webp 1600w" sizes="(min-width: 992px) 45vw, 100vw" width="1600" height="1000" loading="lazy" decoding="async" alt="AdminKit PRO: {{title}}{{#compare mode "===" "dark"}}, dark mode{{/compare}}">
+  <img class="{{#if imgClass}}{{imgClass}}{{else}}card-img-top{{/if}}" src="/img/screenshots/pro/{{name}}-{{mode}}.webp" srcset="/img/screenshots/pro/{{name}}-{{mode}}-800.webp 800w, /img/screenshots/pro/{{name}}-{{mode}}.webp 1600w" sizes="{{#if sizes}}{{sizes}}{{else}}(min-width: 992px) 45vw, 100vw{{/if}}" width="1600" height="1000" loading="lazy" decoding="async" alt="AdminKit PRO: {{title}}{{#compare mode "===" "dark"}}, dark mode{{/compare}}">
 </picture>
