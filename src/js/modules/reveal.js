@@ -4,6 +4,8 @@
 // --ak-reveal-index, capped at maxStagger steps. The hidden state is CSS under
 // html.js-reveal, which js/head.js sets; without JavaScript nothing is hidden. Styles:
 // scss/3-components/_reveal.scss.
+import { mount } from "./mount";
+
 const selector = ".ak-reveal, .ak-reveal-cards .card:not(.card .card)";
 const maxStagger = 8;
 
@@ -37,18 +39,9 @@ const root = document.documentElement;
 // js/head.js shows everything again if this module has not run within a few seconds
 root.classList.add("js-reveal-ready");
 
-// Start after the page scripts that build charts and tables on DOMContentLoaded, so their
-// layout is in place before the cards become visible
-document.addEventListener("DOMContentLoaded", () => {
-  if (!root.classList.contains("js-reveal")) {
-    return;
-  }
-
-  document.querySelectorAll(".ak-reveal-cards").forEach((element) => {
-    element.classList.add("ak-revealed");
-  });
-
-  document.querySelectorAll(selector).forEach((element) => {
-    observer.observe(element);
-  });
-});
+// mount() starts after the page scripts that build charts and tables on DOMContentLoaded, so
+// their layout is in place before the cards become visible
+if (root.classList.contains("js-reveal")) {
+  mount(".ak-reveal-cards", (element) => element.classList.add("ak-revealed"));
+  mount(selector, (element) => observer.observe(element));
+}

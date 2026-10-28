@@ -1,6 +1,7 @@
 // Light, dark or auto (follows the operating system) colour mode. The mode is
 // data-bs-theme on <html>; js/head.js sets it from localStorage before the first paint, so
 // this module only changes it afterwards, or sets it when the page has no js/head.js.
+import { mount } from "./mount";
 import appearance from "../../data/appearance.json" with { type: "json" };
 
 const storageKey = "adminkit_config_colorMode";
@@ -53,24 +54,25 @@ export const setColorMode = (mode, { persist = true } = {}) => {
 // Buttons get .active and aria-pressed, radios get checked. Elements with
 // data-color-mode-icon="<mode>" are shown for the current mode only, and the
 // data-color-mode-toggle element's aria-label names it.
-const syncControls = () => {
-  for (const control of document.querySelectorAll("[data-color-mode-value]")) {
-    const active = control.dataset.colorModeValue === colorMode;
+const controls =
+  "[data-color-mode-value], [data-color-mode-icon], [data-color-mode-toggle]";
 
-    if (control instanceof HTMLInputElement) {
-      control.checked = active;
-    } else {
-      control.classList.toggle("active", active);
-      control.setAttribute("aria-pressed", active);
-    }
+const syncControl = (element) => {
+  const { colorModeValue, colorModeIcon } = element.dataset;
+
+  if (colorModeValue && element instanceof HTMLInputElement) {
+    element.checked = colorModeValue === colorMode;
+  } else if (colorModeValue) {
+    element.classList.toggle("active", colorModeValue === colorMode);
+    element.setAttribute("aria-pressed", colorModeValue === colorMode);
   }
 
-  for (const icon of document.querySelectorAll("[data-color-mode-icon]")) {
-    icon.hidden = icon.dataset.colorModeIcon !== colorMode;
+  if (colorModeIcon) {
+    element.hidden = colorModeIcon !== colorMode;
   }
 
-  for (const toggle of document.querySelectorAll("[data-color-mode-toggle]")) {
-    toggle.setAttribute("aria-label", `Color mode (${colorMode})`);
+  if (element.hasAttribute("data-color-mode-toggle")) {
+    element.setAttribute("aria-label", `Color mode (${colorMode})`);
   }
 };
 
@@ -92,5 +94,8 @@ document.addEventListener("click", (event) => {
   }
 });
 
-document.addEventListener("adminkit:colormodechange", syncControls);
-document.addEventListener("DOMContentLoaded", syncControls);
+document.addEventListener("adminkit:colormodechange", () => {
+  document.querySelectorAll(controls).forEach(syncControl);
+});
+
+mount(controls, syncControl);

@@ -1,26 +1,48 @@
 // Usage: https://github.com/Grsmto/simplebar
 import { Offcanvas } from "bootstrap";
 import SimpleBar from "simplebar";
+import { mount } from "./mount";
 
 // From the lg breakpoint the sidebar is part of the layout and the navbar toggle hides and
 // shows it. Below it the sidebar is a Bootstrap offcanvas (.offcanvas-lg) that the toggle
-// opens as a sheet, which brings the backdrop, focus trap, Escape and scroll lock.
+// opens as a sheet, which brings the backdrop, focus trap, Escape and scroll lock. The
+// handlers listen on document, so they also work for a sidebar or toggle added later.
+const sidebarSelector = ".js-sidebar";
+const toggleSelector = ".js-sidebar-toggle";
 
-const initializeSimplebar = (sidebar) => {
-  const content = sidebar.querySelector(".js-simplebar");
+let desktop;
+// Read once the stylesheet applies
+const isDesktop = () => {
+  if (!desktop) {
+    const breakpoint = getComputedStyle(
+      document.documentElement
+    ).getPropertyValue("--bs-breakpoint-lg");
+    desktop = matchMedia(`(min-width: ${breakpoint})`);
+    // Bootstrap closes the sheet when the window grows past the breakpoint
+    desktop.addEventListener("change", updateToggles);
+  }
+  return desktop.matches;
+};
 
-  if (content) {
-    const simplebar = new SimpleBar(content);
+// aria-expanded: the toggle expands and collapses the sidebar it controls; its name says
+// what a click does
+const updateToggles = () => {
+  const sidebar = document.querySelector(sidebarSelector);
 
-    // Recalculate on sidebar dropdown toggle
-    sidebar.querySelectorAll("[data-bs-parent]").forEach((dropdown) => {
-      dropdown.addEventListener("shown.bs.collapse", () =>
-        simplebar.recalculate()
-      );
-      dropdown.addEventListener("hidden.bs.collapse", () =>
-        simplebar.recalculate()
-      );
-    });
+  if (!sidebar) {
+    return;
+  }
+
+  const expanded = isDesktop()
+    ? !sidebar.classList.contains("collapsed")
+    : sidebar.classList.contains("show");
+
+  for (const toggle of document.querySelectorAll(toggleSelector)) {
+    toggle.setAttribute("aria-expanded", String(expanded));
+    toggle.setAttribute(
+      "aria-label",
+      expanded ? "Collapse sidebar" : "Expand sidebar"
+    );
   }
 };
 
@@ -43,67 +65,58 @@ const resizeAfterTransition = (sidebar) => {
   sidebar.addEventListener("transitionend", onTransitionEnd);
 };
 
-const initializeSidebarToggle = (sidebar, toggle) => {
-  const breakpoint = getComputedStyle(
-    document.documentElement
-  ).getPropertyValue("--bs-breakpoint-lg");
-  const desktop = matchMedia(`(min-width: ${breakpoint})`);
-  const sheet = Offcanvas.getOrCreateInstance(sidebar);
+document.addEventListener("click", (event) => {
+  const sidebar = document.querySelector(sidebarSelector);
 
-  // aria-expanded: the toggle expands and collapses the sidebar it controls; its name says
-  // what a click does
-  const updateToggle = () => {
-    const expanded = desktop.matches
-      ? !sidebar.classList.contains("collapsed")
-      : sidebar.classList.contains("show");
-    toggle.setAttribute("aria-expanded", String(expanded));
-    toggle.setAttribute(
-      "aria-label",
-      expanded ? "Collapse sidebar" : "Expand sidebar"
-    );
-  };
+  if (!sidebar) {
+    return;
+  }
 
-  updateToggle();
-
-  toggle.addEventListener("click", () => {
-    if (desktop.matches) {
+  if (event.target.closest(toggleSelector)) {
+    if (isDesktop()) {
       sidebar.classList.toggle("collapsed");
-      updateToggle();
+      updateToggles();
       resizeAfterTransition(sidebar);
     } else {
-      sheet.toggle();
+      Offcanvas.getOrCreateInstance(sidebar).toggle();
     }
-  });
-
-  // Following a link closes the sheet
-  sidebar.addEventListener("click", (event) => {
-    if (
-      !desktop.matches &&
-      event.target.closest("a[href]:not([data-bs-toggle])")
-    ) {
-      sheet.hide();
-    }
-  });
-
-  sidebar.addEventListener("shown.bs.offcanvas", updateToggle);
-  // Focus returns to the toggle, as with Bootstrap's data-bs-toggle triggers
-  sidebar.addEventListener("hidden.bs.offcanvas", () => {
-    updateToggle();
-    toggle.focus();
-  });
-  // Bootstrap closes the sheet when the window grows past the breakpoint
-  desktop.addEventListener("change", updateToggle);
-};
-
-document.addEventListener("DOMContentLoaded", () => {
-  const sidebar = document.querySelector(".js-sidebar");
-  const toggle = document.querySelector(".js-sidebar-toggle");
-
-  if (sidebar) {
-    initializeSimplebar(sidebar);
-
-    if (toggle) {
-      initializeSidebarToggle(sidebar, toggle);
-    }
+  } else if (
+    // Following a link closes the sheet
+    !isDesktop() &&
+    event.target.closest(`${sidebarSelector} a[href]:not([data-bs-toggle])`)
+  ) {
+    Offcanvas.getInstance(sidebar)?.hide();
   }
+});
+
+document.addEventListener("shown.bs.offcanvas", ({ target }) => {
+  if (target.matches(sidebarSelector)) {
+    updateToggles();
+  }
+});
+
+// Focus returns to the toggle, as with Bootstrap's data-bs-toggle triggers
+document.addEventListener("hidden.bs.offcanvas", ({ target }) => {
+  if (target.matches(sidebarSelector)) {
+    updateToggles();
+    document.querySelector(toggleSelector)?.focus();
+  }
+});
+
+mount(toggleSelector, updateToggles);
+
+mount(sidebarSelector, (sidebar) => {
+  updateToggles();
+  return () => Offcanvas.getInstance(sidebar)?.dispose();
+});
+
+mount(".js-simplebar", (element) => {
+  const simplebar = new SimpleBar(element);
+  const recalculate = () => simplebar.recalculate();
+
+  // Recalculate when a sidebar dropdown opens or closes
+  element.addEventListener("shown.bs.collapse", recalculate);
+  element.addEventListener("hidden.bs.collapse", recalculate);
+
+  return () => simplebar.unMount();
 });

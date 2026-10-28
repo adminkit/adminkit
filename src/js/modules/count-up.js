@@ -5,6 +5,8 @@
 // and with reduced motion it never changes. Put it on an element that holds only the
 // number and sits on a line of its own, such as the stat cards' .h1, so its changing width
 // does not move anything else.
+import { mount } from "./mount";
+
 const duration = 1000;
 const number = /(\d{1,3}(?:,\d{3})+|\d+)(\.\d+)?/;
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -66,12 +68,6 @@ const observer = new IntersectionObserver((entries) => {
   }
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  if (reducedMotion.matches) {
-    return;
-  }
-
-  document.querySelectorAll("[data-count-up]").forEach((element) => {
-    observer.observe(element);
-  });
-});
+if (!reducedMotion.matches) {
+  mount("[data-count-up]", (element) => observer.observe(element));
+}

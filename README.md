@@ -88,7 +88,7 @@ Pin an exact version instead of `@latest` in production. The script adds `window
 
 ## Frameworks
 
-AdminKit is plain HTML, CSS and JavaScript, so it works with any back end or front-end framework. The documentation has a setup guide for each of these:
+AdminKit is plain HTML, CSS and JavaScript, so it works with any back end or front-end framework. `js/app.js` also sets up icons, the sidebar and the other markup it enhances when a framework renders them after the page has loaded. The documentation has a setup guide for each of these:
 
 - [HTML](https://adminkit.io/docs/frameworks/html/)
 - [Laravel](https://adminkit.io/docs/frameworks/laravel/)
@@ -182,7 +182,7 @@ The template targets WCAG 2.2 AA in both color modes: 4.5:1 contrast for text, 3
 
 ## Icons
 
-AdminKit uses [Lucide](https://lucide.dev/icons/) icons: `<i data-lucide="house"></i>` becomes an inline SVG when the page loads. `js/app.js` only bundles the icons the templates use, listed in `src/js/modules/icons.js`. To use another icon, import it there and add it to `icons`; `npm run lint` fails when a template uses an icon that is not bundled, or the list bundles one that no template uses. After adding icon markup at runtime, render it with `lucide.createIcons({ icons: lucide.icons })`.
+AdminKit uses [Lucide](https://lucide.dev/icons/) icons: `<i data-lucide="house"></i>` gets the icon as an inline SVG inside it, also when the markup is added after the page has loaded. `js/app.js` only bundles the icons the templates use, listed in `src/js/modules/icons.js`. To use another icon, import it there and add it to `icons`; `npm run lint` fails when a template uses an icon that is not bundled, or the list bundles one that no template uses.
 
 The icons page loads `js/icons-all.js`, which holds every Lucide icon. Its icon list, `src/data/icons-lucide.json`, is generated from `lucide-static`; run `npm run icons:list` after upgrading `lucide` and `lucide-static`.
 

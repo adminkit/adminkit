@@ -22,6 +22,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Replace flatpickr with Vanilla Calendar Pro
 - Use `data-bs-theme="dark"` on `<html>` for dark mode
 - Load the color mode script from `js/head.js` instead of an inline script
+- Initialise icons and the sidebar automatically when markup is added later
+- Render icons inside their `<i data-lucide>` element instead of replacing it
 - Improve color contrast to meet WCAG 2.2 AA
 - Update demo data to 2026
 - Load Google Maps without an API key

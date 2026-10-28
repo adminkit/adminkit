@@ -71,7 +71,7 @@ const imports = new Set(
     .match(/import\s*\{([^}]*)\}\s*from\s*"lucide"/)[1]
     .split(",")
     .map((name) => name.trim())
-    .filter((name) => name && name !== "createIcons")
+    .filter((name) => name && name !== "createElement")
 );
 const registered = new Set(
   iconsSource
