@@ -2,9 +2,10 @@
   box-shadow: $box-shadow;
 }
 
+// The slide uses translate, not transform: Popper places menus with transform, and a
+// held transform would override it
 .dropdown .dropdown-menu.show {
-  animation: dropdownAnimation var(--ak-duration-base) var(--ak-ease-emphasized)
-    forwards;
+  animation: dropdownAnimation var(--ak-duration-base) var(--ak-ease-emphasized);
 
   @media (prefers-reduced-motion: reduce) {
     animation-name: dropdownFade;
@@ -14,11 +15,7 @@
 @keyframes dropdownAnimation {
   from {
     opacity: 0;
-    transform: translateY(-8px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0);
+    translate: 0 -8px;
   }
 }
 

@@ -82,7 +82,7 @@ $inter-unicode-ranges: (
     U+FFFD,
   ),
 ) !default;
-$inter-display: optional !default;
+$inter-display: swap !default;
 
 @each $weight in (300, 400, 600) {
   @each $subset, $range in $inter-unicode-ranges {

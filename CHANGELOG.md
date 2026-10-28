@@ -33,6 +33,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Load Google Maps without an API key
 - Bundle the Inter font instead of loading it from Google Fonts
 - Fix button contrast in dark mode
+- Fix Inter falling back to Arial on slow loads
+- Fix dropdown menus positioned with a fixed strategy
+- Fix sticky elements inside the page content
 - Fix calendar overflow on the dashboard
 - Fix sideways scrolling on the sign-in, sign-up and error pages on mobile
 - Migrate to Vite v8

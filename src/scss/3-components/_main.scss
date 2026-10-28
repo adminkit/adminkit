@@ -5,7 +5,9 @@
   min-height: 100vh;
   background: var(--#{$prefix}body-bg);
   flex-direction: column;
-  overflow: hidden;
+  // clip, not hidden: hidden makes .main a scroll container, so position: sticky
+  // inside the page (such as the pricing table header) would never stick
+  overflow: clip;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
