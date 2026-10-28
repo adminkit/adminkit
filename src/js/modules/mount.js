@@ -1,7 +1,9 @@
 // The modules set up their markup (icons, the sidebar, SimpleBar, ...) once the page has
 // loaded and again whenever such markup is added later, as single-page apps, Turbo and
-// Livewire do, so nothing has to be called by hand. One MutationObserver on <body> looks
+// Livewire do, so nothing has to be called by hand. One MutationObserver on <html> looks
 // at the added elements, and at the removed ones when a setup has something to clean up.
+// It watches <html>, not <body>, because Turbo Drive and Astro's view transitions replace
+// <body>: the new one is an added element like any other.
 const entries = [];
 let started = false;
 
@@ -71,7 +73,7 @@ const start = () => {
   for (const entry of entries) {
     setUp(entry, document.body);
   }
-  observer.observe(document.body, {
+  observer.observe(document.documentElement, {
     childList: true,
     subtree: true,
     attributeFilter: ["data-lucide"],
@@ -93,13 +95,17 @@ export const mount = (selector, setup) => {
 };
 
 // js/app.js runs before DOMContentLoaded as a deferred or module script, so it starts then,
-// after the page scripts. A framework can also import it once DOMContentLoaded has fired.
-const [navigation] = performance.getEntriesByType("navigation");
+// after the page scripts. Imported later, by a framework or a client-only plugin, it starts
+// right away. Both see readyState "interactive"; the navigation timing tells them apart.
+const loaded = () => {
+  if (document.readyState !== "interactive") {
+    return document.readyState === "complete";
+  }
+  const [navigation] = performance.getEntriesByType("navigation");
+  return !navigation || navigation.domContentLoadedEventStart > 0;
+};
 
-if (
-  navigation?.domContentLoadedEventStart > 0 ||
-  document.readyState === "complete"
-) {
+if (loaded()) {
   start();
 } else {
   document.addEventListener("DOMContentLoaded", start);

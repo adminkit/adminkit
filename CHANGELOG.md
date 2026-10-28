@@ -24,6 +24,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Load the color mode script from `js/head.js` instead of an inline script
 - Initialise icons and the sidebar automatically when markup is added later
 - Render icons inside their `<i data-lucide>` element instead of replacing it
+- Fix icons and the sidebar after Turbo and Astro page swaps
 - Improve color contrast to meet WCAG 2.2 AA
 - Update demo data to 2026
 - Load Google Maps without an API key
