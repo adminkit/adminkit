@@ -80,6 +80,17 @@ if (!document.documentElement.hasAttribute("data-bs-theme")) {
   applyColorMode();
 }
 
+// Astro's view transitions give <html> the attributes of the new page, which has no
+// data-bs-theme: the mode is set again before the page is painted
+new MutationObserver(() => {
+  if (!document.documentElement.hasAttribute("data-bs-theme")) {
+    applyColorMode();
+  }
+}).observe(document.documentElement, {
+  attributes: true,
+  attributeFilter: ["data-bs-theme"],
+});
+
 systemDark.addEventListener("change", () => {
   if (colorMode === "auto") {
     applyColorMode();

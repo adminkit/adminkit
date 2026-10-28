@@ -27,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add package entry points: `@adminkit/core`, `@adminkit/core/css`
 - Ship TypeScript declarations
 - Make `js/app.js` safe to import during server-side rendering
-- Fix icons and the sidebar after Turbo and Astro page swaps
+- Fix icons, the sidebar and the color mode after Turbo and Astro page swaps
 - Improve color contrast to meet WCAG 2.2 AA
 - Update demo data to 2026
 - Load Google Maps without an API key

@@ -105,9 +105,23 @@ document.addEventListener("hidden.bs.offcanvas", ({ target }) => {
 
 mount(toggleSelector, updateToggles);
 
+// Turbo and Astro remove the old sidebar while a link click is still closing its sheet. The
+// sheet finishes its transition first; disposing it earlier breaks Bootstrap's callback.
+const disposeSheet = (sidebar) => {
+  const offcanvas = Offcanvas.getInstance(sidebar);
+
+  if (sidebar.matches(".showing, .hiding")) {
+    const dispose = () => offcanvas.dispose();
+    sidebar.addEventListener("shown.bs.offcanvas", dispose, { once: true });
+    sidebar.addEventListener("hidden.bs.offcanvas", dispose, { once: true });
+  } else {
+    offcanvas?.dispose();
+  }
+};
+
 mount(sidebarSelector, (sidebar) => {
   updateToggles();
-  return () => Offcanvas.getInstance(sidebar)?.dispose();
+  return () => disposeSheet(sidebar);
 });
 
 mount(".js-simplebar", (element) => {
