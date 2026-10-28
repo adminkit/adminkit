@@ -179,7 +179,7 @@
     { "id": "icons", "label": "Icons", "pro": 4071 },
     { "id": "colorSchemes", "label": "Sidebar color schemes", "pro": 3 },
     { "id": "darkMode", "label": "Dark mode", "pro": true },
-    { "id": "aiChat", "label": "AI chat", "pro": true },
+    { "id": "aiChat", "label": "AI features", "pro": true },
     { "id": "settingsPanel", "label": "Settings panel", "pro": true },
     { "id": "support", "label": "Support", "pro": "Email" },
     { "id": "license", "label": "License", "pro": "Commercial" }

@@ -282,7 +282,7 @@ const editionLinks = { pro: "https://adminkit.io/pricing/" };
 
 const renderValue = (value) => {
   if (typeof value === "number") return number(value);
-  if (typeof value === "boolean") return value ? "Yes" : "No";
+  if (typeof value === "boolean") return value ? "✔" : "";
   return value;
 };
 
