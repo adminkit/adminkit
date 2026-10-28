@@ -10,40 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [4.0.0] - 2026-10-28
 
 - Add dark mode with light, dark and auto color modes (`data-bs-theme`)
-- Add color mode toggle to the navbar
-- Add pricing page (/pages-pricing.html)
-- Add invoice page (/pages-invoice.html)
-- Add 404, 500, alerts, modals and tables pages
+- Add pricing, invoice, 404, 500, alerts, modals and tables pages
 - Add off-canvas sidebar on mobile
-- Add subtle animations: cards fade in, numbers count up, skeleton loaders (respects reduced motion)
-- Add print styles
-- Update Analytics dashboard with website metrics
-- Redesign the Upgrade to Pro page
-- Redesign invoice, pricing and profile pages
-- Rename Feather icons page to Lucide (/icons-lucide.html)
+- Add subtle animations (respects reduced motion)
+- Redesign Analytics dashboard and profile pages
 - Replace Feather icons with Lucide (`data-feather` → `data-lucide`)
 - Replace flatpickr with Vanilla Calendar Pro
-- Use `data-bs-theme="dark"` on `<html>` for dark mode
-- Load the color mode script from `js/head.js` instead of an inline script
-- Initialise icons and the sidebar automatically when markup is added later
-- Render icons inside their `<i data-lucide>` element instead of replacing it
-- Add package entry points: `@adminkit/core`, `@adminkit/core/css`
-- Ship TypeScript declarations
-- Make `js/app.js` safe to import during server-side rendering
-- Fix icons, the sidebar and the color mode after Turbo and Astro page swaps
 - Improve color contrast to meet WCAG 2.2 AA
-- Update demo data to 2026
-- Load Google Maps without an API key
-- Bundle the Inter font instead of loading it from Google Fonts
-- Fix button contrast in dark mode
-- Fix Inter falling back to Arial on slow loads
-- Fix dropdown menus positioned with a fixed strategy
-- Fix sticky elements inside the page content
-- Fix calendar overflow on the dashboard
-- Fix sideways scrolling on the sign-in, sign-up and error pages on mobile
 - Migrate to Vite v8
-- Upgrade to Chart.js v4
-- Upgrade to SimpleBar v6
+- Upgrade to Chart.js v4 and SimpleBar v6
 - Upgrade dependencies
 
 ## [3.5.0] - 2026-08-01
