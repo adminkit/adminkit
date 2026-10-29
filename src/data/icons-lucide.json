@@ -337,8 +337,32 @@
     "tags": ["index", "backup", "box", "storage", "records"]
   },
   {
-    "name": "archive-restore",
-    "tags": ["unarchive", "index", "backup", "box", "storage", "records"]
+    "name": "archive-arrow-down",
+    "tags": [
+      "index",
+      "backup",
+      "box",
+      "storage",
+      "records",
+      "email",
+      "download",
+      "save"
+    ]
+  },
+  {
+    "name": "archive-arrow-up",
+    "tags": [
+      "unarchive",
+      "index",
+      "backup",
+      "box",
+      "storage",
+      "records",
+      "restore",
+      "retrieve",
+      "recover",
+      "reactivate"
+    ]
   },
   {
     "name": "archive-x",
@@ -1966,7 +1990,6 @@
   { "name": "bluetooth-connected", "tags": ["paired"] },
   { "name": "bluetooth-off", "tags": ["lost"] },
   { "name": "bluetooth-searching", "tags": ["pairing"] },
-  { "name": "bold", "tags": ["text", "strong", "format"] },
   {
     "name": "bolt",
     "tags": [
@@ -2859,6 +2882,31 @@
     ]
   },
   {
+    "name": "boxes-linked",
+    "tags": [
+      "cubes",
+      "package",
+      "module",
+      "dependencies",
+      "link",
+      "chain",
+      "blockchain",
+      "network",
+      "nodes",
+      "supply chain",
+      "integration",
+      "component",
+      "logistics",
+      "distributed",
+      "interconnected",
+      "relationship",
+      "coupling",
+      "system architecture",
+      "distributed systems",
+      "inventory"
+    ]
+  },
+  {
     "name": "braces",
     "tags": ["json", "code", "token", "curly brackets", "data", "{", "}"]
   },
@@ -3418,6 +3466,53 @@
       "decreasing",
       "rising",
       "falling"
+    ]
+  },
+  {
+    "name": "calendar-arrow-left",
+    "tags": [
+      "date",
+      "day",
+      "month",
+      "year",
+      "event",
+      "arrow",
+      "direction",
+      "navigation",
+      "previous",
+      "back",
+      "backward",
+      "past",
+      "earlier",
+      "reschedule",
+      "postpone",
+      "schedule",
+      "timeline",
+      "date picker"
+    ]
+  },
+  {
+    "name": "calendar-arrow-right",
+    "tags": [
+      "date",
+      "day",
+      "month",
+      "year",
+      "event",
+      "arrow",
+      "direction",
+      "navigation",
+      "next",
+      "forward",
+      "future",
+      "upcoming",
+      "later",
+      "reschedule",
+      "postpone",
+      "defer",
+      "schedule",
+      "timeline",
+      "appointment"
     ]
   },
   {
@@ -4085,6 +4180,47 @@
     "tags": ["statistics", "analytics", "diagram", "presentation"]
   },
   {
+    "name": "chart-quadrant",
+    "tags": [
+      "quadrant",
+      "chart",
+      "diagram",
+      "statistics",
+      "analytics",
+      "graph",
+      "chart-scatter",
+      "scatter plot",
+      "2x2",
+      "matrix",
+      "segmentation",
+      "correlation",
+      "comparison",
+      "risk",
+      "swot",
+      "clustering"
+    ]
+  },
+  {
+    "name": "chart-radar",
+    "tags": [
+      "radar",
+      "chart",
+      "diagram",
+      "shape",
+      "gem",
+      "mineral",
+      "pentagon",
+      "multidimensional",
+      "metrics",
+      "performance",
+      "comparison",
+      "profile",
+      "analytics",
+      "visualization",
+      "attributes"
+    ]
+  },
+  {
     "name": "chart-scatter",
     "tags": ["statistics", "analytics", "diagram", "graph"]
   },
@@ -4567,6 +4703,498 @@
     ]
   },
   {
+    "name": "circle-letter-a",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "grade",
+      "rating",
+      "accessibility",
+      "blood type",
+      "audio",
+      "ampere",
+      "electricity",
+      "appearance",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-b",
+    "tags": [
+      "strong",
+      "emphasis",
+      "format",
+      "alphabet",
+      "character",
+      "uppercase",
+      "bold",
+      "blood type",
+      "byte",
+      "computing",
+      "b-side",
+      "bus",
+      "transit",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-c",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "celsius",
+      "temperature",
+      "carbon",
+      "chemistry",
+      "grade",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-d",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "drive",
+      "gear",
+      "diameter",
+      "measurement",
+      "vitamin",
+      "grade",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-e",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "explicit",
+      "content rating",
+      "east",
+      "empty",
+      "energy",
+      "grade",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-f",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "fahrenheit",
+      "temperature",
+      "female",
+      "fail",
+      "grade",
+      "rating",
+      "force",
+      "aperture",
+      "f-stop",
+      "camera",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-g",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "gravity",
+      "g-force",
+      "gram",
+      "measurement",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-h",
+    "tags": [
+      "h1",
+      "html",
+      "markup",
+      "markdown",
+      "alphabet",
+      "character",
+      "uppercase",
+      "heading",
+      "hospital",
+      "hydrogen",
+      "chemistry",
+      "hour",
+      "time",
+      "height",
+      "measurement",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-i",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "information",
+      "help",
+      "input",
+      "current",
+      "electricity",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-j",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "joule",
+      "energy",
+      "java",
+      "javascript",
+      "code",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-k",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "thousand",
+      "kilo",
+      "kelvin",
+      "temperature",
+      "potassium",
+      "chemistry",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-l",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "learner",
+      "driver",
+      "litre",
+      "left",
+      "length",
+      "measurement",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-m",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "million",
+      "mega",
+      "metre",
+      "measurement",
+      "male",
+      "medium",
+      "size",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-n",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "north",
+      "neutral",
+      "gear",
+      "new",
+      "nitrogen",
+      "chemistry",
+      "newton",
+      "force",
+      "sample size",
+      "statistics",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-o",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "oxygen",
+      "chemistry",
+      "blood type",
+      "off",
+      "zero",
+      "marker",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-p",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "parking",
+      "phosphorus",
+      "chemistry",
+      "p-value",
+      "statistics",
+      "piano",
+      "soft",
+      "music",
+      "page",
+      "probability",
+      "math",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-p-off",
+    "tags": ["parking lot", "car park", "no parking"]
+  },
+  {
+    "name": "circle-letter-q",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "question",
+      "help",
+      "queue",
+      "charge",
+      "electricity",
+      "quality",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-r",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "registered trademark",
+      "trademark",
+      "right",
+      "reverse",
+      "gear",
+      "resistance",
+      "electricity",
+      "radius",
+      "geometry",
+      "rating",
+      "review",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-s",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "south",
+      "small",
+      "size",
+      "second",
+      "time",
+      "sulfur",
+      "chemistry",
+      "save",
+      "siemens",
+      "electricity",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-t",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "tesla",
+      "magnetism",
+      "temperature",
+      "tonne",
+      "measurement",
+      "time",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-u",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "rack unit",
+      "server",
+      "equipment",
+      "uranium",
+      "chemistry",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-v",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "voltage",
+      "volt",
+      "electricity",
+      "volume",
+      "victory",
+      "success",
+      "vegan",
+      "vegetarian",
+      "video",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-w",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "watt",
+      "power",
+      "west",
+      "width",
+      "measurement",
+      "tungsten",
+      "chemistry",
+      "win",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-x",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "close",
+      "dismiss",
+      "multiply",
+      "math",
+      "unknown",
+      "variable",
+      "x-axis",
+      "axis",
+      "intersection",
+      "cross",
+      "chromosome",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-y",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "y-axis",
+      "axis",
+      "yes",
+      "confirm",
+      "year",
+      "time",
+      "chromosome",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "circle-letter-z",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "z-axis",
+      "axis",
+      "sleep",
+      "rest",
+      "impedance",
+      "electricity",
+      "atomic number",
+      "chemistry",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
     "name": "circle-minus",
     "tags": [
       "subtract",
@@ -4604,11 +5232,6 @@
       "wrong",
       "failure"
     ]
-  },
-  { "name": "circle-parking", "tags": ["parking lot", "car park"] },
-  {
-    "name": "circle-parking-off",
-    "tags": ["parking lot", "car park", "no parking"]
   },
   { "name": "circle-pause", "tags": ["music", "audio", "stop"] },
   {
@@ -5717,6 +6340,24 @@
     ]
   },
   {
+    "name": "database-cog",
+    "tags": [
+      "db",
+      "settings",
+      "configuration",
+      "preferences",
+      "gear",
+      "admin",
+      "sql",
+      "storage",
+      "server",
+      "maintenance",
+      "schema",
+      "query",
+      "relational"
+    ]
+  },
+  {
     "name": "database-minus",
     "tags": [
       "storage",
@@ -6349,6 +6990,49 @@
       "silence",
       "audio",
       "accessibility"
+    ]
+  },
+  {
+    "name": "earbuds",
+    "tags": [
+      "earphones",
+      "audio",
+      "sound",
+      "bluetooth",
+      "wireless",
+      "music",
+      "noise cancelling",
+      "acoustics",
+      "stereo",
+      "media",
+      "listen",
+      "pairing",
+      "hands-free",
+      "speaker",
+      "volume"
+    ]
+  },
+  {
+    "name": "earbuds-off",
+    "tags": [
+      "earphones",
+      "audio",
+      "sound",
+      "bluetooth",
+      "wireless",
+      "music",
+      "noise cancelling",
+      "acoustics",
+      "stereo",
+      "media",
+      "listen",
+      "pairing",
+      "hands-free",
+      "speaker",
+      "volume",
+      "disconnected",
+      "disabled",
+      "inactive"
     ]
   },
   {
@@ -8490,7 +9174,6 @@
       "output"
     ]
   },
-  { "name": "heading", "tags": ["h1", "html", "markup", "markdown"] },
   { "name": "heading-1", "tags": ["h1", "html", "markup", "markdown"] },
   { "name": "heading-2", "tags": ["h2", "html", "markup", "markdown"] },
   { "name": "heading-3", "tags": ["h3", "html", "markup", "markdown"] },
@@ -9095,6 +9778,22 @@
       "task"
     ]
   },
+  {
+    "name": "laser",
+    "tags": [
+      "annotation",
+      "beam",
+      "draw",
+      "guide",
+      "highlight",
+      "pointer",
+      "presentation",
+      "screen",
+      "spotlight",
+      "pointer device",
+      "projection"
+    ]
+  },
   { "name": "lasso", "tags": ["select", "cursor"] },
   { "name": "lasso-select", "tags": ["select", "cursor"] },
   {
@@ -9395,6 +10094,363 @@
     ]
   },
   {
+    "name": "letter-a",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "grade",
+      "rating",
+      "accessibility",
+      "blood type",
+      "audio",
+      "ampere",
+      "electricity",
+      "appearance",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-b",
+    "tags": [
+      "strong",
+      "emphasis",
+      "format",
+      "alphabet",
+      "character",
+      "uppercase",
+      "bold",
+      "blood type",
+      "byte",
+      "computing",
+      "b-side",
+      "bus",
+      "transit",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-c",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "celsius",
+      "temperature",
+      "carbon",
+      "chemistry",
+      "grade",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-d",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "drive",
+      "gear",
+      "diameter",
+      "measurement",
+      "vitamin",
+      "grade",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-e",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "explicit",
+      "content rating",
+      "east",
+      "empty",
+      "energy",
+      "grade",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-f",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "fahrenheit",
+      "temperature",
+      "female",
+      "fail",
+      "grade",
+      "rating",
+      "force",
+      "aperture",
+      "f-stop",
+      "camera",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-g",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "gravity",
+      "g-force",
+      "gram",
+      "measurement",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-h",
+    "tags": [
+      "h1",
+      "html",
+      "markup",
+      "markdown",
+      "alphabet",
+      "character",
+      "uppercase",
+      "heading",
+      "hospital",
+      "hydrogen",
+      "chemistry",
+      "hour",
+      "time",
+      "height",
+      "measurement",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-i",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "information",
+      "help",
+      "input",
+      "current",
+      "electricity",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-j",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "joule",
+      "energy",
+      "java",
+      "javascript",
+      "code",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-k",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "thousand",
+      "kilo",
+      "kelvin",
+      "temperature",
+      "potassium",
+      "chemistry",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-l",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "learner",
+      "driver",
+      "litre",
+      "left",
+      "length",
+      "measurement",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-m",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "million",
+      "mega",
+      "metre",
+      "measurement",
+      "male",
+      "medium",
+      "size",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-n",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "north",
+      "neutral",
+      "gear",
+      "new",
+      "nitrogen",
+      "chemistry",
+      "newton",
+      "force",
+      "sample size",
+      "statistics",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-o",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "oxygen",
+      "chemistry",
+      "blood type",
+      "off",
+      "zero",
+      "marker",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-p",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "parking",
+      "phosphorus",
+      "chemistry",
+      "p-value",
+      "statistics",
+      "piano",
+      "soft",
+      "music",
+      "page",
+      "probability",
+      "math",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-q",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "question",
+      "help",
+      "queue",
+      "charge",
+      "electricity",
+      "quality",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-r",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "registered trademark",
+      "trademark",
+      "right",
+      "reverse",
+      "gear",
+      "resistance",
+      "electricity",
+      "radius",
+      "geometry",
+      "rating",
+      "review",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-s",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "south",
+      "small",
+      "size",
+      "second",
+      "time",
+      "sulfur",
+      "chemistry",
+      "save",
+      "siemens",
+      "electricity",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
     "name": "letter-spacing",
     "tags": [
       "tracking",
@@ -9407,6 +10463,137 @@
       "font",
       "typography",
       "formatting"
+    ]
+  },
+  {
+    "name": "letter-t",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "tesla",
+      "magnetism",
+      "temperature",
+      "tonne",
+      "measurement",
+      "time",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-u",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "rack unit",
+      "server",
+      "equipment",
+      "uranium",
+      "chemistry",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-v",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "voltage",
+      "volt",
+      "electricity",
+      "volume",
+      "victory",
+      "success",
+      "vegan",
+      "vegetarian",
+      "video",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-w",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "watt",
+      "power",
+      "west",
+      "width",
+      "measurement",
+      "tungsten",
+      "chemistry",
+      "win",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-x",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "close",
+      "dismiss",
+      "multiply",
+      "math",
+      "unknown",
+      "variable",
+      "x-axis",
+      "axis",
+      "intersection",
+      "cross",
+      "chromosome",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-y",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "y-axis",
+      "axis",
+      "yes",
+      "confirm",
+      "year",
+      "time",
+      "chromosome",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "letter-z",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "z-axis",
+      "axis",
+      "sleep",
+      "rest",
+      "impedance",
+      "electricity",
+      "atomic number",
+      "chemistry",
+      "text",
+      "font",
+      "typography"
     ]
   },
   {
@@ -11617,6 +12804,20 @@
       "draft",
       "template",
       "lines"
+    ]
+  },
+  {
+    "name": "numbers",
+    "tags": [
+      "123",
+      "digits",
+      "numeric",
+      "numerical",
+      "counting",
+      "quantity",
+      "math",
+      "sequence",
+      "integer"
     ]
   },
   { "name": "nut", "tags": ["hazelnut", "acorn", "food", "diet"] },
@@ -15304,6 +16505,23 @@
     ]
   },
   {
+    "name": "siren-off",
+    "tags": [
+      "police",
+      "ambulance",
+      "emergency",
+      "security",
+      "alert",
+      "alarm",
+      "light",
+      "disabled",
+      "mute",
+      "silent",
+      "silence",
+      "inactive"
+    ]
+  },
+  {
     "name": "sixteenth-notes",
     "tags": ["audio", "music", "sound", "notes", "semiquavers"]
   },
@@ -15864,6 +17082,143 @@
     ]
   },
   {
+    "name": "square-chevrons-down",
+    "tags": [
+      "bottom",
+      "descend",
+      "page",
+      "page down",
+      "scroll",
+      "jump",
+      "south",
+      "caret",
+      "button",
+      "keyboard",
+      "skip",
+      "end",
+      "last page",
+      "latest",
+      "feed",
+      "chat",
+      "pagination",
+      "fast",
+      "media",
+      "menu",
+      "panel",
+      "double-arrow",
+      "outlined",
+      "border",
+      "seek",
+      "rewind",
+      "controls",
+      "fast-forward"
+    ]
+  },
+  {
+    "name": "square-chevrons-left",
+    "tags": [
+      "previous",
+      "back",
+      "rewind",
+      "backward",
+      "first",
+      "beginning",
+      "start",
+      "west",
+      "music",
+      "caret",
+      "button",
+      "keyboard",
+      "menu",
+      "panel",
+      "pagination",
+      "skip",
+      "skip-back",
+      "seek-back",
+      "media-controls",
+      "player",
+      "playlist",
+      "track",
+      "chapter",
+      "jump",
+      "timeline",
+      "controls",
+      "seek",
+      "media"
+    ]
+  },
+  {
+    "name": "square-chevrons-right",
+    "tags": [
+      "next",
+      "forward",
+      "skip",
+      "fast forward",
+      "last",
+      "end",
+      "east",
+      "music",
+      "caret",
+      "button",
+      "keyboard",
+      "menu",
+      "panel",
+      "pagination",
+      "jump",
+      "seek",
+      "seek forward",
+      "player control",
+      "chapter",
+      "track",
+      "timeline",
+      "navigation control",
+      "double arrow",
+      "media controls",
+      "toolbar",
+      "keyboard shortcut",
+      "skip-to-end",
+      "end-of-list"
+    ]
+  },
+  {
+    "name": "square-chevrons-up",
+    "tags": [
+      "top",
+      "ascend",
+      "page",
+      "page up",
+      "back to top",
+      "scroll",
+      "jump",
+      "north",
+      "caret",
+      "button",
+      "keyboard",
+      "skip",
+      "pagination",
+      "first page",
+      "fast",
+      "fast scroll",
+      "rewind",
+      "jump to start",
+      "floating action button",
+      "anchor",
+      "mac",
+      "control",
+      "ctrl",
+      "menu",
+      "panel",
+      "timeline",
+      "start",
+      "first",
+      "return",
+      "double arrow",
+      "seek",
+      "playlist",
+      "floating action"
+    ]
+  },
+  {
     "name": "square-code",
     "tags": ["gist", "source", "programming", "html", "xml", "coding"]
   },
@@ -16083,6 +17438,526 @@
     ]
   },
   {
+    "name": "square-kanban-plus",
+    "tags": [
+      "board",
+      "project",
+      "add",
+      "create",
+      "plus",
+      "agile",
+      "tickets",
+      "issues",
+      "productivity",
+      "columns",
+      "workflow",
+      "planning",
+      "dashboard",
+      "workspace",
+      "collaboration",
+      "cards"
+    ]
+  },
+  {
+    "name": "square-letter-a",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "grade",
+      "rating",
+      "accessibility",
+      "blood type",
+      "audio",
+      "ampere",
+      "electricity",
+      "appearance",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-b",
+    "tags": [
+      "strong",
+      "emphasis",
+      "format",
+      "alphabet",
+      "character",
+      "uppercase",
+      "bold",
+      "blood type",
+      "byte",
+      "computing",
+      "b-side",
+      "bus",
+      "transit",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-c",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "celsius",
+      "temperature",
+      "carbon",
+      "chemistry",
+      "grade",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-d",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "drive",
+      "gear",
+      "diameter",
+      "measurement",
+      "vitamin",
+      "grade",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-e",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "explicit",
+      "content rating",
+      "east",
+      "empty",
+      "energy",
+      "grade",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-f",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "fahrenheit",
+      "temperature",
+      "female",
+      "fail",
+      "grade",
+      "rating",
+      "force",
+      "aperture",
+      "f-stop",
+      "camera",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-g",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "gravity",
+      "g-force",
+      "gram",
+      "measurement",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-h",
+    "tags": [
+      "h1",
+      "html",
+      "markup",
+      "markdown",
+      "alphabet",
+      "character",
+      "uppercase",
+      "heading",
+      "hospital",
+      "hydrogen",
+      "chemistry",
+      "hour",
+      "time",
+      "height",
+      "measurement",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-i",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "information",
+      "help",
+      "input",
+      "current",
+      "electricity",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-j",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "joule",
+      "energy",
+      "java",
+      "javascript",
+      "code",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-k",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "thousand",
+      "kilo",
+      "kelvin",
+      "temperature",
+      "potassium",
+      "chemistry",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-l",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "learner",
+      "driver",
+      "litre",
+      "left",
+      "length",
+      "measurement",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-m",
+    "tags": [
+      "metro",
+      "subway",
+      "underground",
+      "track",
+      "line",
+      "alphabet",
+      "character",
+      "uppercase",
+      "million",
+      "mega",
+      "metre",
+      "measurement",
+      "male",
+      "medium",
+      "size",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-n",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "north",
+      "neutral",
+      "gear",
+      "new",
+      "nitrogen",
+      "chemistry",
+      "newton",
+      "force",
+      "sample size",
+      "statistics",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-o",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "oxygen",
+      "chemistry",
+      "blood type",
+      "off",
+      "zero",
+      "marker",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-p",
+    "tags": [
+      "parking lot",
+      "car park",
+      "alphabet",
+      "character",
+      "uppercase",
+      "parking",
+      "phosphorus",
+      "chemistry",
+      "p-value",
+      "statistics",
+      "piano",
+      "soft",
+      "music",
+      "page",
+      "probability",
+      "math",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-p-off",
+    "tags": ["parking lot", "car park", "no parking"]
+  },
+  {
+    "name": "square-letter-q",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "question",
+      "help",
+      "queue",
+      "charge",
+      "electricity",
+      "quality",
+      "rating",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-r",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "registered trademark",
+      "trademark",
+      "right",
+      "reverse",
+      "gear",
+      "resistance",
+      "electricity",
+      "radius",
+      "geometry",
+      "rating",
+      "review",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-s",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "south",
+      "small",
+      "size",
+      "second",
+      "time",
+      "sulfur",
+      "chemistry",
+      "save",
+      "siemens",
+      "electricity",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-t",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "tesla",
+      "magnetism",
+      "temperature",
+      "tonne",
+      "measurement",
+      "time",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-u",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "rack unit",
+      "server",
+      "equipment",
+      "uranium",
+      "chemistry",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-v",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "voltage",
+      "volt",
+      "electricity",
+      "volume",
+      "victory",
+      "success",
+      "vegan",
+      "vegetarian",
+      "video",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-w",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "watt",
+      "power",
+      "west",
+      "width",
+      "measurement",
+      "tungsten",
+      "chemistry",
+      "win",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-x",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "close",
+      "dismiss",
+      "multiply",
+      "math",
+      "unknown",
+      "variable",
+      "x-axis",
+      "axis",
+      "intersection",
+      "cross",
+      "chromosome",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-y",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "y-axis",
+      "axis",
+      "yes",
+      "confirm",
+      "year",
+      "time",
+      "chromosome",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
+    "name": "square-letter-z",
+    "tags": [
+      "alphabet",
+      "character",
+      "uppercase",
+      "z-axis",
+      "axis",
+      "sleep",
+      "rest",
+      "impedance",
+      "electricity",
+      "atomic number",
+      "chemistry",
+      "text",
+      "font",
+      "typography"
+    ]
+  },
+  {
     "name": "square-library",
     "tags": [
       "books",
@@ -16109,10 +17984,6 @@
       "music",
       "package"
     ]
-  },
-  {
-    "name": "square-m",
-    "tags": ["metro", "subway", "underground", "track", "line"]
   },
   {
     "name": "square-menu",
@@ -16183,11 +18054,6 @@
       "form",
       "ui"
     ]
-  },
-  { "name": "square-parking", "tags": ["parking lot", "car park"] },
-  {
-    "name": "square-parking-off",
-    "tags": ["parking lot", "car park", "no parking"]
   },
   { "name": "square-pause", "tags": ["music", "audio", "stop"] },
   {
@@ -18288,6 +20154,22 @@
       "magnifier",
       "magnifying glass",
       "lens"
+    ]
+  },
+  {
+    "name": "user-round-shield",
+    "tags": [
+      "security",
+      "protection",
+      "admin",
+      "guard",
+      "privacy",
+      "account",
+      "role",
+      "permissions",
+      "profile",
+      "identity",
+      "trusted"
     ]
   },
   {

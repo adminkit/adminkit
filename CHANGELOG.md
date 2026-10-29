@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Upgrade dependencies
+
 ## [4.0.0] - 2026-10-28
 
 - Add dark mode with light, dark and auto color modes (`data-bs-theme`)
