@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [4.1.0] - 2026-10-31
+
 - Drop the `ak-` prefix from classes, Sass variables and functions (`.ak-reveal` → `.reveal`); the old names work until v5
 - Upgrade dependencies
 

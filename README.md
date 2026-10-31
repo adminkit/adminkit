@@ -49,7 +49,7 @@ Need more? [AdminKit PRO](https://adminkit.io/pricing/) adds more pages, dashboa
 | Pages                 | 20            | 53                                           |
 | Dashboards            | 1             | 5                                            |
 | Plugins               | 4             | 11                                           |
-| Icons                 | 2,015         | 4,071                                        |
+| Icons                 | 2,015         | 4,178                                        |
 | Sidebar color schemes | 1             | 3                                            |
 | Dark mode             | ✔             | ✔                                            |
 | AI features           |               | ✔                                            |

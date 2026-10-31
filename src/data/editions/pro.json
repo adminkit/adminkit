@@ -1,6 +1,6 @@
 {
   "edition": "pro",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "pages": {
     "count": 53,
     "list": [
@@ -153,8 +153,8 @@
     ]
   },
   "icons": {
-    "total": 4071,
-    "lucide": 1908,
+    "total": 4178,
+    "lucide": 2015,
     "fontAwesome": {
       "solid": 1422,
       "regular": 169,
@@ -176,7 +176,7 @@
     { "id": "pages", "label": "Pages", "pro": 53 },
     { "id": "dashboards", "label": "Dashboards", "pro": 5 },
     { "id": "plugins", "label": "Plugins", "pro": 11 },
-    { "id": "icons", "label": "Icons", "pro": 4071 },
+    { "id": "icons", "label": "Icons", "pro": 4178 },
     { "id": "colorSchemes", "label": "Sidebar color schemes", "pro": 3 },
     { "id": "darkMode", "label": "Dark mode", "pro": true },
     { "id": "aiChat", "label": "AI features", "pro": true },
