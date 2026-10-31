@@ -55,7 +55,7 @@ Release AdminKit PRO first, so its counts are final, then this repository. A fix
 1. Branch `chore/release-<version>` from `main`.
 2. Run `npm version <version> --no-git-tag-version`, then `npm run stats:sync -- --pro ../adminkit-pro` (it runs `npm run stats` too).
 3. In `CHANGELOG.md`, add `## [<version>] - <YYYY-MM-DD>` right under `## [Unreleased]`, so the unreleased lines move into it.
-4. Commit as `chore(release): <version>`, open a PR titled `release: AdminKit <version>` and squash-merge it.
+4. Commit as `chore(release): <version>`, open a PR titled `chore(release): <version>` and squash-merge it (commitlint checks the squashed subject on `main`).
 5. Tag the merge commit and push the tag: `git tag -a v<version> -m "AdminKit <version>" && git push origin v<version>`. The Release workflow builds `dist/` and attaches `adminkit-v<version>.zip` to a GitHub release; name it `AdminKit <version>` and paste the version's changelog lines as its notes.
 6. Publish to npm from the tagged commit: `npm publish` (`prepublishOnly` builds first).
 7. In the website repository, refresh the docs previews: `npm run preview:sync -- --free ../adminkit --pro ../adminkit-pro`.
