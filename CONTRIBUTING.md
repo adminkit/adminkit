@@ -47,3 +47,15 @@ Page, plugin and icon counts are generated, never typed: `npm run stats` updates
 ## Changelog
 
 A PR that changes behaviour adds a line under `Unreleased` in `CHANGELOG.md`. The file follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Pure refactors, formatting and tooling changes that users never notice don't need an entry. Keep each line short, imperative and user-facing, like the released entries ("Add pricing page (/pages-pricing.html)", "Upgrade to Bootstrap v5.3.8"); one line per change a template user would notice, no internal tooling and no explanations. Notable dependency majors get "Upgrade to X vN", the rest "Upgrade dependencies".
+
+## Releasing
+
+Release AdminKit PRO first, so its counts are final, then this repository. A fix is a patch release; new features or names that keep the old ones working are a minor; anything that breaks a page or a name is a major.
+
+1. Branch `chore/release-<version>` from `main`.
+2. Run `npm version <version> --no-git-tag-version`, then `npm run stats:sync -- --pro ../adminkit-pro` (it runs `npm run stats` too).
+3. In `CHANGELOG.md`, add `## [<version>] - <YYYY-MM-DD>` right under `## [Unreleased]`, so the unreleased lines move into it.
+4. Commit as `chore(release): <version>`, open a PR titled `release: AdminKit <version>` and squash-merge it.
+5. Tag the merge commit and push the tag: `git tag -a v<version> -m "AdminKit <version>" && git push origin v<version>`. The Release workflow builds `dist/` and attaches `adminkit-v<version>.zip` to a GitHub release; name it `AdminKit <version>` and paste the version's changelog lines as its notes.
+6. Publish to npm from the tagged commit: `npm publish` (`prepublishOnly` builds first).
+7. In the website repository, refresh the docs previews: `npm run preview:sync -- --free ../adminkit --pro ../adminkit-pro`.
