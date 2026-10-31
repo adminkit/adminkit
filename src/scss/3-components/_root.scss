@@ -3,11 +3,11 @@
 // grays and the secondary, light and dark colours around, so components that should follow
 // the mode use var(--bs-gray-*), var(--bs-secondary) and friends rather than Sass values.
 :root {
-  --ak-duration-fast: #{$ak-transition-duration-fast};
-  --ak-duration-base: #{$ak-transition-duration-base};
-  --ak-duration-slow: #{$ak-transition-duration-slow};
-  --ak-ease-standard: #{$ak-transition-easing-standard};
-  --ak-ease-emphasized: #{$ak-transition-easing-emphasized};
+  --ak-duration-fast: #{$transition-duration-fast};
+  --ak-duration-base: #{$transition-duration-base};
+  --ak-duration-slow: #{$transition-duration-slow};
+  --ak-ease-standard: #{$transition-easing-standard};
+  --ak-ease-emphasized: #{$transition-easing-emphasized};
 }
 
 :root,

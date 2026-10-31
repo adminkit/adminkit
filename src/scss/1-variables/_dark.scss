@@ -36,7 +36,7 @@ $grays-dark: (
 
 // The theme colours that differ in dark mode; the others keep their light value
 // Dark enough for white text on it; as text, see $theme-text-colors-dark
-$secondary-dark: ak-readable($gray-400-dark, #fff) !default;
+$secondary-dark: readable($gray-400-dark, #fff) !default;
 $light-dark: color.mix(#fff, $dark-theme-base, 5%) !default;
 $dark-dark: $gray-900-dark !default;
 
@@ -54,7 +54,7 @@ $theme-text-colors-dark: () !default;
     $theme-text-colors-dark: map.merge(
       $theme-text-colors-dark,
       (
-        $name: ak-readable($value, $surface-bg-dark),
+        $name: readable($value, $surface-bg-dark),
       )
     );
   }
@@ -73,9 +73,9 @@ $border-color-dark: $gray-200-dark !default;
 $border-color-translucent-dark: rgba(#fff, 0.175) !default;
 
 // Links, code and marks keep their light colours
-$link-color-dark: ak-readable($primary, $surface-bg-dark) !default;
+$link-color-dark: readable($primary, $surface-bg-dark) !default;
 $link-hover-color-dark: color.mix(#fff, $link-color-dark, 20%) !default;
-$code-color-dark: ak-readable($pink, $surface-bg-dark) !default;
+$code-color-dark: readable($pink, $surface-bg-dark) !default;
 $mark-color-dark: $gray-900 !default;
 $mark-bg-dark: color.mix(#fff, $yellow, 80%) !default;
 

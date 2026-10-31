@@ -32,7 +32,7 @@
   @each $color, $value in $theme-colors {
     &.alert-#{$color} .alert-icon {
       background-color: var(--#{$prefix}#{$color});
-      color: ak-text-on($value);
+      color: text-on($value);
     }
   }
 }

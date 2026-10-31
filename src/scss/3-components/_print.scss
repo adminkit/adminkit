@@ -26,8 +26,10 @@
     box-shadow: none;
   }
 
-  .js-reveal .ak-reveal-cards,
-  .js-reveal :is(.ak-reveal, .ak-reveal-cards .card) {
+  // .ak-reveal and .ak-reveal-cards: v4 aliases, remove in v5
+  .js-reveal :is(.reveal-cards, .ak-reveal-cards),
+  .js-reveal
+    :is(.reveal, .ak-reveal, .reveal-cards .card, .ak-reveal-cards .card) {
     opacity: 1 !important;
     transform: none !important;
   }

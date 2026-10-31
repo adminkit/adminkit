@@ -1,14 +1,14 @@
 // Loading placeholders for content that JavaScript draws (charts, maps, tables). The markup
-// shows an .ak-skeleton inside an element marked aria-busy="true"; markReady(element)
+// shows a .skeleton inside an element marked aria-busy="true"; markReady(element)
 // removes the placeholders around element, sets aria-busy="false" and fires
 // adminkit:ready on element. The chart, map and table helpers call it when they have
 // drawn; call adminkit.ready(element) for your own content. Styles:
-// scss/3-components/_skeleton.scss.
+// scss/3-components/_skeleton.scss. .ak-skeleton is a v4 alias, remove it in v5.
 export const markReady = (element) => {
   const busy = element.closest('[aria-busy="true"]');
 
   if (busy) {
-    busy.querySelectorAll(".ak-skeleton").forEach((skeleton) => {
+    busy.querySelectorAll(".skeleton, .ak-skeleton").forEach((skeleton) => {
       skeleton.remove();
     });
     busy.setAttribute("aria-busy", "false");

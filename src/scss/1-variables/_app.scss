@@ -84,11 +84,18 @@ $enable-dark-mode: true !default; // Dark mode values live in 1-variables/_dark.
 // --ak-ease-standard|emphasized, set on :root in 3-components/_root.scss) so they can be
 // tuned at runtime. Under prefers-reduced-motion: reduce, Bootstrap's transition() mixin
 // drops the transitions and AdminKit's own animations only fade.
-$ak-transition-duration-fast: 0.15s !default;
-$ak-transition-duration-base: 0.25s !default;
-$ak-transition-duration-slow: 0.35s !default;
-$ak-transition-easing-standard: cubic-bezier(0.4, 0, 0.2, 1) !default;
-$ak-transition-easing-emphasized: cubic-bezier(0.2, 0, 0, 1) !default;
+$transition-duration-fast: 0.15s !default;
+$transition-duration-base: 0.25s !default;
+$transition-duration-slow: 0.35s !default;
+$transition-easing-standard: cubic-bezier(0.4, 0, 0.2, 1) !default;
+$transition-easing-emphasized: cubic-bezier(0.2, 0, 0, 1) !default;
+
+// v4 aliases, remove in v5
+$ak-transition-duration-fast: $transition-duration-fast;
+$ak-transition-duration-base: $transition-duration-base;
+$ak-transition-duration-slow: $transition-duration-slow;
+$ak-transition-easing-standard: $transition-easing-standard;
+$ak-transition-easing-emphasized: $transition-easing-emphasized;
 
 // Bootstrap transitions on the motion tokens
 $transition-base: all var(--ak-duration-slow) var(--ak-ease-standard) !default;
@@ -175,13 +182,13 @@ $theme-text-colors: () !default;
     $theme-text-colors: map.merge(
       $theme-text-colors,
       (
-        $name: ak-readable($value, $body-bg),
+        $name: readable($value, $body-bg),
       )
     );
   }
 }
 
-$code-color: ak-readable($pink, $body-bg) !default;
+$code-color: readable($pink, $body-bg) !default;
 
 // Links
 $link-decoration: none !default;

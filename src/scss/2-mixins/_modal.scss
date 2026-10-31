@@ -1,12 +1,12 @@
 @mixin modal-variant($color) {
   .modal-content {
     background: $color;
-    color: ak-text-on($color);
+    color: text-on($color);
   }
 
   // The close button follows the text: white, or the default dark one in both modes
   .btn-close {
-    @if ak-text-on($color) == #fff {
+    @if text-on($color) == #fff {
       filter: $btn-close-filter-dark;
     } @else {
       filter: none;
@@ -25,6 +25,6 @@
   .h4,
   .h5,
   .h6 {
-    color: ak-text-on($color);
+    color: text-on($color);
   }
 }

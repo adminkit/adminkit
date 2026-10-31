@@ -6,7 +6,7 @@
   .badge-#{$color}-light {
     @include badge-variant(
       rgba($value, 0.15),
-      ak-readable($value, color.mix($value, $surface-bg, 15%))
+      readable($value, color.mix($value, $surface-bg, 15%))
     );
   }
 }
@@ -17,7 +17,7 @@
     .badge-#{$color}-light {
       @include badge-variant(
         rgba($value, 0.15),
-        ak-readable($value, color.mix($value, $surface-bg-dark, 15%))
+        readable($value, color.mix($value, $surface-bg-dark, 15%))
       );
     }
   }

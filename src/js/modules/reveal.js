@@ -1,12 +1,14 @@
-// Cards fade up as they scroll into view: every top-level .card inside .ak-reveal-cards (the
+// Cards fade up as they scroll into view: every top-level .card inside .reveal-cards (the
 // layouts put it on <main>, which itself fades in once the page scripts have run) and any
-// element with .ak-reveal. Elements that come into view together are staggered through
+// element with .reveal. Elements that come into view together are staggered through
 // --ak-reveal-index, capped at maxStagger steps. The hidden state is CSS under
 // html.js-reveal, which js/head.js sets; without JavaScript nothing is hidden. Styles:
-// scss/3-components/_reveal.scss.
+// scss/3-components/_reveal.scss. .ak-reveal and .ak-reveal-cards are v4 aliases, remove
+// them in v5.
 import { mount } from "./mount";
 
-const selector = ".ak-reveal, .ak-reveal-cards .card:not(.card .card)";
+const cards = ".reveal-cards, .ak-reveal-cards";
+const selector = `.reveal, .ak-reveal, :is(${cards}) .card:not(.card .card)`;
 const maxStagger = 8;
 
 const reveal = (elements) => {
@@ -14,14 +16,14 @@ const reveal = (elements) => {
     const onTransitionEnd = (event) => {
       if (event.target === element && event.propertyName === "opacity") {
         element.removeEventListener("transitionend", onTransitionEnd);
-        element.classList.remove("ak-revealing");
+        element.classList.remove("revealing");
         element.style.removeProperty("--ak-reveal-index");
       }
     };
 
     element.addEventListener("transitionend", onTransitionEnd);
     element.style.setProperty("--ak-reveal-index", Math.min(index, maxStagger));
-    element.classList.add("ak-revealed", "ak-revealing");
+    element.classList.add("revealed", "revealing");
   });
 };
 
@@ -42,6 +44,6 @@ root.classList.add("js-reveal-ready");
 // mount() starts after the page scripts that build charts and tables on DOMContentLoaded, so
 // their layout is in place before the cards become visible
 if (root.classList.contains("js-reveal")) {
-  mount(".ak-reveal-cards", (element) => element.classList.add("ak-revealed"));
+  mount(cards, (element) => element.classList.add("revealed"));
   mount(selector, (element) => observer.observe(element));
 }
