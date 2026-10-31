@@ -59,14 +59,14 @@
       }
     ]
   },
-  "icons": { "total": 1999, "lucide": 1999 },
+  "icons": { "total": 2015, "lucide": 2015 },
   "colorModes": { "count": 2, "list": ["light", "dark"] },
   "colorSchemes": { "count": 1, "list": ["default"] },
   "comparison": [
     { "id": "pages", "label": "Pages", "free": 20, "pro": 53 },
     { "id": "dashboards", "label": "Dashboards", "free": 1, "pro": 5 },
     { "id": "plugins", "label": "Plugins", "free": 4, "pro": 11 },
-    { "id": "icons", "label": "Icons", "free": 1999, "pro": 4071 },
+    { "id": "icons", "label": "Icons", "free": 2015, "pro": 4071 },
     {
       "id": "colorSchemes",
       "label": "Sidebar color schemes",
