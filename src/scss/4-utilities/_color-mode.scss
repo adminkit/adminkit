@@ -1,6 +1,9 @@
 // Content for one color mode only, such as a light and a dark screenshot side by side in
 // the markup. Hidden content does not load when it is lazy (loading="lazy" images).
+// .ak-dark-only and .ak-light-only: v4 aliases, remove in v5
+html:not([data-bs-theme="dark"]) .dark-only,
 html:not([data-bs-theme="dark"]) .ak-dark-only,
+[data-bs-theme="dark"] .light-only,
 [data-bs-theme="dark"] .ak-light-only {
   display: none !important;
 }

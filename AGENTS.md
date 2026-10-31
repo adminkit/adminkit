@@ -63,8 +63,8 @@ Free Bootstrap 5 admin template, published to npm as `@adminkit/core`.
 
 ## Motion and loading states
 
-- Tokens: `$ak-transition-duration-fast|base|slow` and `$ak-transition-easing-standard|emphasized` in `src/scss/1-variables/_app.scss`, used as `var(--ak-duration-*)` and `var(--ak-ease-*)`. Write transitions with Bootstrap's `@include transition(...)` so reduced motion turns them off; an animation must not move anything under `prefers-reduced-motion: reduce` (a fade is fine).
-- Reveal (`js/modules/reveal.js`, `3-components/_reveal.scss`): every top-level `.card` inside `.ak-reveal-cards` (the layouts put it on `<main>`, which itself fades in once the page scripts have run) and every `.ak-reveal` element fades up when it scrolls into view. The hidden state only applies under `html.js-reveal`, set by `js/head.js`; nothing else is needed on a new page.
+- Tokens: `$transition-duration-fast|base|slow` and `$transition-easing-standard|emphasized` in `src/scss/1-variables/_app.scss`, used as `var(--ak-duration-*)` and `var(--ak-ease-*)`. Write transitions with Bootstrap's `@include transition(...)` so reduced motion turns them off; an animation must not move anything under `prefers-reduced-motion: reduce` (a fade is fine).
+- Reveal (`js/modules/reveal.js`, `3-components/_reveal.scss`): every top-level `.card` inside `.reveal-cards` (the layouts put it on `<main>`, which itself fades in once the page scripts have run) and every `.reveal` element fades up when it scrolls into view. The hidden state only applies under `html.js-reveal`, set by `js/head.js`; nothing else is needed on a new page.
 - Count-up (`js/modules/count-up.js`): `data-count-up` on an element that holds only a number (with any prefix, suffix, `,` separators and decimals) and sits on its own line. The text stays the final value for screen readers and reduced motion.
 - Skeletons (`js/modules/skeleton.js`, `3-components/_skeleton.scss`): for content JavaScript draws, put `aria-busy="true"` on the card body and `{{> skeleton }}` inside a `position-relative` element that has the content's final height (a `.chart` or a `min-height`). `adminkit.chartjs()` and `adminkit.vectorMap()` clear it; for anything else call `adminkit.ready(element)`. All of them fire `adminkit:ready`.
 - Clickable cards: `a.card` or a card with a `.stretched-link` lifts on hover and focus; nothing to add.
@@ -75,11 +75,12 @@ Free Bootstrap 5 admin template, published to npm as `@adminkit/core`.
 
 - Target: WCAG 2.2 AA in light and dark mode, on every page including the sidebar and navbar: 4.5:1 for text, 3:1 for large text, icons and controls, no serious or critical axe violations.
 - Check with `@axe-core/playwright` on the built pages in both modes.
-- A new color that text or a control is drawn in must pass: use `ak-readable($color, $background)` (`src/scss/1-variables/_functions.scss`) and `$theme-text-colors` / `$theme-text-colors-dark` for theme colors as text; fills with white text must reach 4.5:1 (`ak-text-on()` picks white or dark text).
+- A new color that text or a control is drawn in must pass: use `readable($color, $background)` (`src/scss/1-variables/_functions.scss`) and `$theme-text-colors` / `$theme-text-colors-dark` for theme colors as text; fills with white text must reach 4.5:1 (`text-on()` picks white or dark text).
 - Icon-only links and buttons get an `aria-label`; links that act as buttons get `role="button"`; card titles are `h2.card-title` under the page's `h1`.
 
 ## Conventions
 
+- Only CSS custom properties get a prefix: `--ak-*`, like Bootstrap's `--bs-*`. Classes, Sass variables, functions and mixins never do.
 - Commits follow Conventional Commits; see `CONTRIBUTING.md` for types, scopes and examples. lefthook enforces them.
 - A PR that changes behaviour adds a line under `Unreleased` in `CHANGELOG.md`. Add it, or ask before opening the PR.
 - Changelog lines are short, imperative and user-facing, like the released entries: "Add pricing page (/pages-pricing.html)", "Replace Feather icons with Lucide", "Upgrade to Chart.js v4", "Upgrade dependencies". One line per change a template user would notice. No internal tooling (lint, CI, hooks, scripts), no explanations, no implementation details. Notable dependency majors get "Upgrade to X vN"; everything else is "Upgrade dependencies".

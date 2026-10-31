@@ -7,8 +7,8 @@
 // White text, or dark text where white does not reach 4.5:1 on the colour (warning)
 @each $color, $value in $theme-colors {
   .btn-#{$color} {
-    @include button-color(ak-text-on($value));
-    @include button-color-hover(ak-text-on($value));
+    @include button-color(text-on($value));
+    @include button-color-hover(text-on($value));
   }
 }
 
@@ -22,7 +22,7 @@
 
 // Brand colours, darkened where white text does not reach 4.5:1 on them
 @each $color, $value in $social-colors {
-  $bg: ak-readable($value, $white);
+  $bg: readable($value, $white);
 
   .btn-#{$color} {
     @include button-variant($bg, $bg);
@@ -33,9 +33,9 @@
 
 // Dark text on the badge colours where white does not reach 4.5:1 (warning)
 @each $color, $value in $theme-colors {
-  @if $color != "light" and ak-text-on($value) != #fff {
+  @if $color != "light" and text-on($value) != #fff {
     .badge.bg-#{$color} {
-      color: ak-text-on($value);
+      color: text-on($value);
     }
   }
 }
@@ -50,8 +50,8 @@
   @each $color, $value in $theme-colors-dark {
     .btn-#{$color} {
       @include button-variant($value, $value);
-      @include button-color(ak-text-on($value));
-      @include button-color-hover(ak-text-on($value));
+      @include button-color(text-on($value));
+      @include button-color-hover(text-on($value));
     }
 
     .btn-outline-#{$color} {
