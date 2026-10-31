@@ -1,6 +1,6 @@
 {
   "edition": "free",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "pages": {
     "count": 20,
     "list": [
@@ -66,7 +66,7 @@
     { "id": "pages", "label": "Pages", "free": 20, "pro": 53 },
     { "id": "dashboards", "label": "Dashboards", "free": 1, "pro": 5 },
     { "id": "plugins", "label": "Plugins", "free": 4, "pro": 11 },
-    { "id": "icons", "label": "Icons", "free": 2015, "pro": 4071 },
+    { "id": "icons", "label": "Icons", "free": 2015, "pro": 4178 },
     {
       "id": "colorSchemes",
       "label": "Sidebar color schemes",

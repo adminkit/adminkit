@@ -31,5 +31,5 @@ Free Bootstrap 5 admin template, published to npm as `@adminkit/core`.
 
 ## Conventions
 
-- Conventional Commits, see `CONTRIBUTING.md`; lefthook enforces them.
+- Conventional Commits, see `CONTRIBUTING.md`; lefthook enforces them. Releases follow "Releasing" there.
 - A PR that changes behaviour adds a short, user-facing line under `Unreleased` in `CHANGELOG.md`, like "Add pricing page (/pages-pricing.html)" or "Upgrade dependencies".
