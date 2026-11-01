@@ -8,6 +8,12 @@
 
 <link rel="canonical" href="https://demo-mit.adminkit.io/{{#if name}}{{ name }}{{/if}}" />
 
+<!-- Social preview image (public/og-image.png): an absolute URL, so change the domain to yours -->
+<meta property="og:image" content="https://demo-mit.adminkit.io/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+
 <title>{{#if title}}{{ title }} | {{/if}}{{ meta_title }}{{#unless title}} - {{ meta_slogan }}{{/unless}}</title>
 
 <!-- Color mode before the first paint (src/js/head.js). Vite leaves vite-ignore tags as they are; vite.config.js builds the file. -->

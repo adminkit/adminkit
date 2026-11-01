@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Social preview image: `public/og-image.png` (1200x630) with its `og:image` and `twitter:card` tags in `src/partials/site-meta.hbs`. Change the domain in the image URL to yours.
+
 ## [4.1.0] - 2026-10-31
 
 - Drop the `ak-` prefix from classes, Sass variables and functions (`.ak-reveal` → `.reveal`); the old names work until v5
