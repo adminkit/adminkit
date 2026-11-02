@@ -92,7 +92,7 @@
     "@eslint/js": "10.0.1",
     "autoprefixer": "10.6.2",
     "eslint": "10.14.0",
-    "globals": "17.13.0",
+    "globals": "17.14.0",
     "gray-matter": "4.0.3",
     "handlebars": "4.7.10",
     "js-beautify": "2.0.3",
