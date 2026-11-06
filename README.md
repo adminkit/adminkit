@@ -9,6 +9,12 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/adminkit/adminkit"><img src=".github/editions/html.svg" width="86" height="34" alt="AdminKit for HTML (this repository)"></a>
+  <a href="https://github.com/adminkit/adminkit-react"><img src=".github/editions/react.svg" width="87" height="34" alt="AdminKit for React"></a>
+  <a href="https://github.com/adminkit/adminkit-nextjs"><img src=".github/editions/nextjs.svg" width="96" height="34" alt="AdminKit for Next.js"></a>
+</p>
+
+<p align="center">
   <a href="https://www.npmjs.com/package/@adminkit/core" rel="nofollow"><img src="https://img.shields.io/npm/v/@adminkit/core" alt="NPM version"></a>
   <a href="https://github.com/adminkit/adminkit/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <a href="https://github.com/adminkit/adminkit/issues?q=is%3Aopen+is%3Aissue"><img src="https://img.shields.io/github/issues/adminkit/adminkit.svg" alt="GitHub issues open"></a>
@@ -81,15 +87,17 @@ Build the production files into `dist/`:
 npm run build
 ```
 
-You can also [download a zip](https://adminkit.io/#download), or install the built files from npm (`npm install @adminkit/core`) or the unpkg CDN; see [Download](https://adminkit.io/docs/getting-started/download/).
+You can also [download a zip](https://adminkit.io/#download), or install the built files from npm (`npm install @adminkit/core`) or the unpkg CDN; see [Download](https://adminkit.io/bootstrap/docs/getting-started/download/).
 
 ## Frameworks
 
-Setup guides for [HTML](https://adminkit.io/docs/frameworks/html/), [Laravel](https://adminkit.io/docs/frameworks/laravel/), [Django](https://adminkit.io/docs/frameworks/django/), [Rails](https://adminkit.io/docs/frameworks/rails/), [Symfony](https://adminkit.io/docs/frameworks/symfony/), [React](https://adminkit.io/docs/frameworks/react/), [Next.js](https://adminkit.io/docs/frameworks/nextjs/), [Vue](https://adminkit.io/docs/frameworks/vue/), [Nuxt](https://adminkit.io/docs/frameworks/nuxt/), [Angular](https://adminkit.io/docs/frameworks/angular/), [SvelteKit](https://adminkit.io/docs/frameworks/sveltekit/) and [Astro](https://adminkit.io/docs/frameworks/astro/).
+Want a ready-made app? AdminKit also comes as [AdminKit for React](https://github.com/adminkit/adminkit-react) ([demo](https://react-demo.adminkit.io/)) and [AdminKit for Next.js](https://github.com/adminkit/adminkit-nextjs) ([demo](https://nextjs-demo.adminkit.io/)), free and MIT-licensed like this template.
+
+Setup guides for [HTML](https://adminkit.io/bootstrap/docs/frameworks/html/), [Laravel](https://adminkit.io/bootstrap/docs/frameworks/laravel/), [Django](https://adminkit.io/bootstrap/docs/frameworks/django/), [Rails](https://adminkit.io/bootstrap/docs/frameworks/rails/), [Symfony](https://adminkit.io/bootstrap/docs/frameworks/symfony/), [React](https://adminkit.io/bootstrap/docs/frameworks/react/), [Next.js](https://adminkit.io/bootstrap/docs/frameworks/nextjs/), [Vue](https://adminkit.io/bootstrap/docs/frameworks/vue/), [Nuxt](https://adminkit.io/bootstrap/docs/frameworks/nuxt/), [Angular](https://adminkit.io/bootstrap/docs/frameworks/angular/), [SvelteKit](https://adminkit.io/bootstrap/docs/frameworks/sveltekit/) and [Astro](https://adminkit.io/bootstrap/docs/frameworks/astro/).
 
 ## Documentation
 
-[Quick start](https://adminkit.io/docs/getting-started/quick-start/), [file structure](https://adminkit.io/docs/getting-started/contents/), [customization](https://adminkit.io/docs/getting-started/customization/), [dark mode](https://adminkit.io/docs/getting-started/dark-mode/), [icons](https://adminkit.io/docs/icons/lucide-icons/), [animations](https://adminkit.io/docs/getting-started/animations/), [accessibility](https://adminkit.io/docs/getting-started/accessibility/) and every component are documented at [adminkit.io/docs](https://adminkit.io/docs/).
+[Quick start](https://adminkit.io/bootstrap/docs/getting-started/quick-start/), [file structure](https://adminkit.io/bootstrap/docs/getting-started/contents/), [customization](https://adminkit.io/bootstrap/docs/getting-started/customization/), [dark mode](https://adminkit.io/bootstrap/docs/getting-started/dark-mode/), [icons](https://adminkit.io/bootstrap/docs/icons/lucide-icons/), [animations](https://adminkit.io/bootstrap/docs/getting-started/animations/), [accessibility](https://adminkit.io/bootstrap/docs/getting-started/accessibility/) and every component are documented at [adminkit.io/docs](https://adminkit.io/bootstrap/docs/).
 
 ## Browser support
 
@@ -101,8 +109,8 @@ Setup guides for [HTML](https://adminkit.io/docs/frameworks/html/), [Laravel](ht
 
 - [Demo](https://demo.adminkit.io/)
 - [Website](https://adminkit.io/)
-- [Documentation](https://adminkit.io/docs/)
+- [Documentation](https://adminkit.io/bootstrap/docs/)
 - [Support](https://adminkit.io/support/)
-- [Affiliate Program](https://adminkit.io/affiliate-program)
+- [Affiliate Program](https://adminkit.io/affiliate-program/)
 
 To report a bug or request a feature, [open a new issue](https://github.com/adminkit/adminkit/issues/new).

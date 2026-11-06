@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="34" viewBox="0 0 96 34" role="img" aria-label="AdminKit for Next.js">
+<title>AdminKit for Next.js</title>
+<style>.bg{fill:#fff;stroke:#dee2e6}.fg{fill:#495057}.ic{fill:#000}@media (prefers-color-scheme:dark){.bg{fill:#222e3c;stroke:#656d77}.fg{fill:#dee2e6}.ic{fill:#fff}}</style>
+<rect class="bg" x="0.5" y="0.5" width="95" height="33" rx="3.5"/>
+<path class="ic" transform="translate(12 9) scale(0.6666666666666666)" d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"/>
+<text class="fg" x="35" y="22" font-family="Inter, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="14" font-weight="600" textLength="49" lengthAdjust="spacingAndGlyphs">Next.js</text>
+</svg>
