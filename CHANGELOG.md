@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Upgrade to Bootstrap v5.3.9
 - Upgrade dependencies
 
 ## [4.1.0] - 2026-10-31

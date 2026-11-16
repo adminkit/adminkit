@@ -189,6 +189,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "reminder",
       "wake-up"
     ]
@@ -837,6 +840,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "junk"
     ]
   },
@@ -1305,6 +1311,8 @@
       "export",
       "save",
       "pull",
+      "install",
+      "installation",
       "final",
       "ending",
       "end",
@@ -2012,7 +2020,27 @@
       "code",
       "glob pattern",
       "wildcard",
-      "*"
+      "*",
+      "required",
+      "mandatory"
+    ]
+  },
+  {
+    "name": "asterism",
+    "tags": [
+      "asterisk",
+      "fediverse",
+      "activitypub",
+      "symbol",
+      "typography",
+      "social",
+      "decentralized",
+      "federation",
+      "stars",
+      "three",
+      "ornament",
+      "punctuation",
+      "divider"
     ]
   },
   {
@@ -2188,6 +2216,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "mute",
       "silence",
       "disabled",
@@ -2259,7 +2290,16 @@
   },
   {
     "name": "award",
-    "tags": ["achievement", "badge", "rosette", "prize", "winner"]
+    "tags": [
+      "achievement",
+      "badge",
+      "rosette",
+      "prize",
+      "winner",
+      "skill",
+      "skills",
+      "expertise"
+    ]
   },
   {
     "name": "axe",
@@ -2427,7 +2467,16 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok",
+      "premium",
+      "vip",
+      "exclusive",
+      "pro",
+      "guarantee",
+      "warranty"
     ]
   },
   {
@@ -2518,6 +2567,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "security",
       "safety",
       "issue"
@@ -2673,7 +2727,11 @@
       "%",
       "marketing",
       "reduced",
-      "price tag"
+      "price tag",
+      "sell",
+      "selling",
+      "promotion",
+      "promo"
     ]
   },
   {
@@ -2746,20 +2804,33 @@
       "scalloped",
       "shape",
       "help",
+      "assistance",
+      "support",
       "guide",
       "tutorial",
       "manual",
+      "faq",
+      "hint",
+      "query",
       "unknown",
       "unidentified",
       "unspecified",
       "uncertain",
+      "unsure",
+      "doubt",
       "undetermined",
       "missing",
       "to be determined",
       "mystery",
       "question",
       "question mark",
-      "?"
+      "?",
+      "quiz",
+      "inquiry",
+      "enquiry",
+      "ask",
+      "punctuation",
+      "symbol"
     ]
   },
   {
@@ -2855,6 +2926,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "lost"
     ]
   },
@@ -2943,7 +3017,8 @@
       "emergency",
       "aid",
       "safety",
-      "patch"
+      "patch",
+      "patient"
     ]
   },
   {
@@ -2992,7 +3067,8 @@
       "cash",
       "funds",
       "transaction",
-      "finance"
+      "finance",
+      "salary"
     ]
   },
   {
@@ -3006,6 +3082,7 @@
       "funds",
       "transaction",
       "finance",
+      "salary",
       "direction",
       "movement",
       "vertical",
@@ -3035,6 +3112,7 @@
       "funds",
       "transaction",
       "finance",
+      "salary",
       "direction",
       "movement",
       "vertical",
@@ -3064,6 +3142,7 @@
       "funds",
       "transaction",
       "finance",
+      "salary",
       "checkmark",
       "done",
       "completed",
@@ -3079,6 +3158,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "banknote",
       "document",
       "verification",
@@ -3097,6 +3179,7 @@
       "funds",
       "transaction",
       "finance",
+      "salary",
       "x",
       "remove",
       "delete",
@@ -3115,6 +3198,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "error",
       "failed",
       "rejected",
@@ -3201,7 +3287,12 @@
       "hazard",
       "exclamation mark",
       "exclamation point",
-      "!"
+      "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol"
     ]
   },
   {
@@ -3436,7 +3527,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -4217,6 +4311,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "read",
       "authored",
       "published",
@@ -4330,6 +4427,9 @@
       "homework",
       "research",
       "documentation",
+      "dashed",
+      "dotted",
+      "broken line",
       "code",
       "coding",
       "version control",
@@ -4434,7 +4534,12 @@
       "hazard",
       "exclamation mark",
       "exclamation point",
-      "!"
+      "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol"
     ]
   },
   {
@@ -4859,6 +4964,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "read",
       "authored",
       "published",
@@ -4918,7 +5026,10 @@
       "screenplay",
       "revealed",
       "blank",
-      "plain"
+      "plain",
+      "docs",
+      "wiki",
+      "knowledge base"
     ]
   },
   {
@@ -5033,7 +5144,8 @@
       "lens",
       "zoom",
       "inspection",
-      "visual search"
+      "visual search",
+      "loupe"
     ]
   },
   {
@@ -5067,7 +5179,10 @@
       "learning",
       "homework",
       "research",
-      "documentation"
+      "documentation",
+      "docs",
+      "wiki",
+      "knowledge base"
     ]
   },
   {
@@ -5257,6 +5372,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "family",
       "friends",
       "acquaintances",
@@ -5318,6 +5435,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "code",
       "coding",
       "version control",
@@ -5389,7 +5509,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -5533,7 +5656,10 @@
       "cross",
       "times",
       "ex",
-      "×"
+      "×",
+      "deny",
+      "decline",
+      "refuse"
     ]
   },
   {
@@ -5708,7 +5834,10 @@
       "smart",
       "deep learning",
       "machine learning",
-      "computing"
+      "computing",
+      "skill",
+      "skills",
+      "expertise"
     ]
   },
   {
@@ -5730,7 +5859,10 @@
       "smart",
       "deep learning",
       "machine learning",
-      "computing"
+      "computing",
+      "skill",
+      "skills",
+      "expertise"
     ]
   },
   {
@@ -5753,6 +5885,9 @@
       "deep learning",
       "machine learning",
       "computing",
+      "skill",
+      "skills",
+      "expertise",
       "cog",
       "cogwheel",
       "gear",
@@ -5789,6 +5924,9 @@
       "deep learning",
       "machine learning",
       "computing",
+      "skill",
+      "skills",
+      "expertise",
       "off",
       "disable",
       "hide",
@@ -5942,10 +6080,34 @@
       "clearance"
     ]
   },
-  { "name": "briefcase", "tags": ["work", "bag", "baggage", "folder"] },
+  {
+    "name": "briefcase",
+    "tags": [
+      "work",
+      "bag",
+      "baggage",
+      "folder",
+      "job",
+      "career",
+      "employment",
+      "hiring",
+      "experience"
+    ]
+  },
   {
     "name": "briefcase-business",
-    "tags": ["work", "bag", "baggage", "folder", "portfolio"]
+    "tags": [
+      "work",
+      "bag",
+      "baggage",
+      "folder",
+      "job",
+      "career",
+      "employment",
+      "hiring",
+      "experience",
+      "portfolio"
+    ]
   },
   {
     "name": "briefcase-conveyor-belt",
@@ -5959,6 +6121,11 @@
       "bag",
       "baggage",
       "folder",
+      "job",
+      "career",
+      "employment",
+      "hiring",
+      "experience",
       "plus",
       "add",
       "new",
@@ -5973,8 +6140,6 @@
       "briefcase",
       "portfolio",
       "business",
-      "career",
-      "employment",
       "professional"
     ]
   },
@@ -6367,7 +6532,7 @@
       "wish"
     ]
   },
-  { "name": "calculator", "tags": ["count", "calculating machine"] },
+  { "name": "calculator", "tags": ["count", "calculating machine", "budget"] },
   {
     "name": "calendar",
     "tags": [
@@ -6401,7 +6566,8 @@
       "singular",
       "once",
       "1",
-      "first"
+      "first",
+      "today"
     ]
   },
   {
@@ -6573,8 +6739,12 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "subscribe",
-      "schedule"
+      "schedule",
+      "today"
     ]
   },
   {
@@ -6603,8 +6773,12 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "subscribe",
-      "schedule"
+      "schedule",
+      "today"
     ]
   },
   {
@@ -6744,7 +6918,9 @@
       "timestamp",
       "event",
       "birthday",
-      "birthdate"
+      "birthdate",
+      "week",
+      "weekly"
     ]
   },
   {
@@ -6938,7 +7114,9 @@
       "birthday",
       "birthdate",
       "range",
-      "period"
+      "period",
+      "week",
+      "weekly"
     ]
   },
   {
@@ -6973,6 +7151,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "events"
     ]
   },
@@ -7037,6 +7216,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "busy"
     ]
   },
@@ -7069,6 +7251,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "busy"
     ]
   },
@@ -7243,6 +7428,31 @@
       "strikethrough",
       "crossed out",
       "diagonal line"
+    ]
+  },
+  {
+    "name": "cap",
+    "tags": [
+      "hat",
+      "baseball",
+      "baseball cap",
+      "snapback",
+      "trucker hat",
+      "visor",
+      "peak",
+      "brim",
+      "headwear",
+      "headgear",
+      "sports",
+      "merchandise",
+      "apparel",
+      "fashion",
+      "accessory",
+      "casual",
+      "shopping",
+      "store",
+      "clothing",
+      "clothes"
     ]
   },
   {
@@ -7603,7 +7813,11 @@
       "presentation",
       "reporting",
       "data visualisation",
-      "visualisation"
+      "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights"
     ]
   },
   {
@@ -7620,6 +7834,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison"
     ]
@@ -7638,6 +7856,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison"
     ]
@@ -7656,6 +7878,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison",
       "trending down"
@@ -7675,6 +7901,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison",
       "trending up"
@@ -7694,6 +7924,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison",
       "multivariate"
@@ -7713,6 +7947,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "distribution",
       "normal distribution",
       "gaussian",
@@ -7737,6 +7975,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "trading",
       "trader",
       "financial",
@@ -7768,6 +8010,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison"
     ]
@@ -7786,6 +8032,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison"
     ]
@@ -7804,6 +8054,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison",
       "trending down"
@@ -7823,6 +8077,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison",
       "trending up"
@@ -7842,6 +8100,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison",
       "multivariate"
@@ -7861,6 +8123,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "timeline",
       "planning",
       "projects",
@@ -7891,7 +8157,11 @@
       "presentation",
       "reporting",
       "data visualisation",
-      "visualisation"
+      "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights"
     ]
   },
   {
@@ -7908,6 +8178,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "network",
       "nodes",
       "edges",
@@ -7934,6 +8208,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison"
     ]
@@ -7952,6 +8230,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison",
       "trending down"
@@ -7971,6 +8253,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison",
       "trending up"
@@ -7990,6 +8276,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "trending up"
     ]
   },
@@ -8007,6 +8297,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "timeline",
       "planning",
       "projects",
@@ -8040,7 +8334,11 @@
       "presentation",
       "reporting",
       "data visualisation",
-      "visualisation"
+      "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights"
     ]
   },
   {
@@ -8057,6 +8355,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "quadrant",
       "chart",
       "chart-scatter",
@@ -8085,6 +8387,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "radar",
       "chart",
       "shape",
@@ -8092,7 +8398,6 @@
       "mineral",
       "pentagon",
       "multidimensional",
-      "metrics",
       "performance",
       "comparison",
       "profile",
@@ -8112,7 +8417,11 @@
       "presentation",
       "reporting",
       "data visualisation",
-      "visualisation"
+      "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights"
     ]
   },
   {
@@ -8129,6 +8438,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "curve",
       "continuous",
       "smooth",
@@ -8155,7 +8468,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -8176,6 +8492,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "received",
       "double"
     ]
@@ -8197,7 +8516,40 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
+    ]
+  },
+  {
+    "name": "cheese",
+    "tags": [
+      "swiss",
+      "holes",
+      "fondue",
+      "emmental",
+      "gouda",
+      "edam",
+      "cheddar",
+      "brie",
+      "mozzarella",
+      "feta",
+      "halloumi",
+      "gorgonzola",
+      "roquefort",
+      "camembert",
+      "dairy",
+      "snack",
+      "dish",
+      "restaurant",
+      "lunch",
+      "meal",
+      "savory",
+      "savoury",
+      "cookery",
+      "cooking",
+      "grilled"
     ]
   },
   {
@@ -8628,6 +8980,46 @@
     ]
   },
   {
+    "name": "circle-arrow-down-left-exit",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "southwest",
+      "south-west",
+      "south west",
+      "out",
+      "outside",
+      "outwards",
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit"
+    ]
+  },
+  {
+    "name": "circle-arrow-down-right-exit",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "southeast",
+      "south-east",
+      "south east",
+      "out",
+      "outside",
+      "outwards",
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit"
+    ]
+  },
+  {
     "name": "circle-arrow-left",
     "tags": [
       "direction",
@@ -8648,57 +9040,6 @@
       "turn",
       "button",
       "<-"
-    ]
-  },
-  {
-    "name": "circle-arrow-out-down-left",
-    "tags": [
-      "direction",
-      "movement",
-      "diagonal",
-      "southwest",
-      "south-west",
-      "south west",
-      "outwards"
-    ]
-  },
-  {
-    "name": "circle-arrow-out-down-right",
-    "tags": [
-      "direction",
-      "movement",
-      "diagonal",
-      "southeast",
-      "south-east",
-      "south east",
-      "outwards"
-    ]
-  },
-  {
-    "name": "circle-arrow-out-up-left",
-    "tags": [
-      "direction",
-      "movement",
-      "diagonal",
-      "northwest",
-      "north-west",
-      "north west",
-      "outwards",
-      "keyboard",
-      "button",
-      "escape"
-    ]
-  },
-  {
-    "name": "circle-arrow-out-up-right",
-    "tags": [
-      "direction",
-      "movement",
-      "diagonal",
-      "northeast",
-      "north-east",
-      "north east",
-      "outwards"
     ]
   },
   {
@@ -8747,6 +9088,49 @@
     ]
   },
   {
+    "name": "circle-arrow-up-left-exit",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "northwest",
+      "north-west",
+      "north west",
+      "out",
+      "outside",
+      "outwards",
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit",
+      "keyboard",
+      "button",
+      "escape"
+    ]
+  },
+  {
+    "name": "circle-arrow-up-right-exit",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "northeast",
+      "north-east",
+      "north east",
+      "out",
+      "outside",
+      "outwards",
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit"
+    ]
+  },
+  {
     "name": "circle-check",
     "tags": [
       "checkmark",
@@ -8763,7 +9147,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -8783,7 +9170,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -9032,6 +9422,9 @@
   {
     "name": "circle-dashed",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "pending",
       "dot",
       "progress",
@@ -9045,6 +9438,9 @@
   {
     "name": "circle-dashed-check",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "pending",
       "dot",
       "progress",
@@ -9068,6 +9464,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "changes",
       "revision",
       "reapproval",
@@ -9147,6 +9546,9 @@
   {
     "name": "circle-dot-dashed",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "pending",
       "progress",
       "issue",
@@ -9234,7 +9636,12 @@
       "hazard",
       "exclamation mark",
       "exclamation point",
-      "!"
+      "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol"
     ]
   },
   {
@@ -9273,6 +9680,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "pending",
       "progress",
       "processing",
@@ -10116,20 +10526,33 @@
     "name": "circle-question-mark",
     "tags": [
       "help",
+      "assistance",
+      "support",
       "guide",
       "tutorial",
       "manual",
+      "faq",
+      "hint",
+      "query",
       "unknown",
       "unidentified",
       "unspecified",
       "uncertain",
+      "unsure",
+      "doubt",
       "undetermined",
       "missing",
       "to be determined",
       "mystery",
       "question",
       "question mark",
-      "?"
+      "?",
+      "quiz",
+      "inquiry",
+      "enquiry",
+      "ask",
+      "punctuation",
+      "symbol"
     ]
   },
   {
@@ -10272,7 +10695,9 @@
       "member",
       "client",
       "participant",
-      "guest"
+      "guest",
+      "customer",
+      "username"
     ]
   },
   {
@@ -10290,7 +10715,9 @@
       "member",
       "client",
       "participant",
-      "guest"
+      "guest",
+      "customer",
+      "username"
     ]
   },
   {
@@ -10314,6 +10741,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "error",
       "incorrect",
       "wrong",
@@ -10418,8 +10848,13 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "copied",
-      "pasted"
+      "pasted",
+      "result",
+      "checklist"
     ]
   },
   {
@@ -10454,7 +10889,7 @@
     ]
   },
   { "name": "clipboard-copy", "tags": ["copy", "paste"] },
-  { "name": "clipboard-list", "tags": ["copy", "paste", "tasks"] },
+  { "name": "clipboard-list", "tags": ["copy", "paste", "tasks", "checklist"] },
   {
     "name": "clipboard-minus",
     "tags": [
@@ -10594,7 +11029,10 @@
       "cross",
       "times",
       "ex",
-      "×"
+      "×",
+      "deny",
+      "decline",
+      "refuse"
     ]
   },
   {
@@ -11069,7 +11507,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -11104,6 +11545,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "wrong"
     ]
   },
@@ -11224,6 +11670,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "sync",
       "network",
       "saved",
@@ -11253,7 +11702,7 @@
       "network"
     ]
   },
-  { "name": "cloud-download", "tags": ["import"] },
+  { "name": "cloud-download", "tags": ["import", "install", "installation"] },
   { "name": "cloud-drizzle", "tags": ["weather", "shower"] },
   {
     "name": "cloud-exclamation-point",
@@ -11271,13 +11720,21 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "sync",
       "network"
     ]
   },
   { "name": "cloud-fog", "tags": ["weather", "mist"] },
   { "name": "cloud-hail", "tags": ["weather", "rainfall"] },
-  { "name": "cloud-lightning", "tags": ["weather", "bolt"] },
+  {
+    "name": "cloud-lightning",
+    "tags": ["weather", "bolt", "thunder", "thunderstorm", "thunderbolt"]
+  },
   { "name": "cloud-moon", "tags": ["weather", "night"] },
   {
     "name": "cloud-moon-rain",
@@ -11342,17 +11799,35 @@
       "data"
     ]
   },
-  { "name": "cloud-upload", "tags": ["file"] },
+  { "name": "cloud-upload", "tags": ["file", "deploy", "deployment"] },
   { "name": "cloudy", "tags": ["weather", "clouds"] },
   { "name": "clover", "tags": ["leaf", "luck", "plant"] },
   { "name": "club", "tags": ["shape", "suit", "playing", "cards"] },
   {
     "name": "code",
-    "tags": ["coding", "programming", "development", "source", "html", "xml"]
+    "tags": [
+      "coding",
+      "programming",
+      "development",
+      "developer",
+      "dev",
+      "source",
+      "html",
+      "xml"
+    ]
   },
   {
     "name": "code-xml",
-    "tags": ["coding", "programming", "development", "source", "html", "xml"]
+    "tags": [
+      "coding",
+      "programming",
+      "development",
+      "developer",
+      "dev",
+      "source",
+      "html",
+      "xml"
+    ]
   },
   {
     "name": "coffee",
@@ -11677,7 +12152,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -11782,6 +12260,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "multiply",
       "multiplication"
     ]
@@ -11998,7 +12479,10 @@
       "license"
     ]
   },
-  { "name": "credit-card", "tags": ["bank", "purchase", "payment", "cc"] },
+  {
+    "name": "credit-card",
+    "tags": ["bank", "purchase", "payment", "cc", "cashier", "merchant"]
+  },
   {
     "name": "credit-card-check",
     "tags": [
@@ -12006,6 +12490,8 @@
       "purchase",
       "payment",
       "cc",
+      "cashier",
+      "merchant",
       "checkmark",
       "done",
       "completed",
@@ -12021,6 +12507,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "debit",
       "banking",
       "finance",
@@ -12040,6 +12529,8 @@
       "purchase",
       "payment",
       "cc",
+      "cashier",
+      "merchant",
       "minus",
       "remove",
       "delete",
@@ -12071,6 +12562,8 @@
       "purchase",
       "payment",
       "cc",
+      "cashier",
+      "merchant",
       "plus",
       "add",
       "new",
@@ -12104,6 +12597,8 @@
       "purchase",
       "payment",
       "cc",
+      "cashier",
+      "merchant",
       "atm",
       "terminal",
       "checkout",
@@ -12127,6 +12622,8 @@
       "purchase",
       "payment",
       "cc",
+      "cashier",
+      "merchant",
       "x",
       "remove",
       "delete",
@@ -12145,6 +12642,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "debit",
       "banking",
       "finance",
@@ -12176,7 +12676,11 @@
       "ruler",
       "winner",
       "favorite",
-      "favourite"
+      "favourite",
+      "premium",
+      "vip",
+      "exclusive",
+      "pro"
     ]
   },
   {
@@ -12462,7 +12966,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -12636,7 +13143,8 @@
       "lens",
       "zoom",
       "inspection",
-      "visual search"
+      "visual search",
+      "loupe"
     ]
   },
   {
@@ -12693,6 +13201,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "error",
       "failed",
       "invalid",
@@ -12744,6 +13255,8 @@
       "energy",
       "power",
       "quick",
+      "thunder",
+      "thunderbolt",
       "cache busting",
       "crash"
     ]
@@ -13354,7 +13867,8 @@
       "egress",
       "gate",
       "gateway",
-      "emergency exit"
+      "emergency exit",
+      "quit"
     ]
   },
   {
@@ -13404,7 +13918,10 @@
       "."
     ]
   },
-  { "name": "download", "tags": ["import", "export", "save", "pull"] },
+  {
+    "name": "download",
+    "tags": ["import", "export", "save", "pull", "install", "installation"]
+  },
   {
     "name": "drafting-compass",
     "tags": [
@@ -13625,7 +14142,17 @@
   },
   {
     "name": "earth",
-    "tags": ["world", "browser", "language", "translate", "globe"]
+    "tags": [
+      "world",
+      "browser",
+      "language",
+      "translate",
+      "globe",
+      "www",
+      "http",
+      "https",
+      "website"
+    ]
   },
   {
     "name": "earth-lock",
@@ -13635,6 +14162,10 @@
       "language",
       "translate",
       "globe",
+      "www",
+      "http",
+      "https",
+      "website",
       "lock",
       "padlock",
       "private",
@@ -13813,7 +14344,10 @@
       "overflow",
       "dots",
       "…",
-      "..."
+      "...",
+      "meatball menu",
+      "three dots",
+      "3 dots"
     ]
   },
   {
@@ -13828,7 +14362,11 @@
       "overflow",
       "dots",
       "…",
-      "..."
+      "...",
+      "kebab",
+      "kebab menu",
+      "three dots",
+      "3 dots"
     ]
   },
   {
@@ -14038,10 +14576,41 @@
     ]
   },
   {
+    "name": "exclamation-mark",
+    "tags": [
+      "alert",
+      "warning",
+      "danger",
+      "caution",
+      "notice",
+      "error",
+      "risk",
+      "concern",
+      "hazard",
+      "exclamation mark",
+      "exclamation point",
+      "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
+      "bang",
+      "surprise",
+      "emphasis",
+      "interjection",
+      "factorial",
+      "negation"
+    ]
+  },
+  {
     "name": "expand",
     "tags": ["scale", "fullscreen", "maximize", "minimize", "contract"]
   },
-  { "name": "external-link", "tags": ["outbound", "open", "share"] },
+  {
+    "name": "external-link",
+    "tags": ["outbound", "open", "share", "redirect"]
+  },
   {
     "name": "eye",
     "tags": [
@@ -14056,7 +14625,8 @@
       "visibility",
       "vision",
       "preview",
-      "read"
+      "read",
+      "eyes"
     ]
   },
   {
@@ -14074,6 +14644,7 @@
       "vision",
       "preview",
       "read",
+      "eyes",
       "hide",
       "conceal",
       "mask",
@@ -14095,6 +14666,10 @@
       "vision",
       "preview",
       "read",
+      "eyes",
+      "dashed",
+      "dotted",
+      "broken line",
       "hide",
       "conceal",
       "mask",
@@ -14117,6 +14692,7 @@
       "vision",
       "preview",
       "read",
+      "eyes",
       "off",
       "disable",
       "hide",
@@ -14148,30 +14724,44 @@
   {
     "name": "face-angry",
     "tags": [
+      "emoji",
+      "emotion",
+      "mood",
+      "feeling",
+      "expression",
+      "reaction",
       "anger",
       "rage",
       "fury",
       "resentment",
       "irritation",
-      "disgust",
-      "emoji",
-      "emotion"
+      "disgust"
     ]
   },
   {
     "name": "face-expressionless",
     "tags": [
+      "emoji",
+      "emotion",
+      "mood",
+      "feeling",
+      "expression",
+      "reaction",
       "nuisance",
       "annoyed",
       "annoyance",
-      "frustration",
-      "emoji",
-      "emotion"
+      "frustration"
     ]
   },
   {
     "name": "face-grinning",
     "tags": [
+      "emoji",
+      "emotion",
+      "mood",
+      "feeling",
+      "expression",
+      "reaction",
       "happy",
       "happiness",
       "good",
@@ -14180,17 +14770,19 @@
       "pleasure",
       "good cheer",
       "humour",
-      "funny",
-      "emoji",
-      "emotion"
+      "funny"
     ]
   },
   {
     "name": "face-neutral",
     "tags": [
       "emoji",
-      "neutral",
       "emotion",
+      "mood",
+      "feeling",
+      "expression",
+      "reaction",
+      "neutral",
       "meh",
       "blank stare",
       "social masking",
@@ -14201,11 +14793,28 @@
   },
   {
     "name": "face-slightly-frowning",
-    "tags": ["emoji", "bad", "sadness", "emotion", "concern", "disappointment"]
+    "tags": [
+      "emoji",
+      "emotion",
+      "mood",
+      "feeling",
+      "expression",
+      "reaction",
+      "bad",
+      "sadness",
+      "concern",
+      "disappointment"
+    ]
   },
   {
     "name": "face-slightly-smiling",
     "tags": [
+      "emoji",
+      "emotion",
+      "mood",
+      "feeling",
+      "expression",
+      "reaction",
       "smile",
       "happy",
       "happiness",
@@ -14214,14 +14823,18 @@
       "friendly",
       "patronizing",
       "passive aggressive",
-      "ironic",
-      "emoji",
-      "emotion"
+      "ironic"
     ]
   },
   {
     "name": "face-slightly-smiling-plus",
     "tags": [
+      "emoji",
+      "emotion",
+      "mood",
+      "feeling",
+      "expression",
+      "reaction",
       "smile",
       "happy",
       "happiness",
@@ -14231,8 +14844,6 @@
       "patronizing",
       "passive aggressive",
       "ironic",
-      "emoji",
-      "emotion",
       "cubes",
       "packages",
       "parts",
@@ -14252,8 +14863,7 @@
       "insert",
       "addition",
       "added",
-      "react",
-      "reaction"
+      "react"
     ]
   },
   {
@@ -14427,6 +15037,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison"
     ]
@@ -14446,6 +15060,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "categorical",
       "comparison",
       "trending up"
@@ -14465,7 +15083,11 @@
       "presentation",
       "reporting",
       "data visualisation",
-      "visualisation"
+      "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights"
     ]
   },
   {
@@ -14482,7 +15104,11 @@
       "presentation",
       "reporting",
       "data visualisation",
-      "visualisation"
+      "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights"
     ]
   },
   {
@@ -14503,7 +15129,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -14524,7 +15153,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -14557,6 +15189,8 @@
       "coding",
       "programming",
       "development",
+      "developer",
+      "dev",
       "script",
       "gist",
       "html",
@@ -14572,6 +15206,8 @@
       "coding",
       "programming",
       "development",
+      "developer",
+      "dev",
       "script",
       "gist",
       "html",
@@ -14654,6 +15290,8 @@
       "export",
       "save",
       "pull",
+      "install",
+      "installation",
       "direction",
       "movement",
       "vertical",
@@ -14681,6 +15319,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "hidden",
       "protected"
     ]
@@ -14936,13 +15579,20 @@
     "tags": [
       "document",
       "help",
+      "assistance",
+      "support",
       "guide",
       "tutorial",
       "manual",
+      "faq",
+      "hint",
+      "query",
       "unknown",
       "unidentified",
       "unspecified",
       "uncertain",
+      "unsure",
+      "doubt",
       "undetermined",
       "missing",
       "to be determined",
@@ -14950,7 +15600,16 @@
       "question",
       "question mark",
       "?",
-      "readme"
+      "quiz",
+      "inquiry",
+      "enquiry",
+      "ask",
+      "punctuation",
+      "symbol",
+      "readme",
+      "404",
+      "not found",
+      "page not found"
     ]
   },
   {
@@ -15004,6 +15663,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "lost",
       "browser"
     ]
@@ -15033,6 +15693,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "lost",
       "browser"
     ]
@@ -15059,7 +15720,16 @@
   },
   {
     "name": "file-spreadsheet",
-    "tags": ["document", "spreadsheet", "sheet", "table"]
+    "tags": [
+      "document",
+      "spreadsheet",
+      "sheet",
+      "table",
+      "csv",
+      "xls",
+      "xlsx",
+      "excel"
+    ]
   },
   {
     "name": "file-stack",
@@ -15082,7 +15752,10 @@
     "name": "file-terminal",
     "tags": ["document", "terminal", "bash", "script", "executable"]
   },
-  { "name": "file-text", "tags": ["document", "data", "txt", "pdf"] },
+  {
+    "name": "file-text",
+    "tags": ["document", "data", "txt", "pdf", "doc", "docx", "word", "docs"]
+  },
   {
     "name": "file-type",
     "tags": [
@@ -15141,6 +15814,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "personal information",
       "listing",
       "networking",
@@ -15191,7 +15866,13 @@
       "times",
       "ex",
       "×",
-      "lost"
+      "deny",
+      "decline",
+      "refuse",
+      "lost",
+      "404",
+      "not found",
+      "page not found"
     ]
   },
   {
@@ -15216,7 +15897,13 @@
       "times",
       "ex",
       "×",
-      "lost"
+      "deny",
+      "decline",
+      "refuse",
+      "lost",
+      "404",
+      "not found",
+      "page not found"
     ]
   },
   { "name": "files", "tags": ["multiple", "copy", "documents"] },
@@ -15604,7 +16291,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -15637,6 +16327,8 @@
       "coding",
       "programming",
       "development",
+      "developer",
+      "dev",
       "develop",
       "software"
     ]
@@ -15925,6 +16617,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "lost",
       "browser"
     ]
@@ -15954,6 +16647,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "lost",
       "browser"
     ]
@@ -16016,6 +16710,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "document",
       "home folder",
       "shared",
@@ -16040,6 +16736,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "shared",
       "document",
       "group",
@@ -16071,7 +16769,10 @@
       "cross",
       "times",
       "ex",
-      "×"
+      "×",
+      "deny",
+      "decline",
+      "refuse"
     ]
   },
   { "name": "folders", "tags": ["multiple", "copy", "directories"] },
@@ -16112,7 +16813,7 @@
       "components"
     ]
   },
-  { "name": "forward", "tags": ["send", "share", "email"] },
+  { "name": "forward", "tags": ["send", "share", "email", "redirect"] },
   { "name": "frame", "tags": ["logo", "design", "tool"] },
   { "name": "fuel", "tags": ["filling-station", "gas", "petrol", "tank"] },
   {
@@ -16160,7 +16861,10 @@
       "cross",
       "times",
       "ex",
-      "×"
+      "×",
+      "deny",
+      "decline",
+      "refuse"
     ]
   },
   {
@@ -16359,7 +17063,11 @@
       "wedding",
       "proposal",
       "marriage",
-      "rubygems"
+      "rubygems",
+      "premium",
+      "vip",
+      "exclusive",
+      "pro"
     ]
   },
   {
@@ -16584,10 +17292,19 @@
       "gitlens"
     ]
   },
-  { "name": "git-merge", "tags": ["code", "version control"] },
+  { "name": "git-merge", "tags": ["code", "version control", "ci/cd", "cicd"] },
   {
     "name": "git-merge-conflict",
-    "tags": ["code", "version control", "commits", "diff", "error", "conflict"]
+    "tags": [
+      "code",
+      "version control",
+      "ci/cd",
+      "cicd",
+      "commits",
+      "diff",
+      "error",
+      "conflict"
+    ]
   },
   { "name": "git-pull-request", "tags": ["code", "version control", "open"] },
   {
@@ -16667,7 +17384,11 @@
       "globe",
       "internet",
       "planet",
-      "network"
+      "network",
+      "www",
+      "http",
+      "https",
+      "website"
     ]
   },
   {
@@ -16688,6 +17409,10 @@
       "internet",
       "planet",
       "network",
+      "www",
+      "http",
+      "https",
+      "website",
       "off",
       "disable",
       "hide",
@@ -16713,7 +17438,6 @@
       "crossed out",
       "diagonal line",
       "web",
-      "website",
       "banned",
       "geo blocking",
       "offline",
@@ -16744,6 +17468,10 @@
       "internet",
       "planet",
       "network",
+      "www",
+      "http",
+      "https",
+      "website",
       "checkmark",
       "done",
       "completed",
@@ -16759,6 +17487,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "web",
       "available",
       "online",
@@ -16783,10 +17514,15 @@
       "internet",
       "planet",
       "network",
+      "www",
+      "http",
+      "https",
+      "website",
       "coding",
       "programming",
       "development",
-      "website",
+      "developer",
+      "dev",
       "digital",
       "access",
       "link"
@@ -16810,6 +17546,10 @@
       "internet",
       "planet",
       "network",
+      "www",
+      "http",
+      "https",
+      "website",
       "lock",
       "padlock",
       "private",
@@ -16848,6 +17588,10 @@
       "internet",
       "planet",
       "network",
+      "www",
+      "http",
+      "https",
+      "website",
       "off",
       "disable",
       "hide",
@@ -16899,6 +17643,10 @@
       "internet",
       "planet",
       "network",
+      "www",
+      "http",
+      "https",
+      "website",
       "plus",
       "add",
       "new",
@@ -16930,6 +17678,10 @@
       "internet",
       "planet",
       "network",
+      "www",
+      "http",
+      "https",
+      "website",
       "x",
       "remove",
       "delete",
@@ -16948,6 +17700,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "offline",
       "disconnected",
       "no connection",
@@ -16955,7 +17710,10 @@
       "signal off"
     ]
   },
-  { "name": "goal", "tags": ["flag", "bullseye"] },
+  {
+    "name": "goal",
+    "tags": ["flag", "bullseye", "result", "outcome", "objective", "okr"]
+  },
   {
     "name": "gpu",
     "tags": [
@@ -16990,7 +17748,10 @@
       "diploma",
       "bachelor's",
       "master's",
-      "doctorate"
+      "doctorate",
+      "skill",
+      "skills",
+      "expertise"
     ]
   },
   { "name": "grape", "tags": ["fruit", "wine", "food"] },
@@ -17017,6 +17778,32 @@
       "backend",
       "fan-out",
       "orchestration"
+    ]
+  },
+  {
+    "name": "graph-ring",
+    "tags": [
+      "network",
+      "nodes",
+      "edges",
+      "links",
+      "connections",
+      "relationships",
+      "structure",
+      "topology",
+      "cycle",
+      "loop",
+      "replication",
+      "consensus",
+      "cluster",
+      "peer-to-peer",
+      "p2p",
+      "mesh",
+      "distributed",
+      "decentralized",
+      "decentralization",
+      "ring topology",
+      "circular network"
     ]
   },
   {
@@ -17098,6 +17885,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "data"
     ]
   },
@@ -17173,6 +17963,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "data"
     ]
   },
@@ -17389,7 +18182,21 @@
     "name": "hammer",
     "tags": ["mallet", "nails", "diy", "toolbox", "build", "construction"]
   },
-  { "name": "hand", "tags": ["wave", "move", "mouse", "grab"] },
+  {
+    "name": "hand",
+    "tags": [
+      "wave",
+      "move",
+      "mouse",
+      "grab",
+      "welcome",
+      "hello",
+      "hi",
+      "greeting",
+      "goodbye",
+      "bye"
+    ]
+  },
   {
     "name": "hand-coins",
     "tags": [
@@ -17406,7 +18213,12 @@
       "allowance",
       "pocket money",
       "handout",
-      "pennies"
+      "pennies",
+      "loan",
+      "lending",
+      "borrow",
+      "debt",
+      "salary"
     ]
   },
   {
@@ -17554,7 +18366,9 @@
       "import",
       "export",
       "save",
-      "pull"
+      "pull",
+      "install",
+      "installation"
     ]
   },
   {
@@ -17859,7 +18673,10 @@
       "phone",
       "telephone",
       "voip",
-      "video"
+      "video",
+      "customer service",
+      "customer support",
+      "helpdesk"
     ]
   },
   {
@@ -17890,7 +18707,8 @@
       "terms",
       "emotion",
       "together",
-      "handshake"
+      "handshake",
+      "insurance"
     ]
   },
   {
@@ -18003,6 +18821,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "unlike",
       "unfavorite"
     ]
@@ -18123,7 +18944,9 @@
       "ward",
       "building",
       "medical",
-      "vet"
+      "vet",
+      "sick",
+      "patient"
     ]
   },
   {
@@ -18202,7 +19025,14 @@
   },
   {
     "name": "house",
-    "tags": ["home", "living", "building", "residence", "architecture"]
+    "tags": [
+      "home",
+      "living",
+      "building",
+      "residence",
+      "architecture",
+      "homepage"
+    ]
   },
   {
     "name": "house-cog",
@@ -18212,6 +19042,7 @@
       "building",
       "residence",
       "architecture",
+      "homepage",
       "cog",
       "cogwheel",
       "gear",
@@ -18238,6 +19069,7 @@
       "building",
       "residence",
       "architecture",
+      "homepage",
       "favorite",
       "favourite",
       "like",
@@ -18260,6 +19092,7 @@
       "building",
       "residence",
       "architecture",
+      "homepage",
       "autarky",
       "energy"
     ]
@@ -18272,6 +19105,7 @@
       "building",
       "residence",
       "architecture",
+      "homepage",
       "plus",
       "add",
       "new",
@@ -18294,6 +19128,7 @@
       "building",
       "residence",
       "architecture",
+      "homepage",
       "connection",
       "signal",
       "wireless",
@@ -18348,7 +19183,12 @@
       "id-card",
       "id-card-lanyard",
       "employee",
-      "gate-pass"
+      "gate-pass",
+      "job",
+      "career",
+      "employment",
+      "hiring",
+      "experience"
     ]
   },
   { "name": "image", "tags": ["picture", "photo"] },
@@ -18526,7 +19366,19 @@
       "monetization"
     ]
   },
-  { "name": "infinity", "tags": ["unlimited", "forever", "loop", "math"] },
+  {
+    "name": "infinity",
+    "tags": [
+      "unlimited",
+      "forever",
+      "loop",
+      "math",
+      "ci/cd",
+      "cicd",
+      "devops",
+      "pipeline"
+    ]
+  },
   {
     "name": "info",
     "tags": [
@@ -18966,7 +19818,9 @@
       "library",
       "temple",
       "ancient",
-      "structure"
+      "structure",
+      "loan",
+      "lending"
     ]
   },
   {
@@ -18995,7 +19849,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -19275,28 +20132,95 @@
       "frame"
     ]
   },
-  { "name": "layout-grid", "tags": ["app", "home", "start"] },
+  {
+    "name": "layout-grid",
+    "tags": [
+      "app",
+      "home",
+      "start",
+      "apps",
+      "menu",
+      "block",
+      "applications",
+      "collection",
+      "dashboard",
+      "overview",
+      "tiles",
+      "grid",
+      "matrix",
+      "launcher",
+      "widgets",
+      "ui",
+      "circles",
+      "shortcuts"
+    ]
+  },
   {
     "name": "layout-grid-circles",
     "tags": [
       "app",
       "home",
       "start",
-      "dot matrix",
-      "dots",
+      "apps",
       "menu",
-      "dashboard",
+      "block",
+      "applications",
       "collection",
+      "dashboard",
       "overview",
       "tiles",
       "grid",
       "matrix",
       "launcher",
-      "apps",
       "widgets",
       "ui",
       "circles",
-      "shortcuts"
+      "shortcuts",
+      "dot matrix",
+      "dots"
+    ]
+  },
+  {
+    "name": "layout-grid-plus",
+    "tags": [
+      "app",
+      "home",
+      "start",
+      "apps",
+      "menu",
+      "block",
+      "applications",
+      "collection",
+      "dashboard",
+      "overview",
+      "tiles",
+      "grid",
+      "matrix",
+      "launcher",
+      "widgets",
+      "ui",
+      "circles",
+      "shortcuts",
+      "plus",
+      "add",
+      "new",
+      "create",
+      "+",
+      "increase",
+      "increment",
+      "extra",
+      "insert",
+      "addition",
+      "added",
+      "structure",
+      "rows",
+      "columns",
+      "expand",
+      "interface",
+      "design",
+      "section",
+      "widget",
+      "tile"
     ]
   },
   {
@@ -19961,7 +20885,9 @@
       "records",
       "albums",
       "music",
-      "package"
+      "package",
+      "wiki",
+      "knowledge base"
     ]
   },
   {
@@ -19989,7 +20915,9 @@
       "records",
       "albums",
       "music",
-      "package"
+      "package",
+      "wiki",
+      "knowledge base"
     ]
   },
   {
@@ -20005,7 +20933,10 @@
       "raft",
       "inflatable",
       "wheel",
-      "donut"
+      "donut",
+      "customer service",
+      "customer support",
+      "helpdesk"
     ]
   },
   {
@@ -20020,13 +20951,18 @@
       "alternatives"
     ]
   },
-  { "name": "lightbulb", "tags": ["idea", "bright", "lights"] },
+  {
+    "name": "lightbulb",
+    "tags": ["idea", "bright", "lights", "suggest", "suggestion"]
+  },
   {
     "name": "lightbulb-off",
     "tags": [
       "idea",
       "bright",
       "lights",
+      "suggest",
+      "suggestion",
       "off",
       "disable",
       "hide",
@@ -20177,12 +21113,17 @@
   {
     "name": "line-squiggle",
     "tags": [
-      "line",
+      "stroke",
+      "path",
+      "segment",
+      "vector",
+      "graphics",
+      "design",
+      "shape",
+      "curve",
       "snakes",
       "annotate",
-      "curve",
       "doodle",
-      "stroke",
       "pen",
       "tool",
       "gesture",
@@ -20194,15 +21135,37 @@
   },
   {
     "name": "line-style",
-    "tags": ["line", "stroke", "style", "dashed", "border"]
+    "tags": [
+      "stroke",
+      "path",
+      "segment",
+      "vector",
+      "graphics",
+      "design",
+      "shape",
+      "curve",
+      "style",
+      "dashed",
+      "border"
+    ]
   },
-  { "name": "link", "tags": ["chain", "url"] },
-  { "name": "link-2", "tags": ["chain", "url"] },
+  {
+    "name": "link",
+    "tags": ["chain", "url", "www", "http", "https", "website"]
+  },
+  {
+    "name": "link-2",
+    "tags": ["chain", "url", "www", "http", "https", "website"]
+  },
   {
     "name": "link-2-off",
     "tags": [
       "chain",
       "url",
+      "www",
+      "http",
+      "https",
+      "website",
       "off",
       "disable",
       "hide",
@@ -20249,8 +21212,12 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "list",
-      "bom"
+      "bom",
+      "checklist"
     ]
   },
   {
@@ -20271,8 +21238,12 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "items",
-      "pending"
+      "pending",
+      "checklist"
     ]
   },
   {
@@ -20526,7 +21497,8 @@
       "complete",
       "tasks",
       "items",
-      "pending"
+      "pending",
+      "checklist"
     ]
   },
   { "name": "list-tree", "tags": ["tree", "browser"] },
@@ -20552,6 +21524,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "playlist",
       "subtract",
       "unqueue"
@@ -20721,7 +21696,7 @@
     ]
   },
   { "name": "log-in", "tags": ["sign in", "arrow", "enter", "auth"] },
-  { "name": "log-out", "tags": ["sign out", "arrow", "exit", "auth"] },
+  { "name": "log-out", "tags": ["sign out", "arrow", "exit", "auth", "quit"] },
   {
     "name": "logs",
     "tags": ["options", "list", "menu", "order", "queue", "tasks", "logs"]
@@ -20774,6 +21749,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "subscribe",
       "delivered",
       "read"
@@ -20855,6 +21833,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "delivery error"
     ]
   },
@@ -20931,7 +21914,9 @@
       "insert",
       "addition",
       "added",
-      "compose"
+      "compose",
+      "invite",
+      "invitation"
     ]
   },
   {
@@ -20942,13 +21927,20 @@
       "letter",
       "unread",
       "help",
+      "assistance",
+      "support",
       "guide",
       "tutorial",
       "manual",
+      "faq",
+      "hint",
+      "query",
       "unknown",
       "unidentified",
       "unspecified",
       "uncertain",
+      "unsure",
+      "doubt",
       "undetermined",
       "missing",
       "to be determined",
@@ -20956,6 +21948,12 @@
       "question",
       "question mark",
       "?",
+      "quiz",
+      "inquiry",
+      "enquiry",
+      "ask",
+      "punctuation",
+      "symbol",
       "delivery",
       "undelivered"
     ]
@@ -20987,7 +21985,8 @@
       "lens",
       "zoom",
       "inspection",
-      "visual search"
+      "visual search",
+      "loupe"
     ]
   },
   {
@@ -21014,7 +22013,10 @@
       "cross",
       "times",
       "ex",
-      "×"
+      "×",
+      "deny",
+      "decline",
+      "refuse"
     ]
   },
   {
@@ -21093,6 +22095,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "added"
     ]
   },
@@ -21118,6 +22123,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "added"
     ]
   },
@@ -21315,6 +22323,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "navigation",
       "travel"
     ]
@@ -21343,7 +22352,10 @@
       "cross",
       "times",
       "ex",
-      "×"
+      "×",
+      "deny",
+      "decline",
+      "refuse"
     ]
   },
   {
@@ -21370,7 +22382,10 @@
       "cross",
       "times",
       "ex",
-      "×"
+      "×",
+      "deny",
+      "decline",
+      "refuse"
     ]
   },
   { "name": "map-pinned", "tags": ["location", "waypoint", "marker", "drop"] },
@@ -21741,6 +22756,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "moderate"
     ]
   },
@@ -21756,6 +22774,8 @@
       "coding",
       "programming",
       "development",
+      "developer",
+      "dev",
       "code review"
     ]
   },
@@ -21768,6 +22788,9 @@
       "dialog",
       "feedback",
       "speech bubble",
+      "dashed",
+      "dotted",
+      "broken line",
       "draft"
     ]
   },
@@ -21780,6 +22803,9 @@
       "dialog",
       "feedback",
       "speech bubble",
+      "dashed",
+      "dotted",
+      "broken line",
       "draft",
       "checkmark",
       "done",
@@ -21796,6 +22822,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "pending",
       "provisional",
       "verification",
@@ -21827,6 +22856,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "report",
       "abuse",
       "offense",
@@ -21903,6 +22937,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "off",
       "disable",
       "hide",
@@ -21962,20 +22999,33 @@
       "feedback",
       "speech bubble",
       "help",
+      "assistance",
+      "support",
       "guide",
       "tutorial",
       "manual",
+      "faq",
+      "hint",
+      "query",
       "unknown",
       "unidentified",
       "unspecified",
       "uncertain",
+      "unsure",
+      "doubt",
       "undetermined",
       "missing",
       "to be determined",
       "mystery",
       "question",
       "question mark",
-      "?"
+      "?",
+      "quiz",
+      "inquiry",
+      "enquiry",
+      "ask",
+      "punctuation",
+      "symbol"
     ]
   },
   {
@@ -22043,6 +23093,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "silence",
       "mute",
       "moderate"
@@ -22083,6 +23136,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "moderate"
     ]
   },
@@ -22098,6 +23154,8 @@
       "coding",
       "programming",
       "development",
+      "developer",
+      "dev",
       "code review"
     ]
   },
@@ -22110,6 +23168,9 @@
       "dialog",
       "feedback",
       "speech bubble",
+      "dashed",
+      "dotted",
+      "broken line",
       "draft"
     ]
   },
@@ -22181,6 +23242,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "report",
       "abuse",
       "offense",
@@ -22284,6 +23350,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "off",
       "disable",
       "hide",
@@ -22330,7 +23399,9 @@
       "extra",
       "insert",
       "addition",
-      "added"
+      "added",
+      "suggest",
+      "suggestion"
     ]
   },
   {
@@ -22413,6 +23484,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "silence",
       "mute",
       "moderate"
@@ -22855,6 +23929,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "connected",
       "running",
       "active"
@@ -23217,6 +24294,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "error",
       "failed",
       "disconnected",
@@ -23356,6 +24436,39 @@
       "racing",
       "journey",
       "delivery"
+    ]
+  },
+  {
+    "name": "mound-shovel",
+    "tags": [
+      "dig",
+      "spade",
+      "treasure",
+      "sand",
+      "pile",
+      "grain",
+      "desert",
+      "nature",
+      "dirt pile",
+      "sand pile",
+      "dirt",
+      "soil",
+      "earth",
+      "gravel",
+      "heap",
+      "stockpile",
+      "aggregate",
+      "excavation",
+      "earthworks",
+      "mine",
+      "mining",
+      "quarry",
+      "sand mine",
+      "frac sand",
+      "construction",
+      "construction site",
+      "landscaping",
+      "beach"
     ]
   },
   { "name": "mountain", "tags": ["climb", "hike", "rock"] },
@@ -23993,7 +25106,10 @@
       "paper",
       "write",
       "lines",
-      "opened"
+      "opened",
+      "docs",
+      "wiki",
+      "knowledge base"
     ]
   },
   {
@@ -24054,6 +25170,9 @@
       "research",
       "lines",
       "opened",
+      "dashed",
+      "dotted",
+      "broken line",
       "draft",
       "template"
     ]
@@ -24126,7 +25245,12 @@
       "hazard",
       "exclamation mark",
       "exclamation point",
-      "!"
+      "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol"
     ]
   },
   {
@@ -24186,6 +25310,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "stop",
       "alert",
       "warning",
@@ -24321,6 +25448,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "delivered"
     ]
   },
@@ -24446,7 +25576,9 @@
       "extra",
       "insert",
       "addition",
-      "added"
+      "added",
+      "install",
+      "installation"
     ]
   },
   {
@@ -24471,13 +25603,20 @@
       "order",
       "product",
       "help",
+      "assistance",
+      "support",
       "guide",
       "tutorial",
       "manual",
+      "faq",
+      "hint",
+      "query",
       "unknown",
       "unidentified",
       "unspecified",
       "uncertain",
+      "unsure",
+      "doubt",
       "undetermined",
       "missing",
       "to be determined",
@@ -24485,6 +25624,12 @@
       "question",
       "question mark",
       "?",
+      "quiz",
+      "inquiry",
+      "enquiry",
+      "ask",
+      "punctuation",
+      "symbol",
       "unresolved",
       "placeholder",
       "pending",
@@ -24534,6 +25679,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "product process"
     ]
   },
@@ -24575,7 +25721,10 @@
       "cross",
       "times",
       "ex",
-      "×"
+      "×",
+      "deny",
+      "decline",
+      "refuse"
     ]
   },
   {
@@ -24689,6 +25838,9 @@
       "y-axis",
       "drawer",
       "dock",
+      "dashed",
+      "dotted",
+      "broken line",
       "show",
       "reveal",
       "padding",
@@ -24785,6 +25937,9 @@
       "x-axis",
       "primary",
       "drawer",
+      "dashed",
+      "dotted",
+      "broken line",
       "sidebar",
       "show",
       "reveal",
@@ -24841,6 +25996,9 @@
       "right edge",
       "rightmost",
       "right side",
+      "dashed",
+      "dotted",
+      "broken line",
       "sidebar",
       "show",
       "reveal",
@@ -24912,6 +26070,9 @@
       "sidebar",
       "secondary",
       "drawer",
+      "dashed",
+      "dotted",
+      "broken line",
       "show",
       "reveal",
       "padding",
@@ -24993,6 +26154,9 @@
       "lower edge",
       "lower",
       "below",
+      "dashed",
+      "dotted",
+      "broken line",
       "sidebar",
       "primary",
       "show",
@@ -25054,6 +26218,9 @@
       "drawer",
       "browser",
       "webpage",
+      "dashed",
+      "dotted",
+      "broken line",
       "menu bar",
       "show",
       "reveal",
@@ -25278,7 +26445,8 @@
       "excitement",
       "exciting",
       "excites",
-      "confetti"
+      "confetti",
+      "welcome"
     ]
   },
   {
@@ -25908,7 +27076,7 @@
       "multitask"
     ]
   },
-  { "name": "piggy-bank", "tags": ["money", "savings"] },
+  { "name": "piggy-bank", "tags": ["money", "savings", "budget"] },
   {
     "name": "pilcrow",
     "tags": [
@@ -25971,7 +27139,9 @@
       "drug",
       "prescription",
       "tablet",
-      "pharmacy"
+      "pharmacy",
+      "sick",
+      "illness"
     ]
   },
   {
@@ -25983,6 +27153,8 @@
       "prescription",
       "tablet",
       "pharmacy",
+      "sick",
+      "illness",
       "supplement",
       "vitamin",
       "capsule",
@@ -26257,6 +27429,8 @@
       "camera",
       "lightning",
       "quick",
+      "thunder",
+      "thunderbolt",
       "charge",
       "charging",
       "battery",
@@ -26424,7 +27598,8 @@
       "restart",
       "button",
       "keyboard",
-      "troubleshoot"
+      "troubleshoot",
+      "quit"
     ]
   },
   {
@@ -26442,6 +27617,7 @@
       "button",
       "keyboard",
       "troubleshoot",
+      "quit",
       "disable",
       "hide",
       "restricted",
@@ -26483,7 +27659,11 @@
       "office",
       "meeting",
       "project",
-      "planning"
+      "planning",
+      "ppt",
+      "pptx",
+      "powerpoint",
+      "slides"
     ]
   },
   { "name": "printer", "tags": ["fax", "office", "device"] },
@@ -26532,6 +27712,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "printed"
     ]
   },
@@ -26559,6 +27742,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "error"
     ]
   },
@@ -26619,6 +27805,39 @@
   {
     "name": "qr-code",
     "tags": ["barcode", "scan", "link", "url", "information", "digital"]
+  },
+  {
+    "name": "question-mark",
+    "tags": [
+      "help",
+      "assistance",
+      "support",
+      "guide",
+      "tutorial",
+      "manual",
+      "faq",
+      "hint",
+      "query",
+      "unknown",
+      "unidentified",
+      "unspecified",
+      "uncertain",
+      "unsure",
+      "doubt",
+      "undetermined",
+      "missing",
+      "to be determined",
+      "mystery",
+      "question",
+      "question mark",
+      "?",
+      "quiz",
+      "inquiry",
+      "enquiry",
+      "ask",
+      "punctuation",
+      "symbol"
+    ]
   },
   { "name": "quote", "tags": ["quotation"] },
   {
@@ -26779,7 +27998,8 @@
       "currency",
       "dollar",
       "usd",
-      "$"
+      "$",
+      "cashier"
     ]
   },
   {
@@ -26794,6 +28014,7 @@
       "dollar",
       "usd",
       "$",
+      "cashier",
       "cents",
       "¢"
     ]
@@ -26810,6 +28031,7 @@
       "dollar",
       "usd",
       "$",
+      "cashier",
       "€"
     ]
   },
@@ -26825,6 +28047,7 @@
       "dollar",
       "usd",
       "$",
+      "cashier",
       "inr",
       "₹"
     ]
@@ -26841,6 +28064,7 @@
       "dollar",
       "usd",
       "$",
+      "cashier",
       "jpy",
       "¥"
     ]
@@ -26857,6 +28081,7 @@
       "dollar",
       "usd",
       "$",
+      "cashier",
       "money",
       "cash",
       "banknote",
@@ -26899,6 +28124,7 @@
       "dollar",
       "usd",
       "$",
+      "cashier",
       "rub",
       "₽"
     ]
@@ -26915,6 +28141,7 @@
       "dollar",
       "usd",
       "$",
+      "cashier",
       "chf",
       "₣"
     ]
@@ -26931,6 +28158,7 @@
       "dollar",
       "usd",
       "$",
+      "cashier",
       "details",
       "small print",
       "terms",
@@ -26950,6 +28178,7 @@
       "dollar",
       "usd",
       "$",
+      "cashier",
       "try",
       "₺"
     ]
@@ -27249,7 +28478,15 @@
   },
   {
     "name": "rocket",
-    "tags": ["release", "boost", "launch", "space", "version"]
+    "tags": [
+      "release",
+      "boost",
+      "launch",
+      "space",
+      "version",
+      "deploy",
+      "deployment"
+    ]
   },
   {
     "name": "rocking-chair",
@@ -27350,7 +28587,9 @@
       "timeline",
       "version",
       "time machine",
-      "ccw"
+      "ccw",
+      "changelog",
+      "release notes"
     ]
   },
   {
@@ -27530,7 +28769,60 @@
   },
   {
     "name": "route",
-    "tags": ["path", "journey", "planner", "points", "stops", "stations"]
+    "tags": [
+      "path",
+      "journey",
+      "planner",
+      "points",
+      "stops",
+      "stations",
+      "direction",
+      "right",
+      "flow",
+      "reroute",
+      "detour",
+      "navigate",
+      "forward",
+      "auto",
+      "map",
+      "waypoint",
+      "gps",
+      "turn",
+      "location",
+      "directional"
+    ]
+  },
+  {
+    "name": "route-arrow-right",
+    "tags": [
+      "path",
+      "journey",
+      "planner",
+      "points",
+      "stops",
+      "stations",
+      "direction",
+      "right",
+      "flow",
+      "reroute",
+      "detour",
+      "navigate",
+      "forward",
+      "auto",
+      "map",
+      "waypoint",
+      "gps",
+      "turn",
+      "location",
+      "directional",
+      "movement",
+      "horizontal",
+      "rightward",
+      "rightwards",
+      "east",
+      "one-way",
+      "arrow"
+    ]
   },
   {
     "name": "route-off",
@@ -27541,6 +28833,20 @@
       "points",
       "stops",
       "stations",
+      "direction",
+      "right",
+      "flow",
+      "reroute",
+      "detour",
+      "navigate",
+      "forward",
+      "auto",
+      "map",
+      "waypoint",
+      "gps",
+      "turn",
+      "location",
+      "directional",
       "off",
       "disable",
       "hide",
@@ -27828,6 +29134,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "save",
       "save-check",
       "floppy-disk",
@@ -28231,6 +29540,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "preview",
       "expand",
       "fullscreen",
@@ -28340,6 +29650,9 @@
       "chop",
       "stationery",
       "crafts",
+      "dashed",
+      "dotted",
+      "broken line",
       "cut here",
       "along",
       "instructions",
@@ -28458,7 +29771,9 @@
       "script",
       "story",
       "code",
-      "coding"
+      "coding",
+      "changelog",
+      "release notes"
     ]
   },
   {
@@ -28485,6 +29800,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "enlarge"
     ]
   },
@@ -28512,6 +29828,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "enlarge",
       "checkmark",
       "done",
@@ -28528,6 +29845,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "found"
     ]
   },
@@ -28555,10 +29875,13 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "enlarge",
       "coding",
       "programming",
       "development",
+      "developer",
+      "dev",
       "grep",
       "chevrons",
       "<>"
@@ -28588,6 +29911,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "enlarge",
       "alert",
       "warning",
@@ -28601,6 +29925,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "stop",
       "anomaly"
     ]
@@ -28629,6 +29958,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "enlarge",
       "stop",
       "clear",
@@ -28661,6 +29991,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "enlarge",
       "x",
       "remove",
@@ -28680,7 +30011,13 @@
       "times",
       "ex",
       "×",
-      "stop"
+      "deny",
+      "decline",
+      "refuse",
+      "stop",
+      "404",
+      "not found",
+      "page not found"
     ]
   },
   {
@@ -28704,7 +30041,9 @@
       "mail",
       "paper airplane",
       "paper aeroplane",
-      "submit"
+      "submit",
+      "invite",
+      "invitation"
     ]
   },
   {
@@ -28715,7 +30054,9 @@
       "mail",
       "paper airplane",
       "paper aeroplane",
-      "submit"
+      "submit",
+      "invite",
+      "invitation"
     ]
   },
   {
@@ -28880,7 +30221,10 @@
   },
   { "name": "share", "tags": ["network", "connections"] },
   { "name": "share-2", "tags": ["network", "connections"] },
-  { "name": "sheet", "tags": ["spreadsheets", "table", "excel"] },
+  {
+    "name": "sheet",
+    "tags": ["spreadsheets", "table", "excel", "csv", "xls", "xlsx"]
+  },
   {
     "name": "shell",
     "tags": [
@@ -29167,6 +30511,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "secured",
       "guarded",
       "defended",
@@ -29187,7 +30534,10 @@
       "cleaned",
       "disinfected",
       "uninfected",
-      "checked"
+      "checked",
+      "insurance",
+      "guarantee",
+      "warranty"
     ]
   },
   {
@@ -29464,6 +30814,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "unshielded",
       "insecure",
       "unsecured",
@@ -29498,7 +30853,6 @@
       "uncertified",
       "emergency",
       "attention",
-      "urgent",
       "alarm",
       "attacked",
       "damaged",
@@ -30071,13 +31425,20 @@
       "cadet",
       "scout",
       "help",
+      "assistance",
+      "support",
       "guide",
       "tutorial",
       "manual",
+      "faq",
+      "hint",
+      "query",
       "unknown",
       "unidentified",
       "unspecified",
       "uncertain",
+      "unsure",
+      "doubt",
       "undetermined",
       "missing",
       "to be determined",
@@ -30085,6 +31446,12 @@
       "question",
       "question mark",
       "?",
+      "quiz",
+      "inquiry",
+      "enquiry",
+      "ask",
+      "punctuation",
+      "symbol",
       "unshielded",
       "insecure",
       "unsecured",
@@ -30173,7 +31540,9 @@
       "member",
       "client",
       "participant",
-      "guest"
+      "guest",
+      "customer",
+      "username"
     ]
   },
   {
@@ -30245,6 +31614,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "unshielded",
       "insecure",
       "unsecured",
@@ -30810,6 +32182,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "avatar",
       "owner",
       "authentication"
@@ -30965,6 +32339,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "spelling",
       "error",
       "mistake",
@@ -30999,6 +32376,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "spelling",
       "error",
       "mistake",
@@ -31012,22 +32392,38 @@
   },
   {
     "name": "spline",
-    "tags": ["path", "pen", "tool", "shape", "curve", "draw"]
+    "tags": [
+      "stroke",
+      "path",
+      "segment",
+      "vector",
+      "graphics",
+      "design",
+      "shape",
+      "curve",
+      "pen",
+      "tool",
+      "draw"
+    ]
   },
   {
     "name": "spline-pointer",
     "tags": [
+      "stroke",
       "path",
-      "pen",
-      "tool",
+      "segment",
+      "vector",
+      "graphics",
+      "design",
       "shape",
       "curve",
+      "pen",
+      "tool",
       "draw",
       "node",
       "click",
       "pointer",
-      "target",
-      "vector"
+      "target"
     ]
   },
   {
@@ -31185,6 +32581,71 @@
     ]
   },
   {
+    "name": "square-arrow-down-enter",
+    "tags": [
+      "direction",
+      "movement",
+      "vertical",
+      "downward",
+      "downwards",
+      "south",
+      "descend",
+      "page down",
+      "in",
+      "inside",
+      "inwards",
+      "input",
+      "incoming",
+      "import",
+      "insert",
+      "entry",
+      "entrance",
+      "ingress",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing",
+      "download",
+      "press",
+      "cell",
+      "split"
+    ]
+  },
+  {
+    "name": "square-arrow-down-exit",
+    "tags": [
+      "direction",
+      "movement",
+      "vertical",
+      "downward",
+      "downwards",
+      "south",
+      "descend",
+      "page down",
+      "out",
+      "outside",
+      "outwards",
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing",
+      "pour",
+      "empty",
+      "cell",
+      "expand"
+    ]
+  },
+  {
     "name": "square-arrow-down-left",
     "tags": [
       "direction",
@@ -31200,6 +32661,58 @@
     ]
   },
   {
+    "name": "square-arrow-down-left-enter",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "southwest",
+      "south-west",
+      "south west",
+      "in",
+      "inside",
+      "inwards",
+      "input",
+      "incoming",
+      "import",
+      "insert",
+      "entry",
+      "entrance",
+      "ingress",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing",
+      "collapse",
+      "exit",
+      "close",
+      "return",
+      "dock"
+    ]
+  },
+  {
+    "name": "square-arrow-down-left-exit",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "southwest",
+      "south-west",
+      "south west",
+      "out",
+      "outside",
+      "outwards",
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit"
+    ]
+  },
+  {
     "name": "square-arrow-down-right",
     "tags": [
       "direction",
@@ -31212,6 +32725,53 @@
       "keyboard",
       "button",
       "turn"
+    ]
+  },
+  {
+    "name": "square-arrow-down-right-enter",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "southeast",
+      "south-east",
+      "south east",
+      "in",
+      "inside",
+      "inwards",
+      "input",
+      "incoming",
+      "import",
+      "insert",
+      "entry",
+      "entrance",
+      "ingress",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing"
+    ]
+  },
+  {
+    "name": "square-arrow-down-right-exit",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "southeast",
+      "south-east",
+      "south east",
+      "out",
+      "outside",
+      "outwards",
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit"
     ]
   },
   {
@@ -31238,55 +32798,67 @@
     ]
   },
   {
-    "name": "square-arrow-out-down-left",
+    "name": "square-arrow-left-enter",
     "tags": [
       "direction",
       "movement",
-      "diagonal",
-      "southwest",
-      "south-west",
-      "south west",
-      "outwards"
+      "horizontal",
+      "leftward",
+      "leftwards",
+      "west",
+      "in",
+      "inside",
+      "inwards",
+      "input",
+      "incoming",
+      "import",
+      "insert",
+      "entry",
+      "entrance",
+      "ingress",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing",
+      "reverse",
+      "back",
+      "<-",
+      "cell",
+      "expand",
+      "collapse",
+      "split"
     ]
   },
   {
-    "name": "square-arrow-out-down-right",
+    "name": "square-arrow-left-exit",
     "tags": [
       "direction",
       "movement",
-      "diagonal",
-      "southeast",
-      "south-east",
-      "south east",
-      "outwards"
-    ]
-  },
-  {
-    "name": "square-arrow-out-up-left",
-    "tags": [
-      "direction",
-      "movement",
-      "diagonal",
-      "northwest",
-      "north-west",
-      "north west",
-      "outwards"
-    ]
-  },
-  {
-    "name": "square-arrow-out-up-right",
-    "tags": [
-      "direction",
-      "movement",
-      "diagonal",
-      "northeast",
-      "north-east",
-      "north east",
+      "horizontal",
+      "leftward",
+      "leftwards",
+      "west",
+      "out",
+      "outside",
       "outwards",
-      "share",
-      "open",
-      "external",
-      "link"
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing",
+      "back",
+      "reverse",
+      "<-",
+      "collapse"
     ]
   },
   {
@@ -31321,15 +32893,35 @@
       "rightward",
       "rightwards",
       "east",
-      "left",
       "in",
       "inside",
+      "inwards",
       "input",
-      "insert",
-      "source",
+      "incoming",
       "import",
+      "insert",
+      "entry",
+      "entrance",
+      "ingress",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing",
+      "left",
+      "source",
       "place",
-      "->"
+      "->",
+      "sign in",
+      "log in",
+      "login",
+      "join",
+      "auth",
+      "data flow",
+      "node editor",
+      "panel",
+      "expand"
     ]
   },
   {
@@ -31343,9 +32935,30 @@
       "east",
       "out",
       "outside",
+      "outwards",
       "output",
+      "outgoing",
       "export",
-      "->"
+      "leave",
+      "egress",
+      "exit",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing",
+      "->",
+      "sign out",
+      "log out",
+      "logout",
+      "auth",
+      "data flow",
+      "node editor",
+      "expand",
+      "panel",
+      "cell",
+      "outbound"
     ]
   },
   {
@@ -31373,6 +32986,69 @@
     ]
   },
   {
+    "name": "square-arrow-up-enter",
+    "tags": [
+      "direction",
+      "movement",
+      "vertical",
+      "upward",
+      "upwards",
+      "north",
+      "ascend",
+      "page up",
+      "in",
+      "inside",
+      "inwards",
+      "input",
+      "incoming",
+      "import",
+      "insert",
+      "entry",
+      "entrance",
+      "ingress",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing",
+      "project",
+      "cast",
+      "screen",
+      "projection",
+      "presentation",
+      "expand",
+      "cell"
+    ]
+  },
+  {
+    "name": "square-arrow-up-exit",
+    "tags": [
+      "direction",
+      "movement",
+      "vertical",
+      "upward",
+      "upwards",
+      "north",
+      "ascend",
+      "page up",
+      "out",
+      "outside",
+      "outwards",
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit",
+      "upload",
+      "share",
+      "external link",
+      "pop out",
+      "open in new window"
+    ]
+  },
+  {
     "name": "square-arrow-up-left",
     "tags": [
       "direction",
@@ -31384,6 +33060,54 @@
       "sign",
       "keyboard",
       "button"
+    ]
+  },
+  {
+    "name": "square-arrow-up-left-enter",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "northwest",
+      "north-west",
+      "north west",
+      "in",
+      "inside",
+      "inwards",
+      "input",
+      "incoming",
+      "import",
+      "insert",
+      "entry",
+      "entrance",
+      "ingress",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing",
+      "merging"
+    ]
+  },
+  {
+    "name": "square-arrow-up-left-exit",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "northwest",
+      "north-west",
+      "north west",
+      "out",
+      "outside",
+      "outwards",
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit"
     ]
   },
   {
@@ -31402,6 +33126,60 @@
     ]
   },
   {
+    "name": "square-arrow-up-right-enter",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "northeast",
+      "north-east",
+      "north east",
+      "in",
+      "inside",
+      "inwards",
+      "input",
+      "incoming",
+      "import",
+      "insert",
+      "entry",
+      "entrance",
+      "ingress",
+      "pane",
+      "grid",
+      "resize",
+      "window",
+      "merge",
+      "resizing",
+      "expand",
+      "contract"
+    ]
+  },
+  {
+    "name": "square-arrow-up-right-exit",
+    "tags": [
+      "direction",
+      "movement",
+      "diagonal",
+      "northeast",
+      "north-east",
+      "north east",
+      "out",
+      "outside",
+      "outwards",
+      "output",
+      "outgoing",
+      "export",
+      "leave",
+      "egress",
+      "exit",
+      "share",
+      "open",
+      "external",
+      "link",
+      "redirect"
+    ]
+  },
+  {
     "name": "square-asterisk",
     "tags": [
       "password",
@@ -31412,21 +33190,46 @@
       "multiplication",
       "glob pattern",
       "wildcard",
-      "*"
+      "*",
+      "required",
+      "mandatory"
     ]
   },
   { "name": "square-bookmark", "tags": ["photo", "book"] },
   {
     "name": "square-bottom-dashed-scissors",
-    "tags": ["cut", "snippet", "chop", "stationery", "crafts"]
+    "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
+      "cut",
+      "snippet",
+      "chop",
+      "stationery",
+      "crafts"
+    ]
   },
   {
     "name": "square-centerline-dashed-horizontal",
-    "tags": ["reflect", "mirror", "alignment", "dashed"]
+    "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
+      "reflect",
+      "mirror",
+      "alignment"
+    ]
   },
   {
     "name": "square-centerline-dashed-vertical",
-    "tags": ["reflect", "mirror", "alignment", "dashed"]
+    "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
+      "reflect",
+      "mirror",
+      "alignment"
+    ]
   },
   {
     "name": "square-chart-gantt",
@@ -31442,6 +33245,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "timeline",
       "planning",
       "projects",
@@ -31481,7 +33288,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -31501,7 +33311,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -31758,6 +33571,8 @@
       "coding",
       "programming",
       "development",
+      "developer",
+      "dev",
       "gist",
       "source",
       "html",
@@ -31767,12 +33582,14 @@
   {
     "name": "square-dashed",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "selection",
       "square",
       "rectangular",
       "marquee",
       "tool",
-      "dashed",
       "box",
       "region",
       "area",
@@ -31782,6 +33599,9 @@
   {
     "name": "square-dashed-bottom",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "rectangle",
       "aspect ratio",
       "1:1",
@@ -31794,6 +33614,9 @@
   {
     "name": "square-dashed-bottom-code",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "rectangle",
       "aspect ratio",
       "1:1",
@@ -31802,12 +33625,17 @@
       "code",
       "coding",
       "programming",
-      "development"
+      "development",
+      "developer",
+      "dev"
     ]
   },
   {
     "name": "square-dashed-kanban",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "projects",
       "manage",
       "overview",
@@ -31830,6 +33658,9 @@
   {
     "name": "square-dashed-mouse-pointer",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "inspector",
       "element",
       "mouse",
@@ -31846,12 +33677,14 @@
   {
     "name": "square-dashed-plus",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "selection",
       "square",
       "rectangular",
       "marquee",
       "tool",
-      "dashed",
       "box",
       "region",
       "area",
@@ -31876,12 +33709,14 @@
   {
     "name": "square-dashed-search",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "selection",
       "square",
       "rectangular",
       "marquee",
       "tool",
-      "dashed",
       "box",
       "region",
       "area",
@@ -31906,22 +33741,25 @@
       "lens",
       "zoom",
       "inspection",
-      "visual search"
+      "visual search",
+      "loupe"
     ]
   },
   {
     "name": "square-dashed-text",
-    "tags": ["find", "search", "selection", "dashed"]
+    "tags": ["dashed", "dotted", "broken line", "find", "search", "selection"]
   },
   {
     "name": "square-dashed-top-solid",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "selection",
       "square",
       "rectangular",
       "marquee",
       "tool",
-      "dashed",
       "box",
       "region",
       "area",
@@ -31939,12 +33777,14 @@
   {
     "name": "square-dashed-x",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "selection",
       "square",
       "rectangular",
       "marquee",
       "tool",
-      "dashed",
       "box",
       "region",
       "area",
@@ -31967,6 +33807,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "deselect",
       "unselect",
       "select",
@@ -31983,12 +33826,14 @@
   {
     "name": "square-dashed-x-corner",
     "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
       "selection",
       "square",
       "rectangular",
       "marquee",
       "tool",
-      "dashed",
       "box",
       "region",
       "area",
@@ -32011,6 +33856,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "deselect",
       "unselect",
       "select",
@@ -32059,6 +33907,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "rectangle",
       "square",
       "notification",
@@ -33340,7 +35193,17 @@
   },
   {
     "name": "square-terminal",
-    "tags": ["code", "command line", "prompt", "shell"]
+    "tags": [
+      "coding",
+      "programming",
+      "development",
+      "developer",
+      "dev",
+      "code",
+      "command line",
+      "prompt",
+      "shell"
+    ]
   },
   {
     "name": "square-text",
@@ -33383,7 +35246,9 @@
       "member",
       "client",
       "participant",
-      "guest"
+      "guest",
+      "customer",
+      "username"
     ]
   },
   {
@@ -33401,7 +35266,9 @@
       "member",
       "client",
       "participant",
-      "guest"
+      "guest",
+      "customer",
+      "username"
     ]
   },
   {
@@ -33425,6 +35292,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "math",
       "multiply",
       "multiplication"
@@ -33487,6 +35357,9 @@
     "name": "squircle-dashed",
     "tags": [
       "shape",
+      "dashed",
+      "dotted",
+      "broken line",
       "pending",
       "progress",
       "issue",
@@ -33569,7 +35442,10 @@
       "valid",
       "ticked",
       "task",
-      "todo"
+      "todo",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -33754,6 +35630,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "mark",
       "symbol",
       "shape",
@@ -33772,7 +35651,7 @@
   },
   {
     "name": "stethoscope",
-    "tags": ["phonendoscope", "medical", "heart", "lungs", "sound"]
+    "tags": ["phonendoscope", "medical", "heart", "lungs", "sound", "patient"]
   },
   {
     "name": "sticker",
@@ -33830,7 +35709,10 @@
       "accepted",
       "correct",
       "valid",
-      "ticked"
+      "ticked",
+      "selected",
+      "okay",
+      "ok"
     ]
   },
   {
@@ -33978,7 +35860,10 @@
       "cross",
       "times",
       "ex",
-      "×"
+      "×",
+      "deny",
+      "decline",
+      "refuse"
     ]
   },
   {
@@ -34022,7 +35907,16 @@
   },
   {
     "name": "store",
-    "tags": ["shop", "supermarket", "stand", "boutique", "building"]
+    "tags": [
+      "shop",
+      "supermarket",
+      "stand",
+      "boutique",
+      "building",
+      "sell",
+      "selling",
+      "merchant"
+    ]
   },
   {
     "name": "stretch-horizontal",
@@ -34052,6 +35946,113 @@
       "-",
       "cross out",
       "format"
+    ]
+  },
+  {
+    "name": "stroke-line-cap-butt",
+    "tags": [
+      "stroke",
+      "path",
+      "segment",
+      "vector",
+      "graphics",
+      "design",
+      "shape",
+      "curve",
+      "endpoint",
+      "flat",
+      "flush"
+    ]
+  },
+  {
+    "name": "stroke-line-cap-round",
+    "tags": [
+      "stroke",
+      "path",
+      "segment",
+      "vector",
+      "graphics",
+      "design",
+      "shape",
+      "curve",
+      "endpoint",
+      "arc",
+      "circular",
+      "smooth"
+    ]
+  },
+  {
+    "name": "stroke-line-cap-square",
+    "tags": [
+      "stroke",
+      "path",
+      "segment",
+      "vector",
+      "graphics",
+      "design",
+      "shape",
+      "curve",
+      "endpoint",
+      "projecting",
+      "extended",
+      "flat"
+    ]
+  },
+  {
+    "name": "stroke-line-join-bevel",
+    "tags": [
+      "stroke",
+      "path",
+      "segment",
+      "vector",
+      "graphics",
+      "design",
+      "shape",
+      "curve",
+      "edge",
+      "intersection",
+      "angle",
+      "chamfer",
+      "trim",
+      "flat",
+      "diagonal"
+    ]
+  },
+  {
+    "name": "stroke-line-join-miter",
+    "tags": [
+      "stroke",
+      "path",
+      "segment",
+      "vector",
+      "graphics",
+      "design",
+      "shape",
+      "curve",
+      "edge",
+      "intersection",
+      "angle",
+      "sharp",
+      "rect"
+    ]
+  },
+  {
+    "name": "stroke-line-join-round",
+    "tags": [
+      "stroke",
+      "path",
+      "segment",
+      "vector",
+      "graphics",
+      "design",
+      "shape",
+      "curve",
+      "edge",
+      "intersection",
+      "angle",
+      "arc",
+      "circular",
+      "smooth"
     ]
   },
   {
@@ -34242,15 +36243,31 @@
       "blood"
     ]
   },
-  { "name": "table", "tags": ["spreadsheet", "grid"] },
-  { "name": "table-2", "tags": ["spreadsheet", "grid"] },
-  { "name": "table-cells-merge", "tags": ["spreadsheet", "grid", "row"] },
-  { "name": "table-cells-split", "tags": ["spreadsheet", "grid", "row"] },
+  {
+    "name": "table",
+    "tags": ["spreadsheet", "grid", "csv", "xls", "xlsx", "excel"]
+  },
+  {
+    "name": "table-2",
+    "tags": ["spreadsheet", "grid", "csv", "xls", "xlsx", "excel"]
+  },
+  {
+    "name": "table-cells-merge",
+    "tags": ["spreadsheet", "grid", "csv", "xls", "xlsx", "excel", "row"]
+  },
+  {
+    "name": "table-cells-split",
+    "tags": ["spreadsheet", "grid", "csv", "xls", "xlsx", "excel", "row"]
+  },
   {
     "name": "table-columns-split",
     "tags": [
       "spreadsheet",
       "grid",
+      "csv",
+      "xls",
+      "xlsx",
+      "excel",
       "cut",
       "break",
       "divide",
@@ -34281,6 +36298,10 @@
     "tags": [
       "spreadsheet",
       "grid",
+      "csv",
+      "xls",
+      "xlsx",
+      "excel",
       "property list",
       "plist",
       "dictionary",
@@ -34293,6 +36314,10 @@
     "tags": [
       "spreadsheet",
       "grid",
+      "csv",
+      "xls",
+      "xlsx",
+      "excel",
       "cut",
       "break",
       "divide",
@@ -34340,7 +36365,19 @@
       "pharmacy"
     ]
   },
-  { "name": "tag", "tags": ["label", "badge", "ticket", "mark"] },
+  {
+    "name": "tag",
+    "tags": [
+      "label",
+      "badge",
+      "ticket",
+      "mark",
+      "sell",
+      "selling",
+      "promotion",
+      "promo"
+    ]
+  },
   {
     "name": "tag-plus",
     "tags": [
@@ -34348,6 +36385,10 @@
       "badge",
       "ticket",
       "mark",
+      "sell",
+      "selling",
+      "promotion",
+      "promo",
       "plus",
       "add",
       "new",
@@ -34368,6 +36409,10 @@
       "badge",
       "ticket",
       "mark",
+      "sell",
+      "selling",
+      "promotion",
+      "promo",
       "x",
       "remove",
       "delete",
@@ -34385,7 +36430,10 @@
       "cross",
       "times",
       "ex",
-      "×"
+      "×",
+      "deny",
+      "decline",
+      "refuse"
     ]
   },
   {
@@ -34496,7 +36544,11 @@
       "projects",
       "overview",
       "work",
-      "productivity"
+      "productivity",
+      "result",
+      "outcome",
+      "objective",
+      "okr"
     ]
   },
   {
@@ -34551,7 +36603,20 @@
       "outdoors"
     ]
   },
-  { "name": "terminal", "tags": ["code", "command line", "prompt", "shell"] },
+  {
+    "name": "terminal",
+    "tags": [
+      "coding",
+      "programming",
+      "development",
+      "developer",
+      "dev",
+      "code",
+      "command line",
+      "prompt",
+      "shell"
+    ]
+  },
   {
     "name": "test-tube",
     "tags": [
@@ -34725,6 +36790,38 @@
     ]
   },
   {
+    "name": "text-pen",
+    "tags": [
+      "edit",
+      "modify",
+      "update",
+      "revise",
+      "amend",
+      "create",
+      "change",
+      "write",
+      "writer",
+      "writing",
+      "pencil",
+      "compose",
+      "draft",
+      "author",
+      "annotate",
+      "comment",
+      "note",
+      "draw",
+      "sketch",
+      "doodle",
+      "rename",
+      "customize",
+      "quick",
+      "autosave",
+      "prompt",
+      "scratch",
+      "authoring"
+    ]
+  },
+  {
     "name": "text-quote",
     "tags": ["blockquote", "quotation", "indent", "reply", "response"]
   },
@@ -34752,6 +36849,7 @@
       "zoom",
       "inspection",
       "visual search",
+      "loupe",
       "data",
       "copy",
       "txt",
@@ -34792,7 +36890,10 @@
     "tags": ["temperature", "celsius", "fahrenheit", "weather", "warm", "hot"]
   },
   { "name": "thumbs-down", "tags": ["dislike", "bad", "emotion"] },
-  { "name": "thumbs-up", "tags": ["like", "good", "emotion"] },
+  {
+    "name": "thumbs-up",
+    "tags": ["like", "good", "emotion", "recommend", "recommendation"]
+  },
   {
     "name": "tic-tac-toe",
     "tags": [
@@ -34818,7 +36919,9 @@
       "concert",
       "show",
       "perforated",
-      "dashed"
+      "dashed",
+      "invite",
+      "invitation"
     ]
   },
   {
@@ -34832,6 +36935,8 @@
       "show",
       "perforated",
       "dashed",
+      "invite",
+      "invitation",
       "checkmark",
       "done",
       "completed",
@@ -34847,6 +36952,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "booked",
       "purchased",
       "receipt",
@@ -34867,6 +36975,8 @@
       "show",
       "perforated",
       "dashed",
+      "invite",
+      "invitation",
       "minus",
       "remove",
       "delete",
@@ -34892,6 +37002,8 @@
       "show",
       "perforated",
       "dashed",
+      "invite",
+      "invitation",
       "discount",
       "sale",
       "offer",
@@ -34925,6 +37037,8 @@
       "show",
       "perforated",
       "dashed",
+      "invite",
+      "invitation",
       "plus",
       "add",
       "new",
@@ -34951,6 +37065,8 @@
       "show",
       "perforated",
       "dashed",
+      "invite",
+      "invitation",
       "minus",
       "remove",
       "delete",
@@ -35012,6 +37128,8 @@
       "show",
       "perforated",
       "dashed",
+      "invite",
+      "invitation",
       "x",
       "remove",
       "delete",
@@ -35030,6 +37148,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "refunded",
       "used",
       "void",
@@ -35559,6 +37680,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "direction",
       "movement",
       "vertical",
@@ -35583,6 +37708,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "direction",
       "movement",
       "vertical",
@@ -35607,6 +37736,10 @@
       "reporting",
       "data visualisation",
       "visualisation",
+      "analyze",
+      "kpi",
+      "metrics",
+      "insights",
       "direction",
       "movement",
       "vertical",
@@ -35638,7 +37771,16 @@
   },
   {
     "name": "triangle-dashed",
-    "tags": ["equilateral", "delta", "shape", "pyramid", "hierarchy", "dashed"]
+    "tags": [
+      "equilateral",
+      "delta",
+      "shape",
+      "pyramid",
+      "hierarchy",
+      "dashed",
+      "dotted",
+      "broken line"
+    ]
   },
   {
     "name": "triangle-exclamation-point",
@@ -35655,6 +37797,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "linter"
     ]
   },
@@ -35681,11 +37828,25 @@
   },
   {
     "name": "triangles-centerline-dashed-horizontal",
-    "tags": ["reflect", "mirror", "alignment", "dashed"]
+    "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
+      "reflect",
+      "mirror",
+      "alignment"
+    ]
   },
   {
     "name": "triangles-centerline-dashed-vertical",
-    "tags": ["reflect", "mirror", "alignment", "dashed"]
+    "tags": [
+      "dashed",
+      "dotted",
+      "broken line",
+      "reflect",
+      "mirror",
+      "alignment"
+    ]
   },
   {
     "name": "trophy",
@@ -35706,7 +37867,8 @@
       "reward",
       "cup",
       "first",
-      "gold"
+      "gold",
+      "result"
     ]
   },
   {
@@ -35932,12 +38094,14 @@
       "line"
     ]
   },
-  { "name": "umbrella", "tags": ["rain", "weather"] },
+  { "name": "umbrella", "tags": ["rain", "weather", "insurance", "coverage"] },
   {
     "name": "umbrella-off",
     "tags": [
       "rain",
       "weather",
+      "insurance",
+      "coverage",
       "off",
       "disable",
       "hide",
@@ -36078,7 +38242,9 @@
       "member",
       "client",
       "participant",
-      "guest"
+      "guest",
+      "customer",
+      "username"
     ]
   },
   {
@@ -36097,6 +38263,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "checkmark",
       "done",
       "completed",
@@ -36112,6 +38280,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "followed",
       "subscribed"
     ]
@@ -36132,6 +38303,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "cog",
       "cogwheel",
       "gear",
@@ -36164,6 +38337,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "alert",
       "warning",
       "danger",
@@ -36176,6 +38351,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "flagged",
       "suspicious",
       "reported",
@@ -36201,6 +38381,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "group",
       "team",
       "community",
@@ -36232,6 +38414,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "key",
       "password",
       "security",
@@ -36277,6 +38461,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "lock",
       "padlock",
       "private",
@@ -36311,6 +38497,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "minus",
       "remove",
       "delete",
@@ -36341,6 +38529,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "edit",
       "modify",
       "update",
@@ -36381,6 +38571,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "plus",
       "add",
       "new",
@@ -36393,7 +38585,9 @@
       "addition",
       "added",
       "follow",
-      "subscribe"
+      "subscribe",
+      "invite",
+      "invitation"
     ]
   },
   {
@@ -36411,7 +38605,9 @@
       "member",
       "client",
       "participant",
-      "guest"
+      "guest",
+      "customer",
+      "username"
     ]
   },
   {
@@ -36430,6 +38626,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "direction",
       "movement",
       "horizontal",
@@ -36466,6 +38664,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "checkmark",
       "done",
       "completed",
@@ -36481,6 +38681,9 @@
       "ticked",
       "task",
       "todo",
+      "selected",
+      "okay",
+      "ok",
       "followed",
       "subscribed"
     ]
@@ -36501,6 +38704,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "cog",
       "cogwheel",
       "gear",
@@ -36533,6 +38738,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "alert",
       "warning",
       "danger",
@@ -36545,6 +38752,11 @@
       "exclamation mark",
       "exclamation point",
       "!",
+      "critical",
+      "urgent",
+      "severity",
+      "punctuation",
+      "symbol",
       "flagged",
       "suspicious",
       "reported",
@@ -36570,6 +38782,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "group",
       "team",
       "community",
@@ -36601,6 +38815,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "key",
       "password",
       "security",
@@ -36646,6 +38862,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "minus",
       "remove",
       "delete",
@@ -36676,6 +38894,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "edit",
       "modify",
       "update",
@@ -36716,6 +38936,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "plus",
       "add",
       "new",
@@ -36728,7 +38950,9 @@
       "addition",
       "added",
       "follow",
-      "subscribe"
+      "subscribe",
+      "invite",
+      "invitation"
     ]
   },
   {
@@ -36747,6 +38971,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "search",
       "magnifier",
       "scan",
@@ -36767,7 +38993,8 @@
       "lens",
       "zoom",
       "inspection",
-      "visual search"
+      "visual search",
+      "loupe"
     ]
   },
   {
@@ -36802,6 +39029,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "starred",
       "featured",
       "favorite",
@@ -36844,6 +39073,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "x",
       "remove",
       "delete",
@@ -36862,6 +39093,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "unfollow",
       "unsubscribe",
       "unavailable"
@@ -36883,6 +39117,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "search",
       "magnifier",
       "scan",
@@ -36903,7 +39139,8 @@
       "lens",
       "zoom",
       "inspection",
-      "visual search"
+      "visual search",
+      "loupe"
     ]
   },
   {
@@ -36922,6 +39159,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "shield",
       "privacy",
       "safeguard",
@@ -36957,6 +39196,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "starred",
       "featured",
       "favorite",
@@ -36994,6 +39235,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "x",
       "remove",
       "delete",
@@ -37012,6 +39255,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "unfollow",
       "unsubscribe",
       "unavailable"
@@ -37033,6 +39279,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "group"
     ]
   },
@@ -37052,6 +39300,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "group",
       "collaboration",
       "team",
@@ -37082,6 +39332,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "group"
     ]
   },
@@ -37101,6 +39353,8 @@
       "client",
       "participant",
       "guest",
+      "customer",
+      "username",
       "group",
       "collaboration",
       "team",
@@ -37541,13 +39795,14 @@
     "name": "vote",
     "tags": ["vote", "poll", "ballot", "political", "social", "check", "tick"]
   },
-  { "name": "wallet", "tags": ["money", "finance", "pocket"] },
+  { "name": "wallet", "tags": ["money", "finance", "pocket", "budget"] },
   {
     "name": "wallet-cards",
     "tags": [
       "money",
       "finance",
       "pocket",
+      "budget",
       "wallet",
       "cards",
       "banking",
@@ -37563,7 +39818,10 @@
       "cc"
     ]
   },
-  { "name": "wallet-minimal", "tags": ["money", "finance", "pocket"] },
+  {
+    "name": "wallet-minimal",
+    "tags": ["money", "finance", "pocket", "budget"]
+  },
   {
     "name": "wallpaper",
     "tags": [
@@ -38238,7 +40496,11 @@
       "automation",
       "devops",
       "node",
-      "connection"
+      "connection",
+      "ci/cd",
+      "cicd",
+      "pipeline",
+      "deploy"
     ]
   },
   {
@@ -38332,6 +40594,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "math",
       "multiply",
       "multiplication"
@@ -38363,6 +40628,9 @@
       "times",
       "ex",
       "×",
+      "deny",
+      "decline",
+      "refuse",
       "math",
       "multiply",
       "multiplication",
@@ -38390,7 +40658,9 @@
       "electricity",
       "energy",
       "power",
-      "quick"
+      "quick",
+      "thunder",
+      "thunderbolt"
     ]
   },
   {
@@ -38403,6 +40673,8 @@
       "energy",
       "power",
       "quick",
+      "thunder",
+      "thunderbolt",
       "off",
       "disable",
       "hide",
